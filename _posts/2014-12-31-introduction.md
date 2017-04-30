@@ -18,7 +18,6 @@ Soporta formatos de fichero estándar, tales como MIDI, BWF, WAV, WAV64, AIFF y 
 Se ejecuta en Linux, mac OS y Windows (oficialmente a partir de la versión 5), y usa ALSA o el Jack Audio Connection Kit (JACK) para interactuar con la tarjeta de sonido del ordenador, así como con otras aplicaciones de audio ejecutándose en el mismo sistema. 
 
 Se puede encontrar más información sobre Ardour y descargar el programa para las varias plataformas en http://ardour.org. En este momento (Abril 2016) la versión mas reciente es 5.8. 
-Hay muchas características y correcciones de fallas en esta versión por lo cual te recomiendo actualizar si tienes una versión anterior. Este manual de referencia solo es valido para las versiones 5+ de Ardour. Se puede encontrar más información aqui:
-[http://ardour.org/](http://ardour.org/ "http://ardour.org/").
+Hay muchas características y correcciones de fallas en esta versión por lo cual te recomiendo actualizar si tienes una versión anterior. Este manual de referencia solo es valido para las versiones 5+ de Ardour.
 
 ### Haz clic [aquí]({{ site.url }}/tags) o saltar directamente a la Tabla de contenidos [Table of Contents]({{ site.url }}/tags)
