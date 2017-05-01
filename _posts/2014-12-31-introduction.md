@@ -94,7 +94,7 @@ Si eres diestro y usas un ratón convencional, entonces Clic se corresponde con 
 Los avisos aparecen aparte del texto principal y se pretende que atraigan su atención hacia ciertos fragmentos de información. Según lo crítica que es la información para el usuario, pueden ser
 
 `Nota. Típicamente, una nota es información que necesitas para comprender la conducta de Ardour.`
-`Importante. Se usa para atraer la atención hacia partes del interfaz que pueden ser pasadas por alto o hacia ciertos ajustes que son vitales para determinar el comportamiento de Ardour. `
+`Importante. Se usa para atraer la atención hacia partes del interfaz que pueden ser pasadas por alto o hacia ciertos ajustes que son vitales para determinar el comportamiento de Ardour.` 
 `Peligro. El aviso de peligro se usa cuando una acción puede tener consecuencias no deseadas o permanentes, como cambios a la sesión que no se pueden deshacer o borrado de archivos.`
 
 ## Elementos básicos del interfaz
@@ -1204,7 +1204,7 @@ Por favor ten en cuenta que cuando se exporta una región, no todos los parámet
 Si estás construyendo una colección de muestras para usar después y las muestras son, básicamente, recortando y editando Regiones, al final del proceso tendrás que exportar todas ellos. Si el número es grande, la exportación de forma manual puede ser tediosa. He aquí una manera de exportar varias regiones a la vez.
 En el modo Seleccionar objeto [ G], selecciona todas las regiones que deseas exportar. No es necesario que estén en la misma pista.
 
-Ir al menú Región → Rangos selecciona Agregar marcador para un intervalo de Región. (Región →  Rangos Añadir → Marca de rango por región.)
+Ir al menú **Región → Rangos** selecciona Agregar marcador para un intervalo de Región. (**Región →  Rangos Añadir → Marca de rango por región**.)
 
 Ardour crea ahora sólo Rangos de marcadores que se ajustan exactamente al comienzo y al final de sus regiones seleccionadas (ver los rectángulos verdes en la regla Marcas de rango):
 
@@ -1215,7 +1215,7 @@ Volver a la pestaña principal (Formato de archivo).
 Haz clic en Exportar.
 Tus regiones se habrán exportado a archivos de audio individuales.
 
-Importante: Este método exporta todo lo que cae en cada intervalo de tiempo definido. En otras palabras, si tienes otras regiones en otras pistas que suenan simultáneamente con la región que deseas exportar, serán mezcladas entre sí. Otra forma de verlo es la siguiente: la operación de exportación exportará todo lo que juega bajo los rangos de tiempo definidos. Si eso no es lo que quieres, se puede utilizar en solitario o botones de silencio en seleccionar las pistas para garantizar exportar sólo lo que quieres.
+`Importante: Este método exporta todo lo que cae en cada intervalo de tiempo definido. En otras palabras, si tienes otras regiones en otras pistas que suenan simultáneamente con la región que deseas exportar, serán mezcladas entre sí. Otra forma de verlo es la siguiente: la operación de exportación exportará todo lo que juega bajo los rangos de tiempo definidos. Si eso no es lo que quieres, se puede utilizar en solitario o botones de silencio en seleccionar las pistas para garantizar exportar sólo lo que quieres.` 
 
 ## Exportar Rangos
 Según hemos aprendido previamente, exportar una Región no exporta todos los cambios que querrías haber hecho a la región. Para Exportar ediciones tales como Normalización, Atenuación y Panoramización, y Automatización, debes exportar bien un Rango o la sesión entera que también vimos con anterioridad.
