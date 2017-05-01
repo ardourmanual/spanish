@@ -1,2 +1,2 @@
-# ardour4-tutorial
-Fully updated version of the Ardour FLOSS manual
+# tutorial de Ardour 5
+Una version actualizada del manual tutorial Ardour FLOSS.
