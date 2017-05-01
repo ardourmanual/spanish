@@ -1466,261 +1466,509 @@ www.doctorproaudio.com
 Noticias, Calculadores de Audio e Iluminación, listas muy completas de organizaciones, ferias, importadores de diferentes marcas, etc.
 
 ## Glosario
+
+
 AIFF 
 Un formato de fichero de sonido desarrollado por Apple y generalmente utilizado para audio sin pérdida y sin compresión. Los ficheros AIFF son compatibles con sistemas operativos Linux, mac OS y Windows.
+
+
 ALSA (Linux)
 Advanced Linux Sound Architecture (Arquitectura de sonido avanzada de Linux). ALSA proporciona funcionalidad de audio y MIDI al sistema operativo Linux.
+
+
 Arm (Armar) Pistas para grabar/ Ardour para grabar]
 Acción que hace que Ardour esté preparado para grabar. Antes de grabar en Ardour, una o más pistas necesitan ser armadas primero, y entonces Ardour mismo necesita ser armado.
+
+
 Artefacts (Artefactos) [de sonido]
 Disminución o distorsión perceptible de calidad de sonido generada como subproducto de ciertas operaciones de procesamiento de señal. Los artefactos son normalmente vistos como resultados indeseables o inesperados de la transformación de sonido de otro modo intencionada.
+
+
 Attenuation (Atenuación)
-Reducir el nivel de una señal de audio, normalmente medida utilizando una escala logarítmica. Ver también gain (ganancia). 
+Reducir el nivel de una señal de audio, normalmente medida utilizando una escala logarítmica. Ver también gain (ganancia).
+
+
 Audition (Escucha)
 El auditor es una banda de mezcla oculta a través de la cual se reproducen las regiones escuchadas. Escuchar (Auditioning) una región reproducirá sólo esa región, sin procesar envíos o Plugins.
+
+
 Automation (Automatización)
 La Automatización es el ajuste automático de parámetros varios tales como la ganancia, la panoramización o las configuraciones de Plugins. Los cambios pueden ser hechos una vez y luego repetidos cada vez que la mezcla se repita. La automatización en Ardour está controlada por lineas de automatización unidas a cada pista o Bus.
+
+
 Auxiliary Controls (Controles Auxiliares)
 Los botones en el lado superior derecho de los controles sitos en la Ventana de Editor: Pinchar/Despinchar (Punch in/out), Auto Reproducir, Auto Entrada, Click, Solo y Escucha.
+
+
 Amplitude (Amplitud) 
 El nivel o magnitud de una señal. Las señales de audio con una amplitud más alta normalmente suenan más fuertes.
+
+
 Bands (Bandas) [ecualización]
 Las particulares regiones de frecuencia a ser aumentadas o atenuadas en el proceso de Ecualización.
+
+
 Bars (Compases) [música]
 Igual que 'medida', un compás es una unidad métrica. En notación Occidental, es el espacio comprendido entre dos líneas verticales dibujadas a través del pentagrama La duración específica de un compás depende de su Time signature (Compás) y el actual Tempo de la música.
+
+
 Bass (Graves) [Frecuencias]
 Una manera genérica de referirse a las frecuencias más bajas del Espectro de un sonido.
+
+
 Beat (Pulso)
 El pulso básico subyacente una pieza de música.
+
+
 Beats per Minute (Pulsos por Minuto) 
 Pulsos por Minuto (BPM) es una medida del Tempo en música. Un índice de 60 pulsos por minuto significa que cada segundo habrá un pulso; 120 bpm significa dos pulsos por segundo, y así. Las indicaciones BPM normalmente aparecen al inicio de una notación musical tradicional como una marca de metrónomo (por ejemplo, "la negra equivale a 60", significa una nota negra por segundo).
+
+
 Bit 
 Un bit (binary digit o dígito binario) es un número único con un valor de 1 ó 0. 
+
+
 Bit Depth (Profundidad de Bits)
 Se refiere al número de bits utilizado para escribir una muestra. En el CD estándar, cada muestra de audio está representada por un número de 16-bit. Esto da 2^16 (dos elevado a la potencia de dieciséis = 65,536) valores posibles que una muestra puede tener. Una profundidad de bits más alta significa un mayor rango dinámico posible. Las grabaciones de estudio son normalmente primero hechas grabar con una profundidad de bits de 24 (o incluso 32) para preservar tanto o más detalle antes de que se transfiera a CD Los DVDs están hechos a 24 bits, mientras videojuegos de los '80 son famosos por su "sonido de 8 bits" característicamente áspero. A la profundidad de bits también se le dice como word length (Tamaño de palabra). 
+
+
 Buffer Size (Tamaño de buffer o tampón)
 El buffer o tampón es una sección de memoria específicamente dispuesta para los datos de señal provisionales. Bufferes tampón pequeños permiten una latencia más baja y así son necesitados cuando se utilizan aplicaciones de audio que requieren interacción en tiempo real. La desventaja es que el consumo de CPU para el sistema es mayor con tamaños de buffer menores. Los bufferes grandes (como de 512 o 1024) pueden ser utilizados cuando no hay tal requisito.
 Built-in Input and Output (Entrada y Salida incorporada)
 Estos son los interfaces por defecto para conseguir meter y sacar sonido de tu ordenador si no tienes una tarjeta de sonido externa. En un portátil, son las conexiones comunes de entrada (mic) y salida (auriculares).
+
+
 Bus 
 Un Bus es similar a una Pista excepto que no contiene sus propias regiones. No puedes grabar directamente en un Bus o arrastrar regiones a él. La banda de mezcla vertical representa el flujo de señal de un Bus, mientras que el lienzo principal horizontalmente exhibe información en función del tiempo para cada Bus (tales como líneas de automatización).
+
+
 BWF
 Broadcast Wave Format o Formato de onda de difusión (BWF) es una extensión del popular formato de audio Microsoft WAVE y es el formato de grabación de la mayoría de grabadoras digitales no-lineales basadas en ficheros utilizadas para producción de películas y televisión. Este formato de fichero permite la inclusión de metadatos para facilitar el intercambio perfecto de datos de sonido entre plataformas de ordenador diferentes y aplicaciones.
+
+
 CAF
 CAF (Core Audio Format o Formato de audio central) es un formato de fichero para almacenar audio, desarrollado por Apple. Es compatible con mac OS 10.4 y superiores. El formato Core Audio está diseñado para superar las limitaciones de los viejos formatos, incluyendo AIFF y WAV. Justo como el formato de fichero .mov de QuickTime, un formato de fichero .caf puede contener muchos formatos de audio, pistas de metadatos, y muchos más datos diferentes.
+
+
 Center Frequency (Frecuencia Central)
 En algunos Plugins de EQ (ecualización), el usuario tiene la posibilidad de elegir la frecuencia central para cada una de las Bandas de Frecuencia. La frecuencia central de una Banda será la que más se atenúe o refuerce por el ecualizador para esa banda específica. Las frecuencias que rodean a la frecuencia central serán menos afectadas. 
+
+
 Clipping (Saturación)
 La Saturación ocurre cuando una señal es demasiado alta en nivel para ser reproducida. Cualesquier muestras demasiado altas en nivel sencillamente serán truncadas, resultando en distorsión, pérdida de detalle de audio, y frecuencias artefacto que no estaban presentes en el sonido original. 
+
+
 Clipping Point (Punto de Saturación) 
 El punto de saturación de un sistema digital se refiere a 0 dB, y el nivel de cualquier sonido está medido en cuán lejos éste está por debajo del punto de saturación (-10 dB, -24 dB, etc). 
+
+
 Clocks (Relojes)
 Los dos grandes visualizadores numéricos cerca de la Ventana de Editor. Pueden exhibir el tiempo en varios formatos: Timecode (Código de tiempo), Bars:Beats (Compases:Pulsos), Minutos:Segundos, y Samples (Muestras).
+
+
 Compile (Compilar)
 Las aplicaciones FLOSS están distribuidas como código fuente, el cual es humanamente legible pero no puede ser ejecutado como una aplicación real. Para tornar este código fuente en una aplicación de ejecutable, primero debe ser Compilado. Cuando descargas una imagen de disco para mac OS o un paquete de software de tu distribución (Ubuntu, Debian o Fedora), ya ha sido compilado para ti. Aun así, si deseas añadir características (como soporte para Plugins VST) que tu distribución no proporciona, entonces tienes que compilar la aplicación con el código de fuente tu mismo. 
+
+
 Compression (Compresión) [DSP]
 Esencialmente, la compresión hace que las partes silenciosas de una señal sean más sonoras sin cambiar el nivel de 
 las partes más fuertes. Esto conlleva una reducción del rango dinámico real: un sonido comprimido es menos dinámico (tiene una rango más pequeño de niveles) 
+
+
 Compression (Compresión) [datos]
 Como cualesquier otros datos, los datos de audio pueden ser comprimidos de modo que utilicen menos espacio de disco duro. La compresión tal como FLAC, ALAC, o MLP reduce el tamaño de ficheros de audio comparados con WAV o AIFF sin cambiar los datos, lo que se suele llamar compresión sin pérdida. El audio puede ser comprimido a un tamaño menor utilizando compresión con pérdida tal como MP3, Ogg Vorbis o AAC pero esto se consigue eliminando datos lo que puede tener un efecto audible. 
+
+
 Cursor Modes (Modos de cursor)
 Estos son los seis botones justo bajo las órdenes de Transporte en la Ventana de Editor. Las seis funciones diferentes que el puntero de ratón puede tener en Ardour son: Seleccionar/Mover Objetos, Seleccionar/Mover Rangos, Selecciona Rango de Ampliación (Zoom), Dibujar Automatización de Ganancia, Extender/Encoger Regiones, Escuchar Regiones Específicas.
+
+
 Decibels (Decibelios) 
 El decibelio es una escala logarítmica utilizada para medir muchas cantidades, incluyendo la ganancia, nivel o volumen de una señal. El decibelio es normalmente abreviado a dB y en el audio digital normalmente denota cuan lejos por debajo 0 dBFS (el punto de clipping [saturación] de un sistema) está una señal. 
+
+
 Delay (Retardo) [efecto]
 La cantidad de tiempo entre un evento y otro. Como efecto de audio, un retardo toma una señal de sonido entrante y la retarda durante una cierta cantidad de tiempo. Cuando se mezcla con el sonido original, se oye un "eco". Utilizando la retroalimentación para retornar la señal tratada de nuevo al retardo (normalmente después de bajar su ganancia), producirá ecos múltiples con un decaimiento.
+
+
 Destructive Editing (Edición destructiva) 
 Las acciones destructivas son las que modifican o borran permanentemente los datos originales (ficheros de sonido) en el transcurso de la edición o grabación. 
+
+
 Distortion (Distorsión) 
 La distorsión ocurre cuando una señal de audio está cambiada de alguna manera que produce frecuencias no presentes en la original. La distorsión puede ser deliberada o indeseada, y puede ser producido por conducir la señal a un punto de clipping (saturación) , o por utilizar transformaciones matemáticas para alterar la forma (o "waveform") de la señal (normalmente referido como "waveshaping").
+
+
 Driver (Controlador) [JACK]
 Software escrito para controlar hardware. CoreAudio es el controlador de sonido de Mac. ALSA es el controlador más común de Linux.
+
+
 DSP
 Digital Signal Processing (Procesamiento de señal digital).
+
+
 Dynamic Range (Rango dinámico)
 Utilizado para referirse a la diferencia entre el sonido más fuerte y el más silencioso que posiblemente pueda grabarse, así como la cantidad de detalle que pueda ser oído en entre aquellos extremos. Los sonidos que son demasiado silenciosos para ser grabados se dicen de estar bajo el noise floor (umbral de ruido) del sistema de registro (micrófono, grabador, tarjeta de sonido, software de audio, etc).  Los sonidos que son demasiado fuertes serán distorsionados o saturados. 
+
+
 Edit Modes (Modos de edición)
 Los tres Modos de edición disponibles (Deslizar, Rizado o Bloquear) controlan el comportamiento de las operaciones de edición en el Lienzo Principal. 
+
+
 Edit Point (Punto de edición)
 El punto en el Lienzo Principal donde tiene lugar una acción como Pegar. Este puede ser el Ratón, la Marca activa o un Marcador.
+
+
 Editor Window (Ventana de Editor)
 Ardour proporciona dos modos de ver una sesión: el Editor y el Mezclador. El Editor representa los aspectos temporales de una sesión: muestra pistas y Buses como exhibiciones horizontales de línea de tiempo, con material dentro de las pistas (audio, MIDI, vídeo, datos de automatización, etc.) colocado a lo largo del eje horizontal (tiempo).
+
+
 EQ / Equalization (Ecualización) 
 La Ecualización (EQ) es el proceso de ajustar los niveles relativos de diferentes frecuencias en una grabación o en una señal. En otras palabras, es el proceso de aumentar o atenuando las varias bandas de frecuencia de un sonido según una meta artística escogida.
+
+
 Filter (Filtro)
 Un tipo de procesamiento de señal que suprime algunas frecuencias. 
+
+
 Floating Point Numbers (Números de coma flotante)
 Es sencillamente un número con un coma decimal. "Coma flotante" se refiere a a la técnica específica que el ordenador utiliza para representar un mayor rango de valores enteros y no enteros.
+
+
 FLAC
 Un formato open source de audio sin pérdida generalmente compatible con Linux, mac OS y Windows. A diferencia de AIFF y WAV, FLAC es un formato comprimido, que permite reducir los tamaños de fichero. 
+
+
 FLOSS
 FLOSS significa Free Libre Open Source Software. Los Manuales FLOSS son una colección de manuales sobre software libre y open source junto a las herramientas utilizadas para crearlos y la comunidad que utiliza esas herramientas. Incluyen autores, editores, artistas, desarrolladores de software, activistas y muchos más.
+
+
 Format (Formato) [fichero de audio]
 Los tipos de fichero de sonido como se guardan los sonidos Entre el más común están AIFF, WAV, FLAC, mp3 y Ogg Vorbis. 
+
+
 fps
 Frames Per Second (Cuadros por segundo). La ratio de Cuadros, o la frecuencia de cuadros (ratio) a la cual un dispositivo de imagen produce imágenes únicas llamadas cuadros.. El término se aplica igualmente bien a gráficos de ordenador, cámaras de vídeo, cámaras de película, y sistemas de captura. La Ratio de cuadros se expresa lo más a menudo en cuadros por segundo (FPS). 
+
+
 Frequency (Frecuencia)
 Se refiere al numero de veces que una oscilación ocurre por segundo. La frecuencia se mide en Hercios (Hz), y está correlacionada con el tono de un sonido. La frecuencia es una escala lineal, mientras que el tono es logarímico. El tono 'La' (A) sobre el 'Do' (C) medio tiene una frecuencia de 440 Hz. El 'La' (A) una octava por encima de aquella es dos veces aquella frecuencia (880 Hz).
+
+
 Gain (Ganancia)
 Aumentar el nivel de una señal de audio, normalmente medida utilizando un escala logarítmica. Ver también atenuación.
+
+
 Grid (Rejilla)
 La rejilla es un sistema de puntos al que una región se puede ajustar cuando se edita. LA rejilla puede estar "Sin Rejilla", "Rejilla" o "Magnética". 
+
+
 Grid Points (Puntos de rejilla)
 Los puntos en la Rejilla a los cuales las regiones se ajustarán cuando esta esté activa. Los Puntos de Rejilla pueden ser minutos, segundos, cuadros de vídeo, compases, pulsos o algún múltiplo de pulso. 
+
+
 Hertz (Hercio)
 Un término utilizado para describir el número de veces que algo ocurre en un segundo. En el audio digital, se utiliza para describir la sampling rate (frecuencia de muestreo), y en acústica se utiliza para describir la frecuencia de un sonido. Mil hercios se describen como KHz (Kilo Hercio). 
+
+
 High Shelf (Estante Alto) 
 En un Ecualizador, un Shelf (Estante) corta o aumenta todo por encima (High Shelf o Estante Alto) o por debajo (Low Shelf o Estante Bajo) de una frecuencia específica.
+
+
 Headroom (Margen) 
 El rango de Decibelios entre el Pico máximo de región y el Punto de Saturación es generalmente referido como Margen. Es práctica común de grabación mantener aproximadamente de tres a seis Decibelios de Margen entre el máximo de tu señal y el Punto de Saturación.
+
+
 Jack Audio Connection Kit (JACK) 
 JACK es un sistema de audio de baja latencia qué gestiona conexiones entre Ardour y la tarjeta de sonido de tu ordenador, y entre Ardour y otros programas de audio JACK en tu ordenador.
+
+
 Jack Server (Servidor Jack) 
 El servidor Jack es el "motor" o "backend" del juego de conexión Jack Audio Connection Kit. 
+
+
 Jack Router (Enrutador Jack) 
 El Enrutador Jack Router permite enrutar el audio de una aplicación a otra utilizando el Servidor Jack. 
+
+
 LADSPA Plugins 
 Linux Audio Developer Simple Plugin API (LADSPA) es el estándar que permite a los procesadores de audio y efectos ser enchufados a un amplio rango de paquetes de síntesis de audio y grabación. Por ejemplo, permite al desarrollador escribir un programa de reverberación y empaquetarlo en una "biblioteca de Plugins" LADSPA. Entonces los usuarios ordinarios pueden utilizar esta reverberación dentro de cualquier aplicación de audio compatible con LADSPA. La mayoría de aplicaciones de audio en Linux soporta LADSPA.
+
+
 Latency (Latencia)
 La latencia es la cantidad de tiempo necesario para procesar todas las muestras que vienen desde aplicaciones de sonido en tu ordenador y enviarlas a la tarjeta de sonido para reproducción, o para reunir muestras desde la tarjeta de sonido para grabación o procesado. Una latencia más breve significa que oirás los resultados más rápido, dando la impresión de un sistema que responde mejor.. Aun así, con latencia más breve también correrás un riesgo mayor de fallas en el audio porque el ordenador podría no tener bastante tiempo para procesar el sonido antes de enviarlo a la tarjeta de sonido. Una latencia mayor significa menos fallas, pero al precio de un tiempo de respuesta más lento. La Latencia se mide en milisegundos.
+
+
 Amplitude (amplitud) [mezcla]
 La fuerza de una señal de audio. La escala de amplitud es logarítmica, ya que expresa la proporción física de potencia entre un sonido y otro. Los niveles en sistemas de audio digital son normalmente representados como la cantidad de decibelios bajo el punto de saturación de 0 dB. Véase también loudness (volumen). 
+
+
 Limiting (Limitación)
 El proceso por el cual se previene que la amplitud de salida de un dispositivo exceda de un valor predeterminado. 
+
+
 Linear (Lineal)
 Una escala de números qué progresa de manera aditiva, tal como por añadir uno (1, 2, 3, #..), dos (2, 4, 6, 8...) ó diez (10, 20, 30, 40...). Multiplicar una señal de audio, por ejemplo, bien por una escala lineal o bien por una escala logarítmica producirá resultados muy diferentes. La escala de frecuencia es lineal, mientras que la escala de tono y ganancia son logarítmicas.
+
+
 Lock Edit (Edición de Bloqueo o Bloquear)
 Uno de los tres Modos de Edición disponibles, la Edición de Bloqueo (o Bloquear) es similar a la Edición de Trozo (o Reunir), pero las regiones quedarán en sus posiciones originales a pesar de cualquier operación de edición ejecutada.
+
+
 Logarithmic (Logarítmica)
 Una escala de números qué progresan según una cierta proporción, tal como exponencialmente (2, 4, 8, 16, 25#..). Ambas escalas de tono y ganancia son logarítmicas, mientras que la escala de frecuencia es lineal.
+
+
 Lossless/Lossy (Sin/con pérdida)
 Véase Compression (Compresión) [datos] 
+
+
 Loudness (Volumen)
 A diferencia de la amplitud, la cual expresa la potencia física de un sonido, el volumen es la fuerza percibida de un sonido. Tonos en frecuencias diferentes pueden ser percibidos como que estén a diferentes volúmenes, incluso si son en la misma amplitud.
+
+
 LV2
 LV2 es un estándar abierto para Plugins y a juego con aplicaciones anfitrionas, principalmente apuntados al procesamiento y generación de audio. LV2 es un sencillo pero extensible sucesor de LADSPA, pretendido para hacerse cargo de las limitaciones de LADSPA el cual muchas aplicaciones han sobrepasado.
+
+
 Lienzo principal
 En la Ventana de Editor de Ardour, el Lienzo Principal es el espacio justo bajo las reglas de línea de tiempo donde las pistas y Buses se exhiben horizontalmente. 
+
+
 Master Out (Salida Master)
 Una salida maestra es un Bus al cual todas (o la mayoría) de las pistas y otros Buses envían sus salidas. Proporciona un conveniente punto único de control para la producción de Ardour, y es una ubicación típica para efectos globales. El uso de la Salida Master está activado por defecto, y el Bus de salida maestra está configurado para ser estéreo.  
+
+
 Meter (Métrica) 
-La agrupación de pulsos fuertes y débiles en unidades mayores llamadas compases o medidas. En Ardour hay un marcador para cada cambio de métrica que se puede ver en la barra de  
+La agrupación de pulsos fuertes y débiles en unidades mayores llamadas compases o medidas. En Ardour hay un marcador para cada cambio de métrica que se puede ver en la barra de transporte.  
+
+
 Mixing (Mezcla)
 La Mezcla de audio es el proceso por el cual una multitud de sonidos grabados son combinados en uno o más canales, más generalmente estéreo bicanal. En el proceso, los niveles, el contenido de frecuencia, las dinámicas y posición panorámica de las señales de origen se manipulan en común y se puede agregar efectos tales como la reverberación. 
+
+
 MIDI
 MIDI (abreviatura de Musical Instrument Digital Interface) es un protocolo estándar industrial definido en1982 que permite a instrumentos electrónicos musicales tales como Controladores de teclado, ordenadores y otro equipamiento electrónico comunicarse, controlarse, y sincronizarse entre sí. MIDI permite que los ordenadores, sintetizadores, controladores MIDI, tarjetas de sonido, samplers y cajas de ritmos se controlen unos a otros, e intercambien datos de sistema. MIDI no transmite señales de audio, sino sencillamente mensajes como el número de nota (tono), velocidad (intensidad), nota-pulsada, y nota-soltada,  señales de control para parámetros musicales como lo son la dinámica, el vibrato, paneo y señales de reloj que establecen y sincronizan el tempo entre varios dispositivos. 
+
+
 Mixer Strip (Banda de Mezcla)
 Cada pista y Bus se representa en la Ventana de Mezclador por una Banda de Mezcla verticalque contiene varios controles relacionados con el flujo de señal. Hay dos sitios en Ardour en qué puedes ver Bandas de Mezcla. La ventana de mezclador es el obvio, pero también puedes ver una sola banda de mezcla en la parte izquierda del Editor (Mayús. + E para esconder/mostrar) 
+
+
 Mixer Window (Ventana de Mezclador)
-El Mezclador muestra la sesión representando pistas verticalmente como Bandas de Mezcla, con controles para ganancia, habilitar grabación, solo, Plugins, etc. El Mezclador representa el flujo de señal de Pistas y Buses en una sesión de Ardour. La ventana de mezclador proporciona una vista que imita una consola de mezcla de hardware tradicional
+El Mezclador muestra la sesión representando pistas verticalmente como Bandas de Mezcla, con controles para ganancia, habilitar grabación, solo, Plugins, etc. El Mezclador representa el flujo de señal de Pistas y Buses en una sesión de Ardour. La ventana de mezclador proporciona una vista que imita una consola de mezcla de hardware tradicional.
+
+
 Monitoring (Monitorización)
 Monitorizar es el proceso de enrutamiento de una mezcla o submezcla específica de tu sesión a salidas separadas (como auriculares). Por ejemplo, un músico siendo grabado puede querer escuchar el material existente mientras actúa. Ardour y JACK hacen fácil configurar salidas de monitor ya que cualquier señal entrante entonces puede ser enviada de nuevo a cualquier salida, opcionalmente mezclada junto con otras señales y con cualquier clase de procesamiento de sonido añadido.
+
+
 Mono
 Un fichero de sonido monoaural contiene solo un canal de audio al contrario de un fichero de sonido estéreo. Una pista monoaural de Ardour tiene solo una entrada y maneja ficheros de sonido monoaurales. 
+
+
 MP3
 Un Formato de fichero de sonido comprimido con pérdida y no-libre. Una alternativa libre al MP3 es OGG/Vorbis.
 Graphic Equalizer/Multi-Band Equalizer (Ecualizador gráfico/Ecualizador multibanda)
+
+
 Un Ecualizador Gráfico (o Multibanda) consta de un banco de deslizadores para aumentar o atenuar diferentes frecuencias de un sonido. 
+
+
 Non-destructive Editing (Edición no destructiva)
 Esto es una forma de editar donde el contenido original no se modifica en el curso de la edición. Detrás de las bambalinas, el fichero de sonido original se mantiene intacto, y tus ediciones son de hecho una lista de instrucciones que Ardour utilizará para reconstruir la señal desde la fuente original cuando lo reproduzcas otra vez. Por ejemplo, crear fade-ins (intensificaciones) y fade-outs (atenuaciones) en tus Regiones es un tipo de edición no-destructiva. 
+
+
 Normalize (Normalizar)
 Normalizar una señal de audio significa ajustar su Ganancia de modo que haga pico a lo máximo que la tarjeta de sonido permita antes de Saturar.
+
+
 Normal Mode (Modo Normal)
 Véase Track Mode (Modo de Pista). 
+
+
 Note value (Valor de Nota)
 La duración proporcional de una nota o silencio en relación a una unidad estándar. Por ejemplo, una 'negra' tiene una duración relativa de un cuarto de una 'redonda'. 
+
+
 Octave (Octava) [música] 
 Una distancia de 12 semitonos entre dos notas. En Hercios, la proporción de una octava es 2:# Por ejemplo, la nota 'La' (A) por encima del 'Do' (C) medio tiene una frecuencia de 440 Hz. La nota 'La' (A) una octava por encima son 880 Hz, y una octava por debajo son 220 Hz. 
+
+
 Ogg Vorbis
 Un formato de fichero de sonido open source comprimido y con pérdida.  
+
+
 Panning (Panoramización)
 La Panoramización es la ubicación de sonidos en el Campo estéreo (izquierda/derecha). 
 Parametric Equalizer (Ecualizador paramétrico)
 El Ecualizador paramétrico es el tipo más versátil de EQ utilizado para Mezclar debido a su extenso control sobre todos los parámetros de filtrado.
+
+
 Peaks (Picos)
 Los Picos son una representación gráfica de los Niveles máximos de una Región. 
+
+
 Peak Meters (Medidor de Pico) 
 Los Medidores de Pico son una representación en vivo de los Niveles máximos de una Región, y están localizados próximos al Atenuador en la Ventana del Mezclador, y también en el Mezclador de Pista, de cada Pista. 
+
+
 Pitch (Tono)
 El tono representa la frecuencia fundamental percibida de un sonido. Es uno de los tres atributos principales de los sonidos junto con el volumen y el timbre. En MIDI, el tono se representa por un número entre 0 y 127, representando cada número una tecla de un teclado MIDI. La relación del tono a la Frecuencia es Logarítmica. Esto significa que un sonido que se escuche como una Octava (+12 notas MIDI) sobre otro es del doble de frecuencia en Hz, mientras que un sonido una octava por debajo (-12 notas MIDI) es de la mitad de la frecuencia.
+
+
 Playhead (Marca Activa)
 En Ardour, la Marca activa es la línea roja que se mueve en el tiempo (esto es, de izquierda a derecha) para indicar la posición de reproducción actual. 
+
+
 Plugin
 En computación, un Plugin consiste en un programa de ordenador que interacciona con la aplicación anfitriona (en este caso, Ardour) para proporcionar una cierta función "bajo demanda", normalmente una muy específica. Reverberación, filtros, y ecualizadores son ejemplos de Plugins que pueden ser utilizados en Ardour en asociación con las Pistas o Buses.
 Portaudio
 Un conjunto de controladores de audio libre y de código abierto.
+
+
 Post-Fader (Plugin or Send) / (Plugin o Envío) Post-Atenuador
 En la Banda de Mezcla, el área post-atenuador es el espacio negro bajo el deslizador de ganancia, a los qué los Plugins o envíos se pueden añadir. La entrada de estos Plugins y envíos será la señal después de que cualquier cambio de ganancia manual o automatizada (por tanto "Post-Atenuador"). 
+
+
 Pre-Fader (Plugin or Send) / (Plugin o Envío) Pre-Atenuador
 En la Banda de Mezcla, el área pre-atenuador es el espacio negro sobre el deslizador de ganancia, al que los Plugins o envíos se pueden añadir. La entrada de estos Plugins y envíos será la señal entrante antes de que está sea afectada por cualesquier cambios de ganancia manual o automatizada controlados por el deslizador (por tanto "pre-Atenuador").
+
+
 Quantization (Subdivisión) 
 En procesamiento de señal, la subdivisión puede referirse a la profundidad de bits (véase la definición de Bit depth (Profundidad de bits). En MIDI, la subdivisión se refiere al proceso de alinear notas a una rejilla temporal precise. Esto resulta en notas establecidas por pulsos o fracciones exactas de pulsos. Los secuenciadores MIDI típicamente incluyen algún tipo de función de subdivisión.
+
+
 Range (Rango)
 Un segmento de tiempo. Los rangos se crean con la herramienta Seleccionar/Mover Rangos y pueden incluir una o más pistas. Los rangos de bucle y de pinchado son tipos especiales de rangos que se crean y manipulan con el medidor de rangos de bucle/pinchado.
+
+
 Real-time System (Sistema de tiempo real) 
 En un sistema de tiempo real, el núcleo de Linux está normalmente recompilado (reconstruido) con nuevos parámetros, y otras configuraciones en el sistema están optimizadas lo que acelera el uso de aplicaciones audio en el sistema.
+
+
 Regions (Regiones)
 Las regiones son los elementos básicos de edición y composición en Ardour. Cada región representa todo o una parte de un fichero de audio. Eliminar una región de la pista no elimina el fichero de audio del disco.
+
+
 Region List (Lista de regiones)
 La lista de región está ubicada en el lado derecho de la Ventana de Editor y muestra todas las regiones asociadas con la sesión. 
+
+
 Reverberation (Reverberación)
 La reverberación es la persistencia del sonido en un espacio particular tras eliminar la fuente original del sonido. Una reverberación, o reverb, se crea cuando un sonido se produce en un espacio cerrado causando que se agrupen una gran cantidad de ecos y que luego decaigan lentamente mientras el sonido es absorbido por las paredes y el aire. La reverberación Digital se puede añadir a un sonido en Ardour por medio de la utilización de Plugins. 
+
+
 Routing (Enrutamiento) 
 El enrutamiento es mandar una señal de audio desde algún sitio a doquiera. Las señales pueden ser enrutadas no solo desde el mundo exterior a Ardour y viceversa, pero también dentro de Ardour mismo (por ejemplo, desde una pista a un Bus).
+
+
 Rulers (Reglas)
 Las reglas están en las delgadas barras horizontales que exhiben la línea temporal, ayudando a ver cuando una región o sonido comienza o acaba exactamente. Exhibidos también con las reglas están los marcadores de métrica y tempo, los marcadores de ubicación, los marcadores de rango y los rangos de bucle/ pinchado. 
+
+
 Sample (Muestra) [datos]
 En audio digital, una muestra es el segmento más pequeño posible de un sonido grabado. En audio-CD, por ejemplo, se necesitan 4#100 muestras para hacer un segundo de sonido grabado, y así podemos decir que la frecuencia de muestreo es de 4#100 Hercios. Las muestras también tienen una profundidad de bits la cual determina el rango dinámico que se puede grabar y reproducir. Profundidades de bits comunes son de 16 (para audio-CD), 24 (para grabación de estudio y DVDs) o 32 (para sonidos dentro del ordenador).
+
+
 Sample (Muestra) [música] 
 En música electrónica, la palabra muestra puede significar cualquier porción de sonido extraído de una pieza existente de música para ser reutilizada en una nueva composición. 
+
+
 Sampler
 Un instrumento o software de música electrónico qué reproduce un sonido grabado (o muestra) siempre que se envíe un mensaje de nota- El tono de la nota determina cuan rápida o lentamente se reproduce la muestra, lo que emula los cambios de tono en otros instrumentos. Las muestras pueden ser cicladas (reproducidas una y otra vez) y one-shot (reproducida una vez).
+
+
 Sampling Rate (Frecuencia de muestreo)
 La frecuencia a la cual un ordenador graba y reproduce sonido, que se mide en Hercios que representan el número de muestras por segundo. Un audio-CD se graba y reproduce a 4#100 Hz (o 44,1 KHz), mientras que un audio-DVD va a 9#000 Hz (96 KHz) y aparatos baratos de consumidor como grabadoras de voz, videojuegos, teléfonos móviles, juguetes y algunos reproductores de MP3 a menudo utilizan una frecuencia de 2#050 Hz (22,05 KHz) o incluso menos. La frecuencia de muestreo determina la frecuencia más alta que puede ser grabada o reproducida, la cual se expresa por el número de Nyquist (la mitad de la frecuencia de muestreo). Reproducir sonidos a una frecuencia de muestreo diferente que a la que fueron grabados resultará en la escucha de un sonido a la "velocidad incorrecta".
+
+
 Send (Envío) 
 Una salida auxiliar opcional para una pista o Bus
+
+
 Session (Sesión)
 Una sesión es toda la información que constituye un proyecto en Ardour. Cada sesión se guarda en su propia carpeta que contiene todo el audio, datos paramétricos y de región, y un archivo maestro con la extensión '.Ardour'.
+
+
 Shelf (Estante) 
 En un Ecualizador, un Shelf (Estante) corta o aumenta todo por encima (High Shelf o Estante Alto) o por debajo (Low Shelf o Estante Bajo) de una frecuencia específica.
+
+
 Slice Edit (Edición de trozo o Reunir)
 Uno del tres Modos de edición disponibles, la edición de trozo (o Reunir) no permite arrastrar regiones alrededor, pero todavía te permite operaciones de trozo (como cortar, pegar, y dividir. El espacio entre las regiones se mantendrá constante tras cualquier operación que lo afecte. Si eliminas la segunda mitad de una región, por ejemplo, cualesquier regiones subsiguientes en la misma pista se moverán automáticamente atrás en la rejilla de tiempo.
+
+
 Slide Edit (Edición de desliz o Deslizar)
 Otro del tres Modos de Edición, la edición de desliz (o deslizar) es el modo por defecto. Te permite arrastrar regiones alrededor horizontalmente (dentro de la misma pista) y verticalmente (entre pistas).
+
+
 SMPTE timecode (Código de tiempo SMTP) 
 Un conjunto de estándares cooperando para etiquetar cuadros individuales de vídeo o película con un timecode (código temporal) definido por la Sociedad de Ingenieros de Cine y Televisión. Los Timecodes (códigos de tiempo) se añaden al material de película, vídeo o audio, y también han sido adaptados para sincronizar música. Proporcionan una referencia de tiempo para la edición, sincronización e identificación.
+
+
 Snap Mode (Modo de Ajuste)
 Los menús de Modo de Ajuste se encuentran justo debajo de los Relojes. Controlan la cantidad Subdivisión de la Rejilla de tiempo, p. ejem.: la cantidad de "ajuste" que una Región audio tiene para el tipo de rejilla que has escogido.
+
+
 Snapshots (Capturas)
-Guardar una captura en Ardour es similar a guardar la sesión a un nuevo fichero para evitar sobrescribir el fichero de sesión original. Una captura contiene el estado actual de tu trabajo, mientras que comparte todo los ficheros de audio y datos de la Sesión. Si estuvieras probando a encontrar una función "guardar como" en Ardour, guardar una captura es probablemente lo que estarías Buscando. 
+Guardar una captura en Ardour es similar a guardar la sesión a un nuevo fichero para evitar sobrescribir el fichero de sesión original. Una captura contiene el estado actual de tu trabajo, mientras que comparte todo los ficheros de audio y datos de la Sesión. Si estuvieras probando a encontrar una función "guardar como" en Ardour, guardar una captura es probablemente lo que estarías buscando. 
+
+
 Solo
 Interruptor de conmutación en controles de pista y Bandas de mezcla. Cuando esté encendido, únicamente las pistas en solo enviarán la salida. Se pueden marcar varias pistas como solo al tiempo. El botón general de Solo (fila superior de los controles en la Ventana de Editor) puede utilizarse para quitar el solo de todas las pistas en solo de un único gesto.
+
+
 Spectrum (Espectro)
 La representación de una señal en términos de sus componentes de frecuencia. 
+
+
 Stereo (Estéreo o Binaural)
 Un fichero de sonido estéreo contiene dos canales de audio (normalmente conocidos como canales Izquierdo y Derecho). Una pista estéreo en Ardour tiene dos entradas y salidas, para grabar y reproducir ficheros estéreo.
+
+
 Stereo Field (Campo estéreo)
 El campo estéreo es la percepción de la ubicación espacial de sonidos basada en un sistema de reproducción de sonido de 2 canales (Izquierdo y Derecho).
+
+
 Take (Toma) [grabación]
 Una secuencia de sonido grabada continuamente de una vez.
 Tape Mode (Modo de cinta)
 Véase Track Mode (Modo de Pista). 
+
+
 Tempo (música)
-La frecuencia a la que un pulso ocurre. Indicaciones Precisas de Tempo se miden en bpm (pulsos por minuto), aunque las indicaciones subjetivas son también comunes en las partituras clásicas (Allegro, Adagio, etc). 
+La frecuencia a la que un pulso ocurre. Indicaciones Precisas de Tempo se miden en bpm (pulsos por minuto), aunque las indicaciones subjetivas son también comunes en las partituras clásicas (Allegro, Adagio, etc).
+
+
 Terminal (Consola) 
-Una "terminal" es la interfaz basada en texto que permite operar un ordenador escribiendo órdenes en ella. La mayoría de usuarios de ordenador hoy confían solamente en una interfaz gráfica para controlar sus sistemas. Tanto mac OS como Linux aun así, incluyen una terminal la cual puede hacer algunas tareas más fáciles para algunos usuarios.  
+Una "terminal" es la interfaz basada en texto que permite operar un ordenador escribiendo órdenes en ella. La mayoría de usuarios de ordenador hoy confían solamente en una interfaz gráfica para controlar sus sistemas. Tanto mac OS como Linux aun así, incluyen una terminal la cual puede hacer algunas tareas más fáciles para algunos usuarios. 
+
+
 Timecode (Código de tiempo)
 Un código de tiempo es una secuencia de códigos numéricos generados a intervalos regulares por un sistema de cronometraje. la familia SMPTE códigos de tiempo es casi universalmente utilizado en producción de películas, vídeos y producción de audio.
+
+
 Time Signature (Compás) [música] 
 Una señal colocada al inicio de una pieza de música (después de la clave y la armadura de clave) o durante el curso de la pieza, indicando el métrica de la música.
+
+
 Track (Pista) 
 Una Pista es el sitio a dónde puedes arrastrar una Región de tu Lista de Regiones y donde puedes grabar los sonidos que provienen una fuente exterior. La Banda de Mezcla representa verticalmente el flujo de señal de una pista, mientras que el Lienzo Principal exhibe horizontalmente información basada en tiempo para cada pista. 
+
+
 Track Mode (Modo de Pista)
 El Modo de Pista te da la oportunidad de escoger entre Modo Normal y Modo de Cinta. El Modo Normal crea una nueva Región para cada Toma de Grabación, mientras Modo Cinta graba destructivamente--en otras palabras la toma previa de la pista es eliminada con cada nueva Toma.
+
+
 Transport (Transporte) 
 Los botones ubicados en la esquina izquierda superior de la Ventana de Editor, con controles como Rebobinar, Reproducir, Paro. 
+
+
 Treble (Agudo) [frecuencias]
 Manera genérica de referirse a las altas frecuencias del Espectro de sonido.
+
+
 VST (Virtual Studio Technology) [Tecnología de estudio virtual] 
 VST es una interfaz para integrar sintetizador audio de software y Plugins de efectos con editores de audio y estaciones digitales tales como Ardour. VST y tecnologías similares utilizan procesamiento de señales digitales para simular aparatos de estudio de grabación tradicional con el software. Existen miles de Plugins, tanto comerciales como freeware. VST fue creado por Steinberg. 
 
