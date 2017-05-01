@@ -20,13 +20,7 @@ Se ejecuta en Linux, mac OS y Windows (oficialmente a partir de la versión 5), 
 Se puede encontrar más información sobre Ardour y descargar el programa para las varias plataformas en http://ardour.org. En este momento (Abril 2016) la versión mas reciente es 5.8. 
 Hay muchas características y correcciones de fallas en esta versión por lo cual te recomiendo actualizar si tienes una versión anterior. Este manual de referencia solo es valido para las versiones 5+ de Ardour.
 
-### Haz clic [aquí]({{ site.url }}/tags) o saltar directamente a la Tabla de contenidos [Table of Contents]({{ site.url }}/tags)
-
-
-
-
-Introducción a Ardour 5 
-
+### Haz clic [aquí]({{ site.url }}/tags) para saltar directamente a la Tabla de contenidos
 
 Basado en el manual de Ardour2, http://en.flossmanuals.net/Ardour 
 Traducido del original al inglés por Roman Muñoz, intxixu@gisa-elkartea.org 
@@ -66,28 +60,28 @@ Puede permanecer en pie durante meses (incluso años) sin problema.
 Es infinitamente configurable hasta el más pequeño detalle.
 No es propiedad de ninguna entidad corporativa, asegurando que su vida y la dirección que toma están a salvo de la intervención de esa corporación.
 Es rápido y eficiente.
-Se ejecuta prácticamente en cualquier plataforma hardware jamás creada, incluyendo viejos y "lentos" sistemas.
-Es uno de los sistemas operativos más seguros "por defecto"
+- Se ejecuta prácticamente en cualquier plataforma hardware jamás creada, incluyendo viejos y "lentos" sistemas.
+- Es uno de los sistemas operativos más seguros "por defecto"
 
 Las ventajas de usar Windows
-Seguro que tu interfaz audio trae un driver para Windows
-se puede usar los plugins WindowsVST que es el formato de plugin estándar en el mundo profesional 
+- Seguro que tu interfaz audio trae un driver para Windows
+- se puede usar los plugins WindowsVST que es uno de los formatos de plugin estándar en el mundo profesional 
 
 Las ventajas de usar mac OS
-O
+- Seguro que tu interfaz audio trae un driver para macOS
+- Se puede usar los plugins AU que es uno de los formatos de plugin estándar en el mundo profesional  
 
 ### Requerimientos 
 Computadora
-Cualquier computadora con un chip Intel de 32 or 64 bit. La velocidad del CPU limita la cantidad de procesamiento.
-Sistema
-Operativo 
-Cualquier versión de Linux con un kernel mas reciente que #3 y versión de libc #25 o arriba.
-Cualquier versión de Windows XP, 7 o arriba.
-Cualquier versión de mac OS de 10.6 (Snow Leopard) hasta 10.11 (El Capitan)
+- Cualquier computadora con un chip Intel de 32 or 64 bit. La velocidad del CPU limita la cantidad de procesamiento.
+Sistema Operativo 
+- Cualquier versión de Linux con un kernel mas reciente que #3 y versión de libc #25 o arriba.
+- Cualquier versión de Windows XP, 7 o arriba.
+- Cualquier versión de mac OS de 10.6 (Snow Leopard) hasta 10.11 (El Capitan)
 RAM
-2GB son recomendados, más es siempre mejor
+- 2GB son recomendados, más es siempre mejor
 Disco Duro
-Mínimo de 350MB de espacio libre para instalar Ardour. Para grabar se necesita mas espacio. No es necesario tener un disco separado pero esto puede facilitar un rendimiento mayor.
+ - Mínimo de 350MB de espacio libre para instalar Ardour. Para grabar se necesita mas espacio. No es necesario tener un disco separado pero esto puede facilitar un rendimiento mayor.
 
 ### ¿No es un programa muy complicado?
 No tiene sentido pretender que Ardour es un programa sencillo y fácil de manejar. El grupo de desarrollo ha trabajado duro intentando hacer las cosas sencillas razonablemente fáciles, las tareas comunes rápidas, y las cosas difíciles o inusuales posibles. Al mismo tiempo, la edición de audio multipista, multicanal, no-lineal y no-destructiva, está lejos de ser un proceso sencillo. 
@@ -98,15 +92,17 @@ Este trabajo no sólo requiere un buen oído, sino también un conocimiento sól
 Este manual usa unas pocas convenciones para indicar atajos de teclado, elecciones de menú y otras interacciones del usuario.
 Atajos de teclado como [Ctrl + A] significan "Mantén pulsada la tecla Ctrl y pulsa la tecla A”
 Los nombres propios, términos técnicos, términos en inglés aparecen en cursiva: Ardour, Hydrogen, master
-El nombre de una opción de menú aparecerán como Menú → Sub-Menú.
+El nombre de una opción de menú aparecerán como **Menú → Sub-Menú**.
 
 ### Botones del ratón
 Puede que estés acostumbrado a términos como "botón izquierdo" y "botón derecho del ratón". Ardour se usa normalmente con un ratón equipado con al menos 2 botones que pueden ser remapeados para usuarios diestros y zurdos, lo cual hace difícil definir sin ambigüedades "derecho" e "izquierdo" de un modo útil. 
 Si eres diestro y usas un ratón convencional, entonces Clic se corresponde con el botón izquierdo y Clic derecho se corresponde con el botón derecho. Si eres zurdo o usas un ratón no convencional, esta nomenclatura se aplica de manera espejada. Si ves instrucciones como [Ctrl + Clic], significan "Mantén pulsada la tecla Ctrl y pulsa Botón izquierda.
 
 ### Avisos
-Los avisos aparecen aparte del texto principal y se pretende que atraigan su atención hacia ciertos fragmentos de información. Según lo crítica que es la información para el usuario, están marcadas como sigue:
-Nota. Típicamente, una nota es información que necesitas para comprender la conducta de Ardour.
+Los avisos aparecen aparte del texto principal y se pretende que atraigan su atención hacia ciertos fragmentos de información. Según lo crítica que es la información para el usuario, pueden ser
+
+`Nota. Típicamente, una nota es información que necesitas para comprender la conducta de Ardour.` 
+
 Importante. Se usa para atraer la atención hacia partes del interfaz que pueden ser pasadas por alto o hacia ciertos ajustes que son vitales para determinar el comportamiento de Ardour.
 Peligro. El aviso de peligro se usa cuando una acción puede tener consecuencias no deseadas o permanentes, como cambios a la sesión que no se pueden deshacer o borrado de archivos.
 
