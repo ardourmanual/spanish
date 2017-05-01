@@ -18,7 +18,6 @@ Traducido del original al inglés por Roman Muñoz, intxixu@gisa-elkartea.org
 Actualizado a la versión 5 y adaptado por Daniel Schär, schaerdaniel@gmail.com
 Para ver la lista de créditos y la Licencia ir a http://brunoruviaro.github.io/Ardour4-tutorial/credits
 
-
 # 1. Introducción
 ## Ardour 5 y sus características
 ### Qué es "Ardour"
@@ -27,7 +26,7 @@ Presenta ilimitadas pistas de audio y buses, edición no-destructiva, no-lineal 
 Soporta formatos de fichero estándar, tales como MIDI, BWF, WAV, WAV64, AIFF y CAF, y puede usar formatos de Plugins LADSPA, LV2, LinuxVST (en GNU/Linux), VST (en Windows) y AudioUnit (en mac OS).
 Se ejecuta en Linux, mac OS y Windows (oficialmente a partir de la versión 5), y usa ALSA o el Jack Audio Connection Kit (JACK) para interactuar con la tarjeta de sonido del ordenador, así como con otras aplicaciones de audio ejecutándose en el mismo sistema. 
 
-Se puede encontrar más información sobre Ardour y descargar el programa para las varias plataformas en http://ardour.org. En este momento (Abril 2016) la versión mas reciente es #8. 
+Se puede encontrar más información sobre Ardour y descargar el programa para las varias plataformas en http://ardour.org. En este momento (Abril 2016) la versión mas reciente es 5.8. 
 Hay muchas características y correcciones de fallas en esta versión por lo cual te recomiendo actualizar si tienes una versión anterior. Este manual de referencia solo es valido para las versiones 5+ de Ardour. 
 
 ### Por qué se llama "Ardour"
@@ -87,7 +86,7 @@ El nombre de una opción de menú aparecerán como **Menú → Sub-Menú**.
 
 ### Botones del ratón
 Puede que estés acostumbrado a términos como "botón izquierdo" y "botón derecho del ratón". Ardour se usa normalmente con un ratón equipado con al menos 2 botones que pueden ser remapeados para usuarios diestros y zurdos, lo cual hace difícil definir sin ambigüedades "derecho" e "izquierdo" de un modo útil. 
-Si eres diestro y usas un ratón convencional, entonces Clic se corresponde con el botón izquierdo y Clic derecho se corresponde con el botón derecho. Si eres zurdo o usas un ratón no convencional, esta nomenclatura se aplica de manera espejada. Si ves instrucciones como [Ctrl + Clic], significan "Mantén pulsada la tecla Ctrl y pulsa Botón izquierda.
+Si eres diestro y usas un ratón convencional, entonces Clic se corresponde con el botón izquierdo y Clic derecho se corresponde con el botón derecho. Si eres zurdo o usas un ratón no convencional, esta nomenclatura se aplica de manera espejada. Si ves instrucciones como [Ctrl + Clic], significan "Mantén pulsada la tecla Ctrl y pulsa Botón izquierda."
 
 ### Avisos
 Los avisos aparecen aparte del texto principal y se pretende que atraigan su atención hacia ciertos fragmentos de información. Según lo crítica que es la información para el usuario, pueden ser
@@ -144,8 +143,7 @@ Sin embargo, cada vez es más común que los estudios usen fuentes de audio y pr
 
 Si quieres usar este sistema de audio te recomendamos estudiar la pagina de cual también lo puedes bajar el programa para tu sistema operativo: http://jackaudio.org 
 
-Si quieres instalar y usar JACK 
-
+Si quieres instalar y usar JACK
 - en Windows hay un tutorial en: http://www.jackaudio.org/faq/jack_on_windows.html
 
 - en GNU/Linux es recomendable descargar la versión de JACK de tu distribución por medio del instalador de paquetes. Los dos paquetes se llaman jackd y qjackctl. Ademas es recomendado leer el tutorial de JACK en Linux de la siguiente pagina: https://radioslibres.net/article/el-poderoso-e-incomprendido-jack/
