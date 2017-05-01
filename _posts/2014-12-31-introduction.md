@@ -11,15 +11,6 @@ image:
   creditlink:  
 ---
 
-Qué es "Ardour"?
-Ardour es un grabador a disco duro completo, libre, de codigo abierto y un puesto de audio digital adecuado para uso profesional. 
-Presenta ilimitadas pistas de audio y buses, edición no-destructiva, no-lineal con deshacer ilimitado, y enrutamiento de señal desde y hacia cualquier lugar. 
-Soporta formatos de fichero estándar, tales como MIDI, BWF, WAV, WAV64, AIFF y CAF, y puede usar formatos de Plugins LADSPA, LV2, LinuxVST (en GNU/Linux), VST (en Windows) y AudioUnit (en mac OS).
-Se ejecuta en Linux, mac OS y Windows (oficialmente a partir de la versión 5), y usa ALSA o el Jack Audio Connection Kit (JACK) para interactuar con la tarjeta de sonido del ordenador, así como con otras aplicaciones de audio ejecutándose en el mismo sistema. 
-
-Se puede encontrar más información sobre Ardour y descargar el programa para las varias plataformas en http://ardour.org. En este momento (Abril 2016) la versión mas reciente es 5.8. 
-Hay muchas características y correcciones de fallas en esta versión por lo cual te recomiendo actualizar si tienes una versión anterior. Este manual de referencia solo es valido para las versiones 5+ de Ardour.
-
 ### Haz clic [aquí]({{ site.url }}/tags) para saltar directamente a la Tabla de contenidos
 
 Basado en el manual de Ardour2, http://en.flossmanuals.net/Ardour 
@@ -28,7 +19,7 @@ Actualizado a la versión 5 y adaptado por Daniel Schär, schaerdaniel@gmail.com
 Para ver la lista de créditos y la Licencia ir a http://brunoruviaro.github.io/Ardour4-tutorial/credits
 
 
-# Introducción
+# 1. Introducción
 ## Ardour 5 y sus características
 ### Qué es "Ardour"
 Ardour es un grabador a disco duro completo, libre, de codigo abierto y un puesto de audio digital adecuado para uso profesional. 
@@ -56,10 +47,10 @@ No están disponibles como código fuente, con lo cual es imposible modificarlo,
 Inicialmente Ardour fue creado como DAW solamente para el Sistema GNU/Linux. El autor principal de Ardour usa GNU/Linux y quería un DAW que pudiera ejecutarse ahí. A partir de la versión 4 se hizo una versión para mac OSX. Hubo muchas personas que preguntaron en el foro de la pagina de Ardour cuando si y cuando va a salir una versión para Windows. En Abril 2015 los desarrolladores sacaron una versión Nightly Build para Windows pero sin ningún soporte. A partir de la versión 5 que salió en Agosto 2016 se consideró que la versión para Windows es suficiente estable para lanzarla oficialmente. Como el sistema operativo Windows aún ocupa el primer lugar mucho es probable que va a ganar mucho mas usuarios. 
 
 Las ventajas de usar GNU/Linux:
-Puede permanecer en pie durante meses (incluso años) sin problema.
-Es infinitamente configurable hasta el más pequeño detalle.
-No es propiedad de ninguna entidad corporativa, asegurando que su vida y la dirección que toma están a salvo de la intervención de esa corporación.
-Es rápido y eficiente.
+- Puede permanecer en pie durante meses (incluso años) sin problema.
+- Es infinitamente configurable hasta el más pequeño detalle.
+- No es propiedad de ninguna entidad corporativa, asegurando que su vida y la dirección que toma están a salvo de la intervención de esa corporación.
+- Es rápido y eficiente.
 - Se ejecuta prácticamente en cualquier plataforma hardware jamás creada, incluyendo viejos y "lentos" sistemas.
 - Es uno de los sistemas operativos más seguros "por defecto"
 
@@ -131,10 +122,10 @@ Para editar el valor de un reloj en particular, haz clic en el campo más a la i
 Una barra de control es un elemento del interfaz que funciona de un modo bastante diferente a cualquier elemento estándar encontrado en la mayoría de programas. Se usan para proporcionar un método combinado de mostrar y modificar un parámetro.
 Para editar gráficamente el valor del parámetro representado por una barra de control, pulsa y arrastra la barra de control hacia la derecha o la izquierda, arriba o abajo, según resulte apropiado. Para editar el valor con mayor precisión, haz un doble clic en la barra de control y se transformará en un diálogo de entrada de datos. Puedes meter un valor exacto para el parámetro, o usar las flechas para aumentar/disminuir el valor mostrado. Cuando hayas terminado de editar, las teclas [Intro] o [Tab] transformarán de nuevo el diálogo de entrada de datos en una barra de control.
 
-## Qué es diferente en Ardour
+## Qué es diferente en Ardour?
 Si ya has usado otros programas de audio, sobre todo DAW, (estación de trabajo para audio digital), entonces hay un cierto número de cosas en Ardour que pueden parecer raro las primeras veces que uses el programa.
 
-### „No hay sesión por defecto“
+### „No hay sesión por defecto!“
 Es necesario crear explícitamente una Sesión antes de poder hacer nada, y si escoges no usar una de las esquemas predefinidas, también tendrás que crear las pistas y Buses necesarias para grabar y/o editar el material existente.
 
 ### „¿Dónde van los Plugins y los envíos?“
@@ -144,7 +135,7 @@ Ardour no tiene un número fijo de "ranuras" para Plugins, envíos o insertos: e
 La mayoría de DAWs han evolucionado hacia proveer la llamada "herramienta inteligente" que te permite usar el ratón para realizar diversos tipos de operaciones sin necesidad de cambiar a una herramienta diferente. Ardour ha usado esta orientación desde el principio, de modo que la herramienta "Objeto" de hecho te permite realizar muchas operaciones diferentes dependiendo de cómo y dónde se usa el ratón. Ardour no proporciona una herramienta "Lápiz" destructiva como hacen otros DAW, por razones técnicas básicas. La necesidad de una herramienta "Lápiz" para reparar la forma de la onda, casi siempre indica que hay un problema con el ajuste de la sesión y/o el hardware de grabación. Las diferentes herramientas que Ardour sí ofrece incluyen la herramienta "Objeto", la cual tiene muchos usos diferentes incluyendo copiar/mover/recortar regiones, editar la automatización, y otros; una herramienta "Rango" para definir rangos de tiempo; una herramienta "TimeFX" para ajustar el tiempo; una herramienta "Gain", usada exclusivamente para editar las envolturas de ganancia de una región; y una herramienta "Zoom" para manipular el zoom temporal. Muchas otras operaciones son accesible vía menú contextual o por atajos de teclado.
 
 ### Configuración sin restricciones de las entradas y salidas de las pistas
-Las pistas y los Buses de Ardour no vienen con configuraciones predeterminadas. Puedes crear una pista mono, y convertirla en pista estéreo en cualquier momento. Puedes convertirla en una pista con 3 entradas y 7 salidas si quieres, ya que Ardour no restringe las configuración de entradas y salidas a un grupo fijo de mono/estéreo/#1/7.1, etc. También puedes conectar cualquier pista a cualquier número de otras pistas y Buses. En Ardour, la única diferencia entre una pista y un Bus es que una pista puede reproducir material pre-grabado desde el disco duro y puede grabar al disco duro. Tanto las pistas como los buses pueden tener plugins, envíos, insertos, automatización y más.
+Las pistas y los Buses de Ardour no vienen con configuraciones predeterminadas. Puedes crear una pista mono, y convertirla en pista estéreo en cualquier momento. Puedes convertirla en una pista con 3 entradas y 7 salidas si quieres, ya que Ardour no restringe las configuración de entradas y salidas a un grupo fijo de mono/estéreo/5.1/7.1, etc. También puedes conectar cualquier pista a cualquier número de otras pistas y Buses. En Ardour, la única diferencia entre una pista y un Bus es que una pista puede reproducir material pre-grabado desde el disco duro y puede grabar al disco duro. Tanto las pistas como los buses pueden tener plugins, envíos, insertos, automatización y más.
 
 ### Uso de JACK
 Es extremadamente importante comprender que Ardour no interactúa directamente con la tarjeta de sonido. En vez de eso, todas las señales de audio que Ardour recibe y genera son enviadas hacia y desde un sistema de audio. Estos enrutan el audio entre la tarjeta de sonido y las aplicaciones de audio, en tiempo real. Hay un sistema de audio que fue portado de GNU/Linux a mac OS y también a Windows que se llama Jack Audio Connection Kit (JACK). 
@@ -155,11 +146,11 @@ Si quieres usar este sistema de audio te recomendamos estudiar la pagina de cual
 
 Si quieres instalar y usar JACK 
 
-en Windows hay un tutorial en: http://www.jackaudio.org/faq/jack_on_windows.html
+- en Windows hay un tutorial en: http://www.jackaudio.org/faq/jack_on_windows.html
 
-en GNU/Linux es recomendable descargar la versión de JACK de tu distribución por medio del instalador de paquetes. Los dos paquetes se llaman jackd y qjackctl. Ademas es recomendado leer el tutorial de JACK en Linux de la siguiente pagina: https://radioslibres.net/article/el-poderoso-e-incomprendido-jack/
+- en GNU/Linux es recomendable descargar la versión de JACK de tu distribución por medio del instalador de paquetes. Los dos paquetes se llaman jackd y qjackctl. Ademas es recomendado leer el tutorial de JACK en Linux de la siguiente pagina: https://radioslibres.net/article/el-poderoso-e-incomprendido-jack/
 
-en mac OS te recomendado leer el tutorial de JACK de la siguiente pagina: http://www.jackosx.com/about.html
+- en mac OS te recomendado leer el tutorial de JACK de la siguiente pagina: http://www.jackosx.com/about.html
 
 JACK no tiene interfaz gráfico para ejecutar y controlar. Sin embargo, hay aplicaciones como qjackqtl en GNU/Linux o JackPilot en mac OS que son aplicaciones que empaqueta JACK en un interfaz gráfico que es a la vez agradable de ver y útil. Necesitas ejecutar qjackctl (en Linux), Jack Control (en Windows) o JackPilot (en mac OS) que controla JACK antes de abrir Ardour. Deberías de ser capaz de abrir este programa desde el menú principal de tu sistema, que normalmente se encuentra en el panel/appbar/dock o como se llame en alguno de los márgenes de tu pantalla. Haz clic en el triangulo verde (Start) en la ventana principal de qjackctl. Hasta ahora puedes arrancar Ardour. 
 
@@ -174,13 +165,11 @@ Conseguir que funcione la tarjeta de sonido puede ser algo difícil al configura
 ASIO en Windows:
 Aunque tengas un driver especifico para tu interfaz audio vale la pena echar un vistazo a ASIO4ALL, un proyecto que tiene como finalidad de ofrecer un driver de audio ASIO de baja latencia para cualquier tipo de tarjeta de sonido que funciona con WDM (un estándar para tarjetas de sonido). Es freeware (gratis) y se puede descargar de la pagina: http://asio4all.com (La versión mas reciente es #13 y existe en español).
 
-
-
-Para instalar ASIO4ALL haz doble clic en el instalador y en Siguiente, dando clic en Acepto los términos de la licencia y otra dos veces en Siguiente. Al final deberías de ser capaz de ver el símbolo de ASIO4ALL en la barra de menú a la hora de abrir el programa. 
+Para instalar ASIO4ALL haz doble clic en el instalador y en **Siguiente**, dando clic en **Acepto los términos de la licencia** y otra dos veces en **Siguiente**. Al final deberías de ser capaz de ver el símbolo de ASIO4ALL en la barra de menú a la hora de abrir el programa. 
 
 En la pestaña Dispositivos WDM vemos la
 en primer lugar los dispositivos WDM, pues si tuviéramos más de una tarjeta de sonido, podemos activar o desactivar cada una de ellas dando clic en el símbolo a su izquierda.
-Después, podemos hacer clic en el expansor (+) a la izquierda para ver las entradas y salidas de las tarjetas para activar/desactivarlas individualmente.
+Después, podemos hacer clic en el expansor **(+)** a la izquierda para ver las entradas y salidas de las tarjetas para activar/desactivarlas individualmente.
 
 Para saber mas de ASIO te recomendamos leer la pagina https://www.wikiwand.com/es/Audio_Stream_Input/Output 
 
@@ -190,11 +179,11 @@ Si alsaconf no termina con un mensaje de éxito, probablemente el problema es qu
 
 Si cuando entras como root escuchas el audio y cuando entras como usuario no, tienes un problema de permisos. En este caso, vuelve a entrar como root, abre una consola o [Alt+F2] y usa este comando:
 
-adduser tu-usuario audio
+**adduser tu-usuario audio**
 
 Con eso estás metiendo tu usuario en el grupo audio, y por tanto le das permiso para usar el hardware de audio. Cuando vuelvas a entrar como usuario, deberías poder reproducir el archivo de audio sin problemas. Sustituye "tu-usuario" por el nombre de usuario que realmente usas para entrar en el sistema. Este comando debería funcionar en cualquier distribución basada en Debian (es decir, una que use paquetes .deb)
 Como alternativa puedes descargar el paquete ubuntustudio-controls con el siguiente comando: 
-sudo apt-get install ubuntustudio-controls
+**sudo apt-get install ubuntustudio-controls**
 
 Luego lo abres como root y puedes realizar la misma tarea de añadir tu usuario al grupo audio de manera gráfica.
 
@@ -207,28 +196,26 @@ Muchas tarjetas de sonido ofrecen modos de conectar tanto micrófonos como instr
 También puedes buscar la opción Tamaño del buffer Esto nos permite aumentar o bajar la latencia. Debe estar hacia la izquierda si queremos trabajar con prioridades de tiempo real. Tiempo real quiere decir que la señal será procesada como máximo cada X mili-segundos. Cada vez que nuestro sistema sea incapaz de procesar la señal de audio en el intervalo de tiempo especificado en "Latencia", tendremos un corte, que se reflejará en la grabación y reproducción de audio como un „retraso“. Si lo conseguimos y la latencia es de 5 mili-segundos o menos, tendremos un sistema de audio profesional. Si la latencia está entre 5 y 7 mili-segundos, tendremos un sistema semiprofesional. Para trabajar en tiempo real necesitamos una computadora suficiente poderosa sino probablemente tendremos muchos cortes. Un corte de más de cinco mili-segundos es perceptible por el cerebro humano. Es inaceptable tener estos cortes mientras capturamos audio.
 
 Ahora estas listo para descargar, instalar y configurar Ardour.  
-#  Iniciar tu primera sesión
+
+#  2. Iniciar tu primera sesión
 ## Instalar Ardour
 Este capítulo cubre las bases para descargar, instalar, configurar y comenzar un nuevo proyecto en Ardour, incluyendo cómo ajustar una sesión.
 
 ### Descargar y instalar 
 Desde la pagina https://community.ardour.org/download puedes descargar la versión actual del programa para GNU/Linux, Windows y mac OS. El código fuente es libre y gratis. Para obtener el programa ejecutable necesitas dar clic en el botón Ready-to-Run Program, seleccionar tu sistema operativo y pagar al mínimo 1 USD con una tarjeta de crédito o con PayPal. 
 
-
-
-
-
 El desarrollador principal vive de estos ingresos. Sea generoso! 
 Antes de descargarlo revisa si tu sistema corre en 32 o 64 bit para descargar la versión adecuada a tu sistema.
-Mejor registrarte para que vayas recibiendo todas las versiones de #X gratis. Ademas puedes usar el enlace tres veces para descargar el programa. Después de descargarlo, busca el instalador del programa y sigue los pasos dependiendo de tu sistema operativo:
+Mejor registrarte para que vayas recibiendo todas las versiones de 5.X gratis. Ademas puedes usar el enlace tres veces para descargar el programa. Después de descargarlo, busca el instalador del programa y sigue los pasos dependiendo de tu sistema operativo:
 
 en GNU/Linux:
 Verifique en las propiedades que el instalador (termina con “.RUN”) sea ejecutable. Cierra y ejecuta el archivo como usuario (sin necesidad de ser root). Si no sabes como ejecutar un archivo, abre un terminal con [Alt + F2] y entra a la carpeta donde se descargó el instalador de Ardour, por ejemplo: 
-cd /Descargas
+**cd /Descargas**
 Ejecuta el instalador escribiendo “./” antes del nombre del instalador (por ejemplo: 
-./Ardour_64bit-##0.run
-Sigue las instrucciones: Ingresar tu contraseña, confirmar las preguntas, etc. Ardour se instala en la carpeta /opt. Si ya tienes una versión anterior de Ardour instalado, te pregunta si quieres desinstalar esta. 
-Nota: Necesitarás obtener privilegios root para instalar el programa. 
+**./Ardour_64bit-##0.run**
+Sigue las instrucciones: Ingresar tu contraseña, confirmar las preguntas, etc. Ardour se instala en la carpeta **/opt**. Si ya tienes una versión anterior de Ardour instalado, te pregunta si quieres desinstalar esta. 
+
+    Nota: Necesitarás obtener privilegios root para instalar el programa. 
 
 en mac OS
 Después de descargar el instalador (termina en .DMG) con tu navegador, el Finder debería mostrar el Programa Ardour con su logotipo en tu escritorio. Puedes arrastrarlo en cualquier lugar en tu disco duro y arrancarlo desde allá. 
@@ -236,10 +223,7 @@ Después de descargar el instalador (termina en .DMG) con tu navegador, el Finde
 Importante: La versión 64bit ya no soporta los plugins Carbon Audio-units de 32bit. Si usas solamente 32bit plugins, favor usar la versión 32bit (que también funciona en mac OS de 64bit).
 
 en Windows:
-Para instalar haz doble clic en el instalador y sigue las instrucciones dando clic en I Agree, Next y Install
-
-
-
+Para instalar haz doble clic en el instalador y sigue las instrucciones dando clic en **I Agree, Next** y **Install**
 
 Si ya tienes una versión anterior de Ardour instalado, te pregunta si quieres desinstalar esta.
 Para arrancar Ardour 5 buscalo en el menú de Windows. 
@@ -271,7 +255,7 @@ Antes de empezar a usar Ardour, necesitarás tener las entradas y salidas de tu 
 Si estas listo, haz clic en Start y espera hasta que se va la palabra roja Parado y cambia a Running. Mientras, Ardour realiza las conexiones y carga los Plugins. Esta ventana se cerrará pero si quieres puedes mostrarla otra vez cuando vas en el menú Ver → Configuración Audio/MIDI.
 
 Nota: Si quieres usar JACK en GNU/Linux pero recibes un error que no se puede abrir el sistema de audio puede ser que te ayude parar JACK en un terminal [Alt + F2] y entra el comando: 
-jack_control exit 
+**jack_control exit **
 
 ## Visión general de la interfaz
 Cuando Ardour arranca con una sesión por defecto, hay una sola ventana visible llamada con la barra de transporte y el Editor. Sin embargo, el programa tiene muchas más ventanas que se pueden visualizar para diferentes propósitos. 
@@ -280,48 +264,31 @@ Ardour proporciona dos maneras de ver una sesión: El Editor y el Mezclador. El 
 ### La barra de transporte
 Esta barra proporciona control completo sobre todas las funciones de transporte de Ardour a la izquierda, los relojes al centro y los botones para mostrar las ventanas del Editor, Mezclador y las Preferencias. Inicialmente está incluida en la ventana Editor, pero también se muestra si vamos en la ventana Mezclador o Preferencias.
 
-      Ir al Inicio Bucleo  Play   Activar Grabar   Reloj primario y secundario			                     Botones para						               	              			             cambiar la ventana
+Ir al Inicio Bucleo  Play   Activar Grabar   Reloj primario y secundario Botones para cambiar la ventana
 
-Claqueta   Ir al Final      Detener  Activar que el curso vuelve después de parar		Desactiva todos los solos
+Claqueta   Ir al Final      Detener   Activar que el curso vuelve después de parar   Desactiva todos los solos
 
-Hay dos relojes las cuales pueden mostrar el tiempo en una cantidad de formatos: Timecode (Código de tiempo), Bars:Beats (Compases:Pulsos), Minutos:Segundos y Samples (Muestras). Clic derecho para cambiar el formato de los dos relojes.
+Hay dos relojes las cuales pueden mostrar el tiempo en una cantidad de formatos: **Timecode (Código de tiempo), Bars:Beats (Compases:Pulsos), Minutos:Segundos y Samples (Muestras)**. Clic derecho para cambiar el formato de los dos relojes.
 
 ### Ventana Editor
-Esta es la ventana principal de Ardour. Contiene la linea de tiempo, con sus varias reglas, así como las pistas de audio y MIDI. Es perfectamente posible controlar todos los aspectos de flujo de señal desde el Editor, sin la vista general que proporciona el Mezclador. Si acudimos al menú Ver → Mostrar Mezclador en Editor o usamos el atajo [Mayusc.+E], aparecerá una sola banda de mezcla en el extremo izquierdo de la ventana Editor. Al hacer clic en cualquiera de las pistas en el área de visualización de las pistas, la tira de mezcla de la izquierda pasará a reflejar los valores correspondientes de esta pista. Por eso, sobre todo durante las fases iniciales, el Editor puede ser la única ventana que necesites.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Esta es la ventana principal de Ardour. Contiene la linea de tiempo, con sus varias reglas, así como las pistas de audio y MIDI. Es perfectamente posible controlar todos los aspectos de flujo de señal desde el Editor, sin la vista general que proporciona el Mezclador. Si acudimos al menú **Ver → Mostrar Mezclador** en Editor o usamos el atajo [Mayusc.+ E], aparecerá una sola banda de mezcla en el extremo izquierdo de la ventana Editor. Al hacer clic en cualquiera de las pistas en el área de visualización de las pistas, la tira de mezcla de la izquierda pasará a reflejar los valores correspondientes de esta pista. Por eso, sobre todo durante las fases iniciales, el Editor puede ser la única ventana que necesites.
 
 
 #### Modos de edición, 
 
-
 Los controles de Modo de edición y Modos de cursor definen el comportamiento de lienzo principal y las diferentes funciones que el cursor puede tener. Hay tres modos de edición en el menú desplegable:
-Deslizar
+**Deslizar
 Rizado (o Ripple)
-Bloquear (ningún objeto se puede mover)
+Bloquear** (ningún objeto se puede mover)
 Tras el menú desplegable están los modos de cursor:
-Smart / Modo inteligente - suma las funciones del modo objeto con el modo de rango. Si está activado el ratón se comporta como el modo rango en la mitad superior de una región y en la mitad inferior funcionará como en modo objeto. [ Y]
-Seleccionar/Mover objeto – permite seleccionar un objeto [ G]
-Seleccionar/Mover rango – permite seleccionar y mover un rango [ R]
-Recortar – permite dividir una región [ C].
-Estirar/Contraer regiones – permite cambiar el tempo de una región manteniendo el tono [ T]
-Modo Audición - permite escuchar las regiones o pistas marcadas
-Automatización – permite dibujar regiones, notas, curvas directamente en la pista (por ejemplo notas MIDI o curva de ganancia) [ D] 
-Modo edición interna - para editar automatización de ganancia o notas [ E]
+**Smart / Modo inteligente** - suma las funciones del modo objeto con el modo de rango. Si está activado el ratón se comporta como el modo rango en la mitad superior de una región y en la mitad inferior funcionará como en modo objeto. [ Y]
+**Seleccionar/Mover objeto** – permite seleccionar un objeto [ G]
+**Seleccionar/Mover rango** – permite seleccionar y mover un rango [ R]
+**Recortar** – permite dividir una región [ C].
+**Estirar/Contraer regiones** – permite cambiar el tempo de una región manteniendo el tono [ T]
+**Modo Audición** - permite escuchar las regiones o pistas marcadas
+**Automatización** – permite dibujar regiones, notas, curvas directamente en la pista (por ejemplo notas MIDI o curva de ganancia) [ D] 
+**Modo edición interna** - para editar automatización de ganancia o notas [ E]
 La mayoría de estos modos de ratón se analizan más ampliamente en el capítulo Trabajando con las regiones. Los dos últimos modos de cursos se discuten en el capítulo Automatización.
 
 #### Modo de zoom 
@@ -331,15 +298,15 @@ Importante: Utilice los atajos del teclado:  = (signo igual en el teclado prin
 El siguiente menú desplegable controla el foco del zoom. Es decir, define el punto de enfoque de las operaciones de zoom, desde dónde comienza a ampliar o reducir. Por ejemplo, escoger la marca activa causará que el zoom se comporte en relación a la posición de la marca activa. Si lo dejamos en ratón,  tomará la posición actual del ratón como la referencia, y así sucesivamente. El siguiente menú desplegable y los dos últimos botones son el control zoom vertical. Permiten ampliar y reducir el tamaño de todas las pistas y Buses verticalmente. Utilice el menú desplegable para elegir un determinado número de pistas que desee para que quepa en la pantalla. Utilice los botones para reducir o aumentar todas las pistas (o pistas seleccionados, si se ha realizado una selección).
 
 #### Modo de ajuste
-Los menús Modo de ajuste se encuentran justo bajo los relojes. Controlan la cantidad de Subdivisión de la rejilla de tiempo, por ejem.: la cantidad de "ajuste" que una Región de audio tiene para el tipo de rejilla que hayas escogido.
+Los menús **Modo de ajuste** se encuentran justo bajo los relojes. Controlan la cantidad de Subdivisión de la rejilla de tiempo, por ejem.: la cantidad de "ajuste" que una Región de audio tiene para el tipo de rejilla que hayas escogido.
 
-Cuando se selecciona Sin Rejilla, las Regiones pueden ser movidas alrededor libremente dentro de las Pistas. Cuando se selecciona Rejilla, las Regiones se ajustarán a Punto de Rejilla más cercano. Cuando se selecciona Magnético, las Regiones pueden moverse libremente pero se ajustarán a un Punto de Rejilla cuando se muevan muy cerca de uno. El menú de Unidades medias se utiliza para seleccionar qué serán los puntos de Rejilla, tales como Pulsos, Compases, Marcas, Minutos, Segundos, varios aspectos del Código de tiempo SMPTE, o los bordes de las Regiones.
+Cuando se selecciona **Sin Rejilla**, las Regiones pueden ser movidas alrededor libremente dentro de las Pistas. Cuando se selecciona Rejilla, las Regiones se ajustarán a Punto de Rejilla más cercano. Cuando se selecciona Magnético, las Regiones pueden moverse libremente pero se ajustarán a un Punto de Rejilla cuando se muevan muy cerca de uno. El menú de Unidades medias se utiliza para seleccionar qué serán los puntos de Rejilla, tales como Pulsos, Compases, Marcas, Minutos, Segundos, varios aspectos del Código de tiempo SMPTE, o los bordes de las Regiones.
 
 #### Las reglas
 
 Debido a que diferentes usuarios querrán utilizar Ardour para diferentes tareas, el modo en que el tiempo es medido en puede ser cambiado. Los usuarios que crean obras de audio, documentales, reportajes o paisajes sonoros pueden desear utilizar Minutos y Segundos, por ejemplo, mientras aquellas bandas que graben o produzcan música pop o  electrónica utilizarán lo mas probablemente Compases y Pulsos. Los productores de vídeo encontrarán útil un Timecode (Código de tiempo) de cuadros-por-segundo, mientras que aquellos que deseen precisión extrema puede incluso querer usar Samples (Muestras). Todos estos pueden ser vistos en Ardour y utilizados como medios para organizar vuestras regiones y ediciones.
 
-Nota: Para ver/ocultar reglas en la línea de tiempo haz clic en el menú Ver→ Reglas o clic derecho en la linea de tiempo y (de)selecciona la que (no) necesitas.
+    Nota: Para ver/ocultar reglas en la línea de tiempo haz clic en el menú Ver→ Reglas o clic derecho en la linea de tiempo y (de)selecciona la que (no) necesitas.
 
 En las reglas Métrica y Tempo es posible de poner una métrica y tempo para la sesión entera de Ardour, así como cambiarlos en puntos diferentes en la misma sesión. 
 Para trabajar con el Timecode (Código de tiempo) de vídeo, primero necesitas establecer las fps del Código de tiempo (Cuadros por segundo). Esto puede encontrar en la pestaña de Timecode de las Propiedades de Sesión en el menú principal de Ardour bajo Sesión → Propiedades [Alt + O].
@@ -555,7 +522,7 @@ Si aparece tu controlador en la lista: Perfecto! Seleccionalo. Sino
 Las entradas y salidas de MIDI Ardour se controla por el misma “motor” como las entradas y salidas de audio. Se puede usar JACK o el soporte nativo MIDI del sistema operativo para recibir y mandar datos MIDI. ALSAMIDI es el estándar para MIDI en GNU/Linux. Mientras, si usas JACK, la aplicación QjackCtl muestra los puertos ALSAMIDI en la pestaña ALSA. QjackCtl es el mismo programa que es recomendado para controlar JACK que incluye un excelente gestor de conexiones MIDI. Si tienes un interfaz MIDI genérico también es probable que en la ventana Configuración Audio/MIDI del menú Ver aparece y puedes calibrarlo allí. 
 
 
-# Editar Sesiones
+# 3. Editar Sesiones
 ## Organizar Pistas
 Organizar tus pistas puede ahorrarte mucho tiempo a la hora de los procesos de editar y mezclar audio. Por esto te recomendamos seguir los siguientes pasos. 
 
@@ -654,7 +621,7 @@ Si mueves el cursor hasta la banda inferior de la Región, donde su nombre apare
 
 Esta acción es no destructiva: ningún audio de hecho está siendo eliminado. Es como si justo "escondieras" aquellas porciones de la Región que no quieres o que ya no necesitas más. Después, puedes "des-recortar" la Región (p. ejem.: extenderla otra vez a su medida original total), incluso si ha sido movida o copiada a una Pista nueva. Una región recortada recibirá un nombre derivado del nombre original de su Región fundamental, y verás ésta reflejada en tu Lista de Regiones. 
 
-Importante: El recorte obedecerá a la configuración de la rejilla. Si no quieres que el recorte se limite a la rejilla, simplemente escoge la opción No rejilla.
+    Importante: El recorte obedecerá a la configuración de la rejilla. Si no quieres que el recorte se limite a la rejilla, simplemente escoge la opción No rejilla.
 
 #### Eliminar regiones
 Una región puede eliminarse de una pista de cuatro formas distintas:
@@ -675,7 +642,7 @@ Cuando una Región se atenúa mientras otra se intensifica, esto se denomina una
 Aun así, si ambas Regiones están en la misma Pista, entonces Ardour automáticamente creará un fundido cruzado cuando una Región se mueva sobre otra. No hay necesidad de crear un fundido cruzado específicamente como en otros editores de audio. Cuando una región se superpone con otra Ardour las trata como capas. Esto significa que una región es una capa que está encima de la inferior. Lo importante es entender que: El fundido de entrada o de salida de la región superior representa el fundido cruzado entre las dos regiones.
 Una vez que entiendas este principio es sencillo crear y controlar fundidos entre regiones. Aquí hay un ejemplo. Las dos regiones separadas que vemos aquí abajo se superpondrán para crear un fundido cruzado.
 
-Nota: no hemos agregado ningún fundido extra a la primera región, pero agregamos un fundido más largo a la segunda región. Luego arrastramos la segunda región sobre la primera, superponiéndolas parcialmente:
+    Nota: no hemos agregado ningún fundido extra a la primera región, pero agregamos un fundido más largo a la segunda región. Luego arrastramos la segunda región sobre la primera, superponiéndolas parcialmente:
 
 El fundido de entrada de la segunda región funcionará como el fundido cruzado entre las dos regiones. En otras palabras, la primera región se desvanecerá y a la vez que la segunda región se intensifica.
 Para que esto ocurra necesitamos asegurarnos de que la región que queremos que sea la "superior" en el sistema de capas de Ardour. Para cambiar las opciones de capa, selecciona una región y ve al menú Región - Capas.
@@ -817,7 +784,7 @@ Para utilizar Expandir/Encoger Regiones, sitúa tu cursor encima de la región, 
 Esto es útil cuando añadamos una Región a una Pista nueva y la longitud de esta nueva Región no coincide con el ritmo existente que hemos ya creado. Es demasiado largo para ser un compás y demasiado corto para ser de dos compases. Selecciona la región que deseas corregir, y arrastra la nueva longitud hasta el final de la segunda barra, de nuevo con la asistencia de la configuración de cuadrícula. 
 Al soltar el botón del ratón, aparecerá el cuadro de diálogo Ampliación de tiempo de audio. Puedes experimentar con diferentes ajustes para la operación de ampliación de tiempo. Cada ajuste afectará al sonido de diferentes maneras. Es una buena idea experimentar con unos pocos ajustes diferentes de estiramiento para averiguar lo que le da el resultado mas adecuado para tu gusto. Cuando la operación de ampliación de tiempo se ha completado, la región será exactamente largas, y debe encajar con el ritmo que ya creaste.
 
-# Mezcla
+# 4. Mezcla
 Mezclar es el proceso de convertir Pistas múltiples a una Mezcla estéreo dónde todo los instrumentos puedan ser oídos claramente. Niveles, Panoramización, Ecualización (EQ), y Compresión son las principales herramientas utilizadas para conseguir una buena Mezcla. Además de estas herramientas básicas, también se puede utilizar una amplia gama de efectos para mejorar el sonido, como efectos de Espacio (Reverb o Delay), Efectos de Modulación (Flanger, Chorus, Phaser, etc). Estos efectos vienen en forma de Plugins, es decir pequeños programas adicionales que son desarrollado independientemente de Ardour y que vienen en diferentes formatos. Mas acerca de Plugins en el capitulo Utilizar Plugins.
 
 ## Presentar la Banda de Mezcla. 
@@ -1136,7 +1103,7 @@ Si tienes una pista más compleja con fundidos sobre las regiones, y / o la nece
 Si hay un simple desvanecimiento gradual a partir de la primera región de la pista, y terminando en la última región, es muy sencillo de hacer esto con atenuador de automatización, pero sería mucho más difícil de hacerlo mediante la automatización específica de la región.
 
 
-# Exportar y Guardar
+# 5. Exportar y Guardar
 Guardar una sesión te permite guardar tu proyecto para que puedes trabajar en el con Ardour mas adelante mientras que exportar es el proceso de guardar una región, pista o sesión a un fichero de tu ordenador al cual puedas escuchar, compartir, quemarlo como un CDR o convertirlo a un MP3/OGG. Exportar una región NO exporta todos los cambios que querrías haber hecho a la región. Para exportar ediciones con Atenuación, Efectos, Paneo, y Automatización, debes exportar bien un rango o la sesión entera.
 
 ## Guardar Sesiones
@@ -1294,7 +1261,7 @@ En la próxima sección, los Apéndices, hemos incluido alguna información adic
 
 ¡Felicitaciones, has logrado llegar al fin del manual Ardour 5! Esperamos que este manual te haya sido útil para aprender las funciones clave de Ardour.
 
-# Appendix
+# 6. Appendix
 Sigue unas tablas con los atajos de teclado principales. Es recomendable familiarizarte con ellos ya que esto te permite trabajar mas rápido y fluido. Para ver todos los atajos y cambiarlos puedes ir al menú Ventana - Bindings editor o pulsando el atajo [Alt + K]. 
 #1 Atajos de teclado 
 
@@ -1759,6 +1726,6 @@ Manera genérica de referirse a las altas frecuencias del Espectro de sonido.
 VST (Virtual Studio Technology) [Tecnología de estudio virtual] 
 VST es una interfaz para integrar sintetizador audio de software y Plugins de efectos con editores de audio y estaciones digitales tales como Ardour. VST y tecnologías similares utilizan procesamiento de señales digitales para simular aparatos de estudio de grabación tradicional con el software. Existen miles de Plugins, tanto comerciales como freeware. VST fue creado por Steinberg. 
 WAV
-Un formato de fichero de sonido desarrollado por Microsoft e IBM y comúnmente utilizado para audio sin pérdida y no comprimido. Los ficheros WAV son compatibles con sistemas operativos Linux, mac OS y Windows.
+Un formato de fichero de sonido desarrollado por Microsoft e IBM y comúnmente utilizado para audio sin pérdida y no comprimido. Los ficheros WAV son compatibles con sistemas operativos Linux, mac OS y Windows. <br>
 Waveform (Forma de onda)
 La representación visual de un sonido en el dominio temporal. Las Waveforms se dibujan dentro de los rectángulos colorados que representan Regiones en el Lienzo Principal.
