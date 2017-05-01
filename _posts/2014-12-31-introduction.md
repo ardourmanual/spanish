@@ -275,18 +275,18 @@ Esta es la ventana principal de Ardour. Contiene la linea de tiempo, con sus var
 #### Modos de edición, 
 
 Los controles de Modo de edición y Modos de cursor definen el comportamiento de lienzo principal y las diferentes funciones que el cursor puede tener. Hay tres modos de edición en el menú desplegable:
-**Deslizar
-Rizado (o Ripple)
-Bloquear** (ningún objeto se puede mover)
+- **Deslizar
+- Rizado (o Ripple)
+- Bloquear** (ningún objeto se puede mover)
 Tras el menú desplegable están los modos de cursor:
-**Smart / Modo inteligente** - suma las funciones del modo objeto con el modo de rango. Si está activado el ratón se comporta como el modo rango en la mitad superior de una región y en la mitad inferior funcionará como en modo objeto. [ Y]
-**Seleccionar/Mover objeto** – permite seleccionar un objeto [ G]
-**Seleccionar/Mover rango** – permite seleccionar y mover un rango [ R]
-**Recortar** – permite dividir una región [ C].
-**Estirar/Contraer regiones** – permite cambiar el tempo de una región manteniendo el tono [ T]
-**Modo Audición** - permite escuchar las regiones o pistas marcadas
-**Automatización** – permite dibujar regiones, notas, curvas directamente en la pista (por ejemplo notas MIDI o curva de ganancia) [ D] 
-**Modo edición interna** - para editar automatización de ganancia o notas [ E]
+- **Smart / Modo inteligente** - suma las funciones del modo objeto con el modo de rango. Si está activado el ratón se comporta como el modo rango en la mitad superior de una región y en la mitad inferior funcionará como en modo objeto. [ Y]
+- **Seleccionar/Mover objeto** – permite seleccionar un objeto [ G]
+- **Seleccionar/Mover rango** – permite seleccionar y mover un rango [ R]
+- **Recortar** – permite dividir una región [ C].
+- **Estirar/Contraer regiones** – permite cambiar el tempo de una región manteniendo el tono [ T]
+- **Modo Audición** - permite escuchar las regiones o pistas marcadas
+- **Automatización** – permite dibujar regiones, notas, curvas directamente en la pista (por ejemplo notas MIDI o curva de ganancia) [ D] 
+- **Modo edición interna** - para editar automatización de ganancia o notas [ E]
 La mayoría de estos modos de ratón se analizan más ampliamente en el capítulo Trabajando con las regiones. Los dos últimos modos de cursos se discuten en el capítulo Automatización.
 
 #### Modo de zoom 
@@ -301,7 +301,6 @@ Los menús **Modo de ajuste** se encuentran justo bajo los relojes. Controlan la
 Cuando se selecciona **Sin Rejilla**, las Regiones pueden ser movidas alrededor libremente dentro de las Pistas. Cuando se selecciona Rejilla, las Regiones se ajustarán a Punto de Rejilla más cercano. Cuando se selecciona Magnético, las Regiones pueden moverse libremente pero se ajustarán a un Punto de Rejilla cuando se muevan muy cerca de uno. El menú de Unidades medias se utiliza para seleccionar qué serán los puntos de Rejilla, tales como Pulsos, Compases, Marcas, Minutos, Segundos, varios aspectos del Código de tiempo SMPTE, o los bordes de las Regiones.
 
 #### Las reglas
-
 Debido a que diferentes usuarios querrán utilizar Ardour para diferentes tareas, el modo en que el tiempo es medido en puede ser cambiado. Los usuarios que crean obras de audio, documentales, reportajes o paisajes sonoros pueden desear utilizar Minutos y Segundos, por ejemplo, mientras aquellas bandas que graben o produzcan música pop o  electrónica utilizarán lo mas probablemente Compases y Pulsos. Los productores de vídeo encontrarán útil un Timecode (Código de tiempo) de cuadros-por-segundo, mientras que aquellos que deseen precisión extrema puede incluso querer usar Samples (Muestras). Todos estos pueden ser vistos en Ardour y utilizados como medios para organizar vuestras regiones y ediciones.
 
 `Nota: Para ver/ocultar reglas en la línea de tiempo haz clic en el menú Ver→ Reglas o clic derecho en la linea de tiempo y (de)selecciona la que (no) necesitas.`
@@ -315,13 +314,13 @@ Justo bajo las reglas es donde las pistas y los Buses son mostrados. En el ejemp
 #### Mezclador del Editor
 El Mezclador del Editor está ubicado a la izquierda de la Ventana del Editor. Muestra la Banda de Mezcla de la pista o Bus actualmente seleccionado. Controla el volumen, los Plugins y enrutamiento para esa pista o Bus al que corresponde. Puedes cambiar de mostrar a ocultar el Mezclador del Editor pinchando en el menú Ver → Mostrar Mezclador del Editor [Mayús. + E]. Este mezclador se cubre en el capítulo La Banda de Mezcla.
 
-###7. Regiones, Pistas/Buses, Capturas, Grupos de edición, Trozos
-A la derecha del Editor se puede mostrar la Ventana del Editor de Ardour que tiene cinco funciones diferentes, dependiendo de que pestaña esté actualmente seleccionada: Regiones, Pistas/Buses, Capturas, Grupos de edición, y Trozos. Aparece desde Ver → Mostrar vista de Editor. Regiones es la pestaña seleccionada por defecto. Esta parte de la Ventana del Editor se denomina comúnmente como Lista de Regiones. Más información sobre Regiones puede hallarse en el capítulo Trabajar con Regiones. La pestaña de la Pista se cubre en el capítulo Organizar Pistas.
+#### Regiones, Pistas/Buses, Capturas, Grupos de edición, Trozos
+A la derecha del Editor se puede mostrar la Ventana del Editor de Ardour que tiene cinco funciones diferentes, dependiendo de que pestaña esté actualmente seleccionada: Regiones, Pistas/Buses, Capturas, Grupos de edición, y Trozos. Aparece desde **Ver → Mostrar vista de Editor**. Regiones es la pestaña seleccionada por defecto. Esta parte de la Ventana del Editor se denomina comúnmente como **Lista de Regiones**. Más información sobre Regiones puede hallarse en el capítulo Trabajar con Regiones. La pestaña de la Pista se cubre en el capítulo Organizar Pistas.
 
 `Nota: Las Regiones representan ficheros de audio almacenados en el disco duro las cuales pueden ser arrastradas desde la lista de Regiones directamente sobre el lienzo principal. `
 
 ### Controles de la Ventana del Mezclador
-La ventana del Mezclador completo se abre aparte yendo al menú Ventana → Mostrar Mezclador [Alt + M].
+La ventana del Mezclador completo se abre aparte yendo al menú **Ventana → Mostrar Mezclador** [Alt + M].
 La función principal de la Ventana del Mezclador es mostrar todas las bandas de mezcla para cada una de las pistas. Esta ventana se utiliza principalmente durante el proceso de Mezcla, y también proporciona acceso a Plugins y otras características de Enrutamiento. Mira los capítulos de Comprender el enrutado, Mezcla y Utilizar Plugins para los detalles.
 
 Esta ventana también contiene un listado de las Bandas de mezcla disponibles en la esquina superior izquierda. Las cajas de marcado en este área pueden utilizarse para mostrar y ocultar las Bandas de Mezcla de las diferentes Pistas. Encima de las Bandas de Mezcla hay un área para gestionar Grupos.
@@ -353,10 +352,10 @@ Para grabar audio o MIDI hay que añadir primero las pistas que van a contener l
 
 En la ventana que aparece puedes encontrar los siguientes opciones:
 Añadir permite especificar cuántas Pistas o Buses querrías crear al mismo tiempo.
-Escoge Pistas o Buses para especificar si quieres crear Pistas o Buses. O si quieres crear pistas para música digital MIDI o Audio+MIDI.
-Coloca un nombre a tu pista y en el menú desplegable Configuración te permite especificar cuántos canales de audio querrías que manejara la nueva Pista o Bus o si quieres que sea Mono o Estéreo. Esta opción afectará posteriormente el tipo de fichero de audio que puedan ser importados a la Pista.
-La siguiente opción, Modo grabación, te da una opción entre el Modo Normal y Modo de Cinta. El Modo Normal crea una nueva Región para cada Toma  de Grabación, y se sugiere para los principiantes. El Modo de Cinta graba destructivamente. En otras palabras la Toma previa de una Pista es eliminada con cada nueva Toma.
-Finalmente, pincha el botón Añadir para crear las Pistas o Buses que justo acabas de configurar. Los verás aparecer como nuevas filas en el Área de trabajo principal al final o al inicio de la selección en función de lo que eligieras en la ventana en el desplegable Insert.
+Escoge Pistas o Buses para especificar si quieres crear Pistas o Buses. O si quieres crear pistas para música digital **MIDI ** o **Audio+MIDI**.
+Coloca un nombre a tu pista y en el menú desplegable **Configuración** te permite especificar cuántos canales de audio querrías que manejara la nueva Pista o Bus o si quieres que sea Mono o Estéreo. Esta opción afectará posteriormente el tipo de fichero de audio que puedan ser importados a la Pista.
+La siguiente opción, **Modo grabación,** te da una opción entre el **Modo Normal y Modo de Cinta**. El **Modo Normal** crea una nueva Región para cada Toma de Grabación, y se sugiere para los principiantes. El **Modo de Cinta** graba destructivamente. En otras palabras la Toma previa de una Pista es eliminada con cada nueva Toma.
+Finalmente, pincha el botón **Añadir** para crear las Pistas o Buses que justo acabas de configurar. Los verás aparecer como nuevas filas en el Área de trabajo principal al final o al inicio de la selección en función de lo que eligieras en la ventana en el desplegable **Insert**.
 
 ### Grabar Audio
 Para grabar nuevo audio puedes usar la fuente de las entradas de línea o de micrófono de tu interfaz de audio, o incluso podría ser sonido originándose desde otras aplicaciones en tu ordenador las cuales hayan sido conectadas a Ardour. Por favor mira la sección sobre Enrutamiento en Ardour para mayor detalle.
@@ -403,7 +402,7 @@ La ganancia del canal "captura" en el mezclador de la tarjeta de sonido se ha aj
 
 Nota: En Ardour, notarás que la tira del mezclador para cada pista permite cambiar la selección de monitorear entre input/pre/post. Ajustar el Fader mientras se controlan los niveles "input" NO tendrá ningún efecto en los niveles. Como se ha dicho antes, Ardour depende de los ajustes del mezclador externo.
 
-Por ultimo revisa la ventana de Conexiones de audio [Alt + P] , o a través de la ventana de menú Ventana → Conexiones de audio. Al lado izquierda están los Orígenes y en la parte inferior derecha están los Destinos. Revisa si el hardware (tu tarjeta de sonido) esta conectado al Bus master. Cada punto verde representa una conexión. Sino, haz clic en la matriz para realizar la conexión manualmente. Ver el capitulo siguiente para entender mejor el enrutamiento de Ardour.
+Por ultimo revisa la ventana de **Conexiones de audio** [Alt + P] , o a través de la ventana de menú Ventana → Conexiones de audio. Al lado izquierda están los Orígenes y en la parte inferior derecha están los Destinos. Revisa si el hardware (tu tarjeta de sonido) esta conectado al Bus master. Cada punto verde representa una conexión. Sino, haz clic en la matriz para realizar la conexión manualmente. Ver el capitulo siguiente para entender mejor el enrutamiento de Ardour.
 
 ## Comprender el enrutamiento
 Enrutar una señal de audio es enviarla desde algún sitio a algún otro sitio más. Además de conseguir señales de audio a y desde Ardour, el enrutamiento juega una parte importante dentro de Ardour mismo. Ejemplos de utilizar enrutamiento dentro de Ardour incluyen audio desde Pistas al Bus master o a otros Buses, crear 'envíos', enrutar las salidas desde los Buses al Bus master, etc. (mira el capítulo Crear una Pista para una explicación sobre Pistas y Buses). 
@@ -415,19 +414,19 @@ Todas las salidas desde las Pistas y Buses son enrutadas a las entradas de Bus M
 Las salidas del Bus Master son enrutadas a las salidas del dispositivo de audio.
 Esta configuración de enrutamiento es básica y tiene sentido para las sesiones que contienen sólo Pistas, pero para hacer uso de los Buses (que no sea el Bus Master) o para ser creativo con las señales de audio dentro de Ardour, tenemos que ser capaces de cambiar el enrutamiento.
 
-La ventana de Conexiones de Audio es la principal manera de hacer conexiones hacia, desde y dentro de Ardour. Puede abrir esta ventana con el atajo [Alt + P] , o a través de la ventana de menú **Ventana → Conexiones de audio.**
+La ventana de **Conexiones de Audio** es la principal manera de hacer conexiones hacia, desde y dentro de Ardour. Puede abrir esta ventana con el atajo [Alt + P] , o a través de la ventana de menú **Ventana → Conexiones de audio.**
 
 El área de control o presenta dos grupos de puertos; un conjunto de fuentes llamadas Orígenes, y uno de Destinos. Las orígenes y los destinos son organizadas por pestañas. Las fuentes-orígenes disponibles se visualizan verticalmente en el lado izquierdo, y los destinos se visualizan horizontalmente en la parte inferior.
 
 En la pantalla al lado, observa que la pestaña hardware se selecciona en la parte superior izquierda (que es una fuente u origen), y el Pistas Ardour se selecciona como destino en la parte inferior. Esto significa que la matriz muestra las conexiones de las fuentes de sonido del hardware disponible (por ejemplo, un micrófono), para las pistas de Ardour existentes.
 Los puntos verdes representan una conexión. La imagen anterior nos dice que los sonidos entrantes de "sistema: capture_1" (la primera fuente de entrada de la tarjeta de sonido, o el micrófono incorporado del equipo portátil) están entrando en la pista Ardour llamada "Audio 1 in", y también que los sonidos entrantes de "sistema: capture_1" y "sistema: capture_2" van respectivamente a las entradas izquierda y derecha de la pista Ardour nombre "Audio #"
 
-Nota: Recuerda que "Audio 1" es una pista mono. Lo vimos en la pantalla anterior que "Audio 1" sólo tiene una ranura de entrada. Pero ahora en la pantalla de arriba se ve que "Audio 1" tiene dos salidas (izquierda y derecha). Esto es normal: definimos que una pista es mono o estéreo por su número de entradas, no de salidas. Las pistas mono sostendrán un solo canal de audio, pero aún así se puede optar por colocar el sonido al altavoz izquierdo o al derecho (o en cualquier lugar o en el medio).
+`Nota: Recuerda que "Audio 1" es una pista mono. Lo vimos en la pantalla anterior que "Audio 1" sólo tiene una ranura de entrada. Pero ahora en la pantalla de arriba se ve que "Audio 1" tiene dos salidas (izquierda y derecha). Esto es normal: definimos que una pista es mono o estéreo por su número de entradas, no de salidas. Las pistas mono sostendrán un solo canal de audio, pero aún así se puede optar por colocar el sonido al altavoz izquierdo o al derecho (o en cualquier lugar o en el medio).`
 
 Por último, vamos a explorar un par de pestañas en la Ventana de Conexiones de audio para ver el sonido que va desde el Bus Master a las salidas de hardware reales (tus altavoces o auriculares):
 Como se puede ver, en Origenes está seleccionado es ahora Buses Ardour y la pestaña de Destinos es hardware. En esta sesión se pasa a tener un único Bus, el Master que como dijimos es el seleccionado por defecto. Los puntos verdes muestran que todos los sonidos que salen del Bus Master van a la reproducción del sistema 1 y 2, que son las salidas de la tarjeta de sonido.
 
-Importante: Para realizar una conexión, haz clic en el cuadrado vacío deseado que se encuentra en la matriz; un punto verde aparecerá para indicar que se realizó la conexión. Para deshacer una conexión, simplemente haz clic en un punto verde existente y este desaparecerá.
+`Importante: Para realizar una conexión, haz clic en el cuadrado vacío deseado que se encuentra en la matriz; un punto verde aparecerá para indicar que se realizó la conexión. Para deshacer una conexión, simplemente haz clic en un punto verde existente y este desaparecerá.`
 
 ### Ejemplo práctico de enrutamiento a Buses
 A veces puede ser útil para controlar el volumen de varias pistas con un solo Fader. En la siguiente sesión de ejemplo, hay dos pistas de guitarra y un Bus no utilizado que se llama “Guitar-Bus”, todo estéreo.
@@ -476,8 +475,9 @@ La captura de pantalla de arriba muestra la grabación de un patrón de batería
 ### Que es MIDI?
 MIDI (abreviatura de Musical Instrument Digital Interface) es un estándar tecnológico que describe un protocolo que permite que varios instrumentos musicales electrónicos, computadoras y otros dispositivos relacionados se conecten y comuniquen entre sí. Una simple conexión MIDI puede transmitir hasta dieciséis canales de información que pueden ser conectados a diferentes dispositivos cada uno. MIDI lleva mensajes de eventos que especifican notación musical, tono y velocidad; señales de control para parámetros musicales como lo son la dinámica, el vibrato, paneo y señales de reloj que establecen y sincronizan el tempo entre varios dispositivos. 
 Ardour puede 
-importar y grabar datos MIDI para mandarlo a un instrumento virtual como “información musical” y se puede procesar esta información (editar, aplicar efectos, etc.). 
-en el caso de un hardware externo de MIDI, recibir datos de este (por ejemplo un teclado MIDI), o mandar datos MIDI (cambio del volumen, del balance o estado de Plugins, etc.) de modo que un controlador MIDI motorizado externo puede reflejar los estos cambios causados por la automatización como por ejemplo el Presonus Faderport. También con otros controladores MIDI externos que no son motorizados es probable que Ardour puede enlazar todos sus Faders, panners, botones y todos los parámetros de los Plugins mediante el protocolo MIDI Machine Control (MMC), MIDI Continuous Controller (CC) o mensajes Note On/Off.
+- importar y grabar datos MIDI para mandarlo a un instrumento virtual como “información musical” y se puede procesar esta información (editar, aplicar efectos, etc.). 
+- en el caso de un hardware externo de MIDI, recibir datos de este (por ejemplo un teclado MIDI), o mandar datos MIDI (cambio del volumen, del balance o estado de Plugins, etc.) de modo que un controlador MIDI motorizado externo puede 
+- reflejar los estos cambios causados por la automatización como por ejemplo el Presonus Faderport. También con otros controladores MIDI externos que no son motorizados es probable que Ardour puede enlazar todos sus Faders, panners, botones y todos los parámetros de los Plugins mediante el protocolo MIDI Machine Control (MMC), MIDI Continuous Controller (CC) o mensajes Note On/Off.
 
 ### Reproducir notas MIDI con un instrumento virtual: Helm
 Vamos a cargar un instrumento virtual dentro de Ardour para reproducir datos MIDI. Por defecto Ardour solo viene con un instrumento virtual que se llama Reasonable synth, pero hay una multitud de instrumentos virtuales disponibles que se pueden instalar. Ver el capitulo Plugins.
@@ -486,14 +486,12 @@ En este ejemplo vamos a usar un sintetizador. Sintetizadores son muy importante 
 
 Usamos un sintetizador que se llama Helm, es multi-plataforma Linux/mac OS/Windows y usa la técnicas síntesis sustractiva. Aparte de la síntesis añade una sección de efectos de procesado. Helm es muy fácil de usar: viene con un montón de presets listos para usar de todo tipo de instrumentos, y por otro lado, permite la experimentación con un número enorme de parámetros y estrategias de síntesis. Puedes descargar el sintetizador en la pagina web: http://tytel.org/helm/downloads/
 Instala el programa y reinicia Ardour. 
-Nota: Para Windows tambien tienes que verificar que esta instalado Microsoft Visual C++ 2015 Redistributable Update 3 RC en tu sistema.
+`Nota: Para Windows tambien tienes que verificar que esta instalado Microsoft Visual C++ 2015 Redistributable Update 3 RC en tu sistema.`
 Los pasos para añadir una pista MIDI con un instrumento virtual es (igual como añadimos una pista de audio): 
 1) Damos clic en el menú Pista → Añadir pista o Bus
 2) En la ventana que aparece seleccionamos Añadir 1 Pistas MIDI y abajo donde dice Instrumento: Helm.
 3) Damos clic en el botón Añadir
 4) Ahora vamos a insertar notas MIDI con el ratón: Seleccionamos el lápiz (Tecla D) en las herramientas.
-
-
 5) Dibujamos un rectángulo de algunos compases en la pista MIDI. Pulsamos en la pista y arrastramos el cursor hacia la derecha. Se muestra una región MIDI donde vamos a insertar las notas.  
 6) Vamos a alargar la pista pulsando en y arrastrando hacia abajo. Ahora se muestra el Piano-Roll, las teclas blancas y negras de un teclado. 
 7) Insertamos las notas con el mismo lápiz, pulsando y arrastrando hacia la derecha en la nota que queremos. Ardour siempre te muestra el nombre de la nota que estas insertando.
@@ -503,8 +501,6 @@ Los pasos para añadir una pista MIDI con un instrumento virtual es (igual como 
 Insertar notas MIDI con el ratón consume bastante tiempo. Si dispones de un teclado MIDI externo puedes grabar estas notas en tiempo real. Ardour reconoce por defecto los dispositivos MIDI genéricos gracias a ALSAMIDI. Conecta tu dispositivo y prueba si aparece en la lista en la banda de mezcla debajo de donde dice MIDI. La pantalla a la izquierda muestra que está conectado un teclado Keystation (de M-Audio).
 Haz clic en el botón al lado para que se activa la entrada de datos MIDI a esta pista. Prueba si suena el instrumento virtual. Ahora para grabar arma tu pista MIDI para grabar y haz clic en el botón grabar. Deberías ver como se dibuja las notas MIDI en la pista. 
 Para editar notas MIDI usa la herramienta de edición interna [ E]. 
-
-
 Para eliminar, transponer, crear legato, cuantificar, eliminar solapamiento o transformar notas MIDI solo selecciona las notas y haz clic derecho (en una de las notas seleccionadas) para editarlas todas a la vez. 
 
 ### Usar controladores externos de MIDI
@@ -532,7 +528,7 @@ Haz doble clic en el nombre de la pista para editarlo.
 
 También puedes desear reorganizar el orden de las pistas de arriba a abajo. Esto se hace en la Ventana del Editor. Hazlo pinchando la pestaña Pistas/Buses en la extrema derecha de la Ventana del Editor y arrastrando-y-soltando las pistas en el orden que prefieras. En el mismo orden como aparecen en la Ventana del Editor (de arriba hacia abajo) van a aparecer también en la Ventana del Mezclador.
 
-Nota: También puedes usar las cajas de marca en esta pestaña para ver u ocultar las Pistas en el Lienzo principal. 
+`Nota: También puedes usar las cajas de marca en esta pestaña para ver u ocultar las Pistas en el Lienzo principal. `
 
 ### Configurar la métrica
 La métrica determina la velocidad musical del pasaje que estamos componiendo, cuando medimos en pulsos por minuto (beats per minute en inglés). Si estamos componiendo algo que es rítmico, ello determinará también las longitudes de las muestras de sonido que utilizamos hasta cierto punto. Así que es importante ser capaz de configurar la Métrica antes de que continuemos.
@@ -621,7 +617,7 @@ Si mueves el cursor hasta la banda inferior de la Región, donde su nombre apare
 
 Esta acción es no destructiva: ningún audio de hecho está siendo eliminado. Es como si justo "escondieras" aquellas porciones de la Región que no quieres o que ya no necesitas más. Después, puedes "des-recortar" la Región (p. ejem.: extenderla otra vez a su medida original total), incluso si ha sido movida o copiada a una Pista nueva. Una región recortada recibirá un nombre derivado del nombre original de su Región fundamental, y verás ésta reflejada en tu Lista de Regiones. 
 
-    Importante: El recorte obedecerá a la configuración de la rejilla. Si no quieres que el recorte se limite a la rejilla, simplemente escoge la opción No rejilla.
+`Importante: El recorte obedecerá a la configuración de la rejilla. Si no quieres que el recorte se limite a la rejilla, simplemente escoge la opción No rejilla.`
 
 #### Eliminar regiones
 Una región puede eliminarse de una pista de cuatro formas distintas:
@@ -642,7 +638,7 @@ Cuando una Región se atenúa mientras otra se intensifica, esto se denomina una
 Aun así, si ambas Regiones están en la misma Pista, entonces Ardour automáticamente creará un fundido cruzado cuando una Región se mueva sobre otra. No hay necesidad de crear un fundido cruzado específicamente como en otros editores de audio. Cuando una región se superpone con otra Ardour las trata como capas. Esto significa que una región es una capa que está encima de la inferior. Lo importante es entender que: El fundido de entrada o de salida de la región superior representa el fundido cruzado entre las dos regiones.
 Una vez que entiendas este principio es sencillo crear y controlar fundidos entre regiones. Aquí hay un ejemplo. Las dos regiones separadas que vemos aquí abajo se superpondrán para crear un fundido cruzado.
 
-    Nota: no hemos agregado ningún fundido extra a la primera región, pero agregamos un fundido más largo a la segunda región. Luego arrastramos la segunda región sobre la primera, superponiéndolas parcialmente:
+`Nota: no hemos agregado ningún fundido extra a la primera región, pero agregamos un fundido más largo a la segunda región. Luego arrastramos la segunda región sobre la primera, superponiéndolas parcialmente:`
 
 El fundido de entrada de la segunda región funcionará como el fundido cruzado entre las dos regiones. En otras palabras, la primera región se desvanecerá y a la vez que la segunda región se intensifica.
 Para que esto ocurra necesitamos asegurarnos de que la región que queremos que sea la "superior" en el sistema de capas de Ardour. Para cambiar las opciones de capa, selecciona una región y ve al menú Región - Capas.
@@ -654,45 +650,58 @@ Experimenta con la configuración de la Rejilla, como se habló en el capítulo 
 ## Más operaciones de región
 Hacer clic derecho en una Región seleccionada revela un menú contextual. El primer elemento del menú (etiquetado con el nombre de la Región) contiene un gran sub-menú. Esta sección describe unas cuantas de las operaciones más generalmente utilizadas accesibles desde este menú.
 El menú de clic derecho de la región encuentras
-Reproducir
+
+- **Reproducir**
 Reproduce desde el principio hasta el final de la región.
-Bucle
+
+- **Bucle**
 Reproduce la región en bucle.
-Editar
+
+- **Editar**
 En este submenu puedes cambiar el tono de la region, revertirla o 
-Audition (Escucha)
+
+- **Audition (Escucha)**
 Más abajo en el menú, la opción Escucha reproduce la Región vía el Bus de Escucha. 
-Bloqueo
+
+- **Bloqueo**
 La caja conmutadora Bloquear bloquea la Región de modo que no pueda ser Movida o Recortada. Todavía puede ser dividida, sin embargo, y las Regiones resultantes serán desbloqueadas.
-Normalize (Normalizar)
+
+- **Normalize (Normalizar)**
 La función Normalizar aumenta no-destructivamente el nivel de la Región seleccionada de modo que los Picos estén en 0dB. En otras palabras, hace la región tan sonora como fuera posible mientras evita Saturación. El aumento aplicado cuando una Región ha sido normalizada puede ser invertido seleccionando el ítem Desnormalizar de menú.
-Análisis espectral
+
+- **Análisis espectral**
 Pinchar esta función abre una nueva ventana la cual exhibe el contenido de frecuencia global de la Región.
-Invertir
+
+- **Invertir**
 La función Invertir invierte la región seleccionada de audio, causando en efecto que se reproduzca hacia atrás. Invertir una región crea un archivo de audio nuevo 'entre bambalinas'.
-Recortar
+
+- **Recortar**
 La función Recortar recorta la Región en varias maneras, incluyendo desde el Inicio al punto de edición y Punto de edición hasta el fin (mira el capítulo anterior para un debate de Puntos de Edición).
-Hacer Regiones Mono
+
+- **Hacer Regiones Mono**
 La función Hacer Regiones Mono divide una región estéreo en dos regiones mono las cuales pueden ser accedidas vía la pestaña de Regiones al extremo derecho de la Ventana del Editor.
-Duplicar, Multi-duplicar, Llenar Pista
+
+- **Duplicar, Multi-duplicar, Llenar Pista**
 Duplicar, Multi-Duplicar y Llenar Pista son métodos para Duplicar la Región. Por favor mira el capítulo Crear Secciones Cicladas para una discusión detallada de estos.
-Eliminar
+
+- **Eliminar**
 La función Eliminar borra la Región seleccionada de la Pista. La región permanece disponible en la Lista de Regiones al extremo derecho de la Ventana del Editor, tal que se puede recuperar arrastrándola y soltándola a una pista en cualquier momento.
+
 Siéntete libre de explorar otros sub-menús que no hayamos mencionado en esta sección. Muchos de ellos son opciones que encontrarás en el menús de Regiones de Ardour. A continuación detallaremos las funcionalidades más útiles. 
 
-Cambio de tono
+- **Cambio de tono**
 La función de cambio de tono cambia el tono de una región sin cambiar su duración. La función aplica un algoritmo de desplazamiento de afinación para crear un nuevo clip de audio basado en el clip de origen.
 La ventana de cambio de tono al usuario especificar la cantidad y dirección de la transposición deseada. La ventana incluye un botón Preserve formantes. Cuando cambio de tono por grandes cantidades, la opción Conservar formantes puede dar resultados que suenan un poco más natural, especialmente cuando se utiliza en el material vocal.
 
-Normalizar
+- **Normalizar**
 La función Normalizar [Alt + 3] aumenta el nivel de la región seleccionada de manera que los picos estén a 0 dB o menos. Cuando normalicemos a 0,0, la región será tan fuerte como sea posible, evitando recortes. A veces puede resultar útil para normalizar una región a un valor inferior a 0, como -#0, -#0, -#0 o decibelios, para que no llegue a ser demasiado alto.
 
-Invertir
+- **Invertir**
 Esta función invierte la región de audio seleccionada, en efecto, haciendo que se reproduzca de atrás para adelante. Invertir una región crea un nuevo archivo de audio.
 Operaciones en dos o más rangos seleccionados
 Si se selecciona más de un rango, la operación se aplicará a todos ellos (por ejemplo, Normalizar, Invertir, etc.)
 
-Combinar
+- **Combinar**
 Algunas operaciones desde el menú contextual sólo estarán disponibles cuando se seleccionen dos o más regiones. Por ejemplo, echa un vistazo a la función "Combinar", bajo el submenú "Editar".
 En primer lugar seleccionamos dos regiones adyacentes:
 
@@ -700,42 +709,43 @@ Luego elegimos "combinar" en el menú contextual que se despliega haciendo clic 
 
 Como resultado, las regiones seleccionadas se combinarán en una sola. Esto es particularmente útil cuando se ha encontrado una secuencia exacta de las regiones que trabaja del mismo modo que desee y que, a continuación, te gustaría copiar y/o mover toda la secuencia como grupo.
 
-Nota: Ten en cuenta que la región combinada resultante tiene la palabra "compuesto" unido a su nombre:
+`Nota: Ten en cuenta que la región combinada resultante tiene la palabra "compuesto" unido a su nombre:`
 
 ## Cambiar Modos de Edición
 Ya hemos aprendido un poco sobre las herramientas Seleccionar/Mover y Rango. En este capítulo conseguiremos una visión general de todo los Modos de edición y Modos de Cursor disponibles en aquella parte de la Ventana de Editor.
 
 Estos controles definen el comportamiento del Lienzo principal y las diferentes funciones del cursor.
-El menú desplegable Modo de Edición contiene tres opciones. Deslizado es el modo estándar. Te permite arrastrar regiones alrededor horizontalmente (dentro de la misma pista) y verticalmente (entre pistas). Rizado no te permite arrastrar regiones, pero todavía te deja ejecutar operaciones de corte (como cortar,pegar y dividir). El espacio entre las regiones se mantendrá constante tras cualquier operación que lo afecte. Si eliminas la segunda mitad de una región, por ejemplo, cualesquier regiones subsiguientes en la misma pista se moverán automáticamente atrás en la rejilla de tiempo. Bloquear es similar a la Edición Rizado, pero las regiones quedarán en sus posiciones originales a pesar de cualquier operación de edición ejecutada.
+El menú desplegable **Modo de Edición** contiene tres opciones. Deslizado es el modo estándar. Te permite arrastrar regiones alrededor horizontalmente (dentro de la misma pista) y verticalmente (entre pistas). 
+**Rizado** no te permite arrastrar regiones, pero todavía te deja ejecutar operaciones de corte (como cortar,pegar y dividir). El espacio entre las regiones se mantendrá constante tras cualquier operación que lo afecte. Si eliminas la segunda mitad de una región, por ejemplo, cualesquier regiones subsiguientes en la misma pista se moverán automáticamente atrás en la rejilla de tiempo. Bloquear es similar a la Edición Rizado, pero las regiones quedarán en sus posiciones originales a pesar de cualquier operación de edición ejecutada.
 
-Seleccionar/Mover Objeto [ O]
+- **Seleccionar/Mover Objeto [ O]**
 Este Modo de Cursor te permite seleccionar o mover objetos tales como regiones y puntos de ruptura (en una curva de automatización). Cuando este Modo de Cursor se selecciona, tu puntero de cursor se verá así:
 
-Rango [ R]
+-**Rango [ R]**
 Este Modo de Cursor te permite pinchar y arrastrar para definir o redimensionar Rangos. Cuando este Modo de Cursor está seleccionado, tu puntero de cursor se verá así:
 
-Modo Cortar [ C]
+-**Modo Cortar [ C]**
 Usa este curso para dividir regiones en regiones más pequeñas. El cursor se verá como unas pequeñas tijeras. Esto te permitirá cortar donde hagas clic con el cursor. 
 Consejo: puedes cortar regiones directamente desde el Modo Seleccionar/arrastrar objeto también (algunas veces puede resultar más práctico). Sin dejar el Modo Seleccionar objeto, simplemente coloca el cursor en la ubicación deseada de corte y aprieta la tecla [S] (de split, dividir en inglés). Importante: tu punto de edición (a la derecha de la configuración de la grilla) debe estar puesta en "Mouse".
 
-Expandir/Encoger Regiones [ T]
+-**Expandir/Encoger Regiones [ T]**
 Este Modo de Cursor te permite arrastrar y redimensionar la duración de una Región entera sin cambiar el Tono. Esto es a veces llamado “Timestretching” o “expansión de tiempo”, por ello el tecla [T].
 
-Escuchar Regiones específicas
+-**Escuchar Regiones específicas**
 Este Modo de Cursor te permite pinchar en cualquier Región existente sobre cualquier pista y reproducirla inmediatamente. La reproducción para al final de la Región. Cuando este Modo de Cursor se selecciona, tu puntero de cursor se verá así:
 
-Nota: También puedes escuchar rápidamente una región seleccionada sin salir del modo Seleccionar/arrastrar objeto. Simplemente selecciona una región y aprieta la tecla "H". 
+`Nota: También puedes escuchar rápidamente una región seleccionada sin salir del modo Seleccionar/arrastrar objeto. Simplemente selecciona una región y aprieta la tecla "H". `
 
-Dibujar Automatización de Ganancia [ G]
+-**Dibujar Automatización de Ganancia [ G]**
 Utiliza este Modo de Cursor si quieres dibujar la Automatización del volumen de una región específica. La curva de automatización creada de este modo no abandonará la región sobre la que fue creada, incluso cuando la Región se mueva alrededor Este tipo de Automatización de ganancia se dibuja directamente en la Región misma, lo cual lo hace diferente de la Automatización utilizada en la región desplegable de Automatización (mira el capítulo Automatización).
 
-Modo de edición
+-**Modo de edición**
 Use este modo para editar puntos de automatización de ganancia existentes. El cursor parece una mano y se convierte en una pequeña cruz cuando se está en la parte superior un punto existente. Haga clic en (mantenga el clic apretado) y arrastre con el fin de mover los puntos.
 
-MIDI
+-**MIDI**
 Los dos últimos botones citados anteriormente también se utilizan para crear y editar la información MIDI. Para aprender mas acerca de MIDI favor leer el capitulo Usar MIDI
 
-Zoom horizontal y opciones de vista
+-**Zoom horizontal y opciones de vista**
 Los principales atajos que probablemente uses todo el tiempo son [-] y [=] (disminuir el zoom y aumentarlo, respectivamente). La ampliación o disminución sucederá en relación con el punto de edición actualmente seleccionada (ratón, marcador o cursor de reproducción). En caso de duda sobre qué punto de edición elegir, selecciona Mouse.
 El botón de Zoom a la Sesión [_] se acerca o aleja, según sea necesario, para que puedas ver el inicio y fin de los marcadores de tu proyecto.
 
@@ -745,28 +755,28 @@ Utiliza el botón "Encoger pistas"  para que todas las pistas seleccionadas quep
 Utiliza el botón "Expandir pistas" para que todas las pistas seleccionadas de vean más grandes.
 También puedes cambiar el tamaño de una pista individual arrastrando su borde inferior, o haciendo clic derecho en la cabecera de la pista y la seleccionando de la "Altura" deseado.
 
-Herramienta de navegación
+-**Herramienta de navegación**
 Puedes usar la herramienta de navegación que se encuentra abajo de todo en la ventana de edición, para subir y bajar la sesión y ajustar el zoom vertical y horizontal, achicando o agrandando el tamaño de la ventana.
 
-Crear sesiones en bucle (loop)
+-**Crear sesiones en bucle (loop)**
 Puedes repetir secciones de audio fácilmente en tu sesión de Ardour. Aquí, tomamos el pasaje rítmico de audio que creamos en Trabajar con Regiones y lo duplicamos para hacer un bucle.
 Antes de duplicar el pasaje o sección de audio, es una buena idea combinar las distintas regiones de la misma pista en una sola: es más fácil el traslado si lo hacemos de esta manera, y se impide que se mueva accidentalmente una sola parte fuera de lugar, por ejemplo. Hay dos maneras de hacer esto: Combinar Regiones (te permite descombinar) y Consolidar Rango ( no permite separar más adelante).
 Si todavía están pensando en hacer alteraciones en el ritmo (añadir, eliminar o mover regiones individuales), puede ser mejor usar la opción Combinar regiones. Si te gusta la secuencia de la manera que es y no quieres o no te importa tener la capacidad para separarlos más tarde, utilice la opción Rango Consolidar.
 
-Combinar Regiones
+-**Combinar Regiones**
 Sólo tiene que seleccionar todas las regiones que desea combinar:
 A continuación, ve al menú Región → Editar → Combinar (o hay clic en las regiones seleccionadas y encontrar la misma opción a través del menú contextual, como se muestra a continuación):
 Las regiones combinadas se verá como esta (nota que la palabra "combinado" se ha añadido al nombre):
 Si tiene que separarlos de nuevo en el futuro, sólo tienes que seleccionar la región compuesto e ir al mismo menú y elegir la opción "Uncombine".
 
-Consolidar el rango
+-**Consolidar el rango**
 Cuando hayas arreglado tus Regiones en un solo "ciclo de bucle" y quedado satisfecho con el sonido, estas a punto para crear un Rango con todas las regiones que harán el bucle. Primero, asegúrate de que se seleccione cada Pista utilizada en el bucle. Las pistas deseleccionadas son grises, y las seleccionadas azules. Si ninguna de las Pistas que utilizaste no está seleccionada, mantén pulsada la tecla de Mayúsculas mientras pinchas en ellas para añadirlas al grupo seleccionado. Finalmente, utiliza la herramienta de Rango para seleccionar el bucle entero. 
 Una vez más, la configuración de la Rejilla te ayudará a poner precisamente el rango al punto de inicio y fin de tu barra métrica. Una vez que tengas seleccionado el bucle entero, haz clic-derecho en el rango y selecciona Consolidar rango. Si te gustaría que cualquier efecto de Automatización o Plugin que hayas añadido al bucle fuera incluido, selecciona Consolidar rango con procesamiento.
 
 Cuando el rango o intervalo seleccionado se consolida, aparecerá nuevas regiones en cada Pista, cada cual conteniendo todas las repeticiones de las muestras que hayas configurado en pasos anteriores.
 Recuerda, una vez que el rango se consolida, no hay manera de deshacer la operación. En cualquier caso, si encuentras que necesita para alterar el ritmo de cualquier manera, siempre se puede recuperar las muestras individuales originales de la lista de regiones y reconstruir el patrón con ellos.
 
-Duplicar el Rango
+- **Duplicar el Rango**
 Después de haber fusionado regiones individuales que forman el patrón (usando la función Combinar o consolidar), es el momento de duplicar el patrón para formar un bucle o loop.
 
 La función Multi-Duplicar (visto en el trabajo con el capítulo Regiones) es una buena manera de lograr esto. Volver a modo Grab [ G], selecciona todas las regiones, y pulsa [Mayus. + D]. Elegir el número de veces que deseas duplicar el patrón, por ejemplo: 1# Después duplicar nuestra sesión se ve algo como esto:
@@ -776,12 +786,13 @@ El comando Rellenar la pista desde el menú Región → Duplicar → Rellenar pi
 El comando Duplicar en el mismo menú [Alt + D]. Esto le permite hacer una sola copia a la vez.
 La única acción duplicado con [Ctrl + clic] en la región + arrastrar una copia.
 
-Expandir/Encoger Regiones
+- **Expandir/Encoger Regiones**
 Las regiones pueden ser expandidas o encogidas en longitud sin cambiar su Tono utilizando la herramienta Expandir/Encoger Regiones. Un ajuste pequeño a la longitud de una Región puede no causar Artefactos notorios de sonido. Aun así, cuanto más extremo el cambio en longitud, más obvio el efecto de procesado en el sonido.
 
 Para utilizar Expandir/Encoger Regiones, sitúa tu cursor encima de la región, y entonces pincha-arrastra a izquierda o derecha. Mientras arrastres, verás una área destacada, que representa la nueva duración a la cual la Región será encogida o expandida cuando liberes el ratón en la posición actual.
 
 Esto es útil cuando añadamos una Región a una Pista nueva y la longitud de esta nueva Región no coincide con el ritmo existente que hemos ya creado. Es demasiado largo para ser un compás y demasiado corto para ser de dos compases. Selecciona la región que deseas corregir, y arrastra la nueva longitud hasta el final de la segunda barra, de nuevo con la asistencia de la configuración de cuadrícula. 
+
 Al soltar el botón del ratón, aparecerá el cuadro de diálogo Ampliación de tiempo de audio. Puedes experimentar con diferentes ajustes para la operación de ampliación de tiempo. Cada ajuste afectará al sonido de diferentes maneras. Es una buena idea experimentar con unos pocos ajustes diferentes de estiramiento para averiguar lo que le da el resultado mas adecuado para tu gusto. Cuando la operación de ampliación de tiempo se ha completado, la región será exactamente largas, y debe encajar con el ritmo que ya creaste.
 
 # 4. Mezcla
