@@ -570,21 +570,21 @@ El modo Seleccionar/Mover objetos [G] está ubicado justo bajo el menú de Tran
 Cuando esté activo, tu puntero de ratón se verá en el lienzo principal como una pequeña mano:
 
 Realiza las siguientes operaciones para practicar: 
-Haz clic en la forma de onda de la región para seleccionarla. Haz clic y arrastra en una región para moverla por distintos lados (izquierda y derecha en la misma pista, sino también hacia arriba y hacia abajo sobre otras pistas).
-Usa [Ctrl + Clic] para crear y arrastrar una copia de la región.
-Puedes seleccionar varias regiones manteniendo pulsada la tecla "Mayus." mientras seleccionas.
-Mover varias regiones al mismo tiempo, después de seleccionarlas.
-Se pueden seleccionar varias regiones secuenciales en una pista a la vez, manteniendo pulsada la tecla Mayus. mientras se selecciona la primera y la última Región de la secuencia (copiar unas pocas regiones en la misma pista para probar esto).
-Cuando se selecciona una sola región, asegúrese de hacer clic en la par de con el dibujo de forma de onda de su rectángulo. La banda inferior con el nombre de la región se utiliza para una acción diferente (véase Recorte de regiones más abajo).
-Utiliza la tecla "Supr" para eliminar regiones seleccionadas.
-Las operaciones estándar de copiar [Ctrl + C], cortar [Ctrl + X], y pegar [Ctrl + V] también funcionan con las regiones.
-También puede arrastrar un cuadro de selección a través de múltiples regiones para seleccionarlos todos.
+- Haz clic en la forma de onda de la región para seleccionarla. Haz clic y arrastra en una región para moverla por distintos lados (izquierda y derecha en la misma pista, sino también hacia arriba y hacia abajo sobre otras pistas).
+- Usa [Ctrl + Clic] para crear y arrastrar una copia de la región.
+- Puedes seleccionar varias regiones manteniendo pulsada la tecla "Mayus." mientras seleccionas.
+- Mover varias regiones al mismo tiempo, después de seleccionarlas.
+- Se pueden seleccionar varias regiones secuenciales en una pista a la vez, manteniendo pulsada la tecla Mayus. mientras se selecciona la primera y la última Región de la secuencia (copiar unas pocas regiones en la misma pista para probar esto).
+- Cuando se selecciona una sola región, asegúrese de hacer clic en la par de con el dibujo de forma de onda de su rectángulo. - La banda inferior con el nombre de la región se utiliza para una acción diferente (véase Recorte de regiones más abajo).
+- Utiliza la tecla "Supr" para eliminar regiones seleccionadas.
+- Las operaciones estándar de copiar [Ctrl + C], cortar [Ctrl + X], y pegar [Ctrl + V] también funcionan con las regiones.
+- También puede arrastrar un cuadro de selección a través de múltiples regiones para seleccionarlos todos.
 
 ### Mover Regiones
 Cuando se mueve una Región, un Timecode (Código temporal) aparecerá en números amarillos sobre la pantalla. Este Timecode es el punto de partida de la Región en la Línea de tiempo. Puedes mover Regiones horizontalmente (de lado) a un punto diferente en el tiempo sobre la misma Pista, o puedes mover la Región seleccionada verticalmente (arriba o abajo) a una Pista diferente.
 Cuando un conjunto de una o más Regiones es seleccionado, puedes mover el conjunto completo arrastrándolo con el ratón.
-Nota: asegúrate de seleccionar la Región en su sección de forma de onda, porque seleccionando el área de barra de título inferior se utiliza para un acción diferente (mira Recortar Regiones abajo).
-Consejo: si pulsas y mantienes la tecla Alt mientras que arrastras una Región entre Pistas, la Región será copiada a la Pista nueva en vez de movida.
+`Nota: asegúrate de seleccionar la Región en su sección de forma de onda, porque seleccionando el área de barra de título inferior se utiliza para un acción diferente (mira Recortar Regiones abajo).  
+Importante: si pulsas y mantienes la tecla Alt mientras que arrastras una Región entre Pistas, la Región será copiada a la Pista nueva en vez de movida.`
 
 ### Duplicar Regiones
 Utilizar la herramienta Seleccionar/Mover Objetos para seleccionar un conjunto de Regiones, y utilizar la función Duplicar para hacer una copia del conjunto. Está en el menú Regiones → Duplicados Región [Alt + D]. 
@@ -596,7 +596,7 @@ Otro modo de copiar regiones es utilizando los comandos estándar Copiar [Ctrl +
 Si se selecciona Ratón como el Punto de Edición, la Región copiada será pegada en la posición actual del ratón.
 Si se selecciona Playhead (Marca activa) como el Punto de Edición, la Región copiada será pegada en la línea roja de Marca activa en la misma Pista donde está la Región original.
 
-Finalmente, si se selecciona Marcador como el Punto de edición, entonces la Región copiada se pegará inmediatamente tras el Marcador de ubicación actualmente seleccionado.
+Finalmente, si se selecciona **Marcador** como el **Punto de edición**, entonces la Región copiada se pegará inmediatamente tras el Marcador de ubicación actualmente seleccionado.
 
 ### Marcadores
 Cuando se crea una nueva sesión, dos marcadores de ubicación se agregan automáticamente de forma predeterminada. Estos son los marcadores de inicio y fin. Si no ve el marcador final, aléjese lo suficiente y lo encontrará.
@@ -722,55 +722,55 @@ El menú desplegable **Modo de Edición** contiene tres opciones. Deslizado es e
 - **Seleccionar/Mover Objeto [ O]**
 Este Modo de Cursor te permite seleccionar o mover objetos tales como regiones y puntos de ruptura (en una curva de automatización). Cuando este Modo de Cursor se selecciona, tu puntero de cursor se verá así:
 
--**Rango [ R]**
+- **Rango [ R]**
 Este Modo de Cursor te permite pinchar y arrastrar para definir o redimensionar Rangos. Cuando este Modo de Cursor está seleccionado, tu puntero de cursor se verá así:
 
--**Modo Cortar [ C]**
+- **Modo Cortar [ C]**
 Usa este curso para dividir regiones en regiones más pequeñas. El cursor se verá como unas pequeñas tijeras. Esto te permitirá cortar donde hagas clic con el cursor. 
 Consejo: puedes cortar regiones directamente desde el Modo Seleccionar/arrastrar objeto también (algunas veces puede resultar más práctico). Sin dejar el Modo Seleccionar objeto, simplemente coloca el cursor en la ubicación deseada de corte y aprieta la tecla [S] (de split, dividir en inglés). Importante: tu punto de edición (a la derecha de la configuración de la grilla) debe estar puesta en "Mouse".
 
--**Expandir/Encoger Regiones [ T]**
+- **Expandir/Encoger Regiones [ T]**
 Este Modo de Cursor te permite arrastrar y redimensionar la duración de una Región entera sin cambiar el Tono. Esto es a veces llamado “Timestretching” o “expansión de tiempo”, por ello el tecla [T].
 
--**Escuchar Regiones específicas**
+- **Escuchar Regiones específicas**
 Este Modo de Cursor te permite pinchar en cualquier Región existente sobre cualquier pista y reproducirla inmediatamente. La reproducción para al final de la Región. Cuando este Modo de Cursor se selecciona, tu puntero de cursor se verá así:
 
-`Nota: También puedes escuchar rápidamente una región seleccionada sin salir del modo Seleccionar/arrastrar objeto. Simplemente selecciona una región y aprieta la tecla "H". `
+`Nota: También puedes escuchar rápidamente una región seleccionada sin salir del modo Seleccionar/arrastrar objeto. Simplemente selecciona una región y aprieta la tecla [H]. `
 
--**Dibujar Automatización de Ganancia [ G]**
+- **Dibujar Automatización de Ganancia [ G]**
 Utiliza este Modo de Cursor si quieres dibujar la Automatización del volumen de una región específica. La curva de automatización creada de este modo no abandonará la región sobre la que fue creada, incluso cuando la Región se mueva alrededor Este tipo de Automatización de ganancia se dibuja directamente en la Región misma, lo cual lo hace diferente de la Automatización utilizada en la región desplegable de Automatización (mira el capítulo Automatización).
 
--**Modo de edición**
+- **Modo de edición**
 Use este modo para editar puntos de automatización de ganancia existentes. El cursor parece una mano y se convierte en una pequeña cruz cuando se está en la parte superior un punto existente. Haga clic en (mantenga el clic apretado) y arrastre con el fin de mover los puntos.
 
--**MIDI**
+- **MIDI**
 Los dos últimos botones citados anteriormente también se utilizan para crear y editar la información MIDI. Para aprender mas acerca de MIDI favor leer el capitulo Usar MIDI
 
--**Zoom horizontal y opciones de vista**
+- **Zoom horizontal y opciones de vista**
 Los principales atajos que probablemente uses todo el tiempo son [-] y [=] (disminuir el zoom y aumentarlo, respectivamente). La ampliación o disminución sucederá en relación con el punto de edición actualmente seleccionada (ratón, marcador o cursor de reproducción). En caso de duda sobre qué punto de edición elegir, selecciona Mouse.
-El botón de Zoom a la Sesión [_] se acerca o aleja, según sea necesario, para que puedas ver el inicio y fin de los marcadores de tu proyecto.
+El botón de Zoom a la Sesión [-] se acerca o aleja, según sea necesario, para que puedas ver el inicio y fin de los marcadores de tu proyecto.
 
 Todas las opciones de zoom discutidos anteriormente controlan la cantidad de contenido horizontal que vas a ver en la pantalla. Una vez que tengas una sesión con varias pistas, también tendrás que controlar la cantidad de contenido vertical, que eres capaz ver en la pantalla. Hay varias formas de hacer esto:
 Utiliza el "Número de pistas visibles" del menú desplegable para seleccionar el número de pistas que deseas ver para que quepan en la pantalla.
-Utiliza el botón "Encoger pistas"  para que todas las pistas seleccionadas quepan.
-Utiliza el botón "Expandir pistas" para que todas las pistas seleccionadas de vean más grandes.
+Utiliza el botón **Encoger pistas**  para que todas las pistas seleccionadas quepan.
+Utiliza el botón **Expandir pistas** para que todas las pistas seleccionadas de vean más grandes.
 También puedes cambiar el tamaño de una pista individual arrastrando su borde inferior, o haciendo clic derecho en la cabecera de la pista y la seleccionando de la "Altura" deseado.
 
--**Herramienta de navegación**
+- **Herramienta de navegación**
 Puedes usar la herramienta de navegación que se encuentra abajo de todo en la ventana de edición, para subir y bajar la sesión y ajustar el zoom vertical y horizontal, achicando o agrandando el tamaño de la ventana.
 
--**Crear sesiones en bucle (loop)**
+- **Crear sesiones en bucle (loop)**
 Puedes repetir secciones de audio fácilmente en tu sesión de Ardour. Aquí, tomamos el pasaje rítmico de audio que creamos en Trabajar con Regiones y lo duplicamos para hacer un bucle.
 Antes de duplicar el pasaje o sección de audio, es una buena idea combinar las distintas regiones de la misma pista en una sola: es más fácil el traslado si lo hacemos de esta manera, y se impide que se mueva accidentalmente una sola parte fuera de lugar, por ejemplo. Hay dos maneras de hacer esto: Combinar Regiones (te permite descombinar) y Consolidar Rango ( no permite separar más adelante).
 Si todavía están pensando en hacer alteraciones en el ritmo (añadir, eliminar o mover regiones individuales), puede ser mejor usar la opción Combinar regiones. Si te gusta la secuencia de la manera que es y no quieres o no te importa tener la capacidad para separarlos más tarde, utilice la opción Rango Consolidar.
 
--**Combinar Regiones**
+- **Combinar Regiones**
 Sólo tiene que seleccionar todas las regiones que desea combinar:
 A continuación, ve al menú Región → Editar → Combinar (o hay clic en las regiones seleccionadas y encontrar la misma opción a través del menú contextual, como se muestra a continuación):
 Las regiones combinadas se verá como esta (nota que la palabra "combinado" se ha añadido al nombre):
 Si tiene que separarlos de nuevo en el futuro, sólo tienes que seleccionar la región compuesto e ir al mismo menú y elegir la opción "Uncombine".
 
--**Consolidar el rango**
+- **Consolidar el rango**
 Cuando hayas arreglado tus Regiones en un solo "ciclo de bucle" y quedado satisfecho con el sonido, estas a punto para crear un Rango con todas las regiones que harán el bucle. Primero, asegúrate de que se seleccione cada Pista utilizada en el bucle. Las pistas deseleccionadas son grises, y las seleccionadas azules. Si ninguna de las Pistas que utilizaste no está seleccionada, mantén pulsada la tecla de Mayúsculas mientras pinchas en ellas para añadirlas al grupo seleccionado. Finalmente, utiliza la herramienta de Rango para seleccionar el bucle entero. 
 Una vez más, la configuración de la Rejilla te ayudará a poner precisamente el rango al punto de inicio y fin de tu barra métrica. Una vez que tengas seleccionado el bucle entero, haz clic-derecho en el rango y selecciona Consolidar rango. Si te gustaría que cualquier efecto de Automatización o Plugin que hayas añadido al bucle fuera incluido, selecciona Consolidar rango con procesamiento.
 
