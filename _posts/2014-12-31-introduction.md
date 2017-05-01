@@ -1723,7 +1723,11 @@ Treble (Agudo) [frecuencias]
 Manera genérica de referirse a las altas frecuencias del Espectro de sonido.
 VST (Virtual Studio Technology) [Tecnología de estudio virtual] 
 VST es una interfaz para integrar sintetizador audio de software y Plugins de efectos con editores de audio y estaciones digitales tales como Ardour. VST y tecnologías similares utilizan procesamiento de señales digitales para simular aparatos de estudio de grabación tradicional con el software. Existen miles de Plugins, tanto comerciales como freeware. VST fue creado por Steinberg. 
+
+
 WAV
-Un formato de fichero de sonido desarrollado por Microsoft e IBM y comúnmente utilizado para audio sin pérdida y no comprimido. Los ficheros WAV son compatibles con sistemas operativos Linux, mac OS y Windows. <br>
+Un formato de fichero de sonido desarrollado por Microsoft e IBM y comúnmente utilizado para audio sin pérdida y no comprimido. Los ficheros WAV son compatibles con sistemas operativos Linux, mac OS y Windows.
+
+
 Waveform (Forma de onda)
 La representación visual de un sonido en el dominio temporal. Las Waveforms se dibujan dentro de los rectángulos colorados que representan Regiones en el Lienzo Principal.
