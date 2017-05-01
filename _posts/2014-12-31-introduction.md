@@ -64,10 +64,12 @@ Las ventajas de usar mac OS
 ### Requerimientos 
 Computadora
 - Cualquier computadora con un chip Intel de 32 or 64 bit. La velocidad del CPU limita la cantidad de procesamiento.
+
 Sistema Operativo 
-- Cualquier versión de Linux con un kernel mas reciente que #3 y versión de libc #25 o arriba.
+- Cualquier versión de Linux con un kernel mas reciente que 2.3 y versión de libc 2.25 o arriba.
 - Cualquier versión de Windows XP, 7 o arriba.
 - Cualquier versión de mac OS de 10.6 (Snow Leopard) hasta 10.11 (El Capitan)
+
 RAM
 - 2GB son recomendados, más es siempre mejor
 Disco Duro
@@ -91,10 +93,10 @@ Si eres diestro y usas un ratón convencional, entonces Clic se corresponde con 
 ### Avisos
 Los avisos aparecen aparte del texto principal y se pretende que atraigan su atención hacia ciertos fragmentos de información. Según lo crítica que es la información para el usuario, pueden ser
 
-`Nota. Típicamente, una nota es información que necesitas para comprender la conducta de Ardour.` 
+`Nota. Típicamente, una nota es información que necesitas para comprender la conducta de Ardour. 
 
-Importante. Se usa para atraer la atención hacia partes del interfaz que pueden ser pasadas por alto o hacia ciertos ajustes que son vitales para determinar el comportamiento de Ardour.
-Peligro. El aviso de peligro se usa cuando una acción puede tener consecuencias no deseadas o permanentes, como cambios a la sesión que no se pueden deshacer o borrado de archivos.
+Importante. Se usa para atraer la atención hacia partes del interfaz que pueden ser pasadas por alto o hacia ciertos ajustes que son vitales para determinar el comportamiento de Ardour. 
+Peligro. El aviso de peligro se usa cuando una acción puede tener consecuencias no deseadas o permanentes, como cambios a la sesión que no se pueden deshacer o borrado de archivos.`
 
 ## Elementos básicos del interfaz
 Aunque Ardour tiene un interfaz gráfico de usuario bastante convencional, similar a otros Digital Audio Workstations (DAW, estación de trabajo para audio digital) como ProTools. A partir de la versión 5 el Interfaz gráfico se puede adaptar en algunos aspectos (cambiar el tema, ventanas, colores, escalar el interfaz, etc). Para este manual se hicieron las capturas de pantalla con el tema de color “Unastudio” que se puede seleccionar en Editar → Preferencias → Tema.
