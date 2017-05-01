@@ -100,7 +100,7 @@ Los avisos aparecen aparte del texto principal y se pretende que atraigan su ate
 `Peligro. El aviso de peligro se usa cuando una acción puede tener consecuencias no deseadas o permanentes, como cambios a la sesión que no se pueden deshacer o borrado de archivos.`
 
 ## Elementos básicos del interfaz
-Aunque Ardour tiene un interfaz gráfico de usuario bastante convencional, similar a otros Digital Audio Workstations (DAW, estación de trabajo para audio digital) como ProTools. A partir de la versión 5 el Interfaz gráfico se puede adaptar en algunos aspectos (cambiar el tema, ventanas, colores, escalar el interfaz, etc). Para este manual se hicieron las capturas de pantalla con el tema de color “Unastudio” que se puede seleccionar en Editar → Preferencias → Tema.
+Aunque Ardour tiene un interfaz gráfico de usuario bastante convencional, similar a otros Digital Audio Workstations (DAW, estación de trabajo para audio digital) como ProTools. A partir de la versión 5 el Interfaz gráfico se puede adaptar en algunos aspectos (cambiar el tema, ventanas, colores, escalar el interfaz, etc). Para este manual se hicieron las capturas de pantalla con el tema de color “Unastudio” que se puede seleccionar en **Editar → Preferencias → Tema.**
 Hay unos pocos elementos que son únicos y que probablemente te resultarán nuevos. Este capítulo proporciona una guía para usar esos elementos.
 
 ### Clics del ratón
@@ -140,13 +140,13 @@ La mayoría de DAWs han evolucionado hacia proveer la llamada "herramienta intel
 Las pistas y los Buses de Ardour no vienen con configuraciones predeterminadas. Puedes crear una pista mono, y convertirla en pista estéreo en cualquier momento. Puedes convertirla en una pista con 3 entradas y 7 salidas si quieres, ya que Ardour no restringe las configuración de entradas y salidas a un grupo fijo de mono/estéreo/5.1/7.1, etc. También puedes conectar cualquier pista a cualquier número de otras pistas y Buses. En Ardour, la única diferencia entre una pista y un Bus es que una pista puede reproducir material pre-grabado desde el disco duro y puede grabar al disco duro. Tanto las pistas como los buses pueden tener plugins, envíos, insertos, automatización y más.
 
 ### Uso de JACK
-Es extremadamente importante comprender que Ardour no interactúa directamente con la tarjeta de sonido. En vez de eso, todas las señales de audio que Ardour recibe y genera son enviadas hacia y desde un sistema de audio. Estos enrutan el audio entre la tarjeta de sonido y las aplicaciones de audio, en tiempo real. Hay un sistema de audio que fue portado de GNU/Linux a mac OS y también a Windows que se llama Jack Audio Connection Kit (JACK). 
+Es extremadamente importante comprender que Ardour no interactúa directamente con la tarjeta de sonido. En vez de eso, todas las señales de audio que Ardour recibe y genera son enviadas hacia y desde un sistema de audio. Estos enrutan el audio entre la tarjeta de sonido y las aplicaciones de audio, en tiempo real. Hay un sistema de audio que fue portado de GNU/Linux a mac OS y también a Windows que se llama *Jack Audio Connection Kit (JACK).*
 Tu sesión no está limitada a recibir y enviar audio desde/hacia tu tarjeta de sonido. Puesto que Ardour usa JACK, una pista con una entrada de hecho puede recibir datos de muchas localizaciones diferentes. Tradicionalmente, la mayoría de las fuentes de audio que querías grabar, así como un montón de los efectos más significantes, vivían fuera del ordenador. Por tanto uno de los mayores problemas para integrar un ordenador en el flujo de trabajo de un estudio de grabación es cómo meter y sacar los datos de audio del ordenador.
 Sin embargo, cada vez es más común que los estudios usen fuentes de audio y procesado de efectos hechos completamente por software, a menudo ejecutándose en la misma máquina, como un secuenciador de MIDI o un sintetizador virtual. En estas situaciones surge un nuevo problema, porque mover datos de audio de un lado a otro ya no involucra a tu tarjeta de sonido. En vez de eso, los datos deben ser llevados de un programa a otro, preferiblemente con el mismo tipo de sincronización. Por medio de JACK Ardour puede enviar y recibir señales de audio de cualquier otra aplicación que se ejecutan en otro ordenador. Por una parte, esto hace un poco más complejo comprender las opciones de Entrada/Salida de una pista o un Bus, pero también proporciona a Ardour una potencia increíble, como veremos más adelante. 
 
 Si quieres usar este sistema de audio te recomendamos estudiar la pagina de cual también lo puedes bajar el programa para tu sistema operativo: http://jackaudio.org 
 
-Si quieres instalar y usar JACK
+Si quieres instalar y usar *JACK*
 - en Windows hay un tutorial en: http://www.jackaudio.org/faq/jack_on_windows.html
 
 - en GNU/Linux es recomendable descargar la versión de JACK de tu distribución por medio del instalador de paquetes. Los dos paquetes se llaman jackd y qjackctl. Ademas es recomendado leer el tutorial de JACK en Linux de la siguiente pagina: https://radioslibres.net/article/el-poderoso-e-incomprendido-jack/
@@ -155,7 +155,7 @@ Si quieres instalar y usar JACK
 
 JACK no tiene interfaz gráfico para ejecutar y controlar. Sin embargo, hay aplicaciones como qjackqtl en GNU/Linux o JackPilot en mac OS que son aplicaciones que empaqueta JACK en un interfaz gráfico que es a la vez agradable de ver y útil. Necesitas ejecutar qjackctl (en Linux), Jack Control (en Windows) o JackPilot (en mac OS) que controla JACK antes de abrir Ardour. Deberías de ser capaz de abrir este programa desde el menú principal de tu sistema, que normalmente se encuentra en el panel/appbar/dock o como se llame en alguno de los márgenes de tu pantalla. Haz clic en el triangulo verde (Start) en la ventana principal de qjackctl. Hasta ahora puedes arrancar Ardour. 
 
-Nota: Antes de la versión 4 de Ardour siempre necesitaba JACK como sistema de audio. A partir de la versión 4 ya no. Si no usas programas o dispositivos externos (sintetizadores, baterías electrónicas, varias tarjetas de sonido, etc.) puedes usar Ardour perfectamente sin JACK.
+`Nota: Antes de la versión 4 de Ardour siempre necesitaba JACK como sistema de audio. A partir de la versión 4 ya no. Si no usas programas o dispositivos externos (sintetizadores, baterías electrónicas, varias tarjetas de sonido, etc.) puedes usar Ardour perfectamente sin JACK.`
 
 ## Hacer funcionar la tarjeta de sonido
 En un mundo perfecto solo hay que conectar tu interfaz de audio con la computadora y tu sistema operativo la reconoce automáticamente. Puedes determinar si estás en esta situación ideal haciendo unas pocas pruebas sencillas en tu máquina. La prueba más obvia es reproducir audio por un reproductor y escuchar si salga de tu tarjeta o interfaz de audio. Si es así, puedes saltar a la sección "Seleccionar la fuente de captura".
@@ -163,7 +163,7 @@ En un mundo perfecto solo hay que conectar tu interfaz de audio con la computado
 ### Probar el interfaz de audio
 Conseguir que funcione la tarjeta de sonido puede ser algo difícil al configurar tu ordenador para ejecutar Ardour. El nivel de dificultad al que te enfrentas dependerá del tipo de tarjeta de sonido que tengas, de la versión del sistema operativo que uses, y de tu propia comprensión de cómo funciona todo esto. Si no consigues reproducir audio correctamente, primero comprueba que todos los cables están en su sitio, que los altavoces están encendidos, etc. Después sigue las instrucciones recomendadas dependiendo de tu sistema operativo:
 
-ASIO en Windows:
+**ASIO en Windows:**
 Aunque tengas un driver especifico para tu interfaz audio vale la pena echar un vistazo a ASIO4ALL, un proyecto que tiene como finalidad de ofrecer un driver de audio ASIO de baja latencia para cualquier tipo de tarjeta de sonido que funciona con WDM (un estándar para tarjetas de sonido). Es freeware (gratis) y se puede descargar de la pagina: http://asio4all.com (La versión mas reciente es #13 y existe en español).
 
 Para instalar ASIO4ALL haz doble clic en el instalador y en **Siguiente**, dando clic en **Acepto los términos de la licencia** y otra dos veces en **Siguiente**. Al final deberías de ser capaz de ver el símbolo de ASIO4ALL en la barra de menú a la hora de abrir el programa. 
@@ -174,7 +174,7 @@ Después, podemos hacer clic en el expansor **(+)** a la izquierda para ver las 
 
 Para saber mas de ASIO te recomendamos leer la pagina https://www.wikiwand.com/es/Audio_Stream_Input/Output 
 
-ALSA en GNU/Linux:
+**ALSA en GNU/Linux:**
 Entra en el sistema como root y ejecuta el programa alsaconf. Puedes hacerlo pulsando [ALT+F2] y escribiendo alsaconf en la ventana de diálogo que aparecerá. Alsaconf es un asistente que intentará configurar tu tarjeta de sonido. Si todo va bien, no tendrás más que ir aceptando lo que te proponga. Una vez ejecutado alsaconf, intenta reproducir de nuevo un archivo de audio. Si consigues escucharlo correctamente, todo va bien.
 Si alsaconf no termina con un mensaje de éxito, probablemente el problema es que la tarjeta de sonido no es reconocida correctamente o no existe un driver ALSA para ella. En este caso, una visita a la página ALSA matrix card puede confirmarte si existe un driver para ella o no. Este es una pagina de ALSA-Project donde usuarios evaluaron el funcionamiento de tarjetas de sonido en GNU/Linux: http://www.alsa-project.org/main/index.php/Matrix:Main.
 
@@ -186,7 +186,7 @@ Como alternativa puedes descargar el paquete ubuntustudio-controls con el siguie
 
 Luego lo abres como root y puedes realizar la misma tarea de añadir tu usuario al grupo audio de manera gráfica.
 
-Core Audio en mac OS
+**Core Audio en mac OS**
 El estándar Core Audio ha sido introducido con la versión 10.3 de mac OS. La mayoría de los interfaces de audio profesionales de hoy en día son compatibles con Core Audio, así que no necesitas instalar ningún driver extra. Sin embargo es una buena idea echar un vistazo a la pagina web del de tu interfaz de audio para verificar si es compatible con tu versión de mac OS. 
 
 ### Seleccionar la fuente a capturar
