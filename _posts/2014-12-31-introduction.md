@@ -206,21 +206,21 @@ El desarrollador principal vive de estos ingresos. Sea generoso!
 Antes de descargarlo revisa si tu sistema corre en 32 o 64 bit para descargar la versión adecuada a tu sistema.
 Mejor registrarte para que vayas recibiendo todas las versiones de 5.X gratis. Ademas puedes usar el enlace tres veces para descargar el programa. Después de descargarlo, busca el instalador del programa y sigue los pasos dependiendo de tu sistema operativo:
 
-en GNU/Linux:
+- en GNU/Linux:
 Verifique en las propiedades que el instalador (termina con “.RUN”) sea ejecutable. Cierra y ejecuta el archivo como usuario (sin necesidad de ser root). Si no sabes como ejecutar un archivo, abre un terminal con [Alt + F2] y entra a la carpeta donde se descargó el instalador de Ardour, por ejemplo: 
 **cd /Descargas**
 Ejecuta el instalador escribiendo “./” antes del nombre del instalador (por ejemplo: 
 **./Ardour_64bit-##0.run**
 Sigue las instrucciones: Ingresar tu contraseña, confirmar las preguntas, etc. Ardour se instala en la carpeta **/opt**. Si ya tienes una versión anterior de Ardour instalado, te pregunta si quieres desinstalar esta. 
 
-    Nota: Necesitarás obtener privilegios root para instalar el programa. 
+`Nota: Necesitarás obtener privilegios root para instalar el programa.`
 
-en mac OS
+- en mac OS
 Después de descargar el instalador (termina en .DMG) con tu navegador, el Finder debería mostrar el Programa Ardour con su logotipo en tu escritorio. Puedes arrastrarlo en cualquier lugar en tu disco duro y arrancarlo desde allá. 
 
 Importante: La versión 64bit ya no soporta los plugins Carbon Audio-units de 32bit. Si usas solamente 32bit plugins, favor usar la versión 32bit (que también funciona en mac OS de 64bit).
 
-en Windows:
+- en Windows:
 Para instalar haz doble clic en el instalador y sigue las instrucciones dando clic en **I Agree, Next** y **Install**
 
 Si ya tienes una versión anterior de Ardour instalado, te pregunta si quieres desinstalar esta.
@@ -253,7 +253,7 @@ Antes de empezar a usar Ardour, necesitarás tener las entradas y salidas de tu 
 Si estas listo, haz clic en Start y espera hasta que se va la palabra roja Parado y cambia a Running. Mientras, Ardour realiza las conexiones y carga los Plugins. Esta ventana se cerrará pero si quieres puedes mostrarla otra vez cuando vas en el menú Ver → Configuración Audio/MIDI.
 
 Nota: Si quieres usar JACK en GNU/Linux pero recibes un error que no se puede abrir el sistema de audio puede ser que te ayude parar JACK en un terminal [Alt + F2] y entra el comando: 
-**jack_control exit **
+**jack_control exit**
 
 ## Visión general de la interfaz
 Cuando Ardour arranca con una sesión por defecto, hay una sola ventana visible llamada con la barra de transporte y el Editor. Sin embargo, el programa tiene muchas más ventanas que se pueden visualizar para diferentes propósitos. 
@@ -304,7 +304,7 @@ Cuando se selecciona **Sin Rejilla**, las Regiones pueden ser movidas alrededor 
 
 Debido a que diferentes usuarios querrán utilizar Ardour para diferentes tareas, el modo en que el tiempo es medido en puede ser cambiado. Los usuarios que crean obras de audio, documentales, reportajes o paisajes sonoros pueden desear utilizar Minutos y Segundos, por ejemplo, mientras aquellas bandas que graben o produzcan música pop o  electrónica utilizarán lo mas probablemente Compases y Pulsos. Los productores de vídeo encontrarán útil un Timecode (Código de tiempo) de cuadros-por-segundo, mientras que aquellos que deseen precisión extrema puede incluso querer usar Samples (Muestras). Todos estos pueden ser vistos en Ardour y utilizados como medios para organizar vuestras regiones y ediciones.
 
-    Nota: Para ver/ocultar reglas en la línea de tiempo haz clic en el menú Ver→ Reglas o clic derecho en la linea de tiempo y (de)selecciona la que (no) necesitas.
+`Nota: Para ver/ocultar reglas en la línea de tiempo haz clic en el menú Ver→ Reglas o clic derecho en la linea de tiempo y (de)selecciona la que (no) necesitas.`
 
 En las reglas Métrica y Tempo es posible de poner una métrica y tempo para la sesión entera de Ardour, así como cambiarlos en puntos diferentes en la misma sesión. 
 Para trabajar con el Timecode (Código de tiempo) de vídeo, primero necesitas establecer las fps del Código de tiempo (Cuadros por segundo). Esto puede encontrar en la pestaña de Timecode de las Propiedades de Sesión en el menú principal de Ardour bajo Sesión → Propiedades [Alt + O].
@@ -318,7 +318,7 @@ El Mezclador del Editor está ubicado a la izquierda de la Ventana del Editor. M
 ###7. Regiones, Pistas/Buses, Capturas, Grupos de edición, Trozos
 A la derecha del Editor se puede mostrar la Ventana del Editor de Ardour que tiene cinco funciones diferentes, dependiendo de que pestaña esté actualmente seleccionada: Regiones, Pistas/Buses, Capturas, Grupos de edición, y Trozos. Aparece desde Ver → Mostrar vista de Editor. Regiones es la pestaña seleccionada por defecto. Esta parte de la Ventana del Editor se denomina comúnmente como Lista de Regiones. Más información sobre Regiones puede hallarse en el capítulo Trabajar con Regiones. La pestaña de la Pista se cubre en el capítulo Organizar Pistas.
 
-Nota: Las Regiones representan ficheros de audio almacenados en el disco duro las cuales pueden ser arrastradas desde la lista de Regiones directamente sobre el lienzo principal. 
+`Nota: Las Regiones representan ficheros de audio almacenados en el disco duro las cuales pueden ser arrastradas desde la lista de Regiones directamente sobre el lienzo principal. `
 
 ### Controles de la Ventana del Mezclador
 La ventana del Mezclador completo se abre aparte yendo al menú Ventana → Mostrar Mezclador [Alt + M].
@@ -327,14 +327,14 @@ La función principal de la Ventana del Mezclador es mostrar todas las bandas de
 Esta ventana también contiene un listado de las Bandas de mezcla disponibles en la esquina superior izquierda. Las cajas de marcado en este área pueden utilizarse para mostrar y ocultar las Bandas de Mezcla de las diferentes Pistas. Encima de las Bandas de Mezcla hay un área para gestionar Grupos.
 
 ### Cambiar entre ventanas, pegar y despegar ventanas
-Ya sabes que puedes utilizar la combinación de teclas [Alt + M] para poder conmutar cual ventana esté encima: del Editor o del Mezclador. Si usas dos monitores tal vez quieres tener en un monitor el Editor y en el otro el Mezclador. En este caso necesitas despegar una de las ventanas. Esto se hace por medio del menú Ver. Busca la ventana que quieres despegar y vas en → Desacoplar. El menú despegado será una ventana separada de tu pantalla. Para acoplar vas otra vez al menú Ver, buscas la ventana y vas en  → Acoplar.
+Ya sabes que puedes utilizar la combinación de teclas [Alt + M] para poder conmutar cual ventana esté encima: del Editor o del Mezclador. Si usas dos monitores tal vez quieres tener en un monitor el Editor y en el otro el Mezclador. En este caso necesitas despegar una de las ventanas. Esto se hace por medio del menú Ver. Busca la ventana que quieres despegar y vas en **→ Desacoplar**. El menú despegado será una ventana separada de tu pantalla. Para acoplar vas otra vez al menú **Ver**, buscas la ventana y vas en ** → Acoplar**.
 
 ## Crear una Pista o un Bus
 Que es una Pista?
 Una Pista es un lugar donde puedes donde puedes grabar sonidos que procedan de una fuente externa nueva (por ejemplo de tu interfaz audio) o arrastrar una Región desde tu Lista de Regiones. 
 
 Que es una Región?
-Una Región representa un fragmento de audio, por ejem.: uno de tus ficheros de sonido o justo una porción del fichero de sonido. En la imagen al lado, el área marcada "01_Kick" es una Pista, y la información de audio dentro de aquella Pista es una Región.
+Una Región representa un fragmento de audio, por ejemplo: uno de tus ficheros de sonido o justo una porción del fichero de sonido. En la imagen al lado, el área marcada "01_Kick" es una Pista, y la información de audio dentro de aquella Pista es una Región.
 
 Que es un Bus?
 Un Bus es similar a una pista exceptuando que no contiene regiones propias. No puedes grabar directamente en un Bus o arrastrar regiones a él. En Ardour el área marcada "master" es un Bus, como puedes ver en la imagen arriba.  Normalmente cada sesión tiene un Bus master. Todo el audio para ser exportado de tu Sesión será enviada al Bus master sumando las diferentes pistas en una sola.
@@ -362,24 +362,24 @@ Finalmente, pincha el botón Añadir para crear las Pistas o Buses que justo aca
 Para grabar nuevo audio puedes usar la fuente de las entradas de línea o de micrófono de tu interfaz de audio, o incluso podría ser sonido originándose desde otras aplicaciones en tu ordenador las cuales hayan sido conectadas a Ardour. Por favor mira la sección sobre Enrutamiento en Ardour para mayor detalle.
 Esta sección te mostrará cómo grabar audio desde una fuente externa (por ejemplo, un micrófono) en una pista de Ardour.
 
-# Tendrías que comprobar que las entradas apropiadas han sido enrutadas a la pista a la que deseas grabar.
-# Selecciona la pista pinchando en el espacio vacío justo bajo su nombre y el deslizador de volumen. La Pista queda destacada.
-# La Banda de Mezcla vertical ubicada en la parte izquierda de la Ventana del Editor tendría que mostrar ahora la pista que justo has seleccionado (01_Kick en este ejemplo).
-Importante: Si no puedes ver el canal o banda de mezcla usa el atajo de teclado [Mayus. + E] o ve al menú principal en Ver → Mostrar Mezclador en Editor. 
-# Justo bajo el nombre de la Pista en la Banda de Mezcla encontrarás un botón que te deja editar el Enrutamiento.
-# Pincha en ese botón y selecciona Editar para investigar el Enrutamiento.
+1) Tendrías que comprobar que las entradas apropiadas han sido enrutadas a la pista a la que deseas grabar.
+2) Selecciona la pista pinchando en el espacio vacío justo bajo su nombre y el deslizador de volumen. La Pista queda destacada.
+3) La Banda de Mezcla vertical ubicada en la parte izquierda de la Ventana del Editor tendría que mostrar ahora la pista que justo has seleccionado (01_Kick en este ejemplo).
+    Importante: Si no puedes ver el canal o banda de mezcla usa el atajo de teclado [Mayus. + E] o ve al menú principal en Ver → Mostrar Mezclador en Editor. 
+4) Justo bajo el nombre de la Pista en la Banda de Mezcla encontrarás un botón que te deja editar el Enrutamiento.
+5) Pincha en ese botón y selecciona Editar para investigar el Enrutamiento.
 
 #### Armar la Pista
 "Armar la Pista" es sencillamente dejarla preparada para grabar. Una vez hayas comprobado que las entradas de captura apropiadas han sido enrutadas a la Pista, puedes armar la Pista para grabar pinchando en el icono rojo pequeño en la banda de pista horizontal (no el grande de los controles de Transporte) o el botón Grabar en la Banda de Mezcla. Cuando esté correctamente armada, el icono rojo pequeño quedará destacado, y serás capaz de ver la señal de entrada mirando en el Medidor de Picos en la Banda de Mezcla o en la banda de Pista horizontal.
 
-Nota: a no ser que hayas dicho a Ardour que actúe de otro modo, la entrada que se graba será monitorizada (en otras palabras, oída) vía la salida Escucha. Si no estás utilizando auriculares para controlar el proceso de grabación, ¡puede que consigas alguna fuerte retroalimentación llegando a este punto!
+`Nota: a no ser que hayas dicho a Ardour que actúe de otro modo, la entrada que se graba será monitorizada (en otras palabras, oída) vía la salida Escucha. Si no estás utilizando auriculares para controlar el proceso de grabación, ¡puede que consigas alguna fuerte retroalimentación llegando a este punto!`
 
 #### Armar Ardour e Iniciar la grabación
 Ahora que has armado la Pista para grabarla, tienes que armar Ardour mismo para grabar pinchando en el botón rojo grande en la barra de Transporte.El botón parpadeará en rojo, indicando que Ardour está listo para grabar. Para empezar a grabar, pincha en el botón Play del menú de Transporte, o pulsar la barra espaciadora de tu teclado de ordenador. Pinchar el botón Play de nuevo (o pulsar la barra espaciadora) parará la grabación.
 Mientras que grabe, la Pista armada capturará los sonidos de la entrada. Cualquier sonido existente en otras pistas se reproducirá normalmente durante la grabación. Esto de permite reproducir, cantar o hablar junto con otras Regiones y pistas que ya hayas grabado o incrustado en tu Sesión.
 Mientras que grabe, serás capaz de ver los Niveles (la amplitud en decibelios) del sonido entrante, así como ver los Picos de la Forma de onda que aparezcan según se esté grabando.
 
-Importante: ¿Mencionamos lo importante que es guardar el trabajo con frecuencia? Haz clic en [Ctrl + S] en este momento. Adquiere el hábito de teclear [Ctrl + S] cada pocos minutos.
+`Importante: ¿Mencionamos lo importante que es guardar el trabajo con frecuencia? Haz clic en [Ctrl + S] en este momento. Adquiere el hábito de teclear [Ctrl + S] cada pocos minutos.`
 
 #### Evitar Saturación
 El audio en la captura de pantalla abajo fue grabado demasiado fuerte y produjo Saturación (en otras palabras, la señal grabada estaba fuera de los límites de lo que podría ser representado digitalmente), lo cual resulta en una pérdida de información y en distorsión audible. Los picos saturados en la forma de onda se marcan en blanco, y el Medidor de Picos en la Banda de Mezcla ha registrado un nivel de señal máximo sobre el límite de cero decibelios.
@@ -388,7 +388,7 @@ La manera mejor y más fácil para evitar la Saturación es tener algún control
 La señal de audio debe ser grabada dentro de límites apropiados. No debe haber Picos rojos, y el medidor de nivel debe dejar una distancia cómoda hasta el punto de Saturación.
 El rango de decibelios entre el Pico máximo de la región y el punto de Saturación es generalmente referido como Margen. Es práctica común de grabación el mantener aproximadamente de tres a seis Decibelios de Margen entre el máximo de tu señal y el Punto de Saturación, siendo este Punto de truncamiento representado como 0dB (cero Decibelios). En otras palabras, una región de audio con una cantidad cómoda de Margen tendría sus Picos Máximos entre −6dB y −3dB.
 
-El audio grabado aparece como una Región nueva en la Pista de grabación. Como todas las Regiones, esta nueva región grabada estará disponible en la Lista de Regiones (mostrar en el menú  Ver → Mostrar lista de Editor) , de donde la puedes arrastrar-y-soltar a otras Pistas si se necesita.
+El audio grabado aparece como una Región nueva en la Pista de grabación. Como todas las Regiones, esta nueva región grabada estará disponible en la Lista de Regiones (mostrar en el menú **Ver → Mostrar lista de Editor**), de donde la puedes arrastrar-y-soltar a otras Pistas si se necesita.
 
 La región que acabas de grabar automáticamente recibirá el nombre de la pista en la que se grabó, con diferentes tomas numerados de forma automática. En la pantalla al lado, "Guitar 2-1" y "Guitar 2-2" representan dos diferentes grabaciones realizadas en una pista llamada "Guitar 2".
 
@@ -400,7 +400,9 @@ El problema más común para los usuarios de audio novatos en GNU/Linux es inten
 Un micrófono conectado a la toma line de la tarjeta de sonido. Los niveles de la señal producida por un micrófono son muy bajos y necesitan ser amplificados antes de poder ser empleados en la mayoría de circuitos de audio. En los estudios de grabación profesionales, esto se hace mediante hardware dedicado llamado "pre-amplificador". Si tu tarjeta de sonido tiene un entrada mic, entonces tiene su propio pre-amplificador integrado en la tarjeta, aunque probablemente no será muy bueno. Si por error conectas un micro en la entrada line, la señal que obtengas será inaudible o muy baja.
 Se has seleccionado la fuente de captura equivocada en el mezclador de la tarjeta de sonido.
 La ganancia del canal "captura" en el mezclador de la tarjeta de sonido se ha ajustado a un nivel demasiado bajo. Necesitarás ajustarla a un nivel adecuado.
+
 Nota: En Ardour, notarás que la tira del mezclador para cada pista permite cambiar la selección de monitorear entre input/pre/post. Ajustar el Fader mientras se controlan los niveles "input" NO tendrá ningún efecto en los niveles. Como se ha dicho antes, Ardour depende de los ajustes del mezclador externo.
+
 Por ultimo revisa la ventana de Conexiones de audio [Alt + P] , o a través de la ventana de menú Ventana → Conexiones de audio. Al lado izquierda están los Orígenes y en la parte inferior derecha están los Destinos. Revisa si el hardware (tu tarjeta de sonido) esta conectado al Bus master. Cada punto verde representa una conexión. Sino, haz clic en la matriz para realizar la conexión manualmente. Ver el capitulo siguiente para entender mejor el enrutamiento de Ardour.
 
 ## Comprender el enrutamiento
@@ -413,7 +415,7 @@ Todas las salidas desde las Pistas y Buses son enrutadas a las entradas de Bus M
 Las salidas del Bus Master son enrutadas a las salidas del dispositivo de audio.
 Esta configuración de enrutamiento es básica y tiene sentido para las sesiones que contienen sólo Pistas, pero para hacer uso de los Buses (que no sea el Bus Master) o para ser creativo con las señales de audio dentro de Ardour, tenemos que ser capaces de cambiar el enrutamiento.
 
-La ventana de Conexiones de Audio es la principal manera de hacer conexiones hacia, desde y dentro de Ardour. Puede abrir esta ventana con el atajo [Alt + P] , o a través de la ventana de menú Ventana → Conexiones de audio.
+La ventana de Conexiones de Audio es la principal manera de hacer conexiones hacia, desde y dentro de Ardour. Puede abrir esta ventana con el atajo [Alt + P] , o a través de la ventana de menú **Ventana → Conexiones de audio.**
 
 El área de control o presenta dos grupos de puertos; un conjunto de fuentes llamadas Orígenes, y uno de Destinos. Las orígenes y los destinos son organizadas por pestañas. Las fuentes-orígenes disponibles se visualizan verticalmente en el lado izquierdo, y los destinos se visualizan horizontalmente en la parte inferior.
 
