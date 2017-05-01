@@ -94,7 +94,9 @@ Si eres diestro y usas un ratón convencional, entonces Clic se corresponde con 
 Los avisos aparecen aparte del texto principal y se pretende que atraigan su atención hacia ciertos fragmentos de información. Según lo crítica que es la información para el usuario, pueden ser
 
 `Nota. Típicamente, una nota es información que necesitas para comprender la conducta de Ardour.`
-`Importante. Se usa para atraer la atención hacia partes del interfaz que pueden ser pasadas por alto o hacia ciertos ajustes que son vitales para determinar el comportamiento de Ardour.` 
+
+`Importante. Se usa para atraer la atención hacia partes del interfaz que pueden ser pasadas por alto o hacia ciertos ajustes que son vitales para determinar el comportamiento de Ardour.`  
+
 `Peligro. El aviso de peligro se usa cuando una acción puede tener consecuencias no deseadas o permanentes, como cambios a la sesión que no se pueden deshacer o borrado de archivos.`
 
 ## Elementos básicos del interfaz
@@ -176,9 +178,7 @@ ALSA en GNU/Linux:
 Entra en el sistema como root y ejecuta el programa alsaconf. Puedes hacerlo pulsando [ALT+F2] y escribiendo alsaconf en la ventana de diálogo que aparecerá. Alsaconf es un asistente que intentará configurar tu tarjeta de sonido. Si todo va bien, no tendrás más que ir aceptando lo que te proponga. Una vez ejecutado alsaconf, intenta reproducir de nuevo un archivo de audio. Si consigues escucharlo correctamente, todo va bien.
 Si alsaconf no termina con un mensaje de éxito, probablemente el problema es que la tarjeta de sonido no es reconocida correctamente o no existe un driver ALSA para ella. En este caso, una visita a la página ALSA matrix card puede confirmarte si existe un driver para ella o no. Este es una pagina de ALSA-Project donde usuarios evaluaron el funcionamiento de tarjetas de sonido en GNU/Linux: http://www.alsa-project.org/main/index.php/Matrix:Main.
 
-Si cuando entras como root escuchas el audio y cuando entras como usuario no, tienes un problema de permisos. En este caso, vuelve a entrar como root, abre una consola o [Alt+F2] y usa este comando:
-
-**adduser tu-usuario audio**
+Si cuando entras como root escuchas el audio y cuando entras como usuario no, tienes un problema de permisos. En este caso, vuelve a entrar como root, abre una consola o [Alt+F2] y usa este comando:**adduser tu-usuario audio**
 
 Con eso estás metiendo tu usuario en el grupo audio, y por tanto le das permiso para usar el hardware de audio. Cuando vuelvas a entrar como usuario, deberías poder reproducir el archivo de audio sin problemas. Sustituye "tu-usuario" por el nombre de usuario que realmente usas para entrar en el sistema. Este comando debería funcionar en cualquier distribución basada en Debian (es decir, una que use paquetes .deb)
 Como alternativa puedes descargar el paquete ubuntustudio-controls con el siguiente comando: 
@@ -273,12 +273,12 @@ Hay dos relojes las cuales pueden mostrar el tiempo en una cantidad de formatos:
 Esta es la ventana principal de Ardour. Contiene la linea de tiempo, con sus varias reglas, así como las pistas de audio y MIDI. Es perfectamente posible controlar todos los aspectos de flujo de señal desde el Editor, sin la vista general que proporciona el Mezclador. Si acudimos al menú **Ver → Mostrar Mezclador** en Editor o usamos el atajo [Mayusc.+ E], aparecerá una sola banda de mezcla en el extremo izquierdo de la ventana Editor. Al hacer clic en cualquiera de las pistas en el área de visualización de las pistas, la tira de mezcla de la izquierda pasará a reflejar los valores correspondientes de esta pista. Por eso, sobre todo durante las fases iniciales, el Editor puede ser la única ventana que necesites.
 
 
-#### Modos de edición, 
+#### Modos de edición
 
 Los controles de Modo de edición y Modos de cursor definen el comportamiento de lienzo principal y las diferentes funciones que el cursor puede tener. Hay tres modos de edición en el menú desplegable:
-- **Deslizar
+- Deslizar
 - Rizado (o Ripple)
-- Bloquear** (ningún objeto se puede mover)
+- Bloquear (ningún objeto se puede mover)
 Tras el menú desplegable están los modos de cursor:
 - **Smart / Modo inteligente** - suma las funciones del modo objeto con el modo de rango. Si está activado el ratón se comporta como el modo rango en la mitad superior de una región y en la mitad inferior funcionará como en modo objeto. [ Y]
 - **Seleccionar/Mover objeto** – permite seleccionar un objeto [ G]
@@ -297,9 +297,9 @@ Importante: Utilice los atajos del teclado:  = (signo igual en el teclado prin
 El siguiente menú desplegable controla el foco del zoom. Es decir, define el punto de enfoque de las operaciones de zoom, desde dónde comienza a ampliar o reducir. Por ejemplo, escoger la marca activa causará que el zoom se comporte en relación a la posición de la marca activa. Si lo dejamos en ratón,  tomará la posición actual del ratón como la referencia, y así sucesivamente. El siguiente menú desplegable y los dos últimos botones son el control zoom vertical. Permiten ampliar y reducir el tamaño de todas las pistas y Buses verticalmente. Utilice el menú desplegable para elegir un determinado número de pistas que desee para que quepa en la pantalla. Utilice los botones para reducir o aumentar todas las pistas (o pistas seleccionados, si se ha realizado una selección).
 
 #### Modo de ajuste
-Los menús **Modo de ajuste** se encuentran justo bajo los relojes. Controlan la cantidad de Subdivisión de la rejilla de tiempo, por ejem.: la cantidad de "ajuste" que una Región de audio tiene para el tipo de rejilla que hayas escogido.
+Los menús **Modo de ajuste** se encuentran justo bajo los relojes. Controlan la cantidad de Subdivisión de la rejilla de tiempo, por ejemplo: la cantidad de "ajuste" que una Región de audio tiene para el tipo de rejilla que hayas escogido.
 
-Cuando se selecciona **Sin Rejilla**, las Regiones pueden ser movidas alrededor libremente dentro de las Pistas. Cuando se selecciona Rejilla, las Regiones se ajustarán a Punto de Rejilla más cercano. Cuando se selecciona Magnético, las Regiones pueden moverse libremente pero se ajustarán a un Punto de Rejilla cuando se muevan muy cerca de uno. El menú de Unidades medias se utiliza para seleccionar qué serán los puntos de Rejilla, tales como Pulsos, Compases, Marcas, Minutos, Segundos, varios aspectos del Código de tiempo SMPTE, o los bordes de las Regiones.
+Cuando se selecciona **Sin Rejilla**, las Regiones pueden ser movidas alrededor libremente dentro de las Pistas. Cuando se selecciona Rejilla, las Regiones se ajustarán a Punto de Rejilla más cercano. Cuando se selecciona Magnético, las Regiones pueden moverse libremente pero se ajustarán a un Punto de Rejilla cuando se muevan muy cerca de uno. El menú de Unidades medias se utiliza para seleccionar qué serán los puntos de Rejilla, tales como **Pulsos, Compases, Marcas, Minutos, Segundos**, varios aspectos del Código de tiempo **SMPTE**, o los bordes de las **Regiones**.
 
 #### Las reglas
 Debido a que diferentes usuarios querrán utilizar Ardour para diferentes tareas, el modo en que el tiempo es medido en puede ser cambiado. Los usuarios que crean obras de audio, documentales, reportajes o paisajes sonoros pueden desear utilizar Minutos y Segundos, por ejemplo, mientras aquellas bandas que graben o produzcan música pop o  electrónica utilizarán lo mas probablemente Compases y Pulsos. Los productores de vídeo encontrarán útil un Timecode (Código de tiempo) de cuadros-por-segundo, mientras que aquellos que deseen precisión extrema puede incluso querer usar Samples (Muestras). Todos estos pueden ser vistos en Ardour y utilizados como medios para organizar vuestras regiones y ediciones.
@@ -307,7 +307,7 @@ Debido a que diferentes usuarios querrán utilizar Ardour para diferentes tareas
 `Nota: Para ver/ocultar reglas en la línea de tiempo haz clic en el menú Ver→ Reglas o clic derecho en la linea de tiempo y (de)selecciona la que (no) necesitas.`
 
 En las reglas Métrica y Tempo es posible de poner una métrica y tempo para la sesión entera de Ardour, así como cambiarlos en puntos diferentes en la misma sesión. 
-Para trabajar con el Timecode (Código de tiempo) de vídeo, primero necesitas establecer las fps del Código de tiempo (Cuadros por segundo). Esto puede encontrar en la pestaña de Timecode de las Propiedades de Sesión en el menú principal de Ardour bajo Sesión → Propiedades [Alt + O].
+Para trabajar con el Timecode (Código de tiempo) de vídeo, primero necesitas establecer las fps del Código de tiempo (Cuadros por segundo). Esto puede encontrar en la pestaña de Timecode de las Propiedades de Sesión en el menú principal de Ardour bajo **Sesión → Propiedades** [Alt + O].
 
 #### Pistas y Buses
 Justo bajo las reglas es donde las pistas y los Buses son mostrados. En el ejemplo a la derecha, puedes ver un Bus llamado master debajo de una pistas llamadas "01_Kick". Esta pista de Audio también contiene una región, la cual representa un fichero de audio con un dibujo de su forma de onda. Más información sobre las Pistas y Buses puede encontrarse en el capítulo Crear una Pista o un Bus.
