@@ -363,7 +363,6 @@ Nota: Las Regiones representan ficheros de audio almacenados en el disco duro la
 La ventana del Mezclador completo se abre aparte yendo al menú Ventana → Mostrar Mezclador [Alt + M].
 La función principal de la Ventana del Mezclador es mostrar todas las bandas de mezcla para cada una de las pistas. Esta ventana se utiliza principalmente durante el proceso de Mezcla, y también proporciona acceso a Plugins y otras características de Enrutamiento. Mira los capítulos de Comprender el enrutado, Mezcla y Utilizar Plugins para los detalles.
 
-
 Esta ventana también contiene un listado de las Bandas de mezcla disponibles en la esquina superior izquierda. Las cajas de marcado en este área pueden utilizarse para mostrar y ocultar las Bandas de Mezcla de las diferentes Pistas. Encima de las Bandas de Mezcla hay un área para gestionar Grupos.
 
 ### Cambiar entre ventanas, pegar y despegar ventanas
@@ -510,7 +509,7 @@ La captura de pantalla de arriba muestra la grabación de un patrón de batería
 3) Ahora listo para empezar. Solamente sigues el mismo procedimiento como explica el capitulo Grabar audio.
 4) Empieza la reproducción de la aplicación: En este caso haz clic en play en Hydrogen y se graba tu patrón de batería a la pista audio en Ardour.
 
-#6  Usar MIDI
+##  Usar MIDI
 ### Que es MIDI?
 MIDI (abreviatura de Musical Instrument Digital Interface) es un estándar tecnológico que describe un protocolo que permite que varios instrumentos musicales electrónicos, computadoras y otros dispositivos relacionados se conecten y comuniquen entre sí. Una simple conexión MIDI puede transmitir hasta dieciséis canales de información que pueden ser conectados a diferentes dispositivos cada uno. MIDI lleva mensajes de eventos que especifican notación musical, tono y velocidad; señales de control para parámetros musicales como lo son la dinámica, el vibrato, paneo y señales de reloj que establecen y sincronizan el tempo entre varios dispositivos. 
 Ardour puede 
@@ -560,8 +559,6 @@ Si aparece tu controlador en la lista: Perfecto! Seleccionalo. Sino
 Las entradas y salidas de MIDI Ardour se controla por el misma “motor” como las entradas y salidas de audio. Se puede usar JACK o el soporte nativo MIDI del sistema operativo para recibir y mandar datos MIDI. ALSAMIDI es el estándar para MIDI en GNU/Linux. Mientras, si usas JACK, la aplicación QjackCtl muestra los puertos ALSAMIDI en la pestaña ALSA. QjackCtl es el mismo programa que es recomendado para controlar JACK que incluye un excelente gestor de conexiones MIDI. Si tienes un interfaz MIDI genérico también es probable que en la ventana Configuración Audio/MIDI del menú Ver aparece y puedes calibrarlo allí. 
 
 
-
-
 # Editar Sesiones
 ## Organizar Pistas
 Organizar tus pistas puede ahorrarte mucho tiempo a la hora de los procesos de editar y mezclar audio. Por esto te recomendamos seguir los siguientes pasos. 
@@ -609,7 +606,7 @@ Esto configurará un rango de bucle que puedes reproducir utilizando el botón d
 En Ardour las secciones de audio se conocen como Regiones. Para componer el tipo de pasaje rítmico en que hemos estado trabajando, necesitaremos conocer cómo Seleccionar, Mover, Dividir y Recortar estas regiones, así como conocer cómo Intensificar (fundido de entrada) o Atenuar (fundido de salida) su volumen y crear Fundidos cruzadas (Crossfades) entre ellas. Algunas de estas opciones puede necesitar ocurrir en Puntos de edición específicos de la composición, o según la Métrica musical podemos también definir con la Línea temporal y la Rejilla.
 
 Seleccionar Regiones
-El modo Seleccionar/Mover objetos [ G] está ubicado justo bajo el menú de Transporte en la Ventana del Editor. Utilizarás mucho esta herramienta en tu trabajo de Ardour.
+El modo Seleccionar/Mover objetos [G] está ubicado justo bajo el menú de Transporte en la Ventana del Editor. Utilizarás mucho esta herramienta en tu trabajo de Ardour.
 Cuando esté activo, tu puntero de ratón se verá en el lienzo principal como una pequeña mano:
 
 Realiza las siguientes operaciones para practicar: 
@@ -623,31 +620,31 @@ Utiliza la tecla "Supr" para eliminar regiones seleccionadas.
 Las operaciones estándar de copiar [Ctrl + C], cortar [Ctrl + X], y pegar [Ctrl + V] también funcionan con las regiones.
 También puede arrastrar un cuadro de selección a través de múltiples regiones para seleccionarlos todos.
 
-##7. Mover Regiones
+### Mover Regiones
 Cuando se mueve una Región, un Timecode (Código temporal) aparecerá en números amarillos sobre la pantalla. Este Timecode es el punto de partida de la Región en la Línea de tiempo. Puedes mover Regiones horizontalmente (de lado) a un punto diferente en el tiempo sobre la misma Pista, o puedes mover la Región seleccionada verticalmente (arriba o abajo) a una Pista diferente.
 Cuando un conjunto de una o más Regiones es seleccionado, puedes mover el conjunto completo arrastrándolo con el ratón.
 Nota: asegúrate de seleccionar la Región en su sección de forma de onda, porque seleccionando el área de barra de título inferior se utiliza para un acción diferente (mira Recortar Regiones abajo).
 Consejo: si pulsas y mantienes la tecla Alt mientras que arrastras una Región entre Pistas, la Región será copiada a la Pista nueva en vez de movida.
 
-##8. Duplicar Regiones
+### Duplicar Regiones
 Utilizar la herramienta Seleccionar/Mover Objetos para seleccionar un conjunto de Regiones, y utilizar la función Duplicar para hacer una copia del conjunto. Está en el menú Regiones → Duplicados Región [Alt + D]. 
 Los Duplicados aparecerán inmediatamente después (y en la misma pista que) los originales.
 En la siguiente captura de pantalla, se ha duplicado una región utilizando los métodos explicados:
 
-##9. Utilizar Puntos de Edición
+### Utilizar Puntos de Edición
 Otro modo de copiar regiones es utilizando los comandos estándar Copiar [Ctrl + C] y Pegar [Ctrl + V]. La ubicación exacta donde la Región copiada será pegada está determinada por el menú desplegable de Punto de Edición.
 Si se selecciona Ratón como el Punto de Edición, la Región copiada será pegada en la posición actual del ratón.
 Si se selecciona Playhead (Marca activa) como el Punto de Edición, la Región copiada será pegada en la línea roja de Marca activa en la misma Pista donde está la Región original.
 
 Finalmente, si se selecciona Marcador como el Punto de edición, entonces la Región copiada se pegará inmediatamente tras el Marcador de ubicación actualmente seleccionado.
 
-##10. Marcadores
+### Marcadores
 Cuando se crea una nueva sesión, dos marcadores de ubicación se agregan automáticamente de forma predeterminada. Estos son los marcadores de inicio y fin. Si no ve el marcador final, aléjese lo suficiente y lo encontrará.
 
 Pero es muy útil de etiquetar diferentes ubicaciones en una sesión para su uso posterior durante la edición y mezcla. Ardour ofrece varias maneras de hacer esto. El método más común es usar las Marcas de posición, que definen las posiciones específicas en el tiempo.
 Los Marcadores pueden añadirse a la Línea temporal haciendo clic derecho en la banda de Marcadores de posición y seleccionando Añadir nueva marca de posición. También pueden ser seleccionados con el ratón y movidos a posiciones nuevas.
 
-##1# Dividir Regiones
+#### Dividir Regiones
 Para Dividir una Región sencillamente significa dividir una sola Región en dos Regiones independientes. Hay dos maneras de realizar esta acción:
 Puedes utilizar el Modo de corte [ C] para hacer clic en cualquier lado que quieras dividir; y,
 si el ratón está seleccionado como tu Punto de edición actual, selecciona una Región y coloca el cursor en el punto te gustaría dividir. Pincha en Editar → Dividir Región [ S]. 
@@ -656,28 +653,28 @@ Tras ser dividido, la Región única original se transforma en dos regiones inde
 Las dos nuevas Regiones son ahora enteramente independientes. Puedes mover y editarlas separadamente.
 Las Regiones pueden ser divididas Utilizando la Marca activa o un Marcador como el punto de Edición.
 
-##1# Recortar regiones
+#### Recortar regiones
 Si mueves el cursor hasta la banda inferior de la Región, donde su nombre aparece, verás que el puntero se torna como una flecha doble. Pincha y arrastra hacia adentro desde cualquier cabo de la Región, y la Región se acortará consiguientemente. Esto se denomina Recortar la Región. Las regiones pueden ser recortadas desde el inicio de la Región (arrastra de izquierda a derecha en el borde) o desde el fin (arrastra de derecha a izquierda).
 
 Esta acción es no destructiva: ningún audio de hecho está siendo eliminado. Es como si justo "escondieras" aquellas porciones de la Región que no quieres o que ya no necesitas más. Después, puedes "des-recortar" la Región (p. ejem.: extenderla otra vez a su medida original total), incluso si ha sido movida o copiada a una Pista nueva. Una región recortada recibirá un nombre derivado del nombre original de su Región fundamental, y verás ésta reflejada en tu Lista de Regiones. 
 
 Importante: El recorte obedecerá a la configuración de la rejilla. Si no quieres que el recorte se limite a la rejilla, simplemente escoge la opción No rejilla.
 
-##1# Eliminar regiones
+#### Eliminar regiones
 Una región puede eliminarse de una pista de cuatro formas distintas:
 Seleccionar la Región y utilizar la tecla [Supr] (no la tecla de borrar "backspace") para sacarla.
 Selecciona la Región y utiliza el atajo [Ctrl + X] para Cortarla (para más tarde pegarla).
 Selecciona la Región y utiliza la opción Editar → Cortar en el menú principal para cortarla (para más tarde pegarla).
 Otra vez, porque Ardour es no destructivo, las Regiones no son eliminadas de la Sesión y pueden ser accedidas desde la pestaña de Regiones en el lado extremo derecho de la Ventana del Editor.
 
-##1# Crear Fundidos de entrada y de salida en las Regiones
+#### Crear Fundidos de entrada y de salida en las Regiones
 Un fade (fundido) es un cambio en el volumen de una Región, bien cuando la Región comienza o bien cuando esta se acaba. Un fade-in al comienzo de la Región es un fundido de entrada, y al final de la Región es un  fundido de salida. Cada Región tiene dos pequeños manipuladores a lo largo de la parte superior, los cuales pueden ser arrastrados hacia adentro desde cualquier borde para crear un fundido de entrada o de salida, como se muestra en la siguiente imagen.
 
 Nota: De hecho, cada región ya tiene un fundido de entrada y de salida por defecto. El fundido de región es muy corto, y sirve para evitar clics en las transiciones al inicio y al final de la región. Mediante el ajuste de las regiones permiten una transición más gradual.
 
 Haciendo clic derecho en las áreas sombreadas azules, se puede ajustar la velocidad del fundido.
 
-##1# Crear Fundidos cruzados (Crossfades) entre dos Regiones
+#### Crear Fundidos cruzados (Crossfades) entre dos Regiones
 Cuando una Región se atenúa mientras otra se intensifica, esto se denomina una Fundido cruzado (Crossfade). Si las dos Regiones están en Pistas diferentes, puedes utilizar el método descrito encima con los manipuladores de atenuación.
 Aun así, si ambas Regiones están en la misma Pista, entonces Ardour automáticamente creará un fundido cruzado cuando una Región se mueva sobre otra. No hay necesidad de crear un fundido cruzado específicamente como en otros editores de audio. Cuando una región se superpone con otra Ardour las trata como capas. Esto significa que una región es una capa que está encima de la inferior. Lo importante es entender que: El fundido de entrada o de salida de la región superior representa el fundido cruzado entre las dos regiones.
 Una vez que entiendas este principio es sencillo crear y controlar fundidos entre regiones. Aquí hay un ejemplo. Las dos regiones separadas que vemos aquí abajo se superpondrán para crear un fundido cruzado.
@@ -687,7 +684,7 @@ Nota: no hemos agregado ningún fundido extra a la primera región, pero agregam
 El fundido de entrada de la segunda región funcionará como el fundido cruzado entre las dos regiones. En otras palabras, la primera región se desvanecerá y a la vez que la segunda región se intensifica.
 Para que esto ocurra necesitamos asegurarnos de que la región que queremos que sea la "superior" en el sistema de capas de Ardour. Para cambiar las opciones de capa, selecciona una región y ve al menú Región - Capas.
 
-##1# Utilizar Configuraciones de Rejilla
+#### Utilizar Configuraciones de Rejilla
 Experimenta con la configuración de la Rejilla, como se habló en el capítulo Configurar la Línea temporal, para dar clases diferentes de Subdivisión - en otras palabras, para limitar las fronteras de cada Región a ciertos puntos de rejilla. Aquí, la Rejilla ha sido activada y puesta a Pulsos/4, para subdividir las Regiones a negras dentro de cada compás. Puedes desear Recortar los extremos de algunas de las muestras, como se habló antes, para que quepan dentro de la estructura métrica has configurado.
 
 
@@ -922,10 +919,11 @@ Puedes encontrar mas información acerca de VST en: http://www.wikiwand.com/es/V
 
 A menudo se encuentra un plugin en la dos versiones, de 32bit y de 64bit. Descarga y instala el plugin correspondiente a tu versión de Ardour, es decir si tienes una versión de Ardour de 32bit descarga los plugins de 32bit. Los plugins de 64bit solo cargan en una versión de Ardour de 64bit (si no usas una bridge como Jbridge).
 
- Plataforma
+Plataforma
 Windows
 mac OS
 Linux
+
 Soporta Formatos de Plugins
 (Extensión de archivo)
 Windows VST en la versión #4 (.dll)
@@ -1030,10 +1028,6 @@ Aquí, el Plugin LADSPA "Gate" muestra un parámetro de control único, el "Thre
 
 La mayoría  de Puertas de ruido, como el Calf Gate Plugin, tienen un control independiente sobre cuan deprisa la Puerta abre (el "Ataque") y cierra (el "Decaimiento"), así como otros parámetros bastante similares a aquellos descritos para el Compresor arriba.
 
-
-
-
-
 ## Ecualización
 A menudo, incluso después de ajustar Niveles y Panoramización, puede ser difícil de discernir pistas diferentes con contenido de frecuencia similar (por ejemplo, una guitarra de graves y un bombo) en la Mezcla. Una herramienta buena para resolver este asunto es un Ecualizador (o EQ). Esencialmente, un ecualizador te permite controlar por separado la ganancia de diferentes rangos de frecuencia de un sonido. Esto puede ser útil no solo para esculpir el timbre de un sonido aislado (por ejemplo, para hacer un sonido 'mas acusado' o 'más suave'), sino también para hacer que sonidos de varios timbres se integren mejor en la mezcla. 
 
@@ -1129,15 +1123,7 @@ Puede cambiar este comportamiento si lo deseas. Si quieres curvas de automatizac
 Región específica automatización de ganancia
 Hay una manera de crear una automatización de ganancia directamente unido a una región. Cuando se selecciona el modo de dibujar, debería ver una línea plana en la mitad superior de cada rectángulo Región:
 
-
-
-
-
 Haz clic directamente en esa línea para crear puntos de automatización. Estos se pueden dibujar directamente en la propia región, en vez de en las pistas de automatización. 
-
-
-
-
 
 Al igual que con las pistas de automatización, un punto de automatización de ganancia se puede arrastrar en cualquier dirección con el ratón o eliminar, presionanda la tecla Mayus., mientras que haces clic derecho sobre el.
 
@@ -1155,7 +1141,6 @@ Si hay un simple desvanecimiento gradual a partir de la primera región de la pi
 
 
 # Exportar y Guardar
-
 Guardar una sesión te permite guardar tu proyecto para que puedes trabajar en el con Ardour mas adelante mientras que exportar es el proceso de guardar una región, pista o sesión a un fichero de tu ordenador al cual puedas escuchar, compartir, quemarlo como un CDR o convertirlo a un MP3/OGG. Exportar una región NO exporta todos los cambios que querrías haber hecho a la región. Para exportar ediciones con Atenuación, Efectos, Paneo, y Automatización, debes exportar bien un rango o la sesión entera.
 
 ## Guardar Sesiones
@@ -1197,8 +1182,9 @@ Con una Plantilla, puedes recrear tu Sesión de trabajo actual sin todos los fic
 Puedes guardar una nueva plantilla desde el menú principal: Sesión → Guardar Plantilla... 
 Cuando se crea una nueva Sesión, puedes también cargar una plantilla previamente guardada con la opción Usar esta plantilla:
 
-Tus plantillas se van a guardar en la carpeta /opt/ y en esta en Ardour-##0/share/templates o dependiendo de la versión de Ardour.
+Tus plantillas se van a guardar en la carpeta /opt/ y en esta en Ardour-5.5.0/share/templates o dependiendo de la versión de Ardour.
 En mac OS se encuentra en la carpeta usr/tunombre/.Ardour. 
+
 ## Exportar una sesión
 Recordamos que exportar es el proceso de guardar una sesión a un solo fichero estéreo de tu ordenador que puedes compartir y reproducir con un reproductor de audio.
 
@@ -1308,21 +1294,7 @@ Importar los Stems (archivos de audio que contienen las pistas individuales con 
 Si trabajaste con ProTools puedes importar una sesión de este DAW. Abre la sesión por el menú Sesión → Importar sesión PT. Esto NO importa la sesión 100% correcto ya que el formato de una sesión ProTools no es un formato abierto y se desconoce como funciona completamente. 
 Usa AATranslator. Es un complemento comercial que permite a exportar la sesión Ardour para usarlo en otra DAW. Mas información: http://www.aatranslator.com.au/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 En la próxima sección, los Apéndices, hemos incluido alguna información adicional que creemos que sería de utilidad para los nuevos usuarios de Ardour, incluyendo cómo conseguir Más Ayuda, un Glosario de términos técnicos utilizados en este manual, algunos Enlaces para más información acerca de Ardour en Internet.
-
 
 ¡Felicitaciones, has logrado llegar al fin del manual Ardour 5! Esperamos que este manual te haya sido útil para aprender las funciones clave de Ardour.
 
