@@ -3,16 +3,14 @@ description:      Una versión actualizada del manual original FLOSS.
 disqus_shortname: 
 reading_time:     true
 words_per_minute: 120
-url:              http://brunoruviaro.github.io/ardour4-tutorial
+url:              https://github.com/ardourmanual/spanish
 
 #http://localhost:4000 
-
-#http://brunoruviaro.github.io/ardour3-floss-tutorial
 
 # Owner/author information
 owner:
   name:           Tutorial Ardour 5
-  avatar:         ardour-icon.png
+  avatar:         Ardour_5_background.png
   bio:            "Una versión actualizada del manual original FLOSS."
   email:          schaerdaniel@gmail.com
   # Social networking links used in footer. Update and remove as you like.
