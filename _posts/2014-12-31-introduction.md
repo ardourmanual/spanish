@@ -6,7 +6,7 @@ comments: false
 tags: [01 INTRODUCTION]
 comments: false
 image:
-  feature: Ardour_5_background.png
+  feature: ardour_5_background.png
   credit:  
   creditlink:  
 ---
@@ -14,14 +14,15 @@ image:
 
 ### Haz clic [aquí]({{ site.url }}/tags) para saltar directamente a la Tabla de contenidos
 
-Basado en el manual de Ardour2, http://en.flossmanuals.net/Ardour 
-Traducido del original al inglés por Roman Muñoz, intxixu@gisa-elkartea.org 
-Actualizado a la versión 5 y adaptado por Daniel Schär, schaerdaniel@gmail.com
+Basado en el manual de Ardour2, http://en.flossmanuals.net/Ardour  
+Traducido del original al inglés por Roman Muñoz, intxixu@gisa-elkartea.org  
+Actualizado a la versión 5 y adaptado por Daniel Schär, schaerdaniel@gmail.com  
 Para ver la lista de créditos y la Licencia ir a http://brunoruviaro.github.io/Ardour4-tutorial/credits
+
 
 # 1. Introducción
 ## Ardour 5 y sus características
-### Qué es "Ardour"
+### ¿Qué es "Ardour"?
 Ardour es un grabador a disco duro completo, libre, de codigo abierto y un puesto de audio digital adecuado para uso profesional. 
 Presenta ilimitadas pistas de audio y buses, edición no-destructiva, no-lineal con deshacer ilimitado, y enrutamiento de señal desde y hacia cualquier lugar. 
 Soporta formatos de fichero estándar, tales como MIDI, BWF, WAV, WAV64, AIFF y CAF, y puede usar formatos de Plugins LADSPA, LV2, LinuxVST (en GNU/Linux), VST (en Windows) y AudioUnit (en mac OS).
@@ -30,7 +31,7 @@ Se ejecuta en Linux, mac OS y Windows (oficialmente a partir de la versión 5), 
 Se puede encontrar más información sobre Ardour y descargar el programa para las varias plataformas en http://ardour.org. En este momento (Abril 2016) la versión mas reciente es 5.8. 
 Hay muchas características y correcciones de fallas en esta versión por lo cual te recomiendo actualizar si tienes una versión anterior. Este manual de referencia solo es valido para las versiones 5+ de Ardour. 
 
-### Por qué se llama "Ardour"
+### ¿Por qué se llama "Ardour"?
 El nombre "Ardour" surgió a partir de consideraciones acerca de cómo debería pronunciarse el acrónimo HDR (Hard Disk Recorder). El intento más obvio suena como un "harder" sin vocales y entonces fue un paso pequeño cambiarlo a una palabra no relacionada pero que sonaba parecido.
   Ardour n 1: sentimiento de fuerte impaciencia (normalmente en favor de una persona o causa); 
   "estaban imbuídos de un ardor revolucionario"; "sentía un tipo de celo religioso" [syn: ardor, impulso, celo] 
