@@ -10,6 +10,7 @@ image:
   credit:  
   creditlink:  
 ---
+![background](/images/ardour_5_background.png)
 
 ### Haz clic [aquí]({{ site.url }}/tags) para saltar directamente a la Tabla de contenidos
 
@@ -110,6 +111,8 @@ Como en la mayoría de los interfaces gráficos actuales, un "clic derecho" en m
 
 También existe el clic con el botón central (la rueda del ratón) que permite activar o desactivar funciones en algunos elementos (por ejemplo activar/desactivar un Plugin en la banda de mezcla)
 
+![reloj](/images/Grafik1.png)
+
 ### Relojes
 En el interfaz de Ardour hay varios relojes, algunos de ellos son visible siempre, otros están en ventanas que sólo se muestran a petición del usuario. Todos estos relojes son idénticos en cuanto a funcionalidad, aunque algunos pueden ser editados por el usuario y otros sólo pueden ser visualizados.
 Un clic contextual en un reloj mostrará un menú que te permitirá modificar el modo de visualización de ese reloj. Las opciones son:
@@ -119,6 +122,8 @@ c) SMPTE
 d) Min:Sec
 Cada modo de reloj tiene un número de campos diferente. Por ejemplo, SMPTE tiene horas, minutos, segundos y frames de video.
 Para editar el valor de un reloj en particular, haz clic en el campo más a la izquierda de los que quieras modificar. Puedes meter un nuevo valor para ese campo usando el teclado numérico, así como el carácter '.' donde sea apropiado. La edición saltará automáticamente al campo siguiente una vez que hayas introducido el número máximo de dígitos en un campo. Para moverte al campo siguiente sin necesidad de introducir el número máximo de dígitos, pulsa [Tab]. Para terminar la edición, pulsa [Intro] o usa [Tab] para saltar todos los campos restantes.
+
+![slider](/images/Grafik2.png)
 
 ### Barras de control
 Una barra de control es un elemento del interfaz que funciona de un modo bastante diferente a cualquier elemento estándar encontrado en la mayoría de programas. Se usan para proporcionar un método combinado de mostrar y modificar un parámetro.
@@ -153,6 +158,8 @@ Si quieres instalar y usar *JACK*
 
 - en mac OS te recomendado leer el tutorial de JACK de la siguiente pagina: http://www.jackosx.com/about.html
 
+![qjackctl](/images/Grafik3.png)
+
 JACK no tiene interfaz gráfico para ejecutar y controlar. Sin embargo, hay aplicaciones como qjackqtl en GNU/Linux o JackPilot en mac OS que son aplicaciones que empaqueta JACK en un interfaz gráfico que es a la vez agradable de ver y útil. Necesitas ejecutar qjackctl (en Linux), Jack Control (en Windows) o JackPilot (en mac OS) que controla JACK antes de abrir Ardour. Deberías de ser capaz de abrir este programa desde el menú principal de tu sistema, que normalmente se encuentra en el panel/appbar/dock o como se llame en alguno de los márgenes de tu pantalla. Haz clic en el triangulo verde (Start) en la ventana principal de qjackctl. Hasta ahora puedes arrancar Ardour. 
 
 `Nota: Antes de la versión 4 de Ardour siempre necesitaba JACK como sistema de audio. A partir de la versión 4 ya no. Si no usas programas o dispositivos externos (sintetizadores, baterías electrónicas, varias tarjetas de sonido, etc.) puedes usar Ardour perfectamente sin JACK.`
@@ -165,6 +172,10 @@ Conseguir que funcione la tarjeta de sonido puede ser algo difícil al configura
 
 **ASIO en Windows:**
 Aunque tengas un driver especifico para tu interfaz audio vale la pena echar un vistazo a ASIO4ALL, un proyecto que tiene como finalidad de ofrecer un driver de audio ASIO de baja latencia para cualquier tipo de tarjeta de sonido que funciona con WDM (un estándar para tarjetas de sonido). Es freeware (gratis) y se puede descargar de la pagina: http://asio4all.com (La versión mas reciente es #13 y existe en español).
+
+![Asio1](/images/Grafik4.png)
+![Asio2](/images/Grafik5.png)
+![Asio3](/images/Grafik6.png)
 
 Para instalar ASIO4ALL haz doble clic en el instalador y en **Siguiente**, dando clic en **Acepto los términos de la licencia** y otra dos veces en **Siguiente**. Al final deberías de ser capaz de ver el símbolo de ASIO4ALL en la barra de menú a la hora de abrir el programa. 
 
