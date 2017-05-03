@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Qué es Ardour?
+title: ¿Qué es Ardour?
 description: "Introducción"
 comments: false 
 tags: [01 INTRODUCTION]
@@ -12,7 +12,7 @@ image:
 ---
 ![background](/images/ardour_5_background.png)
 
-### Haz clic [aquí]({{ site.url }}/tags) para saltar directamente a la Tabla de contenidos
+### Haz clic [aquí] para saltar directamente a la Tabla de contenidos
 
 Basado en el manual de Ardour2, http://en.flossmanuals.net/Ardour  
 Traducido del original al inglés por Roman Muñoz, intxixu@gisa-elkartea.org  
@@ -180,8 +180,9 @@ Aunque tengas un driver especifico para tu interfaz audio vale la pena echar un 
 
 Para instalar ASIO4ALL haz doble clic en el instalador y en **Siguiente**, dando clic en **Acepto los términos de la licencia** y otra dos veces en **Siguiente**. Al final deberías de ser capaz de ver el símbolo de ASIO4ALL en la barra de menú a la hora de abrir el programa. 
 
-En la pestaña Dispositivos WDM vemos la
-en primer lugar los dispositivos WDM, pues si tuviéramos más de una tarjeta de sonido, podemos activar o desactivar cada una de ellas dando clic en el símbolo a su izquierda.
+![Asio4](/images/Grafik8.png)
+
+En la pestaña Dispositivos WDM vemos los interfazes audio, pues si tuviéramos más de una tarjeta de sonido, podemos activar o desactivar cada una de ellas dando clic en el símbolo a su izquierda.
 Después, podemos hacer clic en el expansor **(+)** a la izquierda para ver las entradas y salidas de las tarjetas para activar/desactivarlas individualmente.
 
 Para saber mas de ASIO te recomendamos leer la pagina https://www.wikiwand.com/es/Audio_Stream_Input/Output 
@@ -195,6 +196,8 @@ Si cuando entras como root escuchas el audio y cuando entras como usuario no, ti
 Con eso estás metiendo tu usuario en el grupo audio, y por tanto le das permiso para usar el hardware de audio. Cuando vuelvas a entrar como usuario, deberías poder reproducir el archivo de audio sin problemas. Sustituye "tu-usuario" por el nombre de usuario que realmente usas para entrar en el sistema. Este comando debería funcionar en cualquier distribución basada en Debian (es decir, una que use paquetes .deb)
 Como alternativa puedes descargar el paquete ubuntustudio-controls con el siguiente comando: 
 **sudo apt-get install ubuntustudio-controls**
+
+![studio-controls](/images/Grafik7.png)
 
 Luego lo abres como root y puedes realizar la misma tarea de añadir tu usuario al grupo audio de manera gráfica.
 
@@ -211,6 +214,8 @@ Ahora estas listo para descargar, instalar y configurar Ardour.
 #  2. Iniciar tu primera sesión
 ## Instalar Ardour
 Este capítulo cubre las bases para descargar, instalar, configurar y comenzar un nuevo proyecto en Ardour, incluyendo cómo ajustar una sesión.
+
+![Asio3](/images/Grafik6.png)
 
 ### Descargar y instalar 
 Desde la pagina https://community.ardour.org/download puedes descargar la versión actual del programa para GNU/Linux, Windows y mac OS. El código fuente es libre y gratis. Para obtener el programa ejecutable necesitas dar clic en el botón Ready-to-Run Program, seleccionar tu sistema operativo y pagar al mínimo 1 USD con una tarjeta de crédito o con PayPal. 
