@@ -172,7 +172,7 @@ En un mundo perfecto solo hay que conectar tu interfaz de audio con la computado
 Conseguir que funcione la tarjeta de sonido puede ser algo difícil al configurar tu ordenador para ejecutar Ardour. El nivel de dificultad al que te enfrentas dependerá del tipo de tarjeta de sonido que tengas, de la versión del sistema operativo que uses, y de tu propia comprensión de cómo funciona todo esto. Si no consigues reproducir audio correctamente, primero comprueba que todos los cables están en su sitio, que los altavoces están encendidos, etc. Después sigue las instrucciones recomendadas dependiendo de tu sistema operativo:
 
 **ASIO en Windows:**
-Aunque tengas un driver especifico para tu interfaz audio vale la pena echar un vistazo a ASIO4ALL, un proyecto que tiene como finalidad de ofrecer un driver de audio ASIO de baja latencia para cualquier tipo de tarjeta de sonido que funciona con WDM (un estándar para tarjetas de sonido). Es freeware (gratis) y se puede descargar de la pagina: http://asio4all.com (La versión mas reciente es #13 y existe en español).
+Aunque tengas un driver especifico para tu interfaz audio vale la pena echar un vistazo a ASIO4ALL, un proyecto que tiene como finalidad de ofrecer un driver de audio ASIO de baja latencia para cualquier tipo de tarjeta de sonido que funciona con WDM (un estándar para tarjetas de sonido). Es freeware (gratis) y se puede descargar de la pagina: http://asio4all.com (La versión mas reciente es 2.13 y existe en español).
 
 ![Asio1](/images/Grafik4.png)
 ![Asio2](/images/Grafik5.png)
@@ -215,10 +215,14 @@ Ahora estas listo para descargar, instalar y configurar Ardour.
 ## Instalar Ardour
 Este capítulo cubre las bases para descargar, instalar, configurar y comenzar un nuevo proyecto en Ardour, incluyendo cómo ajustar una sesión.
 
-![Asio3](/images/Grafik6.png)
-
 ### Descargar y instalar 
 Desde la pagina https://community.ardour.org/download puedes descargar la versión actual del programa para GNU/Linux, Windows y mac OS. El código fuente es libre y gratis. Para obtener el programa ejecutable necesitas dar clic en el botón Ready-to-Run Program, seleccionar tu sistema operativo y pagar al mínimo 1 USD con una tarjeta de crédito o con PayPal. 
+
+![sistema](/images/Grafik9.png)
+![ready-to-run](/images/Grafik10.png)
+![32bit](/images/Grafik11.png)  
+![pay](/images/Grafik12.png)  
+![choosetopay](/images/Grafik13.png)
 
 El desarrollador principal vive de estos ingresos. Sea generoso! 
 Antes de descargarlo revisa si tu sistema corre en 32 o 64 bit para descargar la versión adecuada a tu sistema.
@@ -241,41 +245,54 @@ Importante: La versión 64bit ya no soporta los plugins Carbon Audio-units de 32
 - en Windows:
 Para instalar haz doble clic en el instalador y sigue las instrucciones dando clic en **I Agree, Next** y **Install**
 
+![installwindows1](/images/Grafik14.png)
+![installwindows2](/images/Grafik15.png)
+
+
 Si ya tienes una versión anterior de Ardour instalado, te pregunta si quieres desinstalar esta.
 Para arrancar Ardour 5 buscalo en el menú de Windows. 
 
 ## Configurar una nueva sesión
-Cuando arrancamos Ardour por primera vez aparece automáticamente el diálogo para crear una nueva sesión. Si trabajaste en sesiones anteriormente les va a mostrar en Sesiones recientes. 
-Si hay una nueva versión de Ardour disponible aparece en la misma ventana arriba un mensaje (ver en la pantalla al lado).
+Cuando arrancamos Ardour por primera vez aparece automáticamente el diálogo para crear una nueva sesión. Si trabajaste en sesiones anteriormente les va a mostrar en **Sesiones recientes**.   
 
-Dando clic en Nueva sesión nos permite dar nombre a la nueva sesión. Puedes usar los caracteres que quieras como parte del nombre, pero conviene que sepas que casi cualquier cosa que no sea alfanumérica (letras del alfabeto y números) será convertida a guión bajo para formar el nombre de la carpeta de la sesión.
+Si hay una nueva versión de Ardour disponible aparece en la misma ventana arriba un mensaje (ver en la pantalla al lado).  
+![nuevasesión1](/images/Grafik16.png)
 
-Necesitas especificar dónde quieres guardar la nueva carpeta de sesión. Si no quieres guardarla en el directorio actual, haz clic en el botón Crear carpeta de sesión en para abrir el selector de archivos. Si las opciones que aparecen aún no te convienen, haz clic en Otro… y a continuación navega hasta el lugar que quieras.
-Ahora Ardour crea una nueva carpeta llamada igual que la sesión, y almacena diversos tipos de archivos y sub-carpetas en ella. La carpeta más importante es sounds, la cual contiene todo el audio grabado o importado en la sesión.
+Dando clic en **Nueva sesión** nos permite dar nombre a la nueva sesión. Puedes usar los caracteres que quieras como parte del nombre, pero conviene que sepas que casi cualquier cosa que no sea alfanumérica (letras del alfabeto y números) será convertida a guión bajo para formar el nombre de la carpeta de la sesión.  
+![nuevasesión2](/images/Grafik17.png)
+
+Necesitas especificar dónde quieres guardar la nueva carpeta de sesión. Si no quieres guardarla en el directorio actual, haz clic en el botón Crear carpeta de sesión en para abrir el selector de archivos. Si las opciones que aparecen aún no te convienen, haz clic en **Otro…** y a continuación navega hasta el lugar que quieras.  
+![nuevasesión3](/images/Grafik17.png)
+
+Ahora Ardour crea una nueva carpeta llamada igual que la sesión, y almacena diversos tipos de archivos y sub-carpetas en ella. La carpeta más importante es sounds, la cual contiene todo el audio grabado o importado en la sesión.  
+![nuevasesión4](/images/Grafik18.png)
 
 ### Opciones avanzadas
 Si quieres tener más control, por ejemplo en el caso cuando no quieras usar el Bus master, haz clic en el triángulo junto a Opciones avanzadas para ver todas las opciones disponibles: Esto es útil si vas a pasar la salida de Ardour por una mesa de mezclas o si quieres por ejemplo crear sonido surround de 8 canales -7.# Pero si no sabes que eligir es recomendado que no hagas ningún cambio.
 
-Buses
+![nuevasesión5](/images/Grafik19.png)
+
+**Buses** 
 Normalmente se va crear un Bus master estéreo con las salidas conectadas a las dos primeras salidas de tu tarjeta de sonido. Un Bus master es un Bus al que todas las pistas y Buses (o la mayoría) envían su señal. Es conveniente porque proporciona un punto de control único para la salida de Ardour, y es una localización típica para efectos globales. Por esto, el uso de un Bus master está activado por defecto, y el Bus master está configurado como estéreo (2 entradas, 2 salidas). Todas las pistas nuevas tendrán sus salidas enviadas al Bus master todas las pistas nuevas tendrán las entradas conectadas a lo que Ardour crea que es la entrada(s) de tu tarjeta de audio.
 En tal caso, desactívalo haciendo clic en el botón junto a Crear Bus master. También puede ocurrir que quieras usar otra configuración de canales en la salida master (por ejemplo, sonido surround de 8 canales 7.1). En ese caso, tendrás que hacer clic en el clickbox para poner el número de canales del Bus master en el valor que quieras.
 
-Entradas
+**Entradas**  
 Hay dos opciones disponibles para configurar las entradas de las pistas: la primera, Conectar a entradas físicas automáticamente, por defecto viene activada. Si lo dejas así, las entradas de las nuevas pistas serán conectadas a las entradas de tu tarjeta de sonido. Si la desactivas, será asunto tuyo configurar las entradas para cada pista. 
 
-Salidas
+**Salidas** 
 Por defecto veremos que está activada la opción Conectar salidas automáticamente, lo que significa que Ardour conectará automáticamente las salidas de las pistas que se creen. A continuación hemos de optar entre que esa conexión automática sea hacia el Bus master (activada por defecto) o hacia las salidas físicas. Esta segunda opción se usa si no queremos usar el Bus master (evidentemente), por ejemplo porque estemos enviando la salida de Ardour a una mesa de mezclas externa. Si activamos la opción Usar solo X salidas físicas, Ardour creará en cada pista tantas salidas como le indiquemos; si la dejamos desactivada, hará lo que le parezca más adecuado.
+![configaudio](/images/Grafik20.png)
 
 ### Configurar el audio 
 Antes de empezar a usar Ardour, necesitarás tener las entradas y salidas de tu ordenador correctamente configuradas para trabajar o con el sistema de audio preferido (JACK, ALSA, CoreAudio o PortAudio). Selecciona tu dispositivo de entrada y salida. Por medio del botón Device Control Panel se puede abrir el controlador (driver) de tu interfaz audio para configurar el interfaz audio.
 Si estas listo, haz clic en Start y espera hasta que se va la palabra roja Parado y cambia a Running. Mientras, Ardour realiza las conexiones y carga los Plugins. Esta ventana se cerrará pero si quieres puedes mostrarla otra vez cuando vas en el menú Ver → Configuración Audio/MIDI.
 
-Nota: Si quieres usar JACK en GNU/Linux pero recibes un error que no se puede abrir el sistema de audio puede ser que te ayude parar JACK en un terminal [Alt + F2] y entra el comando: 
-**jack_control exit**
+`Nota: Si quieres usar JACK en GNU/Linux pero recibes un error que no se puede abrir el sistema de audio puede ser que te ayude parar JACK en un terminal [Alt + F2] y entra el comando: 
+**jack_control exit**`
 
 ## Visión general de la interfaz
 Cuando Ardour arranca con una sesión por defecto, hay una sola ventana visible llamada con la barra de transporte y el Editor. Sin embargo, el programa tiene muchas más ventanas que se pueden visualizar para diferentes propósitos. 
-Ardour proporciona dos maneras de ver una sesión: El Editor y el Mezclador. El Editor muestra la sesión representando las pistas como líneas de tiempo horizontales, con el material contenido en las pistas (audio, MIDI, video, datos de automatización, etc.) ordenado a lo largo del eje horizontal (tiempo). El Mezclador muestra la sesión representando las pistas como tiras de mezcla verticales, con controles de ganancia, activado de grabación, solo, etc. En abstracto, el Editor representa los aspectos de la sesión basados en tiempo, mientras que el Mezclador representa el flujo de la señal. En seguido te presentamos los tres áreas:
+Ardour proporciona dos maneras de ver una sesión: El **Editor y el Mezclador**. El Editor muestra la sesión representando las pistas como líneas de tiempo horizontales, con el material contenido en las pistas (audio, MIDI, video, datos de automatización, etc.) ordenado a lo largo del eje horizontal (tiempo). El Mezclador muestra la sesión representando las pistas como tiras de mezcla verticales, con controles de ganancia, activado de grabación, solo, etc. En abstracto, el Editor representa los aspectos de la sesión basados en tiempo, mientras que el Mezclador representa el flujo de la señal. En seguido te presentamos los tres áreas:
 
 ### La barra de transporte
 Esta barra proporciona control completo sobre todas las funciones de transporte de Ardour a la izquierda, los relojes al centro y los botones para mostrar las ventanas del Editor, Mezclador y las Preferencias. Inicialmente está incluida en la ventana Editor, pero también se muestra si vamos en la ventana Mezclador o Preferencias.
