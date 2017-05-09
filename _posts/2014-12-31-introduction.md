@@ -297,7 +297,8 @@ Ardour proporciona dos maneras de ver una sesión: El **Editor y el Mezclador**.
 ### La barra de transporte
 Esta barra proporciona control completo sobre todas las funciones de transporte de Ardour a la izquierda, los relojes al centro y los botones para mostrar las ventanas del Editor, Mezclador y las Preferencias. Inicialmente está incluida en la ventana Editor, pero también se muestra si vamos en la ventana Mezclador o Preferencias.
 
-Ir al Inicio Bucleo  Play   Activar Grabar   Reloj primario y secundario Botones para cambiar la ventana
+Ir al Inicio Bucleo  Play   Activar Grabar   Reloj primario y secundario Botones para cambiar la ventana  
+![transporte](/images/Grafik21.png)
 
 Claqueta   Ir al Final      Detener   Activar que el curso vuelve después de parar   Desactiva todos los solos
 
@@ -309,10 +310,15 @@ Esta es la ventana principal de Ardour. Contiene la linea de tiempo, con sus var
 
 #### Modos de edición
 
+![modos edicion](/images/Grafik22.png)
+
 Los controles de Modo de edición y Modos de cursor definen el comportamiento de lienzo principal y las diferentes funciones que el cursor puede tener. Hay tres modos de edición en el menú desplegable:
 - Deslizar
 - Rizado (o Ripple)
 - Bloquear (ningún objeto se puede mover)
+
+![modos cursor](/images/Grafik23.png)
+
 Tras el menú desplegable están los modos de cursor:
 - **Smart / Modo inteligente** - suma las funciones del modo objeto con el modo de rango. Si está activado el ratón se comporta como el modo rango en la mitad superior de una región y en la mitad inferior funcionará como en modo objeto. [ Y]
 - **Seleccionar/Mover objeto** – permite seleccionar un objeto [ G]
@@ -325,18 +331,25 @@ Tras el menú desplegable están los modos de cursor:
 La mayoría de estos modos de ratón se analizan más ampliamente en el capítulo Trabajando con las regiones. Los dos últimos modos de cursos se discuten en el capítulo Automatización.
 
 #### Modo de zoom 
+
 Entre los Modos de cursor y Modo de ajuste están las opciones de Zoom. Aquí puedes definir el comportamiento de las operaciones de zoom. Tiene dos botones, uno zoom in y otro zoom out, más uno tercero llamado Zoom a la sesión (útil para tener una visión general de toda la sesión: Hace un zoom para que se ajuste al espacio disponible en la pantalla).
-Importante: Utilice los atajos del teclado:  = (signo igual en el teclado principal) para acercar o zoom +, y - (guión la tecla en el teclado principal) para alejar o zoom -
+Importante: Utilice los atajos del teclado:  = (signo igual en el teclado principal) para acercar o zoom +, y - (guión la tecla en el teclado principal) para alejar o zoom out.  
+
+![modos zoom](/images/Grafik23.png)
 
 El siguiente menú desplegable controla el foco del zoom. Es decir, define el punto de enfoque de las operaciones de zoom, desde dónde comienza a ampliar o reducir. Por ejemplo, escoger la marca activa causará que el zoom se comporte en relación a la posición de la marca activa. Si lo dejamos en ratón,  tomará la posición actual del ratón como la referencia, y así sucesivamente. El siguiente menú desplegable y los dos últimos botones son el control zoom vertical. Permiten ampliar y reducir el tamaño de todas las pistas y Buses verticalmente. Utilice el menú desplegable para elegir un determinado número de pistas que desee para que quepa en la pantalla. Utilice los botones para reducir o aumentar todas las pistas (o pistas seleccionados, si se ha realizado una selección).
 
 #### Modo de ajuste
 Los menús **Modo de ajuste** se encuentran justo bajo los relojes. Controlan la cantidad de Subdivisión de la rejilla de tiempo, por ejemplo: la cantidad de "ajuste" que una Región de audio tiene para el tipo de rejilla que hayas escogido.
 
+![modos ajuste](/images/Grafik24.png)
+
 Cuando se selecciona **Sin Rejilla**, las Regiones pueden ser movidas alrededor libremente dentro de las Pistas. Cuando se selecciona Rejilla, las Regiones se ajustarán a Punto de Rejilla más cercano. Cuando se selecciona Magnético, las Regiones pueden moverse libremente pero se ajustarán a un Punto de Rejilla cuando se muevan muy cerca de uno. El menú de Unidades medias se utiliza para seleccionar qué serán los puntos de Rejilla, tales como **Pulsos, Compases, Marcas, Minutos, Segundos**, varios aspectos del Código de tiempo **SMPTE**, o los bordes de las **Regiones**.
 
 #### Las reglas
 Debido a que diferentes usuarios querrán utilizar Ardour para diferentes tareas, el modo en que el tiempo es medido en puede ser cambiado. Los usuarios que crean obras de audio, documentales, reportajes o paisajes sonoros pueden desear utilizar Minutos y Segundos, por ejemplo, mientras aquellas bandas que graben o produzcan música pop o  electrónica utilizarán lo mas probablemente Compases y Pulsos. Los productores de vídeo encontrarán útil un Timecode (Código de tiempo) de cuadros-por-segundo, mientras que aquellos que deseen precisión extrema puede incluso querer usar Samples (Muestras). Todos estos pueden ser vistos en Ardour y utilizados como medios para organizar vuestras regiones y ediciones.
+
+![reglas](/images/Grafik25.png)
 
 `Nota: Para ver/ocultar reglas en la línea de tiempo haz clic en el menú Ver→ Reglas o clic derecho en la linea de tiempo y (de)selecciona la que (no) necesitas.`
 
@@ -344,10 +357,14 @@ En las reglas Métrica y Tempo es posible de poner una métrica y tempo para la 
 Para trabajar con el Timecode (Código de tiempo) de vídeo, primero necesitas establecer las fps del Código de tiempo (Cuadros por segundo). Esto puede encontrar en la pestaña de Timecode de las Propiedades de Sesión en el menú principal de Ardour bajo **Sesión → Propiedades** [Alt + O].
 
 #### Pistas y Buses
-Justo bajo las reglas es donde las pistas y los Buses son mostrados. En el ejemplo a la derecha, puedes ver un Bus llamado master debajo de una pistas llamadas "01_Kick". Esta pista de Audio también contiene una región, la cual representa un fichero de audio con un dibujo de su forma de onda. Más información sobre las Pistas y Buses puede encontrarse en el capítulo Crear una Pista o un Bus.
+![pistas](/images/Grafik26.png)
+
+Justo bajo las reglas es donde las pistas y los Buses son mostrados. En el ejemplo arriba, puedes ver un Bus llamado **master** debajo de una pistas llamadas "01_Kick". Esta pista de Audio también contiene una región, la cual representa un fichero de audio con un dibujo de su forma de onda. Más información sobre las Pistas y Buses puede encontrarse en el capítulo Crear una Pista o un Bus.
+
 
 #### Mezclador del Editor
 El Mezclador del Editor está ubicado a la izquierda de la Ventana del Editor. Muestra la Banda de Mezcla de la pista o Bus actualmente seleccionado. Controla el volumen, los Plugins y enrutamiento para esa pista o Bus al que corresponde. Puedes cambiar de mostrar a ocultar el Mezclador del Editor pinchando en el menú Ver → Mostrar Mezclador del Editor [Mayús. + E]. Este mezclador se cubre en el capítulo La Banda de Mezcla.
+![reglas](/images/Grafik27.png)
 
 #### Regiones, Pistas/Buses, Capturas, Grupos de edición, Trozos
 A la derecha del Editor se puede mostrar la Ventana del Editor de Ardour que tiene cinco funciones diferentes, dependiendo de que pestaña esté actualmente seleccionada: Regiones, Pistas/Buses, Capturas, Grupos de edición, y Trozos. Aparece desde **Ver → Mostrar vista de Editor**. Regiones es la pestaña seleccionada por defecto. Esta parte de la Ventana del Editor se denomina comúnmente como **Lista de Regiones**. Más información sobre Regiones puede hallarse en el capítulo Trabajar con Regiones. La pestaña de la Pista se cubre en el capítulo Organizar Pistas.
@@ -357,6 +374,7 @@ A la derecha del Editor se puede mostrar la Ventana del Editor de Ardour que tie
 ### Controles de la Ventana del Mezclador
 La ventana del Mezclador completo se abre aparte yendo al menú **Ventana → Mostrar Mezclador** [Alt + M].
 La función principal de la Ventana del Mezclador es mostrar todas las bandas de mezcla para cada una de las pistas. Esta ventana se utiliza principalmente durante el proceso de Mezcla, y también proporciona acceso a Plugins y otras características de Enrutamiento. Mira los capítulos de Comprender el enrutado, Mezcla y Utilizar Plugins para los detalles.
+![editor](/images/Grafik28.png)
 
 Esta ventana también contiene un listado de las Bandas de mezcla disponibles en la esquina superior izquierda. Las cajas de marcado en este área pueden utilizarse para mostrar y ocultar las Bandas de Mezcla de las diferentes Pistas. Encima de las Bandas de Mezcla hay un área para gestionar Grupos.
 
@@ -364,6 +382,8 @@ Esta ventana también contiene un listado de las Bandas de mezcla disponibles en
 Ya sabes que puedes utilizar la combinación de teclas [Alt + M] para poder conmutar cual ventana esté encima: del Editor o del Mezclador. Si usas dos monitores tal vez quieres tener en un monitor el Editor y en el otro el Mezclador. En este caso necesitas despegar una de las ventanas. Esto se hace por medio del menú Ver. Busca la ventana que quieres despegar y vas en **→ Desacoplar**. El menú despegado será una ventana separada de tu pantalla. Para acoplar vas otra vez al menú **Ver**, buscas la ventana y vas en ** → Acoplar**.
 
 ## Crear una Pista o un Bus
+![pistas](/images/Grafik26.png)
+
 Que es una Pista?
 Una Pista es un lugar donde puedes donde puedes grabar sonidos que procedan de una fuente externa nueva (por ejemplo de tu interfaz audio) o arrastrar una Región desde tu Lista de Regiones. 
 
@@ -379,11 +399,13 @@ Otro uso de un Bus sería el tener un Plugin Reverberación común, tal que cual
 Entonces, Plugins y Automatización pueden ser aplicados tanto a Pistas como Buses.
 
 ### Añadir Pistas y Buses
-Para grabar audio o MIDI hay que añadir primero las pistas que van a contener la información audio o MIDI. Hay 4 maneras de como añadir pistas o Buses.  
+Para grabar audio o MIDI hay que añadir primero las pistas que van a contener la información audio o MIDI. Hay 4 maneras de como añadir pistas o Buses.
+
 1) Clic derecho en el área vacía de la izquierda, debajo de la última pista o Bus añadido
 2) Clic en el menú Sesión → Añadir Pista/Bus/VCA.
 3) Clic en el menú Pista → Añadir Pista/Bus/VCA
 4) Con [Ctrl + Mayus. + N].
+![pistas](/images/Grafik30.png)
 
 En la ventana que aparece puedes encontrar los siguientes opciones:
 Añadir permite especificar cuántas Pistas o Buses querrías crear al mismo tiempo.
@@ -397,6 +419,9 @@ Para grabar nuevo audio puedes usar la fuente de las entradas de línea o de mic
 Esta sección te mostrará cómo grabar audio desde una fuente externa (por ejemplo, un micrófono) en una pista de Ardour.
 
 1) Tendrías que comprobar que las entradas apropiadas han sido enrutadas a la pista a la que deseas grabar.
+
+![editor](/images/Grafik31.png)
+  
 2) Selecciona la pista pinchando en el espacio vacío justo bajo su nombre y el deslizador de volumen. La Pista queda destacada.
 3) La Banda de Mezcla vertical ubicada en la parte izquierda de la Ventana del Editor tendría que mostrar ahora la pista que justo has seleccionado (01_Kick en este ejemplo).
     Importante: Si no puedes ver el canal o banda de mezcla usa el atajo de teclado [Mayus. + E] o ve al menú principal en Ver → Mostrar Mezclador en Editor. 
@@ -404,6 +429,7 @@ Esta sección te mostrará cómo grabar audio desde una fuente externa (por ejem
 5) Pincha en ese botón y selecciona Editar para investigar el Enrutamiento.
 
 #### Armar la Pista
+![pistas](/images/Grafik32.png)
 "Armar la Pista" es sencillamente dejarla preparada para grabar. Una vez hayas comprobado que las entradas de captura apropiadas han sido enrutadas a la Pista, puedes armar la Pista para grabar pinchando en el icono rojo pequeño en la banda de pista horizontal (no el grande de los controles de Transporte) o el botón Grabar en la Banda de Mezcla. Cuando esté correctamente armada, el icono rojo pequeño quedará destacado, y serás capaz de ver la señal de entrada mirando en el Medidor de Picos en la Banda de Mezcla o en la banda de Pista horizontal.
 
 `Nota: a no ser que hayas dicho a Ardour que actúe de otro modo, la entrada que se graba será monitorizada (en otras palabras, oída) vía la salida Escucha. Si no estás utilizando auriculares para controlar el proceso de grabación, ¡puede que consigas alguna fuerte retroalimentación llegando a este punto!`
@@ -418,16 +444,19 @@ Mientras que grabe, serás capaz de ver los Niveles (la amplitud en decibelios) 
 #### Evitar Saturación
 El audio en la captura de pantalla abajo fue grabado demasiado fuerte y produjo Saturación (en otras palabras, la señal grabada estaba fuera de los límites de lo que podría ser representado digitalmente), lo cual resulta en una pérdida de información y en distorsión audible. Los picos saturados en la forma de onda se marcan en blanco, y el Medidor de Picos en la Banda de Mezcla ha registrado un nivel de señal máximo sobre el límite de cero decibelios.
 La manera mejor y más fácil para evitar la Saturación es tener algún control sobre el volumen de la señal de audio entrante antes de que llegue a la tarjeta de sonido. Por ejemplo, puedes mover el micrófono más lejos del sonido grabándose o utilizar un mezclador para reducir el volumen de la señal entrante.
+![saturación](/images/Grafik33.png)
 
 La señal de audio debe ser grabada dentro de límites apropiados. No debe haber Picos rojos, y el medidor de nivel debe dejar una distancia cómoda hasta el punto de Saturación.
 El rango de decibelios entre el Pico máximo de la región y el punto de Saturación es generalmente referido como Margen. Es práctica común de grabación el mantener aproximadamente de tres a seis Decibelios de Margen entre el máximo de tu señal y el Punto de Saturación, siendo este Punto de truncamiento representado como 0dB (cero Decibelios). En otras palabras, una región de audio con una cantidad cómoda de Margen tendría sus Picos Máximos entre −6dB y −3dB.
 
-El audio grabado aparece como una Región nueva en la Pista de grabación. Como todas las Regiones, esta nueva región grabada estará disponible en la Lista de Regiones (mostrar en el menú **Ver → Mostrar lista de Editor**), de donde la puedes arrastrar-y-soltar a otras Pistas si se necesita.
+El audio grabado aparece como una Región nueva en la Pista de grabación. Como todas las Regiones, esta nueva región grabada estará disponible en la Lista de Regiones (mostrar en el menú **Ver → Mostrar lista de Editor**), de donde la puedes arrastrar-y-soltar a otras Pistas si se necesita.  
+![saturación](/images/Grafik34.png)
 
 La región que acabas de grabar automáticamente recibirá el nombre de la pista en la que se grabó, con diferentes tomas numerados de forma automática. En la pantalla al lado, "Guitar 2-1" y "Guitar 2-2" representan dos diferentes grabaciones realizadas en una pista llamada "Guitar 2".
 
 Puedes planificar con anticipación y organizar tu sesión de grabación dando los nombres apropiados a las diferentes pistas. Por ejemplo, una Pista utilizada sólo para grabar cantos puede ser llamada "Guitar". De este modo, los archivos de sonido grabados serán nombrados consiguientemente, y las diferentes tomas aparecerán en la Lista de Regiones identificadas como "Guitar-1", "Guitar-2", etc, en vez de los nombre genéricos por defecto, como "Audio 1".
 Para renombrar una Pista, pincha justo en su nombre (antes de que armes la pista para grabar) y escribe el nombre nuevo.
+![nombre](/images/Grafik35.png)
 
 #### No capto ninguna señal cuando grabo...
 El problema más común para los usuarios de audio novatos en GNU/Linux es intentar grabar algo y no obtener ninguna señal en absoluto, o una señal muy baja. El problema de la señal baja típicamente surge de una de las siguientes causas:
@@ -435,7 +464,7 @@ Un micrófono conectado a la toma line de la tarjeta de sonido. Los niveles de l
 Se has seleccionado la fuente de captura equivocada en el mezclador de la tarjeta de sonido.
 La ganancia del canal "captura" en el mezclador de la tarjeta de sonido se ha ajustado a un nivel demasiado bajo. Necesitarás ajustarla a un nivel adecuado.
 
-Nota: En Ardour, notarás que la tira del mezclador para cada pista permite cambiar la selección de monitorear entre input/pre/post. Ajustar el Fader mientras se controlan los niveles "input" NO tendrá ningún efecto en los niveles. Como se ha dicho antes, Ardour depende de los ajustes del mezclador externo.
+`Nota: En Ardour, notarás que la tira del mezclador para cada pista permite cambiar la selección de monitorear entre input/pre/post. Ajustar el Fader mientras se controlan los niveles "input" NO tendrá ningún efecto en los niveles. Como se ha dicho antes, Ardour depende de los ajustes del mezclador externo.`
 
 Por ultimo revisa la ventana de **Conexiones de audio** [Alt + P] , o a través de la ventana de menú Ventana → Conexiones de audio. Al lado izquierda están los Orígenes y en la parte inferior derecha están los Destinos. Revisa si el hardware (tu tarjeta de sonido) esta conectado al Bus master. Cada punto verde representa una conexión. Sino, haz clic en la matriz para realizar la conexión manualmente. Ver el capitulo siguiente para entender mejor el enrutamiento de Ardour.
 
@@ -445,20 +474,25 @@ Enrutar una señal de audio es enviarla desde algún sitio a algún otro sitio m
 ### Enrutamiento en Ardour
 El enrutamiento estándar de entradas, pistas y Buses en Ardour se determina cuando una Sesión nueva es creada en las Opciones Avanzadas de la caja de diálogo Sesión Nueva (mira el capítulo Iniciar una Sesión). Por defecto, el enrutamiento es como sigue:
 Las entradas del dispositivo de audio son enrutadas a las entradas de Pistas.
-Todas las salidas desde las Pistas y Buses son enrutadas a las entradas de Bus Master (ver imagen al lado: La Pista 1 out L va a la pista Master in L, la Pista 2 out L va al Master in R).
+![nombre](/images/Grafik36.png)
+
+Todas las salidas desde las Pistas y Buses son enrutadas a las entradas de Bus Master (ver imagen arriba: La Pista 1 out L va a la pista Master in L, la Pista 2 out L va al Master in R).
 Las salidas del Bus Master son enrutadas a las salidas del dispositivo de audio.
 Esta configuración de enrutamiento es básica y tiene sentido para las sesiones que contienen sólo Pistas, pero para hacer uso de los Buses (que no sea el Bus Master) o para ser creativo con las señales de audio dentro de Ardour, tenemos que ser capaces de cambiar el enrutamiento.
 
 La ventana de **Conexiones de Audio** es la principal manera de hacer conexiones hacia, desde y dentro de Ardour. Puede abrir esta ventana con el atajo [Alt + P] , o a través de la ventana de menú **Ventana → Conexiones de audio.**
 
 El área de control o presenta dos grupos de puertos; un conjunto de fuentes llamadas Orígenes, y uno de Destinos. Las orígenes y los destinos son organizadas por pestañas. Las fuentes-orígenes disponibles se visualizan verticalmente en el lado izquierdo, y los destinos se visualizan horizontalmente en la parte inferior.
+![hardware](/images/Grafik37.png)
 
-En la pantalla al lado, observa que la pestaña hardware se selecciona en la parte superior izquierda (que es una fuente u origen), y el Pistas Ardour se selecciona como destino en la parte inferior. Esto significa que la matriz muestra las conexiones de las fuentes de sonido del hardware disponible (por ejemplo, un micrófono), para las pistas de Ardour existentes.
+En la pantalla arriba, observa que la pestaña hardware se selecciona en la parte superior izquierda (que es una fuente u origen), y el Pistas Ardour se selecciona como destino en la parte inferior. Esto significa que la matriz muestra las conexiones de las fuentes de sonido del hardware disponible (por ejemplo, un micrófono), para las pistas de Ardour existentes.
 Los puntos verdes representan una conexión. La imagen anterior nos dice que los sonidos entrantes de "sistema: capture_1" (la primera fuente de entrada de la tarjeta de sonido, o el micrófono incorporado del equipo portátil) están entrando en la pista Ardour llamada "Audio 1 in", y también que los sonidos entrantes de "sistema: capture_1" y "sistema: capture_2" van respectivamente a las entradas izquierda y derecha de la pista Ardour nombre "Audio #"
 
 `Nota: Recuerda que "Audio 1" es una pista mono. Lo vimos en la pantalla anterior que "Audio 1" sólo tiene una ranura de entrada. Pero ahora en la pantalla de arriba se ve que "Audio 1" tiene dos salidas (izquierda y derecha). Esto es normal: definimos que una pista es mono o estéreo por su número de entradas, no de salidas. Las pistas mono sostendrán un solo canal de audio, pero aún así se puede optar por colocar el sonido al altavoz izquierdo o al derecho (o en cualquier lugar o en el medio).`
 
 Por último, vamos a explorar un par de pestañas en la Ventana de Conexiones de audio para ver el sonido que va desde el Bus Master a las salidas de hardware reales (tus altavoces o auriculares):
+![out](/images/Grafik38.png)
+
 Como se puede ver, en Origenes está seleccionado es ahora Buses Ardour y la pestaña de Destinos es hardware. En esta sesión se pasa a tener un único Bus, el Master que como dijimos es el seleccionado por defecto. Los puntos verdes muestran que todos los sonidos que salen del Bus Master van a la reproducción del sistema 1 y 2, que son las salidas de la tarjeta de sonido.
 
 `Importante: Para realizar una conexión, haz clic en el cuadrado vacío deseado que se encuentra en la matriz; un punto verde aparecerá para indicar que se realizó la conexión. Para deshacer una conexión, simplemente haz clic en un punto verde existente y este desaparecerá.`
@@ -467,6 +501,7 @@ Como se puede ver, en Origenes está seleccionado es ahora Buses Ardour y la pes
 A veces puede ser útil para controlar el volumen de varias pistas con un solo Fader. En la siguiente sesión de ejemplo, hay dos pistas de guitarra y un Bus no utilizado que se llama “Guitar-Bus”, todo estéreo.
 Supongamos que deseas enviar la salida de las dos pistas de guitarra al Guitar Bus en lugar de enviar al Bus Master. Esto te permitirá controlar el volumen de las dos guitarras con un solo Fader (en este caso el Fader será el “Guitar-Bus”). A continuación, la salida del Guitar-Bus, que es la suma de las dos guitarras, va directamente al Bus Master.
 En la imagen que tienes a continuación se muestra el enrutamiento que se debe realizar para el caso expuesto anteriormente. Selecciona las Pistas Ardour en las pestañas verticales donde están las Origen y elige Ardour Buses en los Destinos que se encuentran en las pestañas inferiores horizontales. Lo primero es deshacer con un clic las conexiones existentes que probablemente lleven las guitarras al Bus Master. A continuación, con un clic sobre los cuadros para que aparezcan las conexiones verdes, crea las conexiones entre las dos pistas de la guitarra (“Guitar1 out” y “Guitar2 out”) con el “Guitar-Bus”. El resultado final sería el siguiente:
+![bus](/images/Grafik40.png)
 
 Ahora ambas pistas de guitarras están enrutadas al Guitar-Bus y ya no se conectan directamente al Bus Master. A continuación, nos aseguramos de que el Guitar-Bus es, por su parte, encaminada al Bus Master (el direccionamiento de salida de un Bus se edita en la misma forma que para una pista), de modo que aún podemos oír el sonido de ambas pistas de guitarra. Y podemos controlar el volumen de ambas pistas juntas al cambiar el deslizador del “Guitar-Bus”. Lo que es más, ahora podemos añadir Plugins para el “Guitar-Bus” para procesar el sonido de las dos pistas de guitarra juntos.
 
