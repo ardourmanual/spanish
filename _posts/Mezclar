@@ -1,0 +1,319 @@
+
+# 4. Mezcla
+Mezclar es el proceso de convertir Pistas múltiples a una Mezcla estéreo dónde todo los instrumentos puedan ser oídos claramente. Niveles, Panoramización, Ecualización (EQ), y Compresión son las principales herramientas utilizadas para conseguir una buena Mezcla. Además de estas herramientas básicas, también se puede utilizar una amplia gama de efectos para mejorar el sonido, como efectos de Espacio (Reverb o Delay), Efectos de Modulación (Flanger, Chorus, Phaser, etc). Estos efectos vienen en forma de Plugins, es decir pequeños programas adicionales que son desarrollado independientemente de Ardour y que vienen en diferentes formatos. Mas acerca de Plugins en el capitulo Utilizar Plugins.
+
+## Presentar la Banda de Mezcla. 
+La Banda de Mezcla es la columna vertical que contiene varios controles relacionados con el flujo de la señal. Cada Pista y Bus en Ardour tiene su propia Banda de Mezcla. La Banda de Mezcla es también una herramienta básica que utilizaremos en el proceso de mezcla de nuestras pistas. En este capítulo, conseguiremos una visión general de la Banda de Mezcla, con cada sección descrita. También proporcionaremos referencias a los capítulos que contienen la información específica a cada aspecto de la Banda de Mezcla. 
+
+Las Bandas de Mezcla pueden ser accedidas tanto desde la Ventana del Editor como desde la Ventana del Mezclador [Alt + M] para alternar entre los dos. Las Bandas de mezcla en cualquier ventana (del Editor o del Mezclador) son espejo una de la otra: cualesquier acciones hechas en una Banda de Mezcla en la Ventana del Mezclador serán reflejadas en la correspondiente Banda de Mezcla en la Ventana del Editor, y viceversa. 
+
+### La Banda de Mezcla desde arriba hasta abajo 
+En la ventana del editor, se puede ver la banda de mezclador de la pista seleccionada en la parte izquierda de la ventana. Si no lo ve, pulsar [Ctrl + E] para mostrarla.
+
+Modos regulares y estrechas
+Con el botón arriba a la izquierda la banda de mezclador se puede cambiar entre el ancho regular y una anchura más estrecha para conservar espacio. La parte superior de la banda de mezclador, se muestra a continuación, cambia entre los modos regulares y estrechos utilizando el botón izquierdo. El botón derecho oculta la banda de mezclador del todo.
+
+Nombre de la pista y el botón de enrutamiento
+Continuando desde arriba hacia abajo, la siguiente sección de la banda de mezclador contiene tres regiones. La primera de estas regiones muestra el nombre de la pista (esa es la palabra Audio 1 en la imagen al lado). La siguiente región, es el 1 en la imagen al lado, es un botón que permite acceder al enrutamiento, es decir, seleccionar qué entrada de la tarjeta de audio asignamos a esa pista. En la sección de Enrutamiento tienes toda la información. También en los capítulos de grabación de audio se habla del enrutamiento de entrada. El último botón sirve para el cambio de fase de la pista que es una opción avanzada sólo para aspectos musicales.
+
+Procesador
+La gran región de negro en la parte inferior de esta sección es la caja del procesador. Aquí es donde se pueden añadir Plugins, por ejemplo. La caja del procesador siempre contendrá el Fader en azul. Esto indica dónde se encuentra el atenuador principal del canal. El Fader se muestra en la mitad inferior de la tira. Por favor, consulta el capitulo Utilizar Plugins para más detalles. 
+
+La siguiente parte de la banda de mezclador incluye controles para la toma panorámica, Record, Mute y Solo, entre otros.
+
+Paneo
+Paneo tiene que ver con la colocación de los sonidos en cualquier lugar entre los altavoces izquierdo y derecho. Por favor, consulte el capítulo Utilizar el Panning para obtener más información.
+
+Solo
+Cuando una pista o el Bus está en Solo, todas las otras pistas o Buses que no son del mismo modo en solitario no puede oírse a través del master de Bus o de la audición. También podemos encontrar un botón Solo en miniatura del mezclador de pistas. Tenga en cuenta que el aislamiento de una autobús no silenciará las pistas y viceversa.
+Cuando cualquier pista o el Bus está en Solo, el indicador Solo en el menú de controles auxiliares se pondrá roja. Al hacer clic en el indicador de Solo mientras parpadea, se desactivarán todos los Solo, en la Sesión.
+
+Mudo
+Cualquier pista o el Bus de Silencio no puede oírse a través del Bus master o de la audición. El mezclador de pistas también contiene un botón de silencio en miniatura, entre el botón de grabación del brazo y el botón Solo. Haga clic en el botón Mute le ofrece opciones avanzadas para el comportamiento del botón de silencio.
+
+Preparar la grabación
+El botón Rec de la pista la prepara para la grabación, como se ve en el capítulo de grabación de audio. Pero haciendo clic no inicia la grabación, sólo la selecciona para cuando hagamos clic en el Rec general, en esa pista se graben las fuentes de entrada.
+
+Fader, fundidos y medidores de pico
+El control más importante presente en una banda de mezclador es el Fader, que se utiliza para ajustar la ganancia total para el correspondiente pista o el Bus. El medidor de pico muestra el valor máximo de la pista seleccionada, y se encuentra justo a la derecha del Fader. Estos medidores de nivel consiste en un gráfico de barra en el caso de una pista mono, y dos gráficos de barras en caso de una pista estéreo. El pequeño campo rectangular por encima de los medidores muestra el mayor valor de pico que se ha jugado en esa pista hasta el momento.
+
+Al hacer clic en el botón de la derecha en la parte inferior de la banda de mezclador (se lee "post" en la imagen al lado), puedes seleccionar el punto de medición, por ejemplo, el directo "In" de la tarjeta de sonido, el "pre" señal de Fader, o el "post" señal Fader. Es decir, seleccionas antes o después del Fader. 
+
+Como se puede ver en la imagen de abajo, hay una versión más pequeña de la banda de mezclador en cada pista, llamado el mezclador de pistas, que contiene un atenuador horizontal, un Medidor vertical, así como botones de miniatura para Rec, Mute y Solo . Todos ellos son similares a los encontrados en la banda de mezclador para esa pista.
+
+Enrutamiento
+Por último, llegamos a la parte inferior de la banda de mezclador. Aquí encontramos el botón de enrutamiento de salida, marcado como "master" en la captura de pantalla anterior, que se discute en el capítulo Descripción del enrutamiento.
+
+## Niveles de Mezcla
+Los Niveles son los volúmenes que cada Pista tiene relativamente a las demás. Si no puedes oír una línea de graves por encima de los otros instrumentos, la elección obvia sería alzar el volumen de línea de graves. Los niveles pueden ajustarse en la Banda de Mezcla de cada Pista bajo su nombre de Pista. El primer paso en la Mezcla es escuchar a todo aquello que ha sido grabado y ajustar los niveles de todas las Pistas de modo que puedas oír todo claramente, pero en una manera que es apropiada para la canción. Por ejemplo, la pista vocal es normalmente más fuerte que la guitarra rítmica porque la voz es el punto focal de la canción.
+
+##1 Utilizar el Atenuador (Fader)
+El Atenuador es el control primario de niveles por cada pista. El valor exacto de los niveles de la Pista se muestran en el pequeño campo rectangular por encima del Atenuador. Puedes cambiar los niveles bien arrastrando el deslizador o bien escribiendo un nuevo número directamente en el rectángulo con la cantidad. Por defecto el Atenuador está puesto a −0.0 dB, que significa que los Niveles de la Pista no se cambian mientras se reproduce.
+
+Una otra tarea importante en la Mezcla es evitar Saturación. El Valor de Pico en la Banda de Mezcla se vuelve rojo cuando la señal ha hecho pico por encima de 0.0dB. Puedes utilizar esta herramienta para controlar los Niveles más altos de tu Pista mientras Mezclas. Pincha encima para reiniciarlo.
+Ya que Ardour utiliza internamente Números de coma flotantes, las señales no son necesariamente Saturación mientras que la información permanezca dentro de Ardour. Así que puede estar OK si una pista o Bus ocasionalmente se pone rojo. Pero tendrías que asegurarte de que cualquier cosa que envíes a tu tarjeta de sonido o que finalmente exportes como archivo de sonido (como para masterizar un CD) nunca vaya por encima de 0.0dB para evitar Saturación real.
+
+Si se produce el recorte en un sonido muy percusivo y es casi imperceptible, que puede ser capaz de ocultarlo por la disminución de la ganancia (por ejemplo, Normalizar la región a 0,0, o un número menor como -1,0). Sin embargo, a menudo los resultados de recorte en la distorsión audible del sonido grabado. La mejor solución en este caso es simplemente grabar de nuevo con los niveles más bajos.
+
+### Utilizar el Panning (Panorámica o Paneo)
+Una vez te ha establecido un equilibrio bueno de niveles en todas las Pistas, puedes empezar para pensar sobre Panoramización. La panoramización ayuda a establecer un Campo estéreo, un espacio relativo entre los altavoces en el qué colocar tus pistas de instrumentos.
+
+La interfaz de Panoramización
+El Deslizador de Panoramización en Ardour está ubicado en la Banda de Mezcla y puede ser ajustado moviendo la línea vertical verde a izquierda o derecha. Una Pista Mono tendrá un deslizador de panoramización como lo de arriba, mientras que una Pista Estéreo tendrá uno como en la de abajo:
+
+Panear una pista mono
+El valor por defecto Mono distribuye 1 entrada para 2 salidas. Su comportamiento es controlado por un solo parámetro que es la posición donde coloquemos el paneo. Por defecto, se centra el panorámico de audio al medio. Puede cambiar la posición haciendo clic y arrastrando directamente en el panorámico de audio mono hacía izquiera o derecha. Haga clic en el panorámico de audio para acceder a otras opciones.
+
+Panear una pista estéreo
+El paneo estéreo por defecto distribuye 2 entradas 2 salidas. Su comportamiento es controlado por dos parámetros, anchura y posición. Por defecto, el panorámico de audio se centra en el ancho total, es decir, en la mitad. 
+Haz clic y arrastra los botones izquierda o derecha para cambiar el ancho. Por ejemplo, si los lleva más juntos que se verá así:
+
+Con una anchura más estrecha, también puedes arrastrar el asa superior para cambiar la posición central relativa.
+
+Si hacemos que los botones Izquierda y Derecha se superpongan por completo (es decir, el ancho se reduce a cero), ambos botones se convierten en un solo indicador y la señal de marca cambiar a "M" (de mono):
+
+Como regla general práctica, las guitarras tienden a ser panoramizadas a la izquierda y derecha. Las voces y el bajo tienden a ser colocados en el centro. Si quieres crear un equilibrio de modo que un lado no sea más fuerte que el otro. Los auriculares pueden ser útiles para determinar cómo tendrían que ser panoramizados los instrumentos y si un lado es demasiado sonoro y hace que la mezcla parezca torcida.
+
+Dos otras herramientas que son útiles para crear un Campo estéreo o "espacial" son Reverberación (Reverb) y Retraso (Delay). Estos efectos puede ser utilizados junto con envíos para crear un envío de tambor que quedaría más lejano en la mezcla cuanta más Reverberación, y un envío de voz que podría tener un poco más Retraso pero sonar más cercano que los tambores. Por favor mira el capítulo Utilizar Plugins de efectos y Crear y utilizar Envíos para más información.
+
+Nota: ¡Mantén siempre un ojo en tus Niveles mientras panoramizas pistas! Panoramizar una pista a un canal aumenta el Nivel de aquel canal. Esto puede cambiar el equilibrio de Niveles que configuraste en el capítulo anterior, y en los casos extremos pueden resultar en Saturación. Cuando esto suceda, reduce los Niveles globales de aquella pista y comprueba de nuevo cómo sienta el cambio a la Mezcla.
+
+## Utilizar Plugins de efectos
+Hay dos grandes categorías de Plugins: instrumentos virtuales y efectos. En este capitulo nos referimos a los efectos. Los Plugins pueden ser utilizados para transformar el sonido de pistas individuales, o a un grupo de Pistas vía un Envío. Más tarde hablaremos de algunos Plugins específicos al proceso de Mezcla, como Compresores, Limitadores, Ecualizadores, Reverberaciones y otros.
+
+Nota: Por defecto Ardour solo trae una pequeña cantidad de Plugins. Pero hay muchísimos Plugins de varios formatos disponible en Internet. Hay varios sitios web donde hay Plugins gratis para diferentes formatos. Vease Plugins.
+
+### Formatos de Plugin
+LADSPA (Linux Audio Developers Simple Plugin API)
+Los Plugin LADSPA son el formato "nativo" de Plugin para Ardour. Fueron inicialmente desarrollados para Linux, pero desde entonces han sido portados a mac OS también. Cada vez mas van a ser reemplazado por LV# 
+Puedes encontrar mas información acerca de LADSPA en: https://www.wikiwand.com/es/LADSPA
+
+LV2
+Los LV2 son los extensibles sucesores de los LADSPA, los cuales pueden usarse para exhibir características sonoras de una manera gráfica. Los Plugins LV2 pueden ser utilizados en Linux y también en mac OS. Puedes encontrar mas información acerca de LV2 en: www.wikiwand.com/es/LV2
+
+VST (Virtual Studio Technology)
+Los VST son el formato de Plugin común para Windows, inicialmente desarrollado por la empresa alemana Steinberg. Los Plugins VST compilados para Linux pueden ser utilizados en Ardour (se muestran como LXVST).
+Puedes encontrar mas información acerca de VST en: http://www.wikiwand.com/es/Virtual_Studio_Technology
+
+A menudo se encuentra un plugin en la dos versiones, de 32bit y de 64bit. Descarga y instala el plugin correspondiente a tu versión de Ardour, es decir si tienes una versión de Ardour de 32bit descarga los plugins de 32bit. Los plugins de 64bit solo cargan en una versión de Ardour de 64bit (si no usas una bridge como Jbridge).
+
+Plataforma
+Windows
+mac OS
+Linux
+
+Soporta Formatos de Plugins
+(Extensión de archivo)
+Windows VST en la versión #4 (.dll)
+AudioUnit (.component) y mac VST en la versión #4 (.vst)
+LinuxVST en la versión #4, LADSPA y LV2 (.so)
+Directorio donde se guarda 
+A menudo una sub-carpeta con el nombre VST2 o VST3 dentro de la carpeta Archivos de Programma 
+Macintosh HD/Library/Audio/Plug-Ins/
+usr/lib/lxvst o usr/lib64/lxvst (para LinuxVST) /usr/lib/lv2 (para LV2)
+o /usr/lib/ladspa (para LADSPA)
+Si un directorio no existe hay que crearlo, por ejemplo con sudo mkdir /usr/lib/lxvst
+
+Después de la instalación de nuevos Plugins es necesario de reiniciar Ardour y actualizar la lista de los Plugins. Para que Ardour encuentre Plugins VST hay abrir el menú Editar → Preferencias y buscar en la lista  VST y hacer clic en VST Path para introducir directorio donde Ardour debe buscar para plugins VST. 
+													
+Si usas Ubuntu Linux puedes instalar el meta-paquete ubuntustudio-audio-plugins con el gestor de software o en un terminal: 
+sudo apt-get install ubuntustudio-audio-plugins 
+Este comando te instalará una multitud de Plugins de diferentes categorías, entre ellos la seria de Calf y los de Invada que dan muy buenos resultados y vienen con una interfaz atractiva. 
+
+Más información acerca de utilizar Plugins LADSPA, LV2 y VST con Ardour, se puede encontrar aquí: http://manual.ardour.org/working-with-plugins/
+
+### Procesar efectos
+En la terminología de Ardour, un procesador es cualquier cosa que conectado a una banda de mezclador trata la señal de alguna manera. La disposición de los procesadores es arbitraria, es decir, la eliges vos, y no hay límite para el número no puede haber. El espacio principal de color negro que se muestra en la imagen de arriba es la caja del procesador. El cuadro azul Fader es en realidad un Plugin que viene por defecto dentro de la caja. Representa el atenuador que se utiliza para controlar el volumen de la pista. 
+Todos los procesadores se muestran como rectángulos de color, con una LED pequeña de color al lado de ellos que se ilumina cuando se activa el Plugin. 
+Los procesadores se añaden por defecto después del Fader, es decir pos-Fader. 
+Nota: Puedes cambiar esto arrastrando el procesador soltándolo arriba del procesador “Fader”.
+
+### La adición de un Plugin de efecto para una pista
+Los Plugins se pueden añadir haciendo con un doble-clic en la caja del procesador de la pista o el Bus. Se presenta el administrador de Plugins: En esta lista, se pueden buscar por tipo (formato),categoría o creador. En este ejemplo, vamos a añadir el Plugin de reverberación llamado Gverb:
+
+Una vez seleccionado, haz clic en Añadir (o doble clic) y el Plugin se mostrará en la lista de Plugins que va a conectarán. A continuación, haga clic en Insertar Plugin(s) y se mostrarán en la caja del procesador.
+
+### Editar los parámetros de un Plugin
+Haz doble clic en un Plugin para editar sus parámetros. En este ejemplo, hacemos doble clic en el cuadro "Gverb" y se abre la siguiente ventana:
+
+En este caso se pueden controlar los parámetros de reverberación tales como el tamaño de la sala (Roomsize), amortiguación (Damping), la cantidad de señal seca (Dry) y húmeda (Wet), etc. 
+
+Puedes usar Añadir para guardar esta nueva configuración como un preset propio. Coloca un nombre y así lo podrás usar en futuras ocasiones de la misma forma sin tener que configurar de nuevo. 
+
+Puentear
+Para omitir el Plugin, pulsa el botón Puentear en la ventana de parámetros del Plugin, o simplemente haz clic en el LED del Plugin en la caja del procesador y se "apaga". Esto deja el Plugin fuera y permite que la señal pase por ella sin ser afectada. Esto es útil cuando se desea comparar cómo suena una pista con y sin el Plugin.
+Los Plugins anulados se muestran en gris y con el LED desactivado.
+
+Clic derecho sobre el Plugin muestra un menú con varias opciones, incluyendo Suprimir o Borrar el Plugin. 
+
+Pre- versus Pos-Fader
+Tienes una elección entre si te gustaría añadir tu Plugin antes o tras del Fader. Por defecto se insertarán pos-Fader, es decir se insertan tras el Fader: En este caso el Fader controla el nivel de señal que entra en el Plugin, mientras si lo pones en pre-Fader se insertan en el camino de la señal antes del Fader, de modo que el Fader controla el nivel de la señal que sale del Plugin. Para ciertos Plugins, la colocación pre- o pos-Fader no importa. Para otros, la diferencia es sutil. Para otros de todos modos, insertarlos en el lugar correcto es absolutamente esencial.
+
+### Crear y Utilizar un Envío
+Un envío es sólo una salida adicional para una pista o un autobús con su propio Fader propio, que se puede utilizar para dirigir la señal a otros puntos de Ardour. También conocido como envíos auxiliares o AUX, que aprovechan la señal en un punto específico en el flujo de señal (pre-Fader, post-Fader, antes o después de ecualizadores y otros Plugins, etc.) y envía una copia de esa señal a otro lugar, sin afectar la señal normal fluya hacia el atenuador de canal. En Ardour, se pueden agregar fácilmente envíos a pistas y buses a través de la banda de mezclador. 
+
+¿Cuando es útil un envío?
+Si tienes en tu proyecto una batería con cuatro pistas: bombo, caja, platillos y redoblantes y digamos ahora que deseas añadir una reverberación a la batería, se podría, por supuesto, añadir un Plugin independiente para cada pista individual, y ajustar las configuraciones por separado. Pero este método aumenta innecesariamente la cantidad de trabajo: Cada vez que desee cambiar un ajuste de reverberación a través del tablero para todos los tambores, se tendría que abrir los cuatro Plugins de reverberación y cambiarlos de la misma manera. Aquí es donde el envío puede venir muy bien: se puede utilizar para añadir un efecto particular a un conjunto de pistas sin crear varias instancias de la misma Plugin.
+
+Aquí está el resumen de cómo crear un efecto envío:
+1) Crear un nuevo bus: seleccionar Pista → Añadir Pista o Bus → Buses de audio
+2) Ir a la Banda de mezcla de este nuevo Bus y añadir un Plugin en esta Banda.
+3) Enrutar un envío para cada pista de batería a la que deseas aplicar el efecto.
+
+Antes de encaminar un envío a este Bus, primero asegúrate de que las salidas de buses se dirigen al bus master, como se muestra a continuación (botón en la parte inferior dice master).
+También, abra la ventana del Plugin (doble clic sobre el rectángulo Gverb) y ajuste la señal de la mezcla a 1,0 Nivel Wet y en Dry 0.0 Nivel. Esto asegura que el Bus lleva toda la señal procesada (la señal 'Wet - húmeda') del Plugin, y ninguna de la señal sin procesar (la señal 'Dry-Seca') al Bus master. Recuerda, las señales 'limpias', sin procesar, están todavía disponibles desde sus pistas originales, así que no hay ninguna necesidad de duplicarlas en este bus.
+
+Crear Envíos en las otras Pistas y enrutarlos a las entradas del Bus.
+Para crear Envíos en las diferentes pistas haz clic-derecho en el área pos-Fader bajo el Atenuador en una de las Pistas de Audio y selecciona Nuevo Envío y selecciona Bus # Hazlo en la banda de cada pista a cual quieres aplicar el efecto (en nuestro ejemplo al bombo, la caja, los platillos y a los redoblantes). 
+Deberías ver ahora esto en el procesador de la pista:
+El pequeño Send es un control deslizante que aparece justo debajo del rectángulo verde y controla la cantidad de sonido que se envía desde esta pista al Bus. Para controlar el nivel de cada envío, simplemente haz clic y arrastra el Fader para aumentar o disminuir su volumen.
+
+El Bus que creamos recibe la suma de todas las pistas que seleccionamos y aplica el efecto. Un solo Plugin aplicado al Bus controla el efecto de la mezcla de los sonidos de toda la batería enviados ahí. De esta manera, tienes un control independiente sobre el sonido "seco (Dry)" de la reverberación de las pistas originales, y el sonido "húmedo/ )(Wet)" del efecto de salida en el Bus.
+El Envío se comporta como cualquier otro Plugin en la caja del procesador. Puedes desactivar temporalmente haciendo clic en el LED pequeño y puedes hacer clic en el rectángulo para acceder a otras opciones, incluyendo "Borrar".
+
+Nota: Es importante de considerar si quieres crear un Envío pre-Fader o pos-Fader. Generalmente esto depende de el tipo de Plugin de efecto utilizado y el resultado deseado. En envíos pre-Fader, el nivel de Envío es controlado solo por el deslizante de control, independientemente del Fader de la pista. En Envíos pos-Fader, el nivel de Envío es controlado tanto por el Fader de Pista como por el atenuador de Envío. Esto significa que el nivel de Envío pos-Fader es siempre proporcional al nivel de Pista/Bus, el cual controla la señal 'Seca'.
+
+## Efectos de Dinámica
+Uno de los problemas que puedas encontrar en una Mezcla es que las partes sonoras son demasiado fuertes, pero las partes silenciosas lo son demasiado. Este tipo de problema no puede ser fácilmente resuelto utilizando solamente Atenuadores para ajustar los Niveles. Puede que pongas los Niveles tan alto que saturen, o que añadas ruido de fondo indeseado por sencillamente incrementar los Niveles. Estos son todo problemas de lo que se llama Rango Dinámico, esto es, la diferencia entre las partes más fuertes y más tranquilas de tu Sesión. Hay varios tipos de herramientas para ajustar el Rango Dinámico disponible en Ardour incluyendo Limitativo (Limiting), Compresión (Compression) y Apertura (Gating).
+
+### Limitación
+Un Limitador es una herramienta que impide que el volumen de una Pista supere un cierto Nivel, normalmente el Nivel de Pico (0dB) o algo cercano. Muchos Limitadores tienen la opción para aumentar los Niveles de la señal entrante antes de que están Limitados, y de este modo puedes "cerrar el vacío" entre las partes más sonoras y las más silenciosas de tu mezcla. Un Limitador puede utilizarse en el Bus master para impedir la Mezcla global sature. Los Limitadores se utilizan casi siempre pos-Fader.
+
+El "Limitador de oteo rápido (Fast Lookahead Limiter)" puede ser encontrado entre los Plugins LADSPA. Para poner cuánto limita el limitador de oteo rápido, sencillamente ajusta el deslizador de "Límit (dB)". El Limitador de oteo rápido literalmente "mira adelante" en la señal por unos cuantos mili-segundos, y cuando ve que la señal está a punto de superar el límite que has puesto, automáticamente decrementa los Niveles.
+
+El deslizador de Input Gain (dB) determina cuánto se incrementan los Niveles antes de que alcancen el Limitador, y el medidor de Limit (dB) en el lado derecho muestra a que Nivel máximo se reduce. Mientras la reducción en volumen es casi-instantánea, el deslizador del Release time determina cuánto tiempo le toma al Limitador regresar a 0 dB.
+Nota que cuanto "más duro" uno maneje el Limitador (incrementando la Ganancia de entrada y/o decrementando el Límite de Pico máximo permitido), más reducción se fuerza a hacer al Limitador, y más probablemente es que ocurran artefactos del procesamiento (como Distorsiones o cambios erráticos en volumen). En el Bus master, es generalmente mejor evitar Limitación excesiva.
+Al lado se muestra una captura de pantalla de un Limiter similar del paquete de Plugins Calf:
+
+### Compresión
+Un Compresor impulsa el volumen global de un sonido, pero entonces "lo" aprieta dependiendo de cuán sonoro sea. Esto puede hacer que las voces suenen más incluso o que los tambores suenen más llenos y más fuertes. El efecto final es similar a cómo un Limitador puede reducir el rango entre el más silencioso y el más fuerte de los sonidos, aun así el efecto es más selectivo cuando se utiliza un Compresor.
+
+El Compresor en su forma más sencillo tiene los siguientes controles: El "Umbral (Threshold)" establece el Nivel en qué el Compresor empezará a actuar, y la "Proporción de Compresión" controla cuánto "aprieta" el sonido el Compresor. Los parámetros "Ataque" y "Decaimiento" controlan cuán deprisa el Compresor afecta al sonido.
+
+Un Compresor más complejo, el Plugin LADSPA SC1 Compresor, puede encontrarse entre los Plugins de Ardour.
+El SC1 Compresor tiene tres botones principales: Nivel de Umbral (Thresold level) (dB), Proporción (Ratio) (1:n) y Ganancia (Makeup gain) (dB).
+El Thresold level pone el Nivel al cual el Compresor comprimirá o apretará el sonido. El Ratio controla cuánto apretará cuando se alcance el Umbral. El Makeup gain aumenta la señal entera después de ocurrir la Compresión. 
+
+Los otros tres controles Tiempo de Ataque (Attack time)(ms), Tiempo de Liberación (Release time)(ms) y Radio (Knee radius) (dB), te permiten controlar la forma de la Compresión. Para una Compresión vocal suave, querrías un Tiempo de Ataque semi-rápido de modo que el Compresor coja el principio de cada palabra, un Tiempo de Liberación más lento para dejar que suene la voz, y un suave Radio (Knee) para crear una forma moderada de compresión que no es demasiado notoria. Si quieres hacer que los tambores suenen grandes, podrías probar un Tiempo de Ataque lento de modo que no Comprimas el pop del tambor, un Tiempo de Liberación rápido de modo que el Compresor pueda coger el próximo golpe del tambor, y una Proporción grande para hacer las Dinámicas entre el principio y el fin del golpe de tambor similares.
+
+Al lado se muestra una captura de pantalla de un compresor similar del paquete de Plugins Calf.
+
+
+### Puerta Umbral (Pasa Ruido)
+La clase más sencilla de Puerta deja pasar una señal a través cuando es superior a un cierto Nivel, y bloquea la señal cuando es menor que aquel. Las puertas son a menudo utilizadas como un tipo de reducción de ruido. Por ejemplo, la Puerta en un canal de micrófono podría abrirse solamente mientras la cantante está cantando, impidiendo que otros ruidos de fondo vengan a través también cuando no esté cantando. Las puertas de los tambores son también un viejo truco de estudio de producción para hacer su sonido "más afilado".
+
+Aquí, el Plugin LADSPA "Gate" muestra un parámetro de control único, el "Threshold" en qué la Puerta abrirá y dejará pasar la señal. 
+
+La mayoría  de Puertas de ruido, como el Calf Gate Plugin, tienen un control independiente sobre cuan deprisa la Puerta abre (el "Ataque") y cierra (el "Decaimiento"), así como otros parámetros bastante similares a aquellos descritos para el Compresor arriba.
+
+## Ecualización
+A menudo, incluso después de ajustar Niveles y Panoramización, puede ser difícil de discernir pistas diferentes con contenido de frecuencia similar (por ejemplo, una guitarra de graves y un bombo) en la Mezcla. Una herramienta buena para resolver este asunto es un Ecualizador (o EQ). Esencialmente, un ecualizador te permite controlar por separado la ganancia de diferentes rangos de frecuencia de un sonido. Esto puede ser útil no solo para esculpir el timbre de un sonido aislado (por ejemplo, para hacer un sonido 'mas acusado' o 'más suave'), sino también para hacer que sonidos de varios timbres se integren mejor en la mezcla. 
+
+### Ecualizador de 3-Bandas.
+La clase más sencilla de Ecualizador es el que nos es familiar de mezcladoras analógicas. Tiene tres parámetros, los cuales ajustan los Niveles de tres Bandas, o rangos de frecuencia: uno para el Graves (frecuencias bajas), uno para las frecuencias de gama medias y uno para el Agudo (frecuencias altas). El Plugin LADSPA "DJ EQ" es justo el dicho EQ: Tiene tres controles para subir/bajar los Graves (Lo gain), los Medios (Mid gain) y los Agudos (Hi gain)
+
+### Ecualizador Multi-Banda (o Gráfico)
+Un ecualizador Multi-Banda (o Gráfico) más complejo a menudo tiene entre ocho y treinta y dos Bandas. Cada Banda está centrada en una frecuencia, y el Nivel de cada Banda puede ajustarse independientemente. En algún EQ Multi-Banda, como el Plugin LADSPA TAP Equalizer mostrado al lado, la frecuencia central de cada Banda puede ser definida por el usuario. Esto te permite bien atenuar (o sacar) una frecuencia indeseada, o bien reforzar (incrementar) una deseada.
+
+La curva "global" de las Bandas también puede utilizarse para determinar el tono general de tu Pista o Mezcla. En el ejemplo encima, la parte más baja de las frecuencias de rango-medio ha sido "disminuida" un poco (nota cómo las Bandas 1 y 8 quedan intactas en 0 dB, mientras que las Bandas intermedias de 2 a 7 dibujan una curva de atenuación, con las Banda 4 en -13 dB como el punto más bajo). 
+
+### Ecualizador paramétrico
+El Ecualizador Paramétrico es el tipo más versátil de EQ utilizado para Mezclar debido a su extenso control sobre todos los tipos de EQ parámetricos. En Ardour hay un ecualizador paramétrico llamado el “Triple Band Parametric with Shelves”. También hay una similar desde el paquete de Calf Plugins, como se ve en la pantalla al lado: El Calf Equalizer 5 Band. Explicamos su interfaz: 
+
+Parametrics
+Hay tres botones para cada banda de frecuencia. Cada una de las tres bandas tiene un control Freq (Hz) que sirve para seleccionar la frecuencia central, un Level (dB) para cortar o aumentar las frecuencias y un ajuste Q que determina el ancho de la gama de frecuencias a ser afectada.
+
+Highshelf, Lowshelf
+A la izquierda y a la derecha hay dos filtros para cortar por encima o por debajo de una frecuencia determinada. Por ejemplo, un filtro bajo (Lowshelf) se puede utilizar para eliminar Ruidos sonidos no deseados, y un alto se puede utilizar para reducir silbidos. El control de Frequency determina la frecuencia de corte. Por ejemplo, un Lowshelf con frecuencia de corte 200 Hz significa que el ecualizador atenuará todo por debajo de esa frecuencia. La cantidad de atenuación es controlada por el mando de nivel (level). Lo contrario aplica al Highshelf. A partir de la frecuencia seleccionada atenuará todo por arriba de esa frecuencia.
+
+#### Un ejemplo de uso de un Ecualizador
+Para conseguir una mejor separación de dos instrumentos en la mezcla a través del uso de EQ, primero necesitas descubrir donde se solapan los dos instrumentos. Asumimos que tienes una pista de bajo eléctrico y una pista de guitarras con distorsión. 
+1) Ponlas en SOLO para escuchar las dos. 
+2) Inserta el Plugin Calf Equalizer 5 Band en tu banda del bajo.
+3) Activa el primer filtro de los Parametrics.
+4) Activa el Analyzer para que muestra el espectro de frecuencias del señal
+5) Selecciona el punto del filtro en la pantalla y sube la "ganancia" a 10dB,
+6) Incrementa el "Q" de modo que sea un rango más estrecho hasta 1,
+7) Desplaza arriba y abajo la "frecuencia". Oirás el tono subir y bajar. 
+8) Entonces desplázalo abajo despacio hasta que oigas el rango de frecuencia donde los dos instrumentos se superponen o una frecuencia de la son
+9) Ahora sencillamente reduce la "ganancia" a unos dB, y esperemos que oigas los instrumentos un poco más claros.
+Luego, aplica el mismo proceso al otro instrumento.
+
+Hay muchos enfoques a la ecualización. Esperemos que esto proporcionará un ejemplo de cómo comenzar ecualizando pistas en tu mezcla. Pero muy en particular, en cuanto a lo que se refiere a EQ, es mejor utilizar de menos que de más, a no ser que conscientemente estás utilizando ecualización extrema como parámetro composicional.
+
+
+## Automatización
+Si quieres que cambien los parámetros de tus Atenuadores, Panoramización o Plugins en el tiempo, entonces querrás explorar este capítulo Utilizar la Automatización. Si no, salta adelante para aprender cómo Exportar Sesiones en la siguiente sección.
+
+La automatización es la manera de representar y especificar cambios en los parámetros de procesado de audio en el tiempo. Hasta ahora, se han usado valores fijos para diversos parámetros de nuestras canciones (por ejemplo, un conjunto de la pista Fader y -3,0 dB, o un panorámico de audio mono se ajusta al 100%, izquierda; etc.) Estos valores fijos se aplicarían para toda la pista a lo largo de toda la sesión.
+Pero, por ejemplo, es posible que desees tener la ganancia de una pista para disminuir gradualmente durante veinte segundos y que encima se escucha una voz. O es posible que desees hacer un movimiento sonido de izquierda a derecha sobre dos segundos. Para esto se usa la automatización.
+
+Se pueden automatizar el Atenuador (Volumen), la Panoramización y cualesquiera de los parámetros de los Plugins utilizados en esa Pista. Un parámetro automatizado se muestra debajo de la pista padre en su propia Pista de Automatización. Los datos de automatización son representado visualmente como una Línea de Automatización, hecha de una cantidad de Puntos de Automatización. Aquí tienes cómo se ve una pista con automatización del Fader:
+
+En la imagen al lado, la Pista de Automatización llamada Fader (Volumen) está asociada a la Pista llamada Gtr1Amp# La ganancia de controles de línea de automatización cambian con el tiempo. 
+
+### Crear una Línea de Automatización
+Para añadir Automatización a una Pista, pincha el botón A o haz clic-derecho en el área de la Pista. Aparecerá un menú, donde puedes seleccionar el parámetro que te gustaría Automatizar o puedes mostrar toda la Automatización. Para nuestro ejemplo tomamos el parámetro Pan (paneo):
+Aparecerá entonces una Pista de Automatización. Con la herramienta Dibujar activa, se pueden crear Puntos de Automatización haciendo clic en cualquier parte de la pista de automatización. Una línea de automatización se une a los puntos de automatización que añada. El número en la imagen al lado indica el estado del panorama actual en la pista de automatización seleccionada.
+Para que se aplica la pista de automatización debes cambiar la pista del modo Manual al modo Reproducir. Este botón está ubicado en el área de cada parámetro de automatización.
+A la hora de reproducir la pista vas a ver como se mueve el pan según la pista de automatización. A la hora de la subido el botón del paneo se mueve hacia la izquierda y cuando baja va hacia la derecha.
+
+### Modos de Automatización
+El modo Reproducir aplicará los datos de Automatización existentes durante la reproducción. En este modo no se grabarán datos de Automatización. 
+
+El modo Manual le dice a Ardour que ignore los datos de Automatización durante la reproducción. 
+
+El modo Escribir graba continuamente los cambios de usuario al parámetro Automatizado según se reproduzca el Transporte, creando una Línea de Automatización. Por ejemplo, puedes empezar la reproducción y entonces hacer cambios de tiempo real en la ganancia utilizando el Atenuador en la banda de mezcla de tu Pista. Todos los cambios que hagas serán escritos (grabados) como una Línea de Automatización, la cual entonces puedes reproducir más tarde cambiando el Modo de Automatización otra vez a Reproducir. El proceso de "grabación en directo" de Líneas de Automatización es igual para Plugins. Abre un Plugin existente haciendo doble-clic sobre él vía la banda de mezcla. Mientras la interfaz de Plugin esta abierta, inicia la reproducción. Cualesquier cambios que hagas moviendo los controles del parámetro Automatizado en la interfaz de Plugin serán escritos como una Línea de Automatización. 
+
+¡Aviso: Dejar la Automatización en modo Escribir durante la reproducción puede sobre-escribir cualquier Automatización anterior que hayas creado! 
+
+El modo Tocar es similar al de Escribir. aun así a diferencia del modo Escribir, el modo de Tacto no grabará sobre datos de Automatización existentes a no ser que el parámetro esté siendo cambiado.
+
+### Crear Automatización de un Plugin
+Puede agregar automatización a cualquier Plugin que ya ha sido añadido a una pista. En el siguiente ejemplo, tenemos un AM pitchshifter Plugin añadió a una pista.
+
+Para seleccionar un parámetro de este Plugin y automatizarlo haz clic en el botón A de la pista marcada y aparecerá un menú. En la sección Automatización procesador encontrará una lista de los Plugins que se han añadido para esa pista. Dentro de cada efecto es posible elegir el parámetro que deseas automatizar. En el ejemplo, hemos elegido el parámetro Pitch shift del AM pitchshifter. Aparece una pista de automatización para ese parámetro. Ten en cuenta que al abrir varias pistas de automatización, aparecerán uno tras otro por debajo de la pista principal.
+
+Dibujar una curva de automatización para ese parámetro. No te olvides de establecer el estado de automatización en Reproducir.
+
+En la imagen de arriba, el pitch shift está cambiando controlado por la curva creada.
+
+Importante: Puede ocultar una pista de automatización haciendo clic en la "X" en la esquina superior izquierda de la pista de automatización. Tenga en cuenta que una automatización de pista oculta sigue funcionando incluso cuando no es visible.
+
+### Trabajar con Puntos de Automatización 
+Se puede conseguir mayor precisión vertical mediante el aumento de la altura de la pista de automatización. Mover el cursor cerca del borde inferior de la pista de automatización. El puntero se convierte en una doble flecha vertical. Arrastra hacia abajo para aumentar la altura de la pista de automatización. Ten en cuenta que la altura de la pista "padre" principal y la alturas de automatización de pista son independientes, por lo que mientras se trabaja en sus curvas de automatización es posible configurarlos así:
+
+Nota: Recuerda que puedes ampliar la resolución del eje horizontal con el Zoom In y Zoom Out.
+
+Hay varias maneras de maneras de ajustar puntos de automatización, dependiendo del modo de edición se encuentra en:
+Un punto de automatización se puede arrastrar en cualquier dirección con el ratón (funciona en modos de ratón seleccionar, dibujar y modo de edición).
+[Ctrl + clic + arrastrar] mueve el punto actual en cualquier dirección, y también todos los puntos subsiguientes sólo horizontalmente (funciona en seleccionar, dibujar y modos de edición).
+Modo de edición única: cualquier segmento de la línea de automatización entre puntos de automatización puede ser arrastrado verticalmente, que afecta a los dos puntos finales a la vez, sin afectar a su posición horizontal. Simplemente haga clic en algún lugar de la línea entre dos puntos, y arrastre hacia arriba y hacia abajo.
+Para eliminar un punto de automatización, mantenga presionada la tecla Mayus., mientras que haciendo clic derecho sobre ella (trabaja en seleccionar, dibujar y modo de edición).
+Cómo eliminar varios puntos de automatización a la vez (modo seleccionar y el modo de edición solamente): seleccionar varios puntos de automatización arrastrando un cuadro a partir de la pista de fondo en torno a los puntos, sería como dibujar un cuadrado seleccionando con el ratón. A continuación, los puntos seleccionados se pueden eliminar presionando [Supr]".
+
+Después de terminar una curva de automatización, su valor se mantendrá en ese nivel para todas las regiones posteriores, aunque no aparezca dibujada. Ese mismo nivel se mantiene durante el resto de la pista, a pesar de que la línea no se dibuja hasta el final.
+
+### Automatización en movimiento
+Si desplazamos una región a una nueva ubicación se moverán automáticamente los datos de automatización que podrían ser alineados con él, como podemos ver en las siguientes capturas de pantalla. Es decir, se mueve la pista con la línea de automatización completa y los puntos que hicimos en ella. 
+Puede cambiar este comportamiento si lo deseas. Si quieres curvas de automatización que no estén ancladas y permanezcan donde están aunque se desplace la región, vas a Edición → Preferencias → Editor y desactivas la casilla Mover la automatización relevante al desplazar las regiones de audio.
+
+Región específica automatización de ganancia
+Hay una manera de crear una automatización de ganancia directamente unido a una región. Cuando se selecciona el modo de dibujar, debería ver una línea plana en la mitad superior de cada rectángulo Región:
+
+Haz clic directamente en esa línea para crear puntos de automatización. Estos se pueden dibujar directamente en la propia región, en vez de en las pistas de automatización. 
+
+Al igual que con las pistas de automatización, un punto de automatización de ganancia se puede arrastrar en cualquier dirección con el ratón o eliminar, presionanda la tecla Mayus., mientras que haces clic derecho sobre el.
+
+Desactivación y eliminación de automatización de ganancia
+La automatización de ganancia - se denomina también como envolvente - puede reiniciarse o desactivado en el menú contextual Región, al que se accede pulsando el botón derecho en la Región (solo funciona en modo Seleccionar y Audición) y después en Ganancia.
+Restablecer Envolvente elimina los punto de automatización que has dibujado en la Región. Envolvente activa activa o desactiva la automatización de ganancia. 
+
+###¿Cuándo debo utilizar automatización en la región o una pista de automatización?
+Como se ha visto anteriormente, ambos son muy similares. Con la práctica te darás cuenta de las situaciones en las que una es más conveniente que la otra. He aquí dos ejemplos:
+
+Si todo lo que necesita hacer es un poco de retoque (corte o realce de ganancia) en una parte específica de una región, y estás satisfecho con el nivel para el resto de la pista completa, utiliza la automatización específica de cada región.
+Si tienes una pista más compleja con fundidos sobre las regiones, y / o la necesidad de dar forma a una curva dinámica de la mayoría de las regiones de esa pista, el uso de atenuadores de automatización es lo recomendado: 
+
+Si hay un simple desvanecimiento gradual a partir de la primera región de la pista, y terminando en la última región, es muy sencillo de hacer esto con atenuador de automatización, pero sería mucho más difícil de hacerlo mediante la automatización específica de la región.
+
