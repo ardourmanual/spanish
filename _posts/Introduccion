@@ -1,0 +1,213 @@
+---
+layout: post
+title: ¿Qué es Ardour?
+description: "Introducción"
+comments: false 
+tags: [01 INTRODUCTION]
+comments: false
+image:
+  feature: ardour_5_background.png
+  credit:  
+  creditlink:  
+---
+![background](/images/ardour_5_background.png)
+
+### Haz clic [aquí] para saltar directamente a la Tabla de contenidos
+
+Basado en el manual de Ardour2, http://en.flossmanuals.net/Ardour  
+Traducido del original al inglés por Roman Muñoz, intxixu@gisa-elkartea.org  
+Actualizado a la versión 5 y adaptado por Daniel Schär, schaerdaniel@gmail.com  
+Para ver la lista de créditos y la Licencia ir a http://brunoruviaro.github.io/Ardour4-tutorial/credits
+
+
+# 1. Introducción
+## Ardour 5 y sus características
+### ¿Qué es "Ardour"?
+Ardour es un grabador a disco duro completo, libre, de codigo abierto y un puesto de audio digital adecuado para uso profesional. 
+Presenta ilimitadas pistas de audio y buses, edición no-destructiva, no-lineal con deshacer ilimitado, y enrutamiento de señal desde y hacia cualquier lugar. 
+Soporta formatos de fichero estándar, tales como MIDI, BWF, WAV, WAV64, AIFF y CAF, y puede usar formatos de Plugins LADSPA, LV2, LinuxVST (en GNU/Linux), VST (en Windows) y AudioUnit (en mac OS).
+Se ejecuta en Linux, mac OS y Windows (oficialmente a partir de la versión 5), y usa ALSA o el Jack Audio Connection Kit (JACK) para interactuar con la tarjeta de sonido del ordenador, así como con otras aplicaciones de audio ejecutándose en el mismo sistema. 
+
+Se puede encontrar más información sobre Ardour y descargar el programa para las varias plataformas en http://ardour.org. En este momento (Abril 2016) la versión mas reciente es 5.8. 
+Hay muchas características y correcciones de fallas en esta versión por lo cual te recomiendo actualizar si tienes una versión anterior. Este manual de referencia solo es valido para las versiones 5+ de Ardour. 
+
+### ¿Por qué se llama "Ardour"?
+El nombre "Ardour" surgió a partir de consideraciones acerca de cómo debería pronunciarse el acrónimo HDR (Hard Disk Recorder). El intento más obvio suena como un "harder" sin vocales y entonces fue un paso pequeño cambiarlo a una palabra no relacionada pero que sonaba parecido.
+  Ardour n 1: sentimiento de fuerte impaciencia (normalmente en favor de una persona o causa); 
+  "estaban imbuídos de un ardor revolucionario"; "sentía un tipo de celo religioso" [syn: ardor, impulso, celo] 
+  2: intenso sentimiento de amor [ syn: ardor] 
+  3: sentimientos de gran calidez e intensidad; "habló con mucho ardor" [syn: ardor, fervor]"
+Años después, apareció otra interpretación de "Ardour", esta vez basada en escuchar a hablantes no-nativos de inglés intentando pronunciar la palabra. En lugar de "Ardour" se convirtió en "Our DAW", lo cual parecía ajustarse poéticamente a una Digital Audio Workstation cuyo código fuente y diseño pertenece a un grupo de colaboradores.
+
+### ¿Por qué escribir otro DAW?
+Existen ya un buen número de excelentes estaciones de trabajo de audio digital. Para mencionar unas pocas: ProTools, Nuendo, Samplitude, Digital Performer, Logic, Cubase (SX), Sonar y otras. Cada uno de estos programas tiene sus puntos fuertes y débiles, aunque en los últimos años la mayoría de ellos han convergido en un grupo muy similar de características principales. Sin embargo, cada uno de ellos sufre dos problemas cuando se les ve desde la perspectiva del grupo de desarrollo de Ardour:
+No todos son mulitplataformas y funcionan en GNU/Linux
+No están disponibles como código fuente, con lo cual es imposible modificarlo, mejorarlo o corregir fallos por parte de los usuarios con conocimientos técnicos y los informáticos que se puedan emplear.
+
+### ¿Que sistema operativo es recomendado para usar Ardour?
+Inicialmente Ardour fue creado como DAW solamente para el Sistema GNU/Linux. El autor principal de Ardour usa GNU/Linux y quería un DAW que pudiera ejecutarse ahí. A partir de la versión 4 se hizo una versión para mac OSX. Hubo muchas personas que preguntaron en el foro de la pagina de Ardour cuando si y cuando va a salir una versión para Windows. En Abril 2015 los desarrolladores sacaron una versión Nightly Build para Windows pero sin ningún soporte. A partir de la versión 5 que salió en Agosto 2016 se consideró que la versión para Windows es suficiente estable para lanzarla oficialmente. Como el sistema operativo Windows aún ocupa el primer lugar mucho es probable que va a ganar mucho mas usuarios.
+
+Las ventajas de usar GNU/Linux:
+- Puede permanecer en pie durante meses (incluso años) sin problema.
+- Es infinitamente configurable hasta el más pequeño detalle.
+- No es propiedad de ninguna entidad corporativa, asegurando que su vida y la dirección que toma están a salvo de la intervención de esa corporación.
+- Es rápido y eficiente.
+- Se ejecuta prácticamente en cualquier plataforma hardware jamás creada, incluyendo viejos y "lentos" sistemas.
+- Es uno de los sistemas operativos más seguros "por defecto"
+
+Las ventajas de usar Windows
+- Seguro que tu interfaz audio trae un driver para Windows
+- se puede usar los plugins WindowsVST que es uno de los formatos de plugin estándar en el mundo profesional 
+
+Las ventajas de usar mac OS
+- Seguro que tu interfaz audio trae un driver para macOS
+- Se puede usar los plugins AU que es uno de los formatos de plugin estándar en el mundo profesional  
+
+### Requerimientos 
+Computadora
+- Cualquier computadora con un chip Intel de 32 or 64 bit. La velocidad del CPU limita la cantidad de procesamiento.
+
+Sistema Operativo 
+- Cualquier versión de Linux con un kernel mas reciente que 2.3 y versión de libc 2.25 o arriba.
+- Cualquier versión de Windows XP, 7 o arriba.
+- Cualquier versión de mac OS de 10.6 (Snow Leopard) hasta 10.11 (El Capitan)
+
+RAM
+- 2GB son recomendados, más es siempre mejor
+Disco Duro
+ - Mínimo de 350MB de espacio libre para instalar Ardour. Para grabar se necesita mas espacio. No es necesario tener un disco separado pero esto puede facilitar un rendimiento mayor.
+
+### ¿No es un programa muy complicado?
+No tiene sentido pretender que Ardour es un programa sencillo y fácil de manejar. El grupo de desarrollo ha trabajado duro intentando hacer las cosas sencillas razonablemente fáciles, las tareas comunes rápidas, y las cosas difíciles o inusuales posibles. Al mismo tiempo, la edición de audio multipista, multicanal, no-lineal y no-destructiva, está lejos de ser un proceso sencillo. 
+Este trabajo no sólo requiere un buen oído, sino también un conocimiento sólido de los conceptos básicos de audio y un modelo mental/metáfora robusto de lo que se está haciendo. Ardour no es un simple "grabador de audio", aunque ciertamente se pueda usar para grabar material estéreo (incluso mono) en una sola pista, sino un programa que se ha diseñado para ser capaz de mucho más que esto. Si nunca has trabajado con un grabador de audio multipista es mejor que empieces a trabajar con un editor mas sencillo como por ejemplo Audacity para familiarizarte con este concepto. 
+
+## Convenciones de formateo
+### Tipografía
+Este manual usa unas pocas convenciones para indicar atajos de teclado, elecciones de menú y otras interacciones del usuario.
+Atajos de teclado como [Ctrl + A] significan "Mantén pulsada la tecla Ctrl y pulsa la tecla A”
+Los nombres propios, términos técnicos, términos en inglés aparecen en cursiva: Ardour, Hydrogen, master
+El nombre de una opción de menú aparecerán como **Menú → Sub-Menú**.
+
+### Botones del ratón
+Puede que estés acostumbrado a términos como "botón izquierdo" y "botón derecho del ratón". Ardour se usa normalmente con un ratón equipado con al menos 2 botones que pueden ser remapeados para usuarios diestros y zurdos, lo cual hace difícil definir sin ambigüedades "derecho" e "izquierdo" de un modo útil. 
+Si eres diestro y usas un ratón convencional, entonces Clic se corresponde con el botón izquierdo y Clic derecho se corresponde con el botón derecho. Si eres zurdo o usas un ratón no convencional, esta nomenclatura se aplica de manera espejada. Si ves instrucciones como [Ctrl + Clic], significan "Mantén pulsada la tecla Ctrl y pulsa Botón izquierda."
+
+### Avisos
+Los avisos aparecen aparte del texto principal y se pretende que atraigan su atención hacia ciertos fragmentos de información. Según lo crítica que es la información para el usuario, pueden ser
+
+`Nota. Típicamente, una nota es información que necesitas para comprender la conducta de Ardour.`
+
+`Importante. Se usa para atraer la atención hacia partes del interfaz que pueden ser pasadas por alto o hacia ciertos ajustes que son vitales para determinar el comportamiento de Ardour.`  
+
+`Peligro. El aviso de peligro se usa cuando una acción puede tener consecuencias no deseadas o permanentes, como cambios a la sesión que no se pueden deshacer o borrado de archivos.`
+
+## Elementos básicos del interfaz
+Aunque Ardour tiene un interfaz gráfico de usuario bastante convencional, similar a otros Digital Audio Workstations (DAW, estación de trabajo para audio digital) como ProTools. A partir de la versión 5 el Interfaz gráfico se puede adaptar en algunos aspectos (cambiar el tema, ventanas, colores, escalar el interfaz, etc). Para este manual se hicieron las capturas de pantalla con el tema de color “Unastudio” que se puede seleccionar en **Editar → Preferencias → Tema.**
+Hay unos pocos elementos que son únicos y que probablemente te resultarán nuevos. Este capítulo proporciona una guía para usar esos elementos.
+
+### Clics del ratón
+Cuando decimos "haz clic en" sin especificar el botón, queremos decir que uses el botón izquierda para hacer clic en algún elemento del interfaz (botón, Fader, menú, etc).
+
+Como en la mayoría de los interfaces gráficos actuales, un "clic derecho" en muchos de los elementos del interfaz, mostrará un menú que dependerá del contexto específico, permitiendo ajustar parámetros o realizar operaciones. Hay un montón de ejemplos de esto, pero hacer la prueba en una región de audio, en un botón "mute" del mezclador y en una banda del mezclador mostrará la idea general.
+
+También existe el clic con el botón central (la rueda del ratón) que permite activar o desactivar funciones en algunos elementos (por ejemplo activar/desactivar un Plugin en la banda de mezcla)
+
+![reloj](/images/Grafik1.png)
+
+### Relojes
+En el interfaz de Ardour hay varios relojes, algunos de ellos son visible siempre, otros están en ventanas que sólo se muestran a petición del usuario. Todos estos relojes son idénticos en cuanto a funcionalidad, aunque algunos pueden ser editados por el usuario y otros sólo pueden ser visualizados.
+Un clic contextual en un reloj mostrará un menú que te permitirá modificar el modo de visualización de ese reloj. Las opciones son:
+a) Frames de audio, 
+b) BBT (Bars, Beats, Ticks - Tiempo basado en tempo y métrica musical ) 
+c) SMPTE
+d) Min:Sec
+Cada modo de reloj tiene un número de campos diferente. Por ejemplo, SMPTE tiene horas, minutos, segundos y frames de video.
+Para editar el valor de un reloj en particular, haz clic en el campo más a la izquierda de los que quieras modificar. Puedes meter un nuevo valor para ese campo usando el teclado numérico, así como el carácter '.' donde sea apropiado. La edición saltará automáticamente al campo siguiente una vez que hayas introducido el número máximo de dígitos en un campo. Para moverte al campo siguiente sin necesidad de introducir el número máximo de dígitos, pulsa [Tab]. Para terminar la edición, pulsa [Intro] o usa [Tab] para saltar todos los campos restantes.
+
+![slider](/images/Grafik2.png)
+
+### Barras de control
+Una barra de control es un elemento del interfaz que funciona de un modo bastante diferente a cualquier elemento estándar encontrado en la mayoría de programas. Se usan para proporcionar un método combinado de mostrar y modificar un parámetro.
+Para editar gráficamente el valor del parámetro representado por una barra de control, pulsa y arrastra la barra de control hacia la derecha o la izquierda, arriba o abajo, según resulte apropiado. Para editar el valor con mayor precisión, haz un doble clic en la barra de control y se transformará en un diálogo de entrada de datos. Puedes meter un valor exacto para el parámetro, o usar las flechas para aumentar/disminuir el valor mostrado. Cuando hayas terminado de editar, las teclas [Intro] o [Tab] transformarán de nuevo el diálogo de entrada de datos en una barra de control.
+
+## Qué es diferente en Ardour?
+Si ya has usado otros programas de audio, sobre todo DAW, (estación de trabajo para audio digital), entonces hay un cierto número de cosas en Ardour que pueden parecer raro las primeras veces que uses el programa.
+
+### „No hay sesión por defecto!“
+Es necesario crear explícitamente una Sesión antes de poder hacer nada, y si escoges no usar una de las esquemas predefinidas, también tendrás que crear las pistas y Buses necesarias para grabar y/o editar el material existente.
+
+### „¿Dónde van los Plugins y los envíos?“
+Ardour no tiene un número fijo de "ranuras" para Plugins, envíos o insertos: en cada pista puedes tener tantos como permita la potencia de tu máquina. Las dos cajas negras encima y debajo del control de volumen en la tira del mezclador correspondiente a la pista son listas de redirección en las cuales puedes añadir, reordenar, eliminar y -generalmente- controlar los Plugins, envíos e insertos, tanto antes de controlar el volumen como después.
+
+### Un conjunto de herramientas más pequeño
+La mayoría de DAWs han evolucionado hacia proveer la llamada "herramienta inteligente" que te permite usar el ratón para realizar diversos tipos de operaciones sin necesidad de cambiar a una herramienta diferente. Ardour ha usado esta orientación desde el principio, de modo que la herramienta "Objeto" de hecho te permite realizar muchas operaciones diferentes dependiendo de cómo y dónde se usa el ratón. Ardour no proporciona una herramienta "Lápiz" destructiva como hacen otros DAW, por razones técnicas básicas. La necesidad de una herramienta "Lápiz" para reparar la forma de la onda, casi siempre indica que hay un problema con el ajuste de la sesión y/o el hardware de grabación. Las diferentes herramientas que Ardour sí ofrece incluyen la herramienta "Objeto", la cual tiene muchos usos diferentes incluyendo copiar/mover/recortar regiones, editar la automatización, y otros; una herramienta "Rango" para definir rangos de tiempo; una herramienta "TimeFX" para ajustar el tiempo; una herramienta "Gain", usada exclusivamente para editar las envolturas de ganancia de una región; y una herramienta "Zoom" para manipular el zoom temporal. Muchas otras operaciones son accesible vía menú contextual o por atajos de teclado.
+
+### Configuración sin restricciones de las entradas y salidas de las pistas
+Las pistas y los Buses de Ardour no vienen con configuraciones predeterminadas. Puedes crear una pista mono, y convertirla en pista estéreo en cualquier momento. Puedes convertirla en una pista con 3 entradas y 7 salidas si quieres, ya que Ardour no restringe las configuración de entradas y salidas a un grupo fijo de mono/estéreo/5.1/7.1, etc. También puedes conectar cualquier pista a cualquier número de otras pistas y Buses. En Ardour, la única diferencia entre una pista y un Bus es que una pista puede reproducir material pre-grabado desde el disco duro y puede grabar al disco duro. Tanto las pistas como los buses pueden tener plugins, envíos, insertos, automatización y más.
+
+### Uso de JACK
+Es extremadamente importante comprender que Ardour no interactúa directamente con la tarjeta de sonido. En vez de eso, todas las señales de audio que Ardour recibe y genera son enviadas hacia y desde un sistema de audio. Estos enrutan el audio entre la tarjeta de sonido y las aplicaciones de audio, en tiempo real. Hay un sistema de audio que fue portado de GNU/Linux a mac OS y también a Windows que se llama *Jack Audio Connection Kit (JACK).*
+Tu sesión no está limitada a recibir y enviar audio desde/hacia tu tarjeta de sonido. Puesto que Ardour usa JACK, una pista con una entrada de hecho puede recibir datos de muchas localizaciones diferentes. Tradicionalmente, la mayoría de las fuentes de audio que querías grabar, así como un montón de los efectos más significantes, vivían fuera del ordenador. Por tanto uno de los mayores problemas para integrar un ordenador en el flujo de trabajo de un estudio de grabación es cómo meter y sacar los datos de audio del ordenador.
+Sin embargo, cada vez es más común que los estudios usen fuentes de audio y procesado de efectos hechos completamente por software, a menudo ejecutándose en la misma máquina, como un secuenciador de MIDI o un sintetizador virtual. En estas situaciones surge un nuevo problema, porque mover datos de audio de un lado a otro ya no involucra a tu tarjeta de sonido. En vez de eso, los datos deben ser llevados de un programa a otro, preferiblemente con el mismo tipo de sincronización. Por medio de JACK Ardour puede enviar y recibir señales de audio de cualquier otra aplicación que se ejecutan en otro ordenador. Por una parte, esto hace un poco más complejo comprender las opciones de Entrada/Salida de una pista o un Bus, pero también proporciona a Ardour una potencia increíble, como veremos más adelante. 
+
+Si quieres usar este sistema de audio te recomendamos estudiar la pagina de cual también lo puedes bajar el programa para tu sistema operativo: http://jackaudio.org 
+
+Si quieres instalar y usar *JACK*
+- en Windows hay un tutorial en: http://www.jackaudio.org/faq/jack_on_windows.html
+
+- en GNU/Linux es recomendable descargar la versión de JACK de tu distribución por medio del instalador de paquetes. Los dos paquetes se llaman jackd y qjackctl. Ademas es recomendado leer el tutorial de JACK en Linux de la siguiente pagina: https://radioslibres.net/article/el-poderoso-e-incomprendido-jack/
+
+- en mac OS te recomendado leer el tutorial de JACK de la siguiente pagina: http://www.jackosx.com/about.html
+
+![qjackctl](/images/Grafik3.png)
+
+JACK no tiene interfaz gráfico para ejecutar y controlar. Sin embargo, hay aplicaciones como qjackqtl en GNU/Linux o JackPilot en mac OS que son aplicaciones que empaqueta JACK en un interfaz gráfico que es a la vez agradable de ver y útil. Necesitas ejecutar qjackctl (en Linux), Jack Control (en Windows) o JackPilot (en mac OS) que controla JACK antes de abrir Ardour. Deberías de ser capaz de abrir este programa desde el menú principal de tu sistema, que normalmente se encuentra en el panel/appbar/dock o como se llame en alguno de los márgenes de tu pantalla. Haz clic en el triangulo verde (Start) en la ventana principal de qjackctl. Hasta ahora puedes arrancar Ardour. 
+
+`Nota: Antes de la versión 4 de Ardour siempre necesitaba JACK como sistema de audio. A partir de la versión 4 ya no. Si no usas programas o dispositivos externos (sintetizadores, baterías electrónicas, varias tarjetas de sonido, etc.) puedes usar Ardour perfectamente sin JACK.`
+
+## Hacer funcionar la tarjeta de sonido
+En un mundo perfecto solo hay que conectar tu interfaz de audio con la computadora y tu sistema operativo la reconoce automáticamente. Puedes determinar si estás en esta situación ideal haciendo unas pocas pruebas sencillas en tu máquina. La prueba más obvia es reproducir audio por un reproductor y escuchar si salga de tu tarjeta o interfaz de audio. Si es así, puedes saltar a la sección "Seleccionar la fuente de captura".
+
+### Probar el interfaz de audio
+Conseguir que funcione la tarjeta de sonido puede ser algo difícil al configurar tu ordenador para ejecutar Ardour. El nivel de dificultad al que te enfrentas dependerá del tipo de tarjeta de sonido que tengas, de la versión del sistema operativo que uses, y de tu propia comprensión de cómo funciona todo esto. Si no consigues reproducir audio correctamente, primero comprueba que todos los cables están en su sitio, que los altavoces están encendidos, etc. Después sigue las instrucciones recomendadas dependiendo de tu sistema operativo:
+
+**ASIO en Windows:**
+Aunque tengas un driver especifico para tu interfaz audio vale la pena echar un vistazo a ASIO4ALL, un proyecto que tiene como finalidad de ofrecer un driver de audio ASIO de baja latencia para cualquier tipo de tarjeta de sonido que funciona con WDM (un estándar para tarjetas de sonido). Es freeware (gratis) y se puede descargar de la pagina: http://asio4all.com (La versión mas reciente es 2.13 y existe en español).
+
+![Asio1](/images/Grafik4.png)
+![Asio2](/images/Grafik5.png)
+![Asio3](/images/Grafik6.png)
+
+Para instalar ASIO4ALL haz doble clic en el instalador y en **Siguiente**, dando clic en **Acepto los términos de la licencia** y otra dos veces en **Siguiente**. Al final deberías de ser capaz de ver el símbolo de ASIO4ALL en la barra de menú a la hora de abrir el programa. 
+
+![Asio4](/images/Grafik8.png)
+
+En la pestaña Dispositivos WDM vemos los interfazes audio, pues si tuviéramos más de una tarjeta de sonido, podemos activar o desactivar cada una de ellas dando clic en el símbolo a su izquierda.
+Después, podemos hacer clic en el expansor **(+)** a la izquierda para ver las entradas y salidas de las tarjetas para activar/desactivarlas individualmente.
+
+Para saber mas de ASIO te recomendamos leer la pagina https://www.wikiwand.com/es/Audio_Stream_Input/Output 
+
+**ALSA en GNU/Linux:**
+Entra en el sistema como root y ejecuta el programa alsaconf. Puedes hacerlo pulsando [ALT+F2] y escribiendo alsaconf en la ventana de diálogo que aparecerá. Alsaconf es un asistente que intentará configurar tu tarjeta de sonido. Si todo va bien, no tendrás más que ir aceptando lo que te proponga. Una vez ejecutado alsaconf, intenta reproducir de nuevo un archivo de audio. Si consigues escucharlo correctamente, todo va bien.
+Si alsaconf no termina con un mensaje de éxito, probablemente el problema es que la tarjeta de sonido no es reconocida correctamente o no existe un driver ALSA para ella. En este caso, una visita a la página ALSA matrix card puede confirmarte si existe un driver para ella o no. Este es una pagina de ALSA-Project donde usuarios evaluaron el funcionamiento de tarjetas de sonido en GNU/Linux: http://www.alsa-project.org/main/index.php/Matrix:Main.
+
+Si cuando entras como root escuchas el audio y cuando entras como usuario no, tienes un problema de permisos. En este caso, vuelve a entrar como root, abre una consola o [Alt+F2] y usa este comando:**adduser tu-usuario audio**
+
+Con eso estás metiendo tu usuario en el grupo audio, y por tanto le das permiso para usar el hardware de audio. Cuando vuelvas a entrar como usuario, deberías poder reproducir el archivo de audio sin problemas. Sustituye "tu-usuario" por el nombre de usuario que realmente usas para entrar en el sistema. Este comando debería funcionar en cualquier distribución basada en Debian (es decir, una que use paquetes .deb)
+Como alternativa puedes descargar el paquete ubuntustudio-controls con el siguiente comando: 
+**sudo apt-get install ubuntustudio-controls**
+
+![studio-controls](/images/Grafik7.png)
+
+Luego lo abres como root y puedes realizar la misma tarea de añadir tu usuario al grupo audio de manera gráfica.
+
+**Core Audio en mac OS**
+El estándar Core Audio ha sido introducido con la versión 10.3 de mac OS. La mayoría de los interfaces de audio profesionales de hoy en día son compatibles con Core Audio, así que no necesitas instalar ningún driver extra. Sin embargo es una buena idea echar un vistazo a la pagina web del de tu interfaz de audio para verificar si es compatible con tu versión de mac OS. 
+
+### Seleccionar la fuente a capturar
+Muchas tarjetas de sonido ofrecen modos de conectar tanto micrófonos como instrumentos u otro hardware de audio para grabar su señal. La pregunta surge de inmediato: ¿cómo sabe Ardour (o cualquier otro programa) qué señal debe grabar, la que viene de la entrada del micrófono o la que llega por la entrada "line"? La misma cuestión surge cuando trabajamos con tarjetas de sonido caras, aunque en este caso el problema se presenta de diferentes maneras. La respuesta rápida es: Ardour no lo sabe. En lugar de eso, eres tú quien debe hacer la elección usando un programa que sabe cómo controlar el mezclador hardware de la tarjeta de audio. Cada uno de ellos ofrece una manera de seleccionar cuál de las señales posibles será usada como "fuente a capturar". El cómo seleccionar la señal en cuestión varía de programa a programa. De modo que tendrás que consultar la documentación del programa que elijas. 
+
+También puedes buscar la opción Tamaño del buffer Esto nos permite aumentar o bajar la latencia. Debe estar hacia la izquierda si queremos trabajar con prioridades de tiempo real. Tiempo real quiere decir que la señal será procesada como máximo cada X mili-segundos. Cada vez que nuestro sistema sea incapaz de procesar la señal de audio en el intervalo de tiempo especificado en "Latencia", tendremos un corte, que se reflejará en la grabación y reproducción de audio como un „retraso“. Si lo conseguimos y la latencia es de 5 mili-segundos o menos, tendremos un sistema de audio profesional. Si la latencia está entre 5 y 7 mili-segundos, tendremos un sistema semiprofesional. Para trabajar en tiempo real necesitamos una computadora suficiente poderosa sino probablemente tendremos muchos cortes. Un corte de más de cinco mili-segundos es perceptible por el cerebro humano. Es inaceptable tener estos cortes mientras capturamos audio.
+
+Ahora estas listo para descargar, instalar y configurar Ardour.  
+
