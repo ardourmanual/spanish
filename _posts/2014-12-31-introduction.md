@@ -507,6 +507,7 @@ Ahora ambas pistas de guitarras están enrutadas al Guitar-Bus y ya no se conect
 
 A veces abrir la Ventana de Conexiones audio no es necesario si lo que se desea es sólo cambiar rápidamente el encaminamiento de una sola entrada o salida de la pista. Ardour permite acceder a un subconjunto importante de conexiones cuando se hace clic directamente en el botón de entradas o salidas de una pista o Bus en el mezclador.
 El botón de entradas está en la parte superior, y el botón de salidas es similar y se encuentra en la parte inferior del mezclador. Al hacer clic en cualquiera de los dos se mostrará un menú de opciones de conexión. En la pantalla abajo, por ejemplo, tendrías que hacer clic en el botón "1" justo debajo del nombre de la pista "Guitar 1" con el fin de acceder a este menú:
+![entrada](/images/Grafik42.png)
 
 Puedes seleccionar una conexión en ese mismo menú, o elije Routing Grid para ver una versión más sencilla del gestor de conexiones de audio que contiene sólo las entradas o salidas de la pista o el Bus seleccionado.
 
@@ -523,23 +524,28 @@ Los pasos generales para grabar audio de un navegador (por ejemplo un video) en 
 2. Desconecta las fuentes de entradas de pista (recuerda, debajo del título, en este caso Firefox, clic en ese botón y selecciona "Desconectar". Aparece un c.
 3. Conectar PulseAudio Jack Sink a las entradas de la pista. (tendrías que usar el gestor de conexiones de tu sistema, Cadence, por ejemplo, en GNU/Linux)
 4. Inicia la grabación en la pista
-5. Inicia la reproducción del sonido (por ejemplo del navegador Firefox)
+5. Inicia la reproducción del sonido (por ejemplo del navegador Firefox)  
+![bus](/images/Grafik43.png)
+
 Para este ejemplo, ...
 1. se ha creado una nueva sesión con una pista estéreo llamada "Firefox":
 2. se ha seleccionado la pista y en la Tira de la Mezclador como fuente de entrada el guión (= significa que con esta pista todavía no tiene un conexión)
 3. Después de desconectar la matrix para la pista “Firefox” debería mostrarse así (sin los puntos verdes)
 4. El próximo paso es de cambiar la pestaña en esta ventana: Selecciona Otras. Allí encuentras todas las aplicaciones activas que pueden servir como fuente para Ardour. Si usas PulseAudio Jack bridge, vas a ver PulseAudio JACK Sink como fuente. Haz clic en los rectángulos vacíos para establecer la conexión (círculos verdes) para  “front-left” y “front-right” a la izquierda y la derecha de la pista “Firefox”. Debería mostrarse así.
+![firefox](/images/Grafik44.png)
 
 #### Grabar de aplicaciones con soporte JACK en Ardour
 Otros aplicaciones de audio como SuperCollider o Hydrogen funcionan con JACK. Esto significa que van a aparecer con entradas y salidas en las en la ventana Conexiones de audio en Ardour. No necesitas de usar PulseAudio / Jack bridge como en el ejemplo anterior. El procedimiento es muy parecido:  
 1) Crear una o varias pistas en Ardour para grabar el audio.
-2) Conectar la entrada de la pista con la fuente como te muestra la captura de pantalla siguiente:
+2) Conectar la entrada de la pista con la fuente como te muestra la captura de pantalla siguiente:  
+![hzdrogen](/images/Grafik46.png)
 
 
 La captura de pantalla de arriba muestra la grabación de un patrón de batería de Hydrogen directamente a una pista llamada “from Hydrogen” en Ardour. La ventana de Hydrogen está a la derecha. La ventana de conexiones de audio en Ardour está abierta para mostrar las conexiones: Nota que Hydrogen aparece como fuente en la pestaña Otras. Está conectada directamente a la entrada de la pista. Nota también que SuperCollider (aplicación con soporte JACK) está abierta. SuperCollider tiene 8 salidas por defecto, cuales se muestran como fuentes posibles en la ventana de conexiones de Ardour.
 
 3) Ahora listo para empezar. Solamente sigues el mismo procedimiento como explica el capitulo Grabar audio.
 4) Empieza la reproducción de la aplicación: En este caso haz clic en play en Hydrogen y se graba tu patrón de batería a la pista audio en Ardour.
+
 
 ##  Usar MIDI
 ### Que es MIDI?
@@ -557,15 +563,24 @@ En este ejemplo vamos a usar un sintetizador. Sintetizadores son muy importante 
 Usamos un sintetizador que se llama Helm, es multi-plataforma Linux/mac OS/Windows y usa la técnicas síntesis sustractiva. Aparte de la síntesis añade una sección de efectos de procesado. Helm es muy fácil de usar: viene con un montón de presets listos para usar de todo tipo de instrumentos, y por otro lado, permite la experimentación con un número enorme de parámetros y estrategias de síntesis. Puedes descargar el sintetizador en la pagina web: http://tytel.org/helm/downloads/
 Instala el programa y reinicia Ardour. 
 `Nota: Para Windows tambien tienes que verificar que esta instalado Microsoft Visual C++ 2015 Redistributable Update 3 RC en tu sistema.`
+
+![midi1](/images/Grafik47.png)
+
 Los pasos para añadir una pista MIDI con un instrumento virtual es (igual como añadimos una pista de audio): 
 1) Damos clic en el menú Pista → Añadir pista o Bus
 2) En la ventana que aparece seleccionamos Añadir 1 Pistas MIDI y abajo donde dice Instrumento: Helm.
 3) Damos clic en el botón Añadir
 4) Ahora vamos a insertar notas MIDI con el ratón: Seleccionamos el lápiz (Tecla D) en las herramientas.
+![midi3](/images/Grafik49.png)
+
 5) Dibujamos un rectángulo de algunos compases en la pista MIDI. Pulsamos en la pista y arrastramos el cursor hacia la derecha. Se muestra una región MIDI donde vamos a insertar las notas.  
+![midi2](/images/Grafik48.png)
+
 6) Vamos a alargar la pista pulsando en y arrastrando hacia abajo. Ahora se muestra el Piano-Roll, las teclas blancas y negras de un teclado. 
 7) Insertamos las notas con el mismo lápiz, pulsando y arrastrando hacia la derecha en la nota que queremos. Ardour siempre te muestra el nombre de la nota que estas insertando.
 8) Reproduzca las notas con el botón Play (o la tecla espaciadora)
+
+![midi4](/images/Grafik50.png)
 
 ### Grabar notas MIDI con un teclado externo
 Insertar notas MIDI con el ratón consume bastante tiempo. Si dispones de un teclado MIDI externo puedes grabar estas notas en tiempo real. Ardour reconoce por defecto los dispositivos MIDI genéricos gracias a ALSAMIDI. Conecta tu dispositivo y prueba si aparece en la lista en la banda de mezcla debajo de donde dice MIDI. La pantalla a la izquierda muestra que está conectado un teclado Keystation (de M-Audio).
@@ -576,6 +591,7 @@ Para eliminar, transponer, crear legato, cuantificar, eliminar solapamiento o tr
 ### Usar controladores externos de MIDI
 Ya explicamos que Ardour puede recibir datos MIDI (cambio del volumen, del balance o estado de Plugins, etc.) no solo de un teclado sino también de un controlador externo, o mandar datos MIDI a este controlador MIDI que va a reflejar los estos cambios. Esto puede ser muy útil en el momento de la edición y mezcla. 
 Para usar controladores externos de MIDI en Ardour necesitas ir a la ventana Preferencias y Buscar en la lista a la izquierda la opción Superficies de control 
+![midi-controller](/images/Grafik51.png)
 
 Si aparece tu controlador en la lista: Perfecto! Seleccionalo. Sino 
 1) intenta con Generic MIDI
@@ -584,8 +600,11 @@ Si aparece tu controlador en la lista: Perfecto! Seleccionalo. Sino
 4) Mueve el botón/Fader de tu controlador o presiona el botón.
 5) Se completó el enrutamiento. Si mueves el botón Fader de tu controlador externo, Ardour debería reflectar este cambio.
 
+![midi-controller2](/images/Grafik53.png)
+
 ### Sistema de MIDI en Linux
 Las entradas y salidas de MIDI Ardour se controla por el misma “motor” como las entradas y salidas de audio. Se puede usar JACK o el soporte nativo MIDI del sistema operativo para recibir y mandar datos MIDI. ALSAMIDI es el estándar para MIDI en GNU/Linux. Mientras, si usas JACK, la aplicación QjackCtl muestra los puertos ALSAMIDI en la pestaña ALSA. QjackCtl es el mismo programa que es recomendado para controlar JACK que incluye un excelente gestor de conexiones MIDI. Si tienes un interfaz MIDI genérico también es probable que en la ventana Configuración Audio/MIDI del menú Ver aparece y puedes calibrarlo allí. 
+![midi-generic](/images/Grafik54.png)
 
 
 # 3. Editar Sesiones
@@ -603,8 +622,10 @@ También puedes desear reorganizar el orden de las pistas de arriba a abajo. Est
 ### Configurar la métrica
 La métrica determina la velocidad musical del pasaje que estamos componiendo, cuando medimos en pulsos por minuto (beats per minute en inglés). Si estamos componiendo algo que es rítmico, ello determinará también las longitudes de las muestras de sonido que utilizamos hasta cierto punto. Así que es importante ser capaz de configurar la Métrica antes de que continuemos.
 Para ver la Métrica de nuestra sesión, podemos hacer clic derecho en cualquier parte del "cabezal" de la línea de tiempo y hacer clic en las siguientes opciones: Métricas, Compases:Pulsos y Tempo en el menú que aparece.
+![metrica](/images/Grafik55.png)
 
 Es posible de poner una Métrica y Tempo para la sesión entera, así como cambiarlos en puntos diferentes en la misma sesión. Para esto, localiza la sección de la Métrica de la Barra de la Línea temporal en la Ventana del Editor, y haz clic-derecho en la primera marca roja pequeña para abrir el Diálogo de Métrica.
+![metrica2](/images/Grafik56.png)
 
 Aquí puedes introducir valores nuevos para los Pulsos por compás así como el Valor de Nota. Pincha Aplicar para aplicar los cambios de manera global a tu sesión.
 En el Diálogo de Tempo puedes introducir un nuevo valor de Pulsos Por Minuto, lo cual afectará la sesión entera.
@@ -627,9 +648,9 @@ Si queremos oír el pasaje que estamos componiendo como bucle, tenemos que crear
 2) Utilizar la herramienta de rango para seleccionar un compás entero con la ayuda de las configuraciones de la Rejilla,
 3) Hacer clic derecho dentro de ese rango para Definir bucle según selección.
 
-Probablemente querrás poner la Rejilla de modo que tus acciones se ajusten a ciertos elementos métricos de la sesión. 
+Probablemente querrás ponerla Rejilla de modo que tus acciones se ajusten a ciertos elementos métricos de la sesión. 
 
-Esto configurará un rango de bucle que puedes reproducir utilizando el botón de Reproducir Bucle en el Menú de Transporte o pulsando en la tecla L. Mientras el rango esté ciclando, puedes utilizar el botón Solo en cada pista para escuchar individualmente a cada instrumento.
+Esto configurará un rango de bucle que puedes reproducir utilizando el botón de Reproducir Bucle en el Menú de Transporte o pulsando en la tecla L. Mientras el rango esté ciclando, puedes utilizar el botón **Solo** en cada pista para escuchar individualmente a cada instrumento.
 
 ### Trabajar con Regiones
 En Ardour las secciones de audio se conocen como Regiones. Para componer el tipo de pasaje rítmico en que hemos estado trabajando, necesitaremos conocer cómo Seleccionar, Mover, Dividir y Recortar estas regiones, así como conocer cómo Intensificar (fundido de entrada) o Atenuar (fundido de salida) su volumen y crear Fundidos cruzadas (Crossfades) entre ellas. Algunas de estas opciones puede necesitar ocurrir en Puntos de edición específicos de la composición, o según la Métrica musical podemos también definir con la Línea temporal y la Rejilla.
