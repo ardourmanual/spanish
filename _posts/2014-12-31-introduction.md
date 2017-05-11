@@ -313,9 +313,9 @@ Esta es la ventana principal de Ardour. Contiene la linea de tiempo, con sus var
 ![modos edicion](/images/Grafik22.png)
 
 Los controles de Modo de edición y Modos de cursor definen el comportamiento de lienzo principal y las diferentes funciones que el cursor puede tener. Hay tres modos de edición en el menú desplegable:
-- Deslizar
-- Rizado (o Ripple)
-- Bloquear (ningún objeto se puede mover)
+- **Deslizar**
+- **Rizado** (o Ripple)
+- **Bloquear** (ningún objeto se puede mover)
 
 ![modos cursor](/images/Grafik23.png)
 
@@ -357,7 +357,7 @@ En las reglas Métrica y Tempo es posible de poner una métrica y tempo para la 
 Para trabajar con el Timecode (Código de tiempo) de vídeo, primero necesitas establecer las fps del Código de tiempo (Cuadros por segundo). Esto puede encontrar en la pestaña de Timecode de las Propiedades de Sesión en el menú principal de Ardour bajo **Sesión → Propiedades** [Alt + O].
 
 #### Pistas y Buses
-![pistas](/images/Grafik26.png)
+![pistas](/images/Grafik26.png)  
 
 Justo bajo las reglas es donde las pistas y los Buses son mostrados. En el ejemplo arriba, puedes ver un Bus llamado **master** debajo de una pistas llamadas "01_Kick". Esta pista de Audio también contiene una región, la cual representa un fichero de audio con un dibujo de su forma de onda. Más información sobre las Pistas y Buses puede encontrarse en el capítulo Crear una Pista o un Bus.
 
@@ -379,13 +379,13 @@ La función principal de la Ventana del Mezclador es mostrar todas las bandas de
 Esta ventana también contiene un listado de las Bandas de mezcla disponibles en la esquina superior izquierda. Las cajas de marcado en este área pueden utilizarse para mostrar y ocultar las Bandas de Mezcla de las diferentes Pistas. Encima de las Bandas de Mezcla hay un área para gestionar Grupos.
 
 ### Cambiar entre ventanas, pegar y despegar ventanas
-Ya sabes que puedes utilizar la combinación de teclas [Alt + M] para poder conmutar cual ventana esté encima: del Editor o del Mezclador. Si usas dos monitores tal vez quieres tener en un monitor el Editor y en el otro el Mezclador. En este caso necesitas despegar una de las ventanas. Esto se hace por medio del menú Ver. Busca la ventana que quieres despegar y vas en **→ Desacoplar**. El menú despegado será una ventana separada de tu pantalla. Para acoplar vas otra vez al menú **Ver**, buscas la ventana y vas en ** → Acoplar**.
+Ya sabes que puedes utilizar la combinación de teclas [Alt + M] para poder conmutar cual ventana esté encima: del Editor o del Mezclador. Si usas dos monitores tal vez quieres tener en un monitor el Editor y en el otro el Mezclador. En este caso necesitas despegar una de las ventanas. Esto se hace por medio del menú Ver. Busca la ventana que quieres despegar y vas en **→ Desacoplar**. El menú despegado será una ventana separada de tu pantalla. Para acoplar vas otra vez al menú **Ver**, buscas la ventana y vas en **→ Acoplar**.
 
 ## Crear una Pista o un Bus
 ![pistas](/images/Grafik26.png)
 
 Que es una Pista?
-Una Pista es un lugar donde puedes donde puedes grabar sonidos que procedan de una fuente externa nueva (por ejemplo de tu interfaz audio) o arrastrar una Región desde tu Lista de Regiones. 
+Una Pista es un lugar donde puedes donde puedes grabar sonidos que procedan de una fuente externa nueva (por ejemplo de tu interfaz audio) o arrastrar una Región desde tu **Lista de Regiones**. 
 
 Que es una Región?
 Una Región representa un fragmento de audio, por ejemplo: uno de tus ficheros de sonido o justo una porción del fichero de sonido. En la imagen al lado, el área marcada "01_Kick" es una Pista, y la información de audio dentro de aquella Pista es una Región.
@@ -430,7 +430,7 @@ Esta sección te mostrará cómo grabar audio desde una fuente externa (por ejem
 
 #### Armar la Pista
 ![pistas](/images/Grafik32.png)
-"Armar la Pista" es sencillamente dejarla preparada para grabar. Una vez hayas comprobado que las entradas de captura apropiadas han sido enrutadas a la Pista, puedes armar la Pista para grabar pinchando en el icono rojo pequeño en la banda de pista horizontal (no el grande de los controles de Transporte) o el botón Grabar en la Banda de Mezcla. Cuando esté correctamente armada, el icono rojo pequeño quedará destacado, y serás capaz de ver la señal de entrada mirando en el Medidor de Picos en la Banda de Mezcla o en la banda de Pista horizontal.
+"Armar la Pista" es sencillamente dejarla preparada para grabar. Una vez hayas comprobado que las entradas de captura apropiadas han sido enrutadas a la Pista, puedes armar la Pista para grabar pinchando en el icono rojo pequeño en la banda de pista horizontal (no el grande de los controles de Transporte) o el botón Grabar en la Banda de Mezcla. Cuando esté correctamente armada, el icono rojo pequeño quedará destacado, y serás capaz de ver la señal de entrada mirando en el Medidor de Picos en la Banda de Mezcla o en la banda de Pista horizontal.
 
 `Nota: a no ser que hayas dicho a Ardour que actúe de otro modo, la entrada que se graba será monitorizada (en otras palabras, oída) vía la salida Escucha. Si no estás utilizando auriculares para controlar el proceso de grabación, ¡puede que consigas alguna fuerte retroalimentación llegando a este punto!`
 
@@ -649,6 +649,7 @@ Si queremos oír el pasaje que estamos componiendo como bucle, tenemos que crear
 3) Hacer clic derecho dentro de ese rango para Definir bucle según selección.
 
 Probablemente querrás ponerla Rejilla de modo que tus acciones se ajusten a ciertos elementos métricos de la sesión. 
+![bucle](/images/Grafik57.png)
 
 Esto configurará un rango de bucle que puedes reproducir utilizando el botón de Reproducir Bucle en el Menú de Transporte o pulsando en la tecla L. Mientras el rango esté ciclando, puedes utilizar el botón **Solo** en cada pista para escuchar individualmente a cada instrumento.
 
@@ -677,9 +678,10 @@ Cuando un conjunto de una o más Regiones es seleccionado, puedes mover el conju
 Importante: si pulsas y mantienes la tecla Alt mientras que arrastras una Región entre Pistas, la Región será copiada a la Pista nueva en vez de movida.`
 
 ### Duplicar Regiones
-Utilizar la herramienta Seleccionar/Mover Objetos para seleccionar un conjunto de Regiones, y utilizar la función Duplicar para hacer una copia del conjunto. Está en el menú Regiones → Duplicados Región [Alt + D]. 
+Utilizar la herramienta **Seleccionar/Mover Objetos** para seleccionar un conjunto de Regiones, y utilizar la función Duplicar para hacer una copia del conjunto. Está en el menú **Regiones → Duplicados Región** [Alt + D]. 
 Los Duplicados aparecerán inmediatamente después (y en la misma pista que) los originales.
 En la siguiente captura de pantalla, se ha duplicado una región utilizando los métodos explicados:
+![midi2](/images/Grafik58.png)
 
 ### Utilizar Puntos de Edición
 Otro modo de copiar regiones es utilizando los comandos estándar Copiar [Ctrl + C] y Pegar [Ctrl + V]. La ubicación exacta donde la Región copiada será pegada está determinada por el menú desplegable de Punto de Edición.
@@ -693,18 +695,21 @@ Cuando se crea una nueva sesión, dos marcadores de ubicación se agregan autom�
 
 Pero es muy útil de etiquetar diferentes ubicaciones en una sesión para su uso posterior durante la edición y mezcla. Ardour ofrece varias maneras de hacer esto. El método más común es usar las Marcas de posición, que definen las posiciones específicas en el tiempo.
 Los Marcadores pueden añadirse a la Línea temporal haciendo clic derecho en la banda de Marcadores de posición y seleccionando Añadir nueva marca de posición. También pueden ser seleccionados con el ratón y movidos a posiciones nuevas.
+![marcas](/images/Grafik59.png)
 
 #### Dividir Regiones
 Para Dividir una Región sencillamente significa dividir una sola Región en dos Regiones independientes. Hay dos maneras de realizar esta acción:
 Puedes utilizar el Modo de corte [ C] para hacer clic en cualquier lado que quieras dividir; y,
 si el ratón está seleccionado como tu Punto de edición actual, selecciona una Región y coloca el cursor en el punto te gustaría dividir. Pincha en Editar → Dividir Región [ S]. 
 Tras ser dividido, la Región única original se transforma en dos regiones independientes, con un nuevo nombre por cada cual:
+![dividir](/images/Grafik60.png)
 
 Las dos nuevas Regiones son ahora enteramente independientes. Puedes mover y editarlas separadamente.
 Las Regiones pueden ser divididas Utilizando la Marca activa o un Marcador como el punto de Edición.
 
 #### Recortar regiones
 Si mueves el cursor hasta la banda inferior de la Región, donde su nombre aparece, verás que el puntero se torna como una flecha doble. Pincha y arrastra hacia adentro desde cualquier cabo de la Región, y la Región se acortará consiguientemente. Esto se denomina Recortar la Región. Las regiones pueden ser recortadas desde el inicio de la Región (arrastra de izquierda a derecha en el borde) o desde el fin (arrastra de derecha a izquierda).
+![recortar](/images/Grafik61.png)
 
 Esta acción es no destructiva: ningún audio de hecho está siendo eliminado. Es como si justo "escondieras" aquellas porciones de la Región que no quieres o que ya no necesitas más. Después, puedes "des-recortar" la Región (p. ejem.: extenderla otra vez a su medida original total), incluso si ha sido movida o copiada a una Pista nueva. Una región recortada recibirá un nombre derivado del nombre original de su Región fundamental, y verás ésta reflejada en tu Lista de Regiones. 
 
@@ -719,8 +724,9 @@ Otra vez, porque Ardour es no destructivo, las Regiones no son eliminadas de la 
 
 #### Crear Fundidos de entrada y de salida en las Regiones
 Un fade (fundido) es un cambio en el volumen de una Región, bien cuando la Región comienza o bien cuando esta se acaba. Un fade-in al comienzo de la Región es un fundido de entrada, y al final de la Región es un  fundido de salida. Cada Región tiene dos pequeños manipuladores a lo largo de la parte superior, los cuales pueden ser arrastrados hacia adentro desde cualquier borde para crear un fundido de entrada o de salida, como se muestra en la siguiente imagen.
+![fade](/images/Grafik62.png)
 
-Nota: De hecho, cada región ya tiene un fundido de entrada y de salida por defecto. El fundido de región es muy corto, y sirve para evitar clics en las transiciones al inicio y al final de la región. Mediante el ajuste de las regiones permiten una transición más gradual.
+`Nota: De hecho, cada región ya tiene un fundido de entrada y de salida por defecto. El fundido de región es muy corto, y sirve para evitar clics en las transiciones al inicio y al final de la región. Mediante el ajuste de las regiones permiten una transición más gradual.`
 
 Haciendo clic derecho en las áreas sombreadas azules, se puede ajustar la velocidad del fundido.
 
@@ -728,11 +734,13 @@ Haciendo clic derecho en las áreas sombreadas azules, se puede ajustar la veloc
 Cuando una Región se atenúa mientras otra se intensifica, esto se denomina una Fundido cruzado (Crossfade). Si las dos Regiones están en Pistas diferentes, puedes utilizar el método descrito encima con los manipuladores de atenuación.
 Aun así, si ambas Regiones están en la misma Pista, entonces Ardour automáticamente creará un fundido cruzado cuando una Región se mueva sobre otra. No hay necesidad de crear un fundido cruzado específicamente como en otros editores de audio. Cuando una región se superpone con otra Ardour las trata como capas. Esto significa que una región es una capa que está encima de la inferior. Lo importante es entender que: El fundido de entrada o de salida de la región superior representa el fundido cruzado entre las dos regiones.
 Una vez que entiendas este principio es sencillo crear y controlar fundidos entre regiones. Aquí hay un ejemplo. Las dos regiones separadas que vemos aquí abajo se superpondrán para crear un fundido cruzado.
+![crossfade](/images/Grafik63.png)
 
 `Nota: no hemos agregado ningún fundido extra a la primera región, pero agregamos un fundido más largo a la segunda región. Luego arrastramos la segunda región sobre la primera, superponiéndolas parcialmente:`
 
 El fundido de entrada de la segunda región funcionará como el fundido cruzado entre las dos regiones. En otras palabras, la primera región se desvanecerá y a la vez que la segunda región se intensifica.
-Para que esto ocurra necesitamos asegurarnos de que la región que queremos que sea la "superior" en el sistema de capas de Ardour. Para cambiar las opciones de capa, selecciona una región y ve al menú Región - Capas.
+Para que esto ocurra necesitamos asegurarnos de que la región que queremos que sea la "superior" en el sistema de capas de Ardour. Para cambiar las opciones de capa, selecciona una región y ve al menú **Región - Capas**.
+![crossfade2](/images/Grafik64.png)
 
 #### Utilizar Configuraciones de Rejilla
 Experimenta con la configuración de la Rejilla, como se habló en el capítulo Configurar la Línea temporal, para dar clases diferentes de Subdivisión - en otras palabras, para limitar las fronteras de cada Región a ciertos puntos de rejilla. Aquí, la Rejilla ha sido activada y puesta a Pulsos/4, para subdividir las Regiones a negras dentro de cada compás. Puedes desear Recortar los extremos de algunas de las muestras, como se habló antes, para que quepan dentro de la estructura métrica has configurado.
@@ -740,6 +748,8 @@ Experimenta con la configuración de la Rejilla, como se habló en el capítulo 
 
 ## Más operaciones de región
 Hacer clic derecho en una Región seleccionada revela un menú contextual. El primer elemento del menú (etiquetado con el nombre de la Región) contiene un gran sub-menú. Esta sección describe unas cuantas de las operaciones más generalmente utilizadas accesibles desde este menú.
+![regions](/images/Grafik65.png)
+
 El menú de clic derecho de la región encuentras
 
 - **Reproducir**
@@ -885,6 +895,7 @@ Para utilizar Expandir/Encoger Regiones, sitúa tu cursor encima de la región, 
 Esto es útil cuando añadamos una Región a una Pista nueva y la longitud de esta nueva Región no coincide con el ritmo existente que hemos ya creado. Es demasiado largo para ser un compás y demasiado corto para ser de dos compases. Selecciona la región que deseas corregir, y arrastra la nueva longitud hasta el final de la segunda barra, de nuevo con la asistencia de la configuración de cuadrícula. 
 
 Al soltar el botón del ratón, aparecerá el cuadro de diálogo Ampliación de tiempo de audio. Puedes experimentar con diferentes ajustes para la operación de ampliación de tiempo. Cada ajuste afectará al sonido de diferentes maneras. Es una buena idea experimentar con unos pocos ajustes diferentes de estiramiento para averiguar lo que le da el resultado mas adecuado para tu gusto. Cuando la operación de ampliación de tiempo se ha completado, la región será exactamente largas, y debe encajar con el ritmo que ya creaste.
+
 
 # 4. Mezcla
 Mezclar es el proceso de convertir Pistas múltiples a una Mezcla estéreo dónde todo los instrumentos puedan ser oídos claramente. Niveles, Panoramización, Ecualización (EQ), y Compresión son las principales herramientas utilizadas para conseguir una buena Mezcla. Además de estas herramientas básicas, también se puede utilizar una amplia gama de efectos para mejorar el sonido, como efectos de Espacio (Reverb o Delay), Efectos de Modulación (Flanger, Chorus, Phaser, etc). Estos efectos vienen en forma de Plugins, es decir pequeños programas adicionales que son desarrollado independientemente de Ardour y que vienen en diferentes formatos. Mas acerca de Plugins en el capitulo Utilizar Plugins.
