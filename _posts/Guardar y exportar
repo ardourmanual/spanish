@@ -1,0 +1,158 @@
+
+# 5. Exportar y Guardar
+Guardar una sesión te permite guardar tu proyecto para que puedes trabajar en el con Ardour mas adelante mientras que exportar es el proceso de guardar una región, pista o sesión a un fichero de tu ordenador al cual puedas escuchar, compartir, quemarlo como un CDR o convertirlo a un MP3/OGG. Exportar una región NO exporta todos los cambios que querrías haber hecho a la región. Para exportar ediciones con Atenuación, Efectos, Paneo, y Automatización, debes exportar bien un rango o la sesión entera.
+
+## Guardar Sesiones
+Hay varias maneras de guardar Sesiones en Ardour, de modo que cada sesión se puede utilizar más adelante. La forma más sencilla es salvar toda la sesión al igual que salvas cualquier tipo de documentos: En el menú Sesión - Guardar [Ctrl + S]. De todas formas, siempre que inicias una sesión se crean todas las carpetas necesarias. Recomendamos SIEMPRE GUARDAR CON FRECUENCIA mientras estás trabajando. Es recomendable adquirir el hábito de hacer [Ctrl + S] cada poco minutos. 
+
+Importante: Evitar el uso de caracteres que no sean letras y números al nombrar a su sesión. Evitar los espacios en blanco, letras acentuadas,! @ # $% * (+), Puntos, comas, Ñ, etc. Use guiones o guiones bajos si lo desea. Por ejemplo, en lugar de "Mi gran sesión!", es mejor "Mi_Gran_Sesion", o "MiGranSesion", o "mi-gran-sesión". 
+
+### Ardour y formato del archivo de carpetas
+El contenido de una carpeta típica de la sesión en el disco duro podría ser algo como esto:
+Si el nombre de esta sesión es mi_sesion:
+El archivo de sesión principal se llama mi_sesion.ardour. El archivo de sesión está respaldado periódicamente por Ardour con una extensión mi_sesion.bak.
+El archivo .history mantiene un registro de los cambios que has realizado durante tu período de sesiones, y también está respaldado periódicamente.
+
+La carpeta de exportación es donde los archivos exportados se guardan de forma predeterminada.
+La carpeta interchange contiene los datos reales de audio de todas las regiones utilizadas en tu sesión. Se llaman por ejemplo:  Audio #wav,  Audio 1-1%R.wav . 
+Si ya has renombrado cada pista antes de grabar audio en ella tienen los nombres de las pistas correspondientes: cymbal-#wav, highhat-#wav, kick-0-bounce.wav, etc, lo que te ayuda a la hora de Buscar el archivo que necesitas por si acaso quieres importarlo en otro programa. 
+Y finalmente, la carpeta peaks contiene los datos que Ardour utiliza para exhibir gráficamente los Picos de tus ficheros de sonido.
+
+Importante: Si haces doble clic en el archivo de sesión no se inicia Ardour, utiliza el método estándar de la primera apertura de la propia aplicación, a continuación, elegir una sesión desde el cuadro de diálogo de configuración de sesión.
+### Moviendo una sesión a otra computadora o disco
+Si tiene que mover tu sesión de Ardour a otro equipo, o si desea hacer una copia de seguridad en un disco duro externo, debe copiar TODA LA CARPETA  que contiene todos los archivos mencionados anteriormente. No basta simplemente copiar el archivo  *.ardour.
+
+Importante: Al copiar una carpeta a otro equipo o unidad, no cambies manualmente el nombre o el nombre de cualquiera de los archivos internos.
+
+### Guardar y Retomar capturas (Snapshots)
+Guardar una captura de sesión en Ardour es similar a guardar tu sesión a un fichero nuevo. Se utilice este comando para evitar sobrescribir el fichero de sesión original. Una captura contiene el estado actual de tu trabajo, a la par que comparte todo el audio y ficheros de datos de la sesión.
+
+Puedes guardar una captura vía menú: Sesión → Captura de sesión [Ctrl + Mayus.+S]. Por defecto el programa nombrará la nueva captura según la fecha actual y fecha de tu sistema. Si deseas, puedes cambiar el nombre a uno con más sentido que corresponda a la Sesión con la estás trabajando.
+
+Puedes retomar una captura guardada vía la pestaña Capturas de sesión en el área en la derecha:
+Ahí ves la captura nueva “Lacuna-3001” que justo creamos, y la entrada “Lacuna” representa el estado original de nuestra sesión.
+
+Nota: A veces es útil de tener un punto de partida por defecto para tus Sesiones más que una captura de los cambios que hayas hecho. Para aprender cómo para hacer esto, por favor continua a la siguiente sesión llamada Guardar Plantillas.
+
+### Guardar plantillas
+Si a menudo te toca configurar la misma información en cada nueva sesión que crees, como el número de entrada y Canales de producción, el número y nombres de Pistas o Buses, o el Enrutamiento, entonces puedes desear crear una Plantilla de aquella información en su lugar.
+Con una Plantilla, puedes recrear tu Sesión de trabajo actual sin todos los ficheros de información de Región. Las plantillas son útiles si, por ejemplo, estás haciendo un extenso enrutamiento en Pistas y Buses y quieres guardar lo  para uso en otras Sesiones. Un ejemplo podría ser una Plantilla para grabar Pistas de batería, bajo, guitarra y voces, cada cual con su entrada propia en la tarjeta de sonido, lo cual lo podrías utilizar como base para cada Sesión que crearas en esa situación. 
+
+Puedes guardar una nueva plantilla desde el menú principal: Sesión → Guardar Plantilla... 
+Cuando se crea una nueva Sesión, puedes también cargar una plantilla previamente guardada con la opción Usar esta plantilla:
+
+Tus plantillas se van a guardar en la carpeta /opt/ y en esta en Ardour-5.5.0/share/templates o dependiendo de la versión de Ardour.
+En mac OS se encuentra en la carpeta usr/tunombre/.Ardour. 
+
+## Exportar una sesión
+Recordamos que exportar es el proceso de guardar una sesión a un solo fichero estéreo de tu ordenador que puedes compartir y reproducir con un reproductor de audio.
+
+Antes de todo tienes que echar un vistazo a toda la sesión. La forma más sencilla es:
+1) Seleccione “Todos” del menú "Número de pistas visibles":
+2) Haz clic en el botón "Zoom a la sesión" (tercer botón en las Opciones de zoom):
+Ahora debería tener una buena visión general de toda la sesión, así:
+Escucha la producción por última vez y asegúrate de que se oye todo de la manera deseada y que no se te olvido desactivas algún Mute o Solo. Todo lo incluido entre los Marcadores de Posición "inicio" y "fin" en la línea temporal será exportado, así que tienes que establecer primero los marcadores si no están en la posición correcta.
+Si el marcador de final está demasiado después del final de la pieza, haz clic y arrastra hacia la izquierda hasta que esté bastante cerca del final de la última región de la composición. En el caso contrario todo eso se exporta como espacio en blanco sin sonido. 
+
+Importante: Puesto que exportar se maneja mediante el Bus master, todas las pistas dentro del rango que seleccionas se exportan conjuntamente, exactamente como se reproducen en tu sesión. A diferencia de la orden Exportar Región, este tipo de exportación incluye cualquier Atenuación y Panoramización, y Automatización o Plugin que hayas creado, junto con las ediciones individuales hechas a las Regiones también. Si cualquier pista tiene los botones de enmudecer o de solo activados, esto afectará a qué pistas se oirán en el fichero exportado. 
+
+Ahora para exportar una sesión, utiliza el menú superior: Sesión → Exportar → Exportar sesión a fichero audio.
+
+Preset: Aquí NO se escribe el nombre del archivo. Es sólo para guardar "preset" predefinidas para guardar archivos, por ejemplo, si siempre guardas en uan calidad de audio determinada tus audios creas una preset y al elegirla se cargan los parámetros definidos. No te preocupes por este campo ahora.
+Formato: permite elegir el formato de archivo (WAV, OGG, FLAC, etc.). El valor predeterminado es de CD, que crea un archivo WAV. 
+Nota: Si usas GNU/Linux NO viene para exportar en MP3, pero puedes exportar a WAV y luego usar un conversor de audio.
+Añadir otro formato: si desea exportar en más de un formato, al mismo tiempo, haz clic en esta pestaña.
+Posición: Este es el lugar donde se encuentra el archivo después de guardarlo. De forma predeterminada, se encuentra en la carpeta de "Export" que está dentro de la carpeta principal de la sesión. También puedes hacer clic en "Examinar" y seleccionar otra ubicación, como el escritorio, por ejemplo.
+Construir el nombre: Aquí es donde se escribe el nombre para el archivo. Ardour añadirá automáticamente el nombre de sesión para el archivo exportado, por lo que si no se escribe nada aquí el nombre puede terminar algo genérico como "mi-sesion.wav".
+Después de haber elegido las opciones, haz clic en Exportar. Una vez finalizada la operación, se puede encontrar el archivo en la carpeta “Export” o en la elegida. 
+
+### Opción: Upload to SoundCloud 
+Por medio de la página web SoundCloud puedes compartir tus sonidos en privado en publico (por ejemplo en las redes sociales o incluirlas en tu sitio web propio). Usar SoundCloud es gratis. Para poder conectarse tienes que ingresar tus datos de la cuenta. Si todavía no tienes una cuenta lo puedes crear gratuito en la pagina web: www.soundcloud.com
+Entonces si tienes una cuenta puedes seleccionar esta opción “Upload to SoundCloud“ dentro de la ventana de Exportación que permite la subida de tu audio exportado a la pagina web de SoundCloud. Después de terminar la exportación Ardour se conecta directamente a tu cuenta SoundCloud y sube tu audio. 
+
+### Opción: Analizar audio exportado
+Esta opción te permite ver la Waveform, la representación visual de un sonido en el dominio temporal incluyendo los momentos de Saturación y un análisis del espectro audio, los picos, el rango de Loudness, la Loudness integrada y  LUFS. También puedes ver los datos generales del archivo como la duración, el Timecode, la frecuencia de muestreo, los canales, el formato. Si necesitas mas información acerca de estos términos técnicos, hay una pagina interesante acerca de la Loudness en ingles: http://www.tcelectronic.com/de/loudness/loudness-explained/
+
+
+
+## Exportar Regiones
+Puedes querer exportar solo una región de tu sesión, quizás para utilizarla como ejemplo en otra aplicación, o para editarla en un programa de edición diferente.
+
+Para Exportar una región, selecciónala (para que se torne azul), y entonces haz clic-derecho en Exportar o utiliza el menú Sesión → Exportar → Exportar regiones seleccionadas a fichero de audio.
+
+Esto abrirá el mismo cuadro de diálogo Exportar explicado en el capítulo Exportación de una sesión. Elige las opciones y haz clic en Exportar. Sólo se exportará la región seleccionada!
+
+Por favor ten en cuenta que cuando se exporta una región, no todos los parámetros y ediciones son exportados. Las Regiones recortadas, divididas, extendidas e invertidas pueden ser exportadas, pero ediciones tales como la Normalización, Atenuación y Panoramización, y Automatización NO se exportan. También, el volumen de la misma pista de audio o del Bus master no afectará al fichero exportado. Para exportar estas ediciones, por favor mira los capítulos Exportar un Rango y Exportar una Sesión.
+
+### Exportación Diversas Regiones a la vez
+Si estás construyendo una colección de muestras para usar después y las muestras son, básicamente, recortando y editando Regiones, al final del proceso tendrás que exportar todas ellos. Si el número es grande, la exportación de forma manual puede ser tediosa. He aquí una manera de exportar varias regiones a la vez.
+En el modo Seleccionar objeto [ G], selecciona todas las regiones que deseas exportar. No es necesario que estén en la misma pista.
+
+Ir al menú **Región → Rangos** selecciona Agregar marcador para un intervalo de Región. (**Región →  Rangos Añadir → Marca de rango por región**.)
+
+Ardour crea ahora sólo Rangos de marcadores que se ajustan exactamente al comienzo y al final de sus regiones seleccionadas (ver los rectángulos verdes en la regla Marcas de rango):
+
+Ve al Menú de Sesión → Exportar y selecciona Exportar a archivo de audio (s) [Alt + E).
+En el cuadro de diálogo Exportar, haz clic en la pestaña Intervalo de tiempo. Verás todos los rangos de nueva creación que allí se indican. También hay un rango predeterminado que representa toda la sesión.
+En Intervalo de tiempo, haz clic en Seleccionar todo, y de-seleccionar el primer rango (el rango de "sesión"). La razón es porque queremos exportar los rangos cortos, no toda la sesión completa.
+Volver a la pestaña principal (Formato de archivo).
+Haz clic en Exportar.
+Tus regiones se habrán exportado a archivos de audio individuales.
+
+`Importante: Este método exporta todo lo que cae en cada intervalo de tiempo definido. En otras palabras, si tienes otras regiones en otras pistas que suenan simultáneamente con la región que deseas exportar, serán mezcladas entre sí. Otra forma de verlo es la siguiente: la operación de exportación exportará todo lo que juega bajo los rangos de tiempo definidos. Si eso no es lo que quieres, se puede utilizar en solitario o botones de silencio en seleccionar las pistas para garantizar exportar sólo lo que quieres.` 
+
+## Exportar Rangos
+Según hemos aprendido previamente, exportar una Región no exporta todos los cambios que querrías haber hecho a la región. Para Exportar ediciones tales como Normalización, Atenuación y Panoramización, y Automatización, debes exportar bien un Rango o la sesión entera que también vimos con anterioridad.
+
+¿Qué es exactamente un rango?
+Un rango es simplemente un área específica con un punto de inicio y final. La pantalla de selección a la derecha del reloj secundaria muestra el tiempo de inicio y fin del rango seleccionado, así como su duración. El área creada por el método anterior desaparecerá tan pronto como se hace clic fuera de ella.
+
+Para Exportar un rango, selecciona la herramienta Seleccionar/Mover rangos , entonces haz clic-derecho en Exportar rango o utiliza el menú superior: Sesión → Exportar → Exportar rangos seleccionadas a fichero de audio. Vamos por partes:
+
+1. Haz clic en el botón de modo de rango [ R)
+2. Marca el rango que quieres exportar
+3. Haz clic derecho en el área de distribución y elige la opción Exportar intervalo en el menú: Esto abrirá el cuadro de diálogo Exportar que explicamos en el capitulo Exportar una sesión. Elige las opciones y clic en Exportar. El rango se exportará y se guarda como un archivo de audio.
+
+Nota: El comando Intervalo de exportación exportará todo lo que se escucha en el Bus Master, tal y como se reproduce en la sesión. Si alguna de las pistas tienen los botones de Silencio y solo participan, esto también afectará a la que las canciones se escuchan en el archivo exportado.
+
+¿Qué es un marcador de intervalo o rango?
+Marcadores de rango son esencialmente dos marcadores de ubicación para marcar el inicio y el final de una sección.
+Aquí están algunas maneras de crear marcadores de rango o intervalo:
+A partir de una selección, clic derecho sobre él y seleccione Añadir Marca de rango.
+Desde la línea de tiempo, clic en el espacio horizontal Marcas de rango y elegir la opción Nuevo Rango.
+A partir de una o más regiones seleccionadas, clic derecho en la Región y elegir la opción Añadir Marca de rango simple (si se seleccionas una sola región), o Añadir Marca de rango por región (si se seleccionan varias regiones).
+
+Nota: Puedes borrar todos los marcadores existentes haciendo clic derecho en el área de distribución de marcadores de la línea de tiempo y seleccionando Borrar todos los rangos.
+
+## Exportar Audio a Video
+Aunque Ardour no es un editor de video se puede añadir una pista audio a un archivo de video. Ardour usa ffmpeg, una herramienta de video muy potente. Aún así las opciones de exportar en Ardour solo ofrece unas opciones limitadas lo cual implica que es para el uso básico de exportación de video. 
+
+Output: Aquí puedes entrar el nombre del archivo que vas a exportar.
+
+Entrada de Video: Dando clic en Explorar puedes seleccionar la fuente (el archivo de video a cual quieres añadir la pista audio). 
+
+Audio: Por defecto se va usar el audio que sale del Bus Master y añadir a tu video, pero puedes seleccionar otras fuentes.  
+
+Para saber más acerca de los demás opciones de video ver la pagina de ffmpeg: http://ffmpeg.org/documentation.html
+
+Dando clic en exportar inicia la exportación. 
+
+## Intercambiar con otro DAW
+Nunca ha sido muy fácil de mover sesiones creado en un DAW a otro DAW. Hay dos estándares que existen para esto y que gozan un apoyo bastante amplio. 
+OMF (Open Media Framework), también conocido como OMFI. Fue desarrollado y controlado por la empresa Avid 
+AAF (Advanced Authoring Format), desarrollado por un consorcio de corporaciones de medias.
+Pero en practica los dos de estos “estándares” tienen un especificaciones tan complejas o incompletas que diferentes DAWs solo lo soportan parcialmente, diferentemente o no. 
+
+Entonces para mover sesión Ardour a otro DAW tienes 3 maneras:
+Exportar los Stems – significa exportar las pistas audios y MIDI consolidados - con sus efectos de insert -   completas de inicio al final de la sesión. Esto es la manera recomendada y tal vez más rápida. La ventaja es que asi se puede importar todos los archivos audio en una DAW
+Copiar la sub-carpeta “interchange” de la sesión de Ardour. La desventaja es que esto copia TODOS los archivos audio, también los que no son utilizados, sin sus efectos insert. Los archivos MIDI no se copian. Si quieres hacer esto, es recomendable usar ANTES el comando Sesión → Purgar → Bring all media files into one folder y también Purgar archivos no usados en el mismo menú para que se limpie tu sesión de los archivos que grabaste pero al final no usaste. 
+Usa AATranslator. Es un complemento comercial que permite a exportar la sesión en otro DAW y guardarla en formato de Ardour. Mas información: http://www.aatranslator.com.au/
+
+Y para mover una sesión de otro DAW a Ardour hay también las 3 maneras:
+Importar los Stems (archivos de audio que contienen las pistas individuales con sus efectos). 
+Si trabajaste con ProTools puedes importar una sesión de este DAW. Abre la sesión por el menú Sesión → Importar sesión PT. Esto NO importa la sesión 100% correcto ya que el formato de una sesión ProTools no es un formato abierto y se desconoce como funciona completamente. 
+Usa AATranslator. Es un complemento comercial que permite a exportar la sesión Ardour para usarlo en otra DAW. Mas información: http://www.aatranslator.com.au/
+
+En la próxima sección, los Apéndices, hemos incluido alguna información adicional que creemos que sería de utilidad para los nuevos usuarios de Ardour, incluyendo cómo conseguir Más Ayuda, un Glosario de términos técnicos utilizados en este manual, algunos Enlaces para más información acerca de Ardour en Internet.
+
+¡Felicitaciones, has logrado llegar al fin del manual Ardour 5! Esperamos que este manual te haya sido útil para aprender las funciones clave de Ardour.
