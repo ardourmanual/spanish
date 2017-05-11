@@ -1,0 +1,290 @@
+
+# 3. Editar Sesiones
+## Organizar Pistas
+Organizar tus pistas puede ahorrarte mucho tiempo a la hora de los procesos de editar y mezclar audio. Por esto te recomendamos seguir los siguientes pasos. 
+
+### Renombrar y Reorganizar
+Es recomendable renombrar las pistas si no tienen un nombre significativo, lo que te ayudará encontrar una pista mas rápido después. En vez de tener una serie de pistas audio llamados “Audio 1”, “Audio 2”, “Audio 3” es mejor renombrarlas según su contenido, por ejemplo: “Bombo”, “Caja”, “Tom1”, Tom2”, etc. 
+Haz doble clic en el nombre de la pista para editarlo. 
+
+También puedes desear reorganizar el orden de las pistas de arriba a abajo. Esto se hace en la Ventana del Editor. Hazlo pinchando la pestaña Pistas/Buses en la extrema derecha de la Ventana del Editor y arrastrando-y-soltando las pistas en el orden que prefieras. En el mismo orden como aparecen en la Ventana del Editor (de arriba hacia abajo) van a aparecer también en la Ventana del Mezclador.
+
+`Nota: También puedes usar las cajas de marca en esta pestaña para ver u ocultar las Pistas en el Lienzo principal. `
+
+### Configurar la métrica
+La métrica determina la velocidad musical del pasaje que estamos componiendo, cuando medimos en pulsos por minuto (beats per minute en inglés). Si estamos componiendo algo que es rítmico, ello determinará también las longitudes de las muestras de sonido que utilizamos hasta cierto punto. Así que es importante ser capaz de configurar la Métrica antes de que continuemos.
+Para ver la Métrica de nuestra sesión, podemos hacer clic derecho en cualquier parte del "cabezal" de la línea de tiempo y hacer clic en las siguientes opciones: Métricas, Compases:Pulsos y Tempo en el menú que aparece.
+![metrica](/images/Grafik55.png)
+
+Es posible de poner una Métrica y Tempo para la sesión entera, así como cambiarlos en puntos diferentes en la misma sesión. Para esto, localiza la sección de la Métrica de la Barra de la Línea temporal en la Ventana del Editor, y haz clic-derecho en la primera marca roja pequeña para abrir el Diálogo de Métrica.
+![metrica2](/images/Grafik56.png)
+
+Aquí puedes introducir valores nuevos para los Pulsos por compás así como el Valor de Nota. Pincha Aplicar para aplicar los cambios de manera global a tu sesión.
+En el Diálogo de Tempo puedes introducir un nuevo valor de Pulsos Por Minuto, lo cual afectará la sesión entera.
+Si la Métrica o Tempo de tu sesión cambia más tarde en la canción o composición, sencillamente añade un marcador nuevo haciendo clic-derecho en la sección de Métrica o Tempo y seleccionando un Tempo Nuevo o Métrica Nueva e introduciendo el tempo nuevo o métrica en el diálogo resultante.
+
+### Utilizar Rangos
+Un Rango es una selección del la Línea temporal que puede incluir una o más Pistas. La herramienta de Rango se ubica justo bajo el Menú de Transporte en la Ventana del Editor.
+
+Cuando hayas seleccionado la herramienta de rango, tu puntero de ratón se verá como una línea vertical:
+
+Puede ser útil crear selecciones de rango que se alineen con los bordes de las regiones en tu línea temporal. Para esto selecciona los Rejilla y Bordes de Región para los menús de Rejilla y Punto de Rejilla respectivamente hace esto fácil.
+
+Para hacer una selección de rango, arrastra doquiera en la Línea temporal. Las opciones actuales de Rejilla y Punto de la Rejilla determinan exactamente cómo se comporta la selección de rango. Una vez un rango ha sido seleccionado, si haces clic derecho sobre él se abre un menú con operaciones específicas de rango.
+Rango de Bucle, por ejemplo, configura los Marcadores de Bucle del Rango actual y empieza una reproducción cíclica. Los puntos de Inicio de Bucle y Fin de Bucle pueden ser cambiados moviendo los triángulos verdes qué corresponden a cada punto.
+Otras opciones útiles aquí para editar te permite Duplicar el rango, Seleccionar Todo dentro del rango o Cortar el rango.
+
+### Configurar un Bucle
+Si queremos oír el pasaje que estamos componiendo como bucle, tenemos que crear un rango para escuchar dentro de nuestra sesión, de modo que podamos regresar exactamente a este punto de la Sesión una y otra vez:
+1) Alejar la imagen si es necesario (acceso directo "-") para ver las barras completas en la línea de tiempo. 
+2) Utilizar la herramienta de rango para seleccionar un compás entero con la ayuda de las configuraciones de la Rejilla,
+3) Hacer clic derecho dentro de ese rango para Definir bucle según selección.
+
+Probablemente querrás ponerla Rejilla de modo que tus acciones se ajusten a ciertos elementos métricos de la sesión. 
+![bucle](/images/Grafik57.png)
+
+Esto configurará un rango de bucle que puedes reproducir utilizando el botón de Reproducir Bucle en el Menú de Transporte o pulsando en la tecla L. Mientras el rango esté ciclando, puedes utilizar el botón **Solo** en cada pista para escuchar individualmente a cada instrumento.
+
+### Trabajar con Regiones
+En Ardour las secciones de audio se conocen como Regiones. Para componer el tipo de pasaje rítmico en que hemos estado trabajando, necesitaremos conocer cómo Seleccionar, Mover, Dividir y Recortar estas regiones, así como conocer cómo Intensificar (fundido de entrada) o Atenuar (fundido de salida) su volumen y crear Fundidos cruzadas (Crossfades) entre ellas. Algunas de estas opciones puede necesitar ocurrir en Puntos de edición específicos de la composición, o según la Métrica musical podemos también definir con la Línea temporal y la Rejilla.
+
+Seleccionar Regiones
+El modo Seleccionar/Mover objetos [G] está ubicado justo bajo el menú de Transporte en la Ventana del Editor. Utilizarás mucho esta herramienta en tu trabajo de Ardour.
+Cuando esté activo, tu puntero de ratón se verá en el lienzo principal como una pequeña mano:
+
+Realiza las siguientes operaciones para practicar: 
+- Haz clic en la forma de onda de la región para seleccionarla. Haz clic y arrastra en una región para moverla por distintos lados (izquierda y derecha en la misma pista, sino también hacia arriba y hacia abajo sobre otras pistas).
+- Usa [Ctrl + Clic] para crear y arrastrar una copia de la región.
+- Puedes seleccionar varias regiones manteniendo pulsada la tecla "Mayus." mientras seleccionas.
+- Mover varias regiones al mismo tiempo, después de seleccionarlas.
+- Se pueden seleccionar varias regiones secuenciales en una pista a la vez, manteniendo pulsada la tecla Mayus. mientras se selecciona la primera y la última Región de la secuencia (copiar unas pocas regiones en la misma pista para probar esto).
+- Cuando se selecciona una sola región, asegúrese de hacer clic en la par de con el dibujo de forma de onda de su rectángulo. - La banda inferior con el nombre de la región se utiliza para una acción diferente (véase Recorte de regiones más abajo).
+- Utiliza la tecla "Supr" para eliminar regiones seleccionadas.
+- Las operaciones estándar de copiar [Ctrl + C], cortar [Ctrl + X], y pegar [Ctrl + V] también funcionan con las regiones.
+- También puede arrastrar un cuadro de selección a través de múltiples regiones para seleccionarlos todos.
+
+### Mover Regiones
+Cuando se mueve una Región, un Timecode (Código temporal) aparecerá en números amarillos sobre la pantalla. Este Timecode es el punto de partida de la Región en la Línea de tiempo. Puedes mover Regiones horizontalmente (de lado) a un punto diferente en el tiempo sobre la misma Pista, o puedes mover la Región seleccionada verticalmente (arriba o abajo) a una Pista diferente.
+Cuando un conjunto de una o más Regiones es seleccionado, puedes mover el conjunto completo arrastrándolo con el ratón.
+`Nota: asegúrate de seleccionar la Región en su sección de forma de onda, porque seleccionando el área de barra de título inferior se utiliza para un acción diferente (mira Recortar Regiones abajo).  
+Importante: si pulsas y mantienes la tecla Alt mientras que arrastras una Región entre Pistas, la Región será copiada a la Pista nueva en vez de movida.`
+
+### Duplicar Regiones
+Utilizar la herramienta **Seleccionar/Mover Objetos** para seleccionar un conjunto de Regiones, y utilizar la función Duplicar para hacer una copia del conjunto. Está en el menú **Regiones → Duplicados Región** [Alt + D]. 
+Los Duplicados aparecerán inmediatamente después (y en la misma pista que) los originales.
+En la siguiente captura de pantalla, se ha duplicado una región utilizando los métodos explicados:
+![midi2](/images/Grafik58.png)
+
+### Utilizar Puntos de Edición
+Otro modo de copiar regiones es utilizando los comandos estándar Copiar [Ctrl + C] y Pegar [Ctrl + V]. La ubicación exacta donde la Región copiada será pegada está determinada por el menú desplegable de Punto de Edición.
+Si se selecciona Ratón como el Punto de Edición, la Región copiada será pegada en la posición actual del ratón.
+Si se selecciona Playhead (Marca activa) como el Punto de Edición, la Región copiada será pegada en la línea roja de Marca activa en la misma Pista donde está la Región original.
+
+Finalmente, si se selecciona **Marcador** como el **Punto de edición**, entonces la Región copiada se pegará inmediatamente tras el Marcador de ubicación actualmente seleccionado.
+
+### Marcadores
+Cuando se crea una nueva sesión, dos marcadores de ubicación se agregan automáticamente de forma predeterminada. Estos son los marcadores de inicio y fin. Si no ve el marcador final, aléjese lo suficiente y lo encontrará.
+
+Pero es muy útil de etiquetar diferentes ubicaciones en una sesión para su uso posterior durante la edición y mezcla. Ardour ofrece varias maneras de hacer esto. El método más común es usar las Marcas de posición, que definen las posiciones específicas en el tiempo.
+Los Marcadores pueden añadirse a la Línea temporal haciendo clic derecho en la banda de Marcadores de posición y seleccionando Añadir nueva marca de posición. También pueden ser seleccionados con el ratón y movidos a posiciones nuevas.
+![marcas](/images/Grafik59.png)
+
+#### Dividir Regiones
+Para Dividir una Región sencillamente significa dividir una sola Región en dos Regiones independientes. Hay dos maneras de realizar esta acción:
+Puedes utilizar el Modo de corte [ C] para hacer clic en cualquier lado que quieras dividir; y,
+si el ratón está seleccionado como tu Punto de edición actual, selecciona una Región y coloca el cursor en el punto te gustaría dividir. Pincha en Editar → Dividir Región [ S]. 
+Tras ser dividido, la Región única original se transforma en dos regiones independientes, con un nuevo nombre por cada cual:
+![dividir](/images/Grafik60.png)
+
+Las dos nuevas Regiones son ahora enteramente independientes. Puedes mover y editarlas separadamente.
+Las Regiones pueden ser divididas Utilizando la Marca activa o un Marcador como el punto de Edición.
+
+#### Recortar regiones
+Si mueves el cursor hasta la banda inferior de la Región, donde su nombre aparece, verás que el puntero se torna como una flecha doble. Pincha y arrastra hacia adentro desde cualquier cabo de la Región, y la Región se acortará consiguientemente. Esto se denomina Recortar la Región. Las regiones pueden ser recortadas desde el inicio de la Región (arrastra de izquierda a derecha en el borde) o desde el fin (arrastra de derecha a izquierda).
+![recortar](/images/Grafik61.png)
+
+Esta acción es no destructiva: ningún audio de hecho está siendo eliminado. Es como si justo "escondieras" aquellas porciones de la Región que no quieres o que ya no necesitas más. Después, puedes "des-recortar" la Región (p. ejem.: extenderla otra vez a su medida original total), incluso si ha sido movida o copiada a una Pista nueva. Una región recortada recibirá un nombre derivado del nombre original de su Región fundamental, y verás ésta reflejada en tu Lista de Regiones. 
+
+`Importante: El recorte obedecerá a la configuración de la rejilla. Si no quieres que el recorte se limite a la rejilla, simplemente escoge la opción No rejilla.`
+
+#### Eliminar regiones
+Una región puede eliminarse de una pista de cuatro formas distintas:
+Seleccionar la Región y utilizar la tecla [Supr] (no la tecla de borrar "backspace") para sacarla.
+Selecciona la Región y utiliza el atajo [Ctrl + X] para Cortarla (para más tarde pegarla).
+Selecciona la Región y utiliza la opción Editar → Cortar en el menú principal para cortarla (para más tarde pegarla).
+Otra vez, porque Ardour es no destructivo, las Regiones no son eliminadas de la Sesión y pueden ser accedidas desde la pestaña de Regiones en el lado extremo derecho de la Ventana del Editor.
+
+#### Crear Fundidos de entrada y de salida en las Regiones
+Un fade (fundido) es un cambio en el volumen de una Región, bien cuando la Región comienza o bien cuando esta se acaba. Un fade-in al comienzo de la Región es un fundido de entrada, y al final de la Región es un  fundido de salida. Cada Región tiene dos pequeños manipuladores a lo largo de la parte superior, los cuales pueden ser arrastrados hacia adentro desde cualquier borde para crear un fundido de entrada o de salida, como se muestra en la siguiente imagen.
+![fade](/images/Grafik62.png)
+
+`Nota: De hecho, cada región ya tiene un fundido de entrada y de salida por defecto. El fundido de región es muy corto, y sirve para evitar clics en las transiciones al inicio y al final de la región. Mediante el ajuste de las regiones permiten una transición más gradual.`
+
+Haciendo clic derecho en las áreas sombreadas azules, se puede ajustar la velocidad del fundido.
+
+#### Crear Fundidos cruzados (Crossfades) entre dos Regiones
+Cuando una Región se atenúa mientras otra se intensifica, esto se denomina una Fundido cruzado (Crossfade). Si las dos Regiones están en Pistas diferentes, puedes utilizar el método descrito encima con los manipuladores de atenuación.
+Aun así, si ambas Regiones están en la misma Pista, entonces Ardour automáticamente creará un fundido cruzado cuando una Región se mueva sobre otra. No hay necesidad de crear un fundido cruzado específicamente como en otros editores de audio. Cuando una región se superpone con otra Ardour las trata como capas. Esto significa que una región es una capa que está encima de la inferior. Lo importante es entender que: El fundido de entrada o de salida de la región superior representa el fundido cruzado entre las dos regiones.
+Una vez que entiendas este principio es sencillo crear y controlar fundidos entre regiones. Aquí hay un ejemplo. Las dos regiones separadas que vemos aquí abajo se superpondrán para crear un fundido cruzado.
+![crossfade](/images/Grafik63.png)
+
+`Nota: no hemos agregado ningún fundido extra a la primera región, pero agregamos un fundido más largo a la segunda región. Luego arrastramos la segunda región sobre la primera, superponiéndolas parcialmente:`
+
+El fundido de entrada de la segunda región funcionará como el fundido cruzado entre las dos regiones. En otras palabras, la primera región se desvanecerá y a la vez que la segunda región se intensifica.
+Para que esto ocurra necesitamos asegurarnos de que la región que queremos que sea la "superior" en el sistema de capas de Ardour. Para cambiar las opciones de capa, selecciona una región y ve al menú **Región - Capas**.
+![crossfade2](/images/Grafik64.png)
+
+#### Utilizar Configuraciones de Rejilla
+Experimenta con la configuración de la Rejilla, como se habló en el capítulo Configurar la Línea temporal, para dar clases diferentes de Subdivisión - en otras palabras, para limitar las fronteras de cada Región a ciertos puntos de rejilla. Aquí, la Rejilla ha sido activada y puesta a Pulsos/4, para subdividir las Regiones a negras dentro de cada compás. Puedes desear Recortar los extremos de algunas de las muestras, como se habló antes, para que quepan dentro de la estructura métrica has configurado.
+
+
+## Más operaciones de región
+Hacer clic derecho en una Región seleccionada revela un menú contextual. El primer elemento del menú (etiquetado con el nombre de la Región) contiene un gran sub-menú. Esta sección describe unas cuantas de las operaciones más generalmente utilizadas accesibles desde este menú.
+![regions](/images/Grafik65.png)
+
+El menú de clic derecho de la región encuentras
+
+- **Reproducir**
+Reproduce desde el principio hasta el final de la región.
+
+- **Bucle**
+Reproduce la región en bucle.
+
+- **Editar**
+En este submenu puedes cambiar el tono de la region, revertirla o 
+
+- **Audition (Escucha)**
+Más abajo en el menú, la opción Escucha reproduce la Región vía el Bus de Escucha. 
+
+- **Bloqueo**
+La caja conmutadora Bloquear bloquea la Región de modo que no pueda ser Movida o Recortada. Todavía puede ser dividida, sin embargo, y las Regiones resultantes serán desbloqueadas.
+
+- **Normalize (Normalizar)**
+La función Normalizar aumenta no-destructivamente el nivel de la Región seleccionada de modo que los Picos estén en 0dB. En otras palabras, hace la región tan sonora como fuera posible mientras evita Saturación. El aumento aplicado cuando una Región ha sido normalizada puede ser invertido seleccionando el ítem Desnormalizar de menú.
+
+- **Análisis espectral**
+Pinchar esta función abre una nueva ventana la cual exhibe el contenido de frecuencia global de la Región.
+
+- **Invertir**
+La función Invertir invierte la región seleccionada de audio, causando en efecto que se reproduzca hacia atrás. Invertir una región crea un archivo de audio nuevo 'entre bambalinas'.
+
+- **Recortar**
+La función Recortar recorta la Región en varias maneras, incluyendo desde el Inicio al punto de edición y Punto de edición hasta el fin (mira el capítulo anterior para un debate de Puntos de Edición).
+
+- **Hacer Regiones Mono**
+La función Hacer Regiones Mono divide una región estéreo en dos regiones mono las cuales pueden ser accedidas vía la pestaña de Regiones al extremo derecho de la Ventana del Editor.
+
+- **Duplicar, Multi-duplicar, Llenar Pista**
+Duplicar, Multi-Duplicar y Llenar Pista son métodos para Duplicar la Región. Por favor mira el capítulo Crear Secciones Cicladas para una discusión detallada de estos.
+
+- **Eliminar**
+La función Eliminar borra la Región seleccionada de la Pista. La región permanece disponible en la Lista de Regiones al extremo derecho de la Ventana del Editor, tal que se puede recuperar arrastrándola y soltándola a una pista en cualquier momento.
+
+Siéntete libre de explorar otros sub-menús que no hayamos mencionado en esta sección. Muchos de ellos son opciones que encontrarás en el menús de Regiones de Ardour. A continuación detallaremos las funcionalidades más útiles. 
+
+- **Cambio de tono**
+La función de cambio de tono cambia el tono de una región sin cambiar su duración. La función aplica un algoritmo de desplazamiento de afinación para crear un nuevo clip de audio basado en el clip de origen.
+La ventana de cambio de tono al usuario especificar la cantidad y dirección de la transposición deseada. La ventana incluye un botón Preserve formantes. Cuando cambio de tono por grandes cantidades, la opción Conservar formantes puede dar resultados que suenan un poco más natural, especialmente cuando se utiliza en el material vocal.
+
+- **Normalizar**
+La función Normalizar [Alt + 3] aumenta el nivel de la región seleccionada de manera que los picos estén a 0 dB o menos. Cuando normalicemos a 0,0, la región será tan fuerte como sea posible, evitando recortes. A veces puede resultar útil para normalizar una región a un valor inferior a 0, como -#0, -#0, -#0 o decibelios, para que no llegue a ser demasiado alto.
+
+- **Invertir**
+Esta función invierte la región de audio seleccionada, en efecto, haciendo que se reproduzca de atrás para adelante. Invertir una región crea un nuevo archivo de audio.
+Operaciones en dos o más rangos seleccionados
+Si se selecciona más de un rango, la operación se aplicará a todos ellos (por ejemplo, Normalizar, Invertir, etc.)
+
+- **Combinar**
+Algunas operaciones desde el menú contextual sólo estarán disponibles cuando se seleccionen dos o más regiones. Por ejemplo, echa un vistazo a la función "Combinar", bajo el submenú "Editar".
+En primer lugar seleccionamos dos regiones adyacentes:
+
+Luego elegimos "combinar" en el menú contextual que se despliega haciendo clic derecho en alguna de las regiones seleccionadas, o desde el menú "Regiones/Editar/Combinar":
+
+Como resultado, las regiones seleccionadas se combinarán en una sola. Esto es particularmente útil cuando se ha encontrado una secuencia exacta de las regiones que trabaja del mismo modo que desee y que, a continuación, te gustaría copiar y/o mover toda la secuencia como grupo.
+
+`Nota: Ten en cuenta que la región combinada resultante tiene la palabra "compuesto" unido a su nombre:`
+
+## Cambiar Modos de Edición
+Ya hemos aprendido un poco sobre las herramientas Seleccionar/Mover y Rango. En este capítulo conseguiremos una visión general de todo los Modos de edición y Modos de Cursor disponibles en aquella parte de la Ventana de Editor.
+
+Estos controles definen el comportamiento del Lienzo principal y las diferentes funciones del cursor.
+El menú desplegable **Modo de Edición** contiene tres opciones. Deslizado es el modo estándar. Te permite arrastrar regiones alrededor horizontalmente (dentro de la misma pista) y verticalmente (entre pistas). 
+**Rizado** no te permite arrastrar regiones, pero todavía te deja ejecutar operaciones de corte (como cortar,pegar y dividir). El espacio entre las regiones se mantendrá constante tras cualquier operación que lo afecte. Si eliminas la segunda mitad de una región, por ejemplo, cualesquier regiones subsiguientes en la misma pista se moverán automáticamente atrás en la rejilla de tiempo. Bloquear es similar a la Edición Rizado, pero las regiones quedarán en sus posiciones originales a pesar de cualquier operación de edición ejecutada.
+
+- **Seleccionar/Mover Objeto [ O]**
+Este Modo de Cursor te permite seleccionar o mover objetos tales como regiones y puntos de ruptura (en una curva de automatización). Cuando este Modo de Cursor se selecciona, tu puntero de cursor se verá así:
+
+- **Rango [ R]**
+Este Modo de Cursor te permite pinchar y arrastrar para definir o redimensionar Rangos. Cuando este Modo de Cursor está seleccionado, tu puntero de cursor se verá así:
+
+- **Modo Cortar [ C]**
+Usa este curso para dividir regiones en regiones más pequeñas. El cursor se verá como unas pequeñas tijeras. Esto te permitirá cortar donde hagas clic con el cursor. 
+Consejo: puedes cortar regiones directamente desde el Modo Seleccionar/arrastrar objeto también (algunas veces puede resultar más práctico). Sin dejar el Modo Seleccionar objeto, simplemente coloca el cursor en la ubicación deseada de corte y aprieta la tecla [S] (de split, dividir en inglés). Importante: tu punto de edición (a la derecha de la configuración de la grilla) debe estar puesta en "Mouse".
+
+- **Expandir/Encoger Regiones [ T]**
+Este Modo de Cursor te permite arrastrar y redimensionar la duración de una Región entera sin cambiar el Tono. Esto es a veces llamado “Timestretching” o “expansión de tiempo”, por ello el tecla [T].
+
+- **Escuchar Regiones específicas**
+Este Modo de Cursor te permite pinchar en cualquier Región existente sobre cualquier pista y reproducirla inmediatamente. La reproducción para al final de la Región. Cuando este Modo de Cursor se selecciona, tu puntero de cursor se verá así:
+
+`Nota: También puedes escuchar rápidamente una región seleccionada sin salir del modo Seleccionar/arrastrar objeto. Simplemente selecciona una región y aprieta la tecla [H]. `
+
+- **Dibujar Automatización de Ganancia [ G]**
+Utiliza este Modo de Cursor si quieres dibujar la Automatización del volumen de una región específica. La curva de automatización creada de este modo no abandonará la región sobre la que fue creada, incluso cuando la Región se mueva alrededor Este tipo de Automatización de ganancia se dibuja directamente en la Región misma, lo cual lo hace diferente de la Automatización utilizada en la región desplegable de Automatización (mira el capítulo Automatización).
+
+- **Modo de edición**
+Use este modo para editar puntos de automatización de ganancia existentes. El cursor parece una mano y se convierte en una pequeña cruz cuando se está en la parte superior un punto existente. Haga clic en (mantenga el clic apretado) y arrastre con el fin de mover los puntos.
+
+- **MIDI**
+Los dos últimos botones citados anteriormente también se utilizan para crear y editar la información MIDI. Para aprender mas acerca de MIDI favor leer el capitulo Usar MIDI
+
+- **Zoom horizontal y opciones de vista**
+Los principales atajos que probablemente uses todo el tiempo son [-] y [=] (disminuir el zoom y aumentarlo, respectivamente). La ampliación o disminución sucederá en relación con el punto de edición actualmente seleccionada (ratón, marcador o cursor de reproducción). En caso de duda sobre qué punto de edición elegir, selecciona Mouse.
+El botón de Zoom a la Sesión [-] se acerca o aleja, según sea necesario, para que puedas ver el inicio y fin de los marcadores de tu proyecto.
+
+Todas las opciones de zoom discutidos anteriormente controlan la cantidad de contenido horizontal que vas a ver en la pantalla. Una vez que tengas una sesión con varias pistas, también tendrás que controlar la cantidad de contenido vertical, que eres capaz ver en la pantalla. Hay varias formas de hacer esto:
+Utiliza el "Número de pistas visibles" del menú desplegable para seleccionar el número de pistas que deseas ver para que quepan en la pantalla.
+Utiliza el botón **Encoger pistas**  para que todas las pistas seleccionadas quepan.
+Utiliza el botón **Expandir pistas** para que todas las pistas seleccionadas de vean más grandes.
+También puedes cambiar el tamaño de una pista individual arrastrando su borde inferior, o haciendo clic derecho en la cabecera de la pista y la seleccionando de la "Altura" deseado.
+
+- **Herramienta de navegación**
+Puedes usar la herramienta de navegación que se encuentra abajo de todo en la ventana de edición, para subir y bajar la sesión y ajustar el zoom vertical y horizontal, achicando o agrandando el tamaño de la ventana.
+
+- **Crear sesiones en bucle (loop)**
+Puedes repetir secciones de audio fácilmente en tu sesión de Ardour. Aquí, tomamos el pasaje rítmico de audio que creamos en Trabajar con Regiones y lo duplicamos para hacer un bucle.
+Antes de duplicar el pasaje o sección de audio, es una buena idea combinar las distintas regiones de la misma pista en una sola: es más fácil el traslado si lo hacemos de esta manera, y se impide que se mueva accidentalmente una sola parte fuera de lugar, por ejemplo. Hay dos maneras de hacer esto: Combinar Regiones (te permite descombinar) y Consolidar Rango ( no permite separar más adelante).
+Si todavía están pensando en hacer alteraciones en el ritmo (añadir, eliminar o mover regiones individuales), puede ser mejor usar la opción Combinar regiones. Si te gusta la secuencia de la manera que es y no quieres o no te importa tener la capacidad para separarlos más tarde, utilice la opción Rango Consolidar.
+
+- **Combinar Regiones**
+Sólo tiene que seleccionar todas las regiones que desea combinar:
+A continuación, ve al menú Región → Editar → Combinar (o hay clic en las regiones seleccionadas y encontrar la misma opción a través del menú contextual, como se muestra a continuación):
+Las regiones combinadas se verá como esta (nota que la palabra "combinado" se ha añadido al nombre):
+Si tiene que separarlos de nuevo en el futuro, sólo tienes que seleccionar la región compuesto e ir al mismo menú y elegir la opción "Uncombine".
+
+- **Consolidar el rango**
+Cuando hayas arreglado tus Regiones en un solo "ciclo de bucle" y quedado satisfecho con el sonido, estas a punto para crear un Rango con todas las regiones que harán el bucle. Primero, asegúrate de que se seleccione cada Pista utilizada en el bucle. Las pistas deseleccionadas son grises, y las seleccionadas azules. Si ninguna de las Pistas que utilizaste no está seleccionada, mantén pulsada la tecla de Mayúsculas mientras pinchas en ellas para añadirlas al grupo seleccionado. Finalmente, utiliza la herramienta de Rango para seleccionar el bucle entero. 
+Una vez más, la configuración de la Rejilla te ayudará a poner precisamente el rango al punto de inicio y fin de tu barra métrica. Una vez que tengas seleccionado el bucle entero, haz clic-derecho en el rango y selecciona Consolidar rango. Si te gustaría que cualquier efecto de Automatización o Plugin que hayas añadido al bucle fuera incluido, selecciona Consolidar rango con procesamiento.
+
+Cuando el rango o intervalo seleccionado se consolida, aparecerá nuevas regiones en cada Pista, cada cual conteniendo todas las repeticiones de las muestras que hayas configurado en pasos anteriores.
+Recuerda, una vez que el rango se consolida, no hay manera de deshacer la operación. En cualquier caso, si encuentras que necesita para alterar el ritmo de cualquier manera, siempre se puede recuperar las muestras individuales originales de la lista de regiones y reconstruir el patrón con ellos.
+
+- **Duplicar el Rango**
+Después de haber fusionado regiones individuales que forman el patrón (usando la función Combinar o consolidar), es el momento de duplicar el patrón para formar un bucle o loop.
+
+La función Multi-Duplicar (visto en el trabajo con el capítulo Regiones) es una buena manera de lograr esto. Volver a modo Grab [ G], selecciona todas las regiones, y pulsa [Mayus. + D]. Elegir el número de veces que deseas duplicar el patrón, por ejemplo: 1# Después duplicar nuestra sesión se ve algo como esto:
+
+Sólo para su revisión, otras opciones que se pueden usar para la duplicación son:
+El comando Rellenar la pista desde el menú Región → Duplicar → Rellenar pista. Esto llenaría toda la pista con las copias de las regiones seleccionadas, todo el camino hasta el marcador de final.
+El comando Duplicar en el mismo menú [Alt + D]. Esto le permite hacer una sola copia a la vez.
+La única acción duplicado con [Ctrl + clic] en la región + arrastrar una copia.
+
+- **Expandir/Encoger Regiones**
+Las regiones pueden ser expandidas o encogidas en longitud sin cambiar su Tono utilizando la herramienta Expandir/Encoger Regiones. Un ajuste pequeño a la longitud de una Región puede no causar Artefactos notorios de sonido. Aun así, cuanto más extremo el cambio en longitud, más obvio el efecto de procesado en el sonido.
+
+Para utilizar Expandir/Encoger Regiones, sitúa tu cursor encima de la región, y entonces pincha-arrastra a izquierda o derecha. Mientras arrastres, verás una área destacada, que representa la nueva duración a la cual la Región será encogida o expandida cuando liberes el ratón en la posición actual.
+
+Esto es útil cuando añadamos una Región a una Pista nueva y la longitud de esta nueva Región no coincide con el ritmo existente que hemos ya creado. Es demasiado largo para ser un compás y demasiado corto para ser de dos compases. Selecciona la región que deseas corregir, y arrastra la nueva longitud hasta el final de la segunda barra, de nuevo con la asistencia de la configuración de cuadrícula. 
+
+Al soltar el botón del ratón, aparecerá el cuadro de diálogo Ampliación de tiempo de audio. Puedes experimentar con diferentes ajustes para la operación de ampliación de tiempo. Cada ajuste afectará al sonido de diferentes maneras. Es una buena idea experimentar con unos pocos ajustes diferentes de estiramiento para averiguar lo que le da el resultado mas adecuado para tu gusto. Cuando la operación de ampliación de tiempo se ha completado, la región será exactamente largas, y debe encajar con el ritmo que ya creaste.
+
