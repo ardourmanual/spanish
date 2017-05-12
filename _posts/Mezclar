@@ -7,6 +7,8 @@ La Banda de Mezcla es la columna vertical que contiene varios controles relacion
 
 Las Bandas de Mezcla pueden ser accedidas tanto desde la Ventana del Editor como desde la Ventana del Mezclador [Alt + M] para alternar entre los dos. Las Bandas de mezcla en cualquier ventana (del Editor o del Mezclador) son espejo una de la otra: cualesquier acciones hechas en una Banda de Mezcla en la Ventana del Mezclador serán reflejadas en la correspondiente Banda de Mezcla en la Ventana del Editor, y viceversa. 
 
+![banda](/images/Grafik67.png)
+
 ### La Banda de Mezcla desde arriba hasta abajo 
 En la ventana del editor, se puede ver la banda de mezclador de la pista seleccionada en la parte izquierda de la ventana. Si no lo ve, pulsar [Ctrl + E] para mostrarla.
 
@@ -18,15 +20,18 @@ Continuando desde arriba hacia abajo, la siguiente sección de la banda de mezcl
 
 Procesador
 La gran región de negro en la parte inferior de esta sección es la caja del procesador. Aquí es donde se pueden añadir Plugins, por ejemplo. La caja del procesador siempre contendrá el Fader en azul. Esto indica dónde se encuentra el atenuador principal del canal. El Fader se muestra en la mitad inferior de la tira. Por favor, consulta el capitulo Utilizar Plugins para más detalles. 
+![procesador](/images/Grafik68.png)
 
 La siguiente parte de la banda de mezclador incluye controles para la toma panorámica, Record, Mute y Solo, entre otros.
 
 Paneo
 Paneo tiene que ver con la colocación de los sonidos en cualquier lugar entre los altavoces izquierdo y derecho. Por favor, consulte el capítulo Utilizar el Panning para obtener más información.
+![paneo](/images/Grafik69.png)
 
 Solo
 Cuando una pista o el Bus está en Solo, todas las otras pistas o Buses que no son del mismo modo en solitario no puede oírse a través del master de Bus o de la audición. También podemos encontrar un botón Solo en miniatura del mezclador de pistas. Tenga en cuenta que el aislamiento de una autobús no silenciará las pistas y viceversa.
 Cuando cualquier pista o el Bus está en Solo, el indicador Solo en el menú de controles auxiliares se pondrá roja. Al hacer clic en el indicador de Solo mientras parpadea, se desactivarán todos los Solo, en la Sesión.
+![solo](/images/Grafik70.png)
 
 Mudo
 Cualquier pista o el Bus de Silencio no puede oírse a través del Bus master o de la audición. El mezclador de pistas también contiene un botón de silencio en miniatura, entre el botón de grabación del brazo y el botón Solo. Haga clic en el botón Mute le ofrece opciones avanzadas para el comportamiento del botón de silencio.
@@ -34,12 +39,13 @@ Cualquier pista o el Bus de Silencio no puede oírse a través del Bus master o 
 Preparar la grabación
 El botón Rec de la pista la prepara para la grabación, como se ve en el capítulo de grabación de audio. Pero haciendo clic no inicia la grabación, sólo la selecciona para cuando hagamos clic en el Rec general, en esa pista se graben las fuentes de entrada.
 
-Fader, fundidos y medidores de pico
+**Fader, fundidos y medidores de pico**
 El control más importante presente en una banda de mezclador es el Fader, que se utiliza para ajustar la ganancia total para el correspondiente pista o el Bus. El medidor de pico muestra el valor máximo de la pista seleccionada, y se encuentra justo a la derecha del Fader. Estos medidores de nivel consiste en un gráfico de barra en el caso de una pista mono, y dos gráficos de barras en caso de una pista estéreo. El pequeño campo rectangular por encima de los medidores muestra el mayor valor de pico que se ha jugado en esa pista hasta el momento.
+![fader](/images/Grafik73.png)
 
 Al hacer clic en el botón de la derecha en la parte inferior de la banda de mezclador (se lee "post" en la imagen al lado), puedes seleccionar el punto de medición, por ejemplo, el directo "In" de la tarjeta de sonido, el "pre" señal de Fader, o el "post" señal Fader. Es decir, seleccionas antes o después del Fader. 
 
-Como se puede ver en la imagen de abajo, hay una versión más pequeña de la banda de mezclador en cada pista, llamado el mezclador de pistas, que contiene un atenuador horizontal, un Medidor vertical, así como botones de miniatura para Rec, Mute y Solo . Todos ellos son similares a los encontrados en la banda de mezclador para esa pista.
+Como se puede ver en la imagen de abajo, hay una versión más pequeña de la banda de mezclador en cada pista, llamado el mezclador de pistas, que contiene un atenuador horizontal, un Medidor vertical, así como botones de miniatura para **Rec, Mute y Solo**. Todos ellos son similares a los encontrados en la banda de mezclador para esa pista.
 
 Enrutamiento
 Por último, llegamos a la parte inferior de la banda de mezclador. Aquí encontramos el botón de enrutamiento de salida, marcado como "master" en la captura de pantalla anterior, que se discute en el capítulo Descripción del enrutamiento.
