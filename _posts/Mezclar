@@ -1,4 +1,15 @@
-
+---
+layout: post
+title: ¿Qué es Ardour?
+description: "Introducción"
+comments: false 
+tags: [04 MEZCLA]
+comments: false
+image:
+  feature: ardour_5_background.png
+  credit:  
+  creditlink:  
+---
 # 4. Mezcla
 Mezclar es el proceso de convertir Pistas múltiples a una Mezcla estéreo dónde todo los instrumentos puedan ser oídos claramente. Niveles, Panoramización, Ecualización (EQ), y Compresión son las principales herramientas utilizadas para conseguir una buena Mezcla. Además de estas herramientas básicas, también se puede utilizar una amplia gama de efectos para mejorar el sonido, como efectos de Espacio (Reverb o Delay), Efectos de Modulación (Flanger, Chorus, Phaser, etc). Estos efectos vienen en forma de Plugins, es decir pequeños programas adicionales que son desarrollado independientemente de Ardour y que vienen en diferentes formatos. Mas acerca de Plugins en el capitulo Utilizar Plugins.
 
@@ -53,7 +64,7 @@ Por último, llegamos a la parte inferior de la banda de mezclador. Aquí encont
 ## Niveles de Mezcla
 Los Niveles son los volúmenes que cada Pista tiene relativamente a las demás. Si no puedes oír una línea de graves por encima de los otros instrumentos, la elección obvia sería alzar el volumen de línea de graves. Los niveles pueden ajustarse en la Banda de Mezcla de cada Pista bajo su nombre de Pista. El primer paso en la Mezcla es escuchar a todo aquello que ha sido grabado y ajustar los niveles de todas las Pistas de modo que puedas oír todo claramente, pero en una manera que es apropiada para la canción. Por ejemplo, la pista vocal es normalmente más fuerte que la guitarra rítmica porque la voz es el punto focal de la canción.
 
-##1 Utilizar el Atenuador (Fader)
+### Utilizar el Atenuador (Fader)
 El Atenuador es el control primario de niveles por cada pista. El valor exacto de los niveles de la Pista se muestran en el pequeño campo rectangular por encima del Atenuador. Puedes cambiar los niveles bien arrastrando el deslizador o bien escribiendo un nuevo número directamente en el rectángulo con la cantidad. Por defecto el Atenuador está puesto a −0.0 dB, que significa que los Niveles de la Pista no se cambian mientras se reproduce.
 
 Una otra tarea importante en la Mezcla es evitar Saturación. El Valor de Pico en la Banda de Mezcla se vuelve rojo cuando la señal ha hecho pico por encima de 0.0dB. Puedes utilizar esta herramienta para controlar los Niveles más altos de tu Pista mientras Mezclas. Pincha encima para reiniciarlo.
